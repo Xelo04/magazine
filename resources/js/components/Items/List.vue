@@ -19,7 +19,13 @@
                             <td>{{ item.name }}</td>
                             <td>{{ item.price }}</td>
                             <td>{{ item.category.name }}</td>
-                            <td>Usuń</td>
+                            <td>
+                                <v-btn @click="deleteItem(item.id)" color="error" fab x-small>
+                                    <v-icon>
+                                        mdi-delete
+                                    </v-icon>
+                                </v-btn>
+                            </td>
                         </tr>
                     </tbody>
                 </template>
@@ -30,7 +36,7 @@
 
 <script>
 import store from '../..//store/index';
-import Create from "./Create.vue"
+import Create from "./Create.vue";
 export default {
     name: 'List',
     components: {
@@ -44,6 +50,11 @@ export default {
     methods: {
         listItems() {
             store.dispatch("listItems", this);
+        },
+        async deleteItem(id) {
+            store.commit("setItemId", id);
+            await store.dispatch("destroyItem", this);
+            this.listItems();
         }
     },
     created() {

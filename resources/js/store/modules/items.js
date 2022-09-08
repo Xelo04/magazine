@@ -35,6 +35,10 @@ const actions = {
     async createItem(state, Vuecomponent) {
         var item = state.getters.getItem;
         await Vuecomponent.$http.post(urlItems + "create", { item: item })
+    },
+    async destroyItem(state, VueComponent) {
+        var id = state.getters.getItemId;
+        await VueComponent.$http.delete(urlItems + "destroy/" + id)
             .then(response => {
                 console.log(response);
             })
