@@ -5712,6 +5712,55 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Categories/List.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Categories/List.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  name: 'List'
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Items/List.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Items/List.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _store_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../..//store/index */ "./resources/js/store/index.js");
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  name: 'List',
+  computed: {
+    items: function items() {
+      return _store_index__WEBPACK_IMPORTED_MODULE_0__["default"].getters.getItems;
+    }
+  },
+  methods: {
+    listItems: function listItems() {
+      _store_index__WEBPACK_IMPORTED_MODULE_0__["default"].dispatch("listItems", this);
+    }
+  },
+  created: function created() {
+    this.listItems();
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/MainVue.vue?vue&type=script&lang=js&":
 /*!**************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/MainVue.vue?vue&type=script&lang=js& ***!
@@ -5737,33 +5786,44 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
-/* harmony import */ var vuetify__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vuetify */ "./node_modules/vuetify/dist/vuetify.js");
-/* harmony import */ var vuetify__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(vuetify__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
-/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./store */ "./resources/js/store/index.js");
-/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_store__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./routes */ "./resources/js/routes.js");
-/* harmony import */ var _components_MainVue_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/MainVue.vue */ "./resources/js/components/MainVue.vue");
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "bus": () => (/* binding */ bus)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
+/* harmony import */ var vuetify__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vuetify */ "./node_modules/vuetify/dist/vuetify.js");
+/* harmony import */ var vuetify__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(vuetify__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _plugins_vuetify__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../plugins/vuetify */ "./resources/plugins/vuetify.js");
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./store */ "./resources/js/store/index.js");
+/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./routes */ "./resources/js/routes.js");
+/* harmony import */ var _components_MainVue_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/MainVue.vue */ "./resources/js/components/MainVue.vue");
+/* harmony import */ var _components_Items_List_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/Items/List.vue */ "./resources/js/components/Items/List.vue");
+/* harmony import */ var vue_resource__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vue-resource */ "./node_modules/vue-resource/dist/vue-resource.esm.js");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
 
-vue__WEBPACK_IMPORTED_MODULE_0__["default"].use((vuetify__WEBPACK_IMPORTED_MODULE_1___default()));
 
-vue__WEBPACK_IMPORTED_MODULE_0__["default"].use(vue_router__WEBPACK_IMPORTED_MODULE_2__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_1__["default"].use((vuetify__WEBPACK_IMPORTED_MODULE_2___default()));
+
+vue__WEBPACK_IMPORTED_MODULE_1__["default"].use(vue_router__WEBPACK_IMPORTED_MODULE_3__["default"]);
 
 
 
-var app = new vue__WEBPACK_IMPORTED_MODULE_0__["default"]({
+
+
+vue__WEBPACK_IMPORTED_MODULE_1__["default"].use(vue_resource__WEBPACK_IMPORTED_MODULE_8__["default"]);
+var app = new vue__WEBPACK_IMPORTED_MODULE_1__["default"]({
   el: '#app',
-  store: (_store__WEBPACK_IMPORTED_MODULE_3___default()),
-  vuetify: new (vuetify__WEBPACK_IMPORTED_MODULE_1___default())(),
-  router: new vue_router__WEBPACK_IMPORTED_MODULE_2__["default"](_routes__WEBPACK_IMPORTED_MODULE_4__["default"]),
+  store: _store__WEBPACK_IMPORTED_MODULE_4__["default"],
+  vuetify: new (vuetify__WEBPACK_IMPORTED_MODULE_2___default())(),
+  router: new vue_router__WEBPACK_IMPORTED_MODULE_3__["default"](_routes__WEBPACK_IMPORTED_MODULE_5__["default"]),
   components: {
-    MainVue: _components_MainVue_vue__WEBPACK_IMPORTED_MODULE_5__["default"]
+    MainVue: _components_MainVue_vue__WEBPACK_IMPORTED_MODULE_6__["default"],
+    ItemsList: _components_Items_List_vue__WEBPACK_IMPORTED_MODULE_7__["default"]
   }
 });
+var bus = new vue__WEBPACK_IMPORTED_MODULE_1__["default"]();
 
 /***/ }),
 
@@ -5823,9 +5883,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _components_Items_List__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/Items/List */ "./resources/js/components/Items/List.vue");
+/* harmony import */ var _components_Categories_List__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/Categories/List */ "./resources/js/components/Categories/List.vue");
+
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   mode: 'history',
-  routes: []
+  routes: [{
+    name: _components_Items_List__WEBPACK_IMPORTED_MODULE_0__["default"],
+    component: _components_Items_List__WEBPACK_IMPORTED_MODULE_0__["default"],
+    path: "/Items/list"
+  }, {
+    name: _components_Categories_List__WEBPACK_IMPORTED_MODULE_1__["default"],
+    component: _components_Categories_List__WEBPACK_IMPORTED_MODULE_1__["default"],
+    path: "/Categories/list"
+  }]
 });
 
 /***/ }),
@@ -5834,15 +5906,91 @@ __webpack_require__.r(__webpack_exports__);
 /*!*************************************!*\
   !*** ./resources/js/store/index.js ***!
   \*************************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-// import { VueElement } from "vue";
-// import Vuex from "vuex"
-// VueElement.use(Vuex)
-// export default new Vuex.Store({
-//     modules: {
-//     },
-// })
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+/* harmony import */ var _modules_items__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/items */ "./resources/js/store/modules/items.js");
+
+
+
+vue__WEBPACK_IMPORTED_MODULE_1__["default"].use(vuex__WEBPACK_IMPORTED_MODULE_2__["default"]);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new vuex__WEBPACK_IMPORTED_MODULE_2__["default"].Store({
+  modules: {
+    Items: _modules_items__WEBPACK_IMPORTED_MODULE_0__["default"]
+  }
+}));
+
+/***/ }),
+
+/***/ "./resources/js/store/modules/items.js":
+/*!*********************************************!*\
+  !*** ./resources/js/store/modules/items.js ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+var urlItems = "/main-api/items/";
+var state = {
+  items: []
+};
+var getters = {
+  getItems: function getItems(state) {
+    return state.items;
+  }
+};
+var mutations = {
+  setItems: function setItems(state, data) {
+    state.items = data;
+  }
+};
+var actions = {
+  listItems: function listItems(state, VueComponent) {
+    console.log(VueComponent.$http);
+    VueComponent.$http.get(urlItems + "list").then(function (response) {
+      state.commit("setItems", response.body.items);
+    });
+  }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  state: state,
+  mutations: mutations,
+  actions: actions,
+  getters: getters
+});
+
+/***/ }),
+
+/***/ "./resources/plugins/vuetify.js":
+/*!**************************************!*\
+  !*** ./resources/plugins/vuetify.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
+/* harmony import */ var vuetify__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vuetify */ "./node_modules/vuetify/dist/vuetify.js");
+/* harmony import */ var vuetify__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(vuetify__WEBPACK_IMPORTED_MODULE_1__);
+
+
+vue__WEBPACK_IMPORTED_MODULE_0__["default"].use((vuetify__WEBPACK_IMPORTED_MODULE_1___default()));
+var opts = {
+  theme: {
+    light: {
+      primary: '#01BAEF'
+    }
+  }
+};
 
 /***/ }),
 
@@ -13100,6 +13248,126 @@ ___CSS_LOADER_EXPORT___.push([module.id, ".v-btn:not(.v-btn--outlined).primary, 
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-15.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-15.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-15.use[3]!./node_modules/vuetify/src/components/VDataTable/VSimpleTable.sass":
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-15.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-15.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-15.use[3]!./node_modules/vuetify/src/components/VDataTable/VSimpleTable.sass ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".theme--light.v-data-table {\n  background-color: #FFFFFF;\n  color: rgba(0, 0, 0, 0.87);\n}\n.theme--light.v-data-table .v-data-table__divider {\n  border-right: thin solid rgba(0, 0, 0, 0.12);\n}\n.theme--light.v-data-table.v-data-table--fixed-header thead th {\n  background: #FFFFFF;\n  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.12);\n}\n.theme--light.v-data-table > .v-data-table__wrapper > table > thead > tr > th {\n  color: rgba(0, 0, 0, 0.6);\n}\n.theme--light.v-data-table > .v-data-table__wrapper > table > thead > tr:last-child > th {\n  border-bottom: thin solid rgba(0, 0, 0, 0.12);\n}\n.theme--light.v-data-table > .v-data-table__wrapper > table > tbody > tr:not(:last-child) > td:not(.v-data-table__mobile-row),\n.theme--light.v-data-table > .v-data-table__wrapper > table > tbody > tr:not(:last-child) > th:not(.v-data-table__mobile-row) {\n  border-bottom: thin solid rgba(0, 0, 0, 0.12);\n}\n.theme--light.v-data-table > .v-data-table__wrapper > table > tbody > tr:not(:last-child) > td:last-child,\n.theme--light.v-data-table > .v-data-table__wrapper > table > tbody > tr:not(:last-child) > th:last-child {\n  border-bottom: thin solid rgba(0, 0, 0, 0.12);\n}\n.theme--light.v-data-table > .v-data-table__wrapper > table > tbody > tr.active {\n  background: #f5f5f5;\n}\n.theme--light.v-data-table > .v-data-table__wrapper > table > tbody > tr:hover:not(.v-data-table__expanded__content):not(.v-data-table__empty-wrapper) {\n  background: #eeeeee;\n}\n.theme--light.v-data-table > .v-data-table__wrapper > table > tfoot > tr > td:not(.v-data-table__mobile-row),\n.theme--light.v-data-table > .v-data-table__wrapper > table > tfoot > tr > th:not(.v-data-table__mobile-row) {\n  border-top: thin solid rgba(0, 0, 0, 0.12);\n}\n\n.theme--dark.v-data-table {\n  background-color: #1E1E1E;\n  color: #FFFFFF;\n}\n.theme--dark.v-data-table .v-data-table__divider {\n  border-right: thin solid rgba(255, 255, 255, 0.12);\n}\n.theme--dark.v-data-table.v-data-table--fixed-header thead th {\n  background: #1E1E1E;\n  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.12);\n}\n.theme--dark.v-data-table > .v-data-table__wrapper > table > thead > tr > th {\n  color: rgba(255, 255, 255, 0.7);\n}\n.theme--dark.v-data-table > .v-data-table__wrapper > table > thead > tr:last-child > th {\n  border-bottom: thin solid rgba(255, 255, 255, 0.12);\n}\n.theme--dark.v-data-table > .v-data-table__wrapper > table > tbody > tr:not(:last-child) > td:not(.v-data-table__mobile-row),\n.theme--dark.v-data-table > .v-data-table__wrapper > table > tbody > tr:not(:last-child) > th:not(.v-data-table__mobile-row) {\n  border-bottom: thin solid rgba(255, 255, 255, 0.12);\n}\n.theme--dark.v-data-table > .v-data-table__wrapper > table > tbody > tr:not(:last-child) > td:last-child,\n.theme--dark.v-data-table > .v-data-table__wrapper > table > tbody > tr:not(:last-child) > th:last-child {\n  border-bottom: thin solid rgba(255, 255, 255, 0.12);\n}\n.theme--dark.v-data-table > .v-data-table__wrapper > table > tbody > tr.active {\n  background: #505050;\n}\n.theme--dark.v-data-table > .v-data-table__wrapper > table > tbody > tr:hover:not(.v-data-table__expanded__content):not(.v-data-table__empty-wrapper) {\n  background: #616161;\n}\n.theme--dark.v-data-table > .v-data-table__wrapper > table > tfoot > tr > td:not(.v-data-table__mobile-row),\n.theme--dark.v-data-table > .v-data-table__wrapper > table > tfoot > tr > th:not(.v-data-table__mobile-row) {\n  border-top: thin solid rgba(255, 255, 255, 0.12);\n}\n\n.v-data-table {\n  line-height: 1.5;\n  max-width: 100%;\n}\n.v-data-table > .v-data-table__wrapper > table {\n  width: 100%;\n  border-spacing: 0;\n}\n.v-data-table > .v-data-table__wrapper > table > tbody > tr > td,\n.v-data-table > .v-data-table__wrapper > table > tbody > tr > th,\n.v-data-table > .v-data-table__wrapper > table > thead > tr > td,\n.v-data-table > .v-data-table__wrapper > table > thead > tr > th,\n.v-data-table > .v-data-table__wrapper > table > tfoot > tr > td,\n.v-data-table > .v-data-table__wrapper > table > tfoot > tr > th {\n  padding: 0 16px;\n  transition: height 0.2s cubic-bezier(0.4, 0, 0.6, 1);\n}\n.v-data-table > .v-data-table__wrapper > table > tbody > tr > th,\n.v-data-table > .v-data-table__wrapper > table > thead > tr > th,\n.v-data-table > .v-data-table__wrapper > table > tfoot > tr > th {\n  -webkit-user-select: none;\n     -moz-user-select: none;\n          user-select: none;\n  font-size: 0.75rem;\n  height: 48px;\n}\n.v-application--is-ltr .v-data-table > .v-data-table__wrapper > table > tbody > tr > th,\n.v-application--is-ltr .v-data-table > .v-data-table__wrapper > table > thead > tr > th,\n.v-application--is-ltr .v-data-table > .v-data-table__wrapper > table > tfoot > tr > th {\n  text-align: left;\n}\n.v-application--is-rtl .v-data-table > .v-data-table__wrapper > table > tbody > tr > th,\n.v-application--is-rtl .v-data-table > .v-data-table__wrapper > table > thead > tr > th,\n.v-application--is-rtl .v-data-table > .v-data-table__wrapper > table > tfoot > tr > th {\n  text-align: right;\n}\n.v-data-table > .v-data-table__wrapper > table > tbody > tr > td,\n.v-data-table > .v-data-table__wrapper > table > thead > tr > td,\n.v-data-table > .v-data-table__wrapper > table > tfoot > tr > td {\n  font-size: 0.875rem;\n  height: 48px;\n}\n\n.v-data-table__wrapper {\n  overflow-x: auto;\n  overflow-y: hidden;\n}\n\n.v-data-table__progress {\n  height: auto !important;\n}\n.v-data-table__progress th {\n  height: auto !important;\n  border: none !important;\n  padding: 0;\n  position: relative;\n}\n\n.v-data-table--dense > .v-data-table__wrapper > table > tbody > tr > td,\n.v-data-table--dense > .v-data-table__wrapper > table > thead > tr > td,\n.v-data-table--dense > .v-data-table__wrapper > table > tfoot > tr > td {\n  height: 32px;\n}\n.v-data-table--dense > .v-data-table__wrapper > table > tbody > tr > th,\n.v-data-table--dense > .v-data-table__wrapper > table > thead > tr > th,\n.v-data-table--dense > .v-data-table__wrapper > table > tfoot > tr > th {\n  height: 32px;\n}\n\n.v-data-table--has-top > .v-data-table__wrapper > table > tbody > tr:first-child:hover > td:first-child {\n  border-top-left-radius: 0;\n}\n.v-data-table--has-top > .v-data-table__wrapper > table > tbody > tr:first-child:hover > td:last-child {\n  border-top-right-radius: 0;\n}\n\n.v-data-table--has-bottom > .v-data-table__wrapper > table > tbody > tr:last-child:hover > td:first-child {\n  border-bottom-left-radius: 0;\n}\n.v-data-table--has-bottom > .v-data-table__wrapper > table > tbody > tr:last-child:hover > td:last-child {\n  border-bottom-right-radius: 0;\n}\n\n.v-data-table--fixed-height .v-data-table__wrapper {\n  overflow-y: auto;\n}\n\n.v-data-table--fixed-header > .v-data-table__wrapper {\n  overflow-y: auto;\n}\n.v-data-table--fixed-header > .v-data-table__wrapper > table > thead > tr > th {\n  border-bottom: 0px !important;\n  position: sticky;\n  top: 0;\n  z-index: 2;\n}\n.v-data-table--fixed-header > .v-data-table__wrapper > table > thead > tr:nth-child(2) > th {\n  top: 48px;\n}\n.v-application--is-ltr .v-data-table--fixed-header .v-data-footer {\n  margin-right: 17px;\n}\n.v-application--is-rtl .v-data-table--fixed-header .v-data-footer {\n  margin-left: 17px;\n}\n\n.v-data-table--fixed-header.v-data-table--dense > .v-data-table__wrapper > table > thead > tr:nth-child(2) > th {\n  top: 32px;\n}", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-15.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-15.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-15.use[3]!./node_modules/vuetify/src/components/VFooter/VFooter.sass":
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-15.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-15.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-15.use[3]!./node_modules/vuetify/src/components/VFooter/VFooter.sass ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".theme--light.v-footer {\n  background-color: #f5f5f5;\n  color: rgba(0, 0, 0, 0.87);\n}\n\n.theme--dark.v-footer {\n  background-color: #272727;\n  color: #FFFFFF;\n}\n\n.v-sheet.v-footer {\n  border-radius: 0;\n}\n.v-sheet.v-footer:not(.v-sheet--outlined) {\n  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12);\n}\n.v-sheet.v-footer.v-sheet--shaped {\n  border-radius: 24px 0;\n}\n\n.v-footer {\n  align-items: center;\n  display: flex;\n  flex: 0 1 auto !important;\n  flex-wrap: wrap;\n  padding: 6px 16px;\n  position: relative;\n  transition-duration: 0.2s;\n  transition-property: background-color, left, right;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n}\n.v-footer:not([data-booted=true]) {\n  transition: none !important;\n}\n\n.v-footer--absolute,\n.v-footer--fixed {\n  z-index: 3;\n}\n\n.v-footer--absolute {\n  position: absolute;\n}\n.v-footer--absolute:not(.v-footer--inset) {\n  width: 100%;\n}\n\n.v-footer--fixed {\n  position: fixed;\n}\n\n.v-footer--padless {\n  padding: 0px;\n}", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-15.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-15.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-15.use[3]!./node_modules/vuetify/src/components/VGrid/VGrid.sass":
+/*!****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-15.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-15.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-15.use[3]!./node_modules/vuetify/src/components/VGrid/VGrid.sass ***!
+  \****************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".container {\n  width: 100%;\n  padding: 12px;\n  margin-right: auto;\n  margin-left: auto;\n}\n@media (min-width: 960px) {\n  .container {\n    max-width: 900px;\n  }\n}\n@media (min-width: 1264px) {\n  .container {\n    max-width: 1185px;\n  }\n}\n@media (min-width: 1904px) {\n  .container {\n    max-width: 1785px;\n  }\n}\n.container--fluid {\n  max-width: 100%;\n}\n\n.row {\n  display: flex;\n  flex-wrap: wrap;\n  flex: 1 1 auto;\n  margin: -12px;\n}\n.row + .row {\n  margin-top: 12px;\n}\n.row + .row--dense {\n  margin-top: 4px;\n}\n.row--dense {\n  margin: -4px;\n}\n.row--dense > .col,\n.row--dense > [class*=col-] {\n  padding: 4px;\n}\n.row.no-gutters {\n  margin: 0;\n}\n.row.no-gutters > .col,\n.row.no-gutters > [class*=col-] {\n  padding: 0;\n}\n\n.col-xl,\n.col-xl-auto, .col-xl-12, .col-xl-11, .col-xl-10, .col-xl-9, .col-xl-8, .col-xl-7, .col-xl-6, .col-xl-5, .col-xl-4, .col-xl-3, .col-xl-2, .col-xl-1, .col-lg,\n.col-lg-auto, .col-lg-12, .col-lg-11, .col-lg-10, .col-lg-9, .col-lg-8, .col-lg-7, .col-lg-6, .col-lg-5, .col-lg-4, .col-lg-3, .col-lg-2, .col-lg-1, .col-md,\n.col-md-auto, .col-md-12, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .col-md-3, .col-md-2, .col-md-1, .col-sm,\n.col-sm-auto, .col-sm-12, .col-sm-11, .col-sm-10, .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, .col-sm-5, .col-sm-4, .col-sm-3, .col-sm-2, .col-sm-1, .col,\n.col-auto, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {\n  width: 100%;\n  padding: 12px;\n}\n\n.col {\n  flex-basis: 0;\n  flex-grow: 1;\n  max-width: 100%;\n}\n\n.col-auto {\n  flex: 0 0 auto;\n  width: auto;\n  max-width: 100%;\n}\n\n.col-1 {\n  flex: 0 0 8.3333333333%;\n  max-width: 8.3333333333%;\n}\n\n.col-2 {\n  flex: 0 0 16.6666666667%;\n  max-width: 16.6666666667%;\n}\n\n.col-3 {\n  flex: 0 0 25%;\n  max-width: 25%;\n}\n\n.col-4 {\n  flex: 0 0 33.3333333333%;\n  max-width: 33.3333333333%;\n}\n\n.col-5 {\n  flex: 0 0 41.6666666667%;\n  max-width: 41.6666666667%;\n}\n\n.col-6 {\n  flex: 0 0 50%;\n  max-width: 50%;\n}\n\n.col-7 {\n  flex: 0 0 58.3333333333%;\n  max-width: 58.3333333333%;\n}\n\n.col-8 {\n  flex: 0 0 66.6666666667%;\n  max-width: 66.6666666667%;\n}\n\n.col-9 {\n  flex: 0 0 75%;\n  max-width: 75%;\n}\n\n.col-10 {\n  flex: 0 0 83.3333333333%;\n  max-width: 83.3333333333%;\n}\n\n.col-11 {\n  flex: 0 0 91.6666666667%;\n  max-width: 91.6666666667%;\n}\n\n.col-12 {\n  flex: 0 0 100%;\n  max-width: 100%;\n}\n\n.v-application--is-ltr .offset-1 {\n  margin-left: 8.3333333333%;\n}\n.v-application--is-rtl .offset-1 {\n  margin-right: 8.3333333333%;\n}\n\n.v-application--is-ltr .offset-2 {\n  margin-left: 16.6666666667%;\n}\n.v-application--is-rtl .offset-2 {\n  margin-right: 16.6666666667%;\n}\n\n.v-application--is-ltr .offset-3 {\n  margin-left: 25%;\n}\n.v-application--is-rtl .offset-3 {\n  margin-right: 25%;\n}\n\n.v-application--is-ltr .offset-4 {\n  margin-left: 33.3333333333%;\n}\n.v-application--is-rtl .offset-4 {\n  margin-right: 33.3333333333%;\n}\n\n.v-application--is-ltr .offset-5 {\n  margin-left: 41.6666666667%;\n}\n.v-application--is-rtl .offset-5 {\n  margin-right: 41.6666666667%;\n}\n\n.v-application--is-ltr .offset-6 {\n  margin-left: 50%;\n}\n.v-application--is-rtl .offset-6 {\n  margin-right: 50%;\n}\n\n.v-application--is-ltr .offset-7 {\n  margin-left: 58.3333333333%;\n}\n.v-application--is-rtl .offset-7 {\n  margin-right: 58.3333333333%;\n}\n\n.v-application--is-ltr .offset-8 {\n  margin-left: 66.6666666667%;\n}\n.v-application--is-rtl .offset-8 {\n  margin-right: 66.6666666667%;\n}\n\n.v-application--is-ltr .offset-9 {\n  margin-left: 75%;\n}\n.v-application--is-rtl .offset-9 {\n  margin-right: 75%;\n}\n\n.v-application--is-ltr .offset-10 {\n  margin-left: 83.3333333333%;\n}\n.v-application--is-rtl .offset-10 {\n  margin-right: 83.3333333333%;\n}\n\n.v-application--is-ltr .offset-11 {\n  margin-left: 91.6666666667%;\n}\n.v-application--is-rtl .offset-11 {\n  margin-right: 91.6666666667%;\n}\n\n@media (min-width: 600px) {\n  .col-sm {\n    flex-basis: 0;\n    flex-grow: 1;\n    max-width: 100%;\n  }\n  .col-sm-auto {\n    flex: 0 0 auto;\n    width: auto;\n    max-width: 100%;\n  }\n  .col-sm-1 {\n    flex: 0 0 8.3333333333%;\n    max-width: 8.3333333333%;\n  }\n  .col-sm-2 {\n    flex: 0 0 16.6666666667%;\n    max-width: 16.6666666667%;\n  }\n  .col-sm-3 {\n    flex: 0 0 25%;\n    max-width: 25%;\n  }\n  .col-sm-4 {\n    flex: 0 0 33.3333333333%;\n    max-width: 33.3333333333%;\n  }\n  .col-sm-5 {\n    flex: 0 0 41.6666666667%;\n    max-width: 41.6666666667%;\n  }\n  .col-sm-6 {\n    flex: 0 0 50%;\n    max-width: 50%;\n  }\n  .col-sm-7 {\n    flex: 0 0 58.3333333333%;\n    max-width: 58.3333333333%;\n  }\n  .col-sm-8 {\n    flex: 0 0 66.6666666667%;\n    max-width: 66.6666666667%;\n  }\n  .col-sm-9 {\n    flex: 0 0 75%;\n    max-width: 75%;\n  }\n  .col-sm-10 {\n    flex: 0 0 83.3333333333%;\n    max-width: 83.3333333333%;\n  }\n  .col-sm-11 {\n    flex: 0 0 91.6666666667%;\n    max-width: 91.6666666667%;\n  }\n  .col-sm-12 {\n    flex: 0 0 100%;\n    max-width: 100%;\n  }\n  .v-application--is-ltr .offset-sm-0 {\n    margin-left: 0;\n  }\n  .v-application--is-rtl .offset-sm-0 {\n    margin-right: 0;\n  }\n  .v-application--is-ltr .offset-sm-1 {\n    margin-left: 8.3333333333%;\n  }\n  .v-application--is-rtl .offset-sm-1 {\n    margin-right: 8.3333333333%;\n  }\n  .v-application--is-ltr .offset-sm-2 {\n    margin-left: 16.6666666667%;\n  }\n  .v-application--is-rtl .offset-sm-2 {\n    margin-right: 16.6666666667%;\n  }\n  .v-application--is-ltr .offset-sm-3 {\n    margin-left: 25%;\n  }\n  .v-application--is-rtl .offset-sm-3 {\n    margin-right: 25%;\n  }\n  .v-application--is-ltr .offset-sm-4 {\n    margin-left: 33.3333333333%;\n  }\n  .v-application--is-rtl .offset-sm-4 {\n    margin-right: 33.3333333333%;\n  }\n  .v-application--is-ltr .offset-sm-5 {\n    margin-left: 41.6666666667%;\n  }\n  .v-application--is-rtl .offset-sm-5 {\n    margin-right: 41.6666666667%;\n  }\n  .v-application--is-ltr .offset-sm-6 {\n    margin-left: 50%;\n  }\n  .v-application--is-rtl .offset-sm-6 {\n    margin-right: 50%;\n  }\n  .v-application--is-ltr .offset-sm-7 {\n    margin-left: 58.3333333333%;\n  }\n  .v-application--is-rtl .offset-sm-7 {\n    margin-right: 58.3333333333%;\n  }\n  .v-application--is-ltr .offset-sm-8 {\n    margin-left: 66.6666666667%;\n  }\n  .v-application--is-rtl .offset-sm-8 {\n    margin-right: 66.6666666667%;\n  }\n  .v-application--is-ltr .offset-sm-9 {\n    margin-left: 75%;\n  }\n  .v-application--is-rtl .offset-sm-9 {\n    margin-right: 75%;\n  }\n  .v-application--is-ltr .offset-sm-10 {\n    margin-left: 83.3333333333%;\n  }\n  .v-application--is-rtl .offset-sm-10 {\n    margin-right: 83.3333333333%;\n  }\n  .v-application--is-ltr .offset-sm-11 {\n    margin-left: 91.6666666667%;\n  }\n  .v-application--is-rtl .offset-sm-11 {\n    margin-right: 91.6666666667%;\n  }\n}\n@media (min-width: 960px) {\n  .col-md {\n    flex-basis: 0;\n    flex-grow: 1;\n    max-width: 100%;\n  }\n  .col-md-auto {\n    flex: 0 0 auto;\n    width: auto;\n    max-width: 100%;\n  }\n  .col-md-1 {\n    flex: 0 0 8.3333333333%;\n    max-width: 8.3333333333%;\n  }\n  .col-md-2 {\n    flex: 0 0 16.6666666667%;\n    max-width: 16.6666666667%;\n  }\n  .col-md-3 {\n    flex: 0 0 25%;\n    max-width: 25%;\n  }\n  .col-md-4 {\n    flex: 0 0 33.3333333333%;\n    max-width: 33.3333333333%;\n  }\n  .col-md-5 {\n    flex: 0 0 41.6666666667%;\n    max-width: 41.6666666667%;\n  }\n  .col-md-6 {\n    flex: 0 0 50%;\n    max-width: 50%;\n  }\n  .col-md-7 {\n    flex: 0 0 58.3333333333%;\n    max-width: 58.3333333333%;\n  }\n  .col-md-8 {\n    flex: 0 0 66.6666666667%;\n    max-width: 66.6666666667%;\n  }\n  .col-md-9 {\n    flex: 0 0 75%;\n    max-width: 75%;\n  }\n  .col-md-10 {\n    flex: 0 0 83.3333333333%;\n    max-width: 83.3333333333%;\n  }\n  .col-md-11 {\n    flex: 0 0 91.6666666667%;\n    max-width: 91.6666666667%;\n  }\n  .col-md-12 {\n    flex: 0 0 100%;\n    max-width: 100%;\n  }\n  .v-application--is-ltr .offset-md-0 {\n    margin-left: 0;\n  }\n  .v-application--is-rtl .offset-md-0 {\n    margin-right: 0;\n  }\n  .v-application--is-ltr .offset-md-1 {\n    margin-left: 8.3333333333%;\n  }\n  .v-application--is-rtl .offset-md-1 {\n    margin-right: 8.3333333333%;\n  }\n  .v-application--is-ltr .offset-md-2 {\n    margin-left: 16.6666666667%;\n  }\n  .v-application--is-rtl .offset-md-2 {\n    margin-right: 16.6666666667%;\n  }\n  .v-application--is-ltr .offset-md-3 {\n    margin-left: 25%;\n  }\n  .v-application--is-rtl .offset-md-3 {\n    margin-right: 25%;\n  }\n  .v-application--is-ltr .offset-md-4 {\n    margin-left: 33.3333333333%;\n  }\n  .v-application--is-rtl .offset-md-4 {\n    margin-right: 33.3333333333%;\n  }\n  .v-application--is-ltr .offset-md-5 {\n    margin-left: 41.6666666667%;\n  }\n  .v-application--is-rtl .offset-md-5 {\n    margin-right: 41.6666666667%;\n  }\n  .v-application--is-ltr .offset-md-6 {\n    margin-left: 50%;\n  }\n  .v-application--is-rtl .offset-md-6 {\n    margin-right: 50%;\n  }\n  .v-application--is-ltr .offset-md-7 {\n    margin-left: 58.3333333333%;\n  }\n  .v-application--is-rtl .offset-md-7 {\n    margin-right: 58.3333333333%;\n  }\n  .v-application--is-ltr .offset-md-8 {\n    margin-left: 66.6666666667%;\n  }\n  .v-application--is-rtl .offset-md-8 {\n    margin-right: 66.6666666667%;\n  }\n  .v-application--is-ltr .offset-md-9 {\n    margin-left: 75%;\n  }\n  .v-application--is-rtl .offset-md-9 {\n    margin-right: 75%;\n  }\n  .v-application--is-ltr .offset-md-10 {\n    margin-left: 83.3333333333%;\n  }\n  .v-application--is-rtl .offset-md-10 {\n    margin-right: 83.3333333333%;\n  }\n  .v-application--is-ltr .offset-md-11 {\n    margin-left: 91.6666666667%;\n  }\n  .v-application--is-rtl .offset-md-11 {\n    margin-right: 91.6666666667%;\n  }\n}\n@media (min-width: 1264px) {\n  .col-lg {\n    flex-basis: 0;\n    flex-grow: 1;\n    max-width: 100%;\n  }\n  .col-lg-auto {\n    flex: 0 0 auto;\n    width: auto;\n    max-width: 100%;\n  }\n  .col-lg-1 {\n    flex: 0 0 8.3333333333%;\n    max-width: 8.3333333333%;\n  }\n  .col-lg-2 {\n    flex: 0 0 16.6666666667%;\n    max-width: 16.6666666667%;\n  }\n  .col-lg-3 {\n    flex: 0 0 25%;\n    max-width: 25%;\n  }\n  .col-lg-4 {\n    flex: 0 0 33.3333333333%;\n    max-width: 33.3333333333%;\n  }\n  .col-lg-5 {\n    flex: 0 0 41.6666666667%;\n    max-width: 41.6666666667%;\n  }\n  .col-lg-6 {\n    flex: 0 0 50%;\n    max-width: 50%;\n  }\n  .col-lg-7 {\n    flex: 0 0 58.3333333333%;\n    max-width: 58.3333333333%;\n  }\n  .col-lg-8 {\n    flex: 0 0 66.6666666667%;\n    max-width: 66.6666666667%;\n  }\n  .col-lg-9 {\n    flex: 0 0 75%;\n    max-width: 75%;\n  }\n  .col-lg-10 {\n    flex: 0 0 83.3333333333%;\n    max-width: 83.3333333333%;\n  }\n  .col-lg-11 {\n    flex: 0 0 91.6666666667%;\n    max-width: 91.6666666667%;\n  }\n  .col-lg-12 {\n    flex: 0 0 100%;\n    max-width: 100%;\n  }\n  .v-application--is-ltr .offset-lg-0 {\n    margin-left: 0;\n  }\n  .v-application--is-rtl .offset-lg-0 {\n    margin-right: 0;\n  }\n  .v-application--is-ltr .offset-lg-1 {\n    margin-left: 8.3333333333%;\n  }\n  .v-application--is-rtl .offset-lg-1 {\n    margin-right: 8.3333333333%;\n  }\n  .v-application--is-ltr .offset-lg-2 {\n    margin-left: 16.6666666667%;\n  }\n  .v-application--is-rtl .offset-lg-2 {\n    margin-right: 16.6666666667%;\n  }\n  .v-application--is-ltr .offset-lg-3 {\n    margin-left: 25%;\n  }\n  .v-application--is-rtl .offset-lg-3 {\n    margin-right: 25%;\n  }\n  .v-application--is-ltr .offset-lg-4 {\n    margin-left: 33.3333333333%;\n  }\n  .v-application--is-rtl .offset-lg-4 {\n    margin-right: 33.3333333333%;\n  }\n  .v-application--is-ltr .offset-lg-5 {\n    margin-left: 41.6666666667%;\n  }\n  .v-application--is-rtl .offset-lg-5 {\n    margin-right: 41.6666666667%;\n  }\n  .v-application--is-ltr .offset-lg-6 {\n    margin-left: 50%;\n  }\n  .v-application--is-rtl .offset-lg-6 {\n    margin-right: 50%;\n  }\n  .v-application--is-ltr .offset-lg-7 {\n    margin-left: 58.3333333333%;\n  }\n  .v-application--is-rtl .offset-lg-7 {\n    margin-right: 58.3333333333%;\n  }\n  .v-application--is-ltr .offset-lg-8 {\n    margin-left: 66.6666666667%;\n  }\n  .v-application--is-rtl .offset-lg-8 {\n    margin-right: 66.6666666667%;\n  }\n  .v-application--is-ltr .offset-lg-9 {\n    margin-left: 75%;\n  }\n  .v-application--is-rtl .offset-lg-9 {\n    margin-right: 75%;\n  }\n  .v-application--is-ltr .offset-lg-10 {\n    margin-left: 83.3333333333%;\n  }\n  .v-application--is-rtl .offset-lg-10 {\n    margin-right: 83.3333333333%;\n  }\n  .v-application--is-ltr .offset-lg-11 {\n    margin-left: 91.6666666667%;\n  }\n  .v-application--is-rtl .offset-lg-11 {\n    margin-right: 91.6666666667%;\n  }\n}\n@media (min-width: 1904px) {\n  .col-xl {\n    flex-basis: 0;\n    flex-grow: 1;\n    max-width: 100%;\n  }\n  .col-xl-auto {\n    flex: 0 0 auto;\n    width: auto;\n    max-width: 100%;\n  }\n  .col-xl-1 {\n    flex: 0 0 8.3333333333%;\n    max-width: 8.3333333333%;\n  }\n  .col-xl-2 {\n    flex: 0 0 16.6666666667%;\n    max-width: 16.6666666667%;\n  }\n  .col-xl-3 {\n    flex: 0 0 25%;\n    max-width: 25%;\n  }\n  .col-xl-4 {\n    flex: 0 0 33.3333333333%;\n    max-width: 33.3333333333%;\n  }\n  .col-xl-5 {\n    flex: 0 0 41.6666666667%;\n    max-width: 41.6666666667%;\n  }\n  .col-xl-6 {\n    flex: 0 0 50%;\n    max-width: 50%;\n  }\n  .col-xl-7 {\n    flex: 0 0 58.3333333333%;\n    max-width: 58.3333333333%;\n  }\n  .col-xl-8 {\n    flex: 0 0 66.6666666667%;\n    max-width: 66.6666666667%;\n  }\n  .col-xl-9 {\n    flex: 0 0 75%;\n    max-width: 75%;\n  }\n  .col-xl-10 {\n    flex: 0 0 83.3333333333%;\n    max-width: 83.3333333333%;\n  }\n  .col-xl-11 {\n    flex: 0 0 91.6666666667%;\n    max-width: 91.6666666667%;\n  }\n  .col-xl-12 {\n    flex: 0 0 100%;\n    max-width: 100%;\n  }\n  .v-application--is-ltr .offset-xl-0 {\n    margin-left: 0;\n  }\n  .v-application--is-rtl .offset-xl-0 {\n    margin-right: 0;\n  }\n  .v-application--is-ltr .offset-xl-1 {\n    margin-left: 8.3333333333%;\n  }\n  .v-application--is-rtl .offset-xl-1 {\n    margin-right: 8.3333333333%;\n  }\n  .v-application--is-ltr .offset-xl-2 {\n    margin-left: 16.6666666667%;\n  }\n  .v-application--is-rtl .offset-xl-2 {\n    margin-right: 16.6666666667%;\n  }\n  .v-application--is-ltr .offset-xl-3 {\n    margin-left: 25%;\n  }\n  .v-application--is-rtl .offset-xl-3 {\n    margin-right: 25%;\n  }\n  .v-application--is-ltr .offset-xl-4 {\n    margin-left: 33.3333333333%;\n  }\n  .v-application--is-rtl .offset-xl-4 {\n    margin-right: 33.3333333333%;\n  }\n  .v-application--is-ltr .offset-xl-5 {\n    margin-left: 41.6666666667%;\n  }\n  .v-application--is-rtl .offset-xl-5 {\n    margin-right: 41.6666666667%;\n  }\n  .v-application--is-ltr .offset-xl-6 {\n    margin-left: 50%;\n  }\n  .v-application--is-rtl .offset-xl-6 {\n    margin-right: 50%;\n  }\n  .v-application--is-ltr .offset-xl-7 {\n    margin-left: 58.3333333333%;\n  }\n  .v-application--is-rtl .offset-xl-7 {\n    margin-right: 58.3333333333%;\n  }\n  .v-application--is-ltr .offset-xl-8 {\n    margin-left: 66.6666666667%;\n  }\n  .v-application--is-rtl .offset-xl-8 {\n    margin-right: 66.6666666667%;\n  }\n  .v-application--is-ltr .offset-xl-9 {\n    margin-left: 75%;\n  }\n  .v-application--is-rtl .offset-xl-9 {\n    margin-right: 75%;\n  }\n  .v-application--is-ltr .offset-xl-10 {\n    margin-left: 83.3333333333%;\n  }\n  .v-application--is-rtl .offset-xl-10 {\n    margin-right: 83.3333333333%;\n  }\n  .v-application--is-ltr .offset-xl-11 {\n    margin-left: 91.6666666667%;\n  }\n  .v-application--is-rtl .offset-xl-11 {\n    margin-right: 91.6666666667%;\n  }\n}", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-15.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-15.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-15.use[3]!./node_modules/vuetify/src/components/VGrid/_grid.sass":
+/*!****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-15.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-15.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-15.use[3]!./node_modules/vuetify/src/components/VGrid/_grid.sass ***!
+  \****************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".container.grow-shrink-0 {\n  flex-grow: 0;\n  flex-shrink: 0;\n}\n.container.fill-height {\n  align-items: center;\n  display: flex;\n  flex-wrap: wrap;\n}\n.container.fill-height > .row {\n  flex: 1 1 100%;\n  max-width: calc(100% + 24px);\n}\n.container.fill-height > .layout {\n  height: 100%;\n  flex: 1 1 auto;\n}\n.container.fill-height > .layout.grow-shrink-0 {\n  flex-grow: 0;\n  flex-shrink: 0;\n}\n.container.grid-list-xs .layout .flex {\n  padding: 1px;\n}\n.container.grid-list-xs .layout:only-child {\n  margin: -1px;\n}\n.container.grid-list-xs .layout:not(:only-child) {\n  margin: auto -1px;\n}\n.container.grid-list-xs *:not(:only-child) .layout:first-child {\n  margin-top: -1px;\n}\n.container.grid-list-xs *:not(:only-child) .layout:last-child {\n  margin-bottom: -1px;\n}\n.container.grid-list-sm .layout .flex {\n  padding: 2px;\n}\n.container.grid-list-sm .layout:only-child {\n  margin: -2px;\n}\n.container.grid-list-sm .layout:not(:only-child) {\n  margin: auto -2px;\n}\n.container.grid-list-sm *:not(:only-child) .layout:first-child {\n  margin-top: -2px;\n}\n.container.grid-list-sm *:not(:only-child) .layout:last-child {\n  margin-bottom: -2px;\n}\n.container.grid-list-md .layout .flex {\n  padding: 4px;\n}\n.container.grid-list-md .layout:only-child {\n  margin: -4px;\n}\n.container.grid-list-md .layout:not(:only-child) {\n  margin: auto -4px;\n}\n.container.grid-list-md *:not(:only-child) .layout:first-child {\n  margin-top: -4px;\n}\n.container.grid-list-md *:not(:only-child) .layout:last-child {\n  margin-bottom: -4px;\n}\n.container.grid-list-lg .layout .flex {\n  padding: 8px;\n}\n.container.grid-list-lg .layout:only-child {\n  margin: -8px;\n}\n.container.grid-list-lg .layout:not(:only-child) {\n  margin: auto -8px;\n}\n.container.grid-list-lg *:not(:only-child) .layout:first-child {\n  margin-top: -8px;\n}\n.container.grid-list-lg *:not(:only-child) .layout:last-child {\n  margin-bottom: -8px;\n}\n.container.grid-list-xl .layout .flex {\n  padding: 12px;\n}\n.container.grid-list-xl .layout:only-child {\n  margin: -12px;\n}\n.container.grid-list-xl .layout:not(:only-child) {\n  margin: auto -12px;\n}\n.container.grid-list-xl *:not(:only-child) .layout:first-child {\n  margin-top: -12px;\n}\n.container.grid-list-xl *:not(:only-child) .layout:last-child {\n  margin-bottom: -12px;\n}\n\n.layout {\n  display: flex;\n  flex: 1 1 auto;\n  flex-wrap: nowrap;\n  min-width: 0;\n}\n.layout.reverse {\n  flex-direction: row-reverse;\n}\n.layout.column {\n  flex-direction: column;\n}\n.layout.column.reverse {\n  flex-direction: column-reverse;\n}\n.layout.column > .flex {\n  max-width: 100%;\n}\n.layout.wrap {\n  flex-wrap: wrap;\n}\n.layout.grow-shrink-0 {\n  flex-grow: 0;\n  flex-shrink: 0;\n}\n\n@media all and (min-width: 0) {\n  .flex.xs12 {\n    flex-basis: 100%;\n    flex-grow: 0;\n    max-width: 100%;\n  }\n  .flex.order-xs12 {\n    order: 12;\n  }\n  .flex.xs11 {\n    flex-basis: 91.6666666667%;\n    flex-grow: 0;\n    max-width: 91.6666666667%;\n  }\n  .flex.order-xs11 {\n    order: 11;\n  }\n  .flex.xs10 {\n    flex-basis: 83.3333333333%;\n    flex-grow: 0;\n    max-width: 83.3333333333%;\n  }\n  .flex.order-xs10 {\n    order: 10;\n  }\n  .flex.xs9 {\n    flex-basis: 75%;\n    flex-grow: 0;\n    max-width: 75%;\n  }\n  .flex.order-xs9 {\n    order: 9;\n  }\n  .flex.xs8 {\n    flex-basis: 66.6666666667%;\n    flex-grow: 0;\n    max-width: 66.6666666667%;\n  }\n  .flex.order-xs8 {\n    order: 8;\n  }\n  .flex.xs7 {\n    flex-basis: 58.3333333333%;\n    flex-grow: 0;\n    max-width: 58.3333333333%;\n  }\n  .flex.order-xs7 {\n    order: 7;\n  }\n  .flex.xs6 {\n    flex-basis: 50%;\n    flex-grow: 0;\n    max-width: 50%;\n  }\n  .flex.order-xs6 {\n    order: 6;\n  }\n  .flex.xs5 {\n    flex-basis: 41.6666666667%;\n    flex-grow: 0;\n    max-width: 41.6666666667%;\n  }\n  .flex.order-xs5 {\n    order: 5;\n  }\n  .flex.xs4 {\n    flex-basis: 33.3333333333%;\n    flex-grow: 0;\n    max-width: 33.3333333333%;\n  }\n  .flex.order-xs4 {\n    order: 4;\n  }\n  .flex.xs3 {\n    flex-basis: 25%;\n    flex-grow: 0;\n    max-width: 25%;\n  }\n  .flex.order-xs3 {\n    order: 3;\n  }\n  .flex.xs2 {\n    flex-basis: 16.6666666667%;\n    flex-grow: 0;\n    max-width: 16.6666666667%;\n  }\n  .flex.order-xs2 {\n    order: 2;\n  }\n  .flex.xs1 {\n    flex-basis: 8.3333333333%;\n    flex-grow: 0;\n    max-width: 8.3333333333%;\n  }\n  .flex.order-xs1 {\n    order: 1;\n  }\n  .v-application--is-ltr .flex.offset-xs12 {\n    margin-left: 100%;\n  }\n  .v-application--is-rtl .flex.offset-xs12 {\n    margin-right: 100%;\n  }\n  .v-application--is-ltr .flex.offset-xs11 {\n    margin-left: 91.6666666667%;\n  }\n  .v-application--is-rtl .flex.offset-xs11 {\n    margin-right: 91.6666666667%;\n  }\n  .v-application--is-ltr .flex.offset-xs10 {\n    margin-left: 83.3333333333%;\n  }\n  .v-application--is-rtl .flex.offset-xs10 {\n    margin-right: 83.3333333333%;\n  }\n  .v-application--is-ltr .flex.offset-xs9 {\n    margin-left: 75%;\n  }\n  .v-application--is-rtl .flex.offset-xs9 {\n    margin-right: 75%;\n  }\n  .v-application--is-ltr .flex.offset-xs8 {\n    margin-left: 66.6666666667%;\n  }\n  .v-application--is-rtl .flex.offset-xs8 {\n    margin-right: 66.6666666667%;\n  }\n  .v-application--is-ltr .flex.offset-xs7 {\n    margin-left: 58.3333333333%;\n  }\n  .v-application--is-rtl .flex.offset-xs7 {\n    margin-right: 58.3333333333%;\n  }\n  .v-application--is-ltr .flex.offset-xs6 {\n    margin-left: 50%;\n  }\n  .v-application--is-rtl .flex.offset-xs6 {\n    margin-right: 50%;\n  }\n  .v-application--is-ltr .flex.offset-xs5 {\n    margin-left: 41.6666666667%;\n  }\n  .v-application--is-rtl .flex.offset-xs5 {\n    margin-right: 41.6666666667%;\n  }\n  .v-application--is-ltr .flex.offset-xs4 {\n    margin-left: 33.3333333333%;\n  }\n  .v-application--is-rtl .flex.offset-xs4 {\n    margin-right: 33.3333333333%;\n  }\n  .v-application--is-ltr .flex.offset-xs3 {\n    margin-left: 25%;\n  }\n  .v-application--is-rtl .flex.offset-xs3 {\n    margin-right: 25%;\n  }\n  .v-application--is-ltr .flex.offset-xs2 {\n    margin-left: 16.6666666667%;\n  }\n  .v-application--is-rtl .flex.offset-xs2 {\n    margin-right: 16.6666666667%;\n  }\n  .v-application--is-ltr .flex.offset-xs1 {\n    margin-left: 8.3333333333%;\n  }\n  .v-application--is-rtl .flex.offset-xs1 {\n    margin-right: 8.3333333333%;\n  }\n  .v-application--is-ltr .flex.offset-xs0 {\n    margin-left: 0%;\n  }\n  .v-application--is-rtl .flex.offset-xs0 {\n    margin-right: 0%;\n  }\n}\n@media all and (min-width: 600px) {\n  .flex.sm12 {\n    flex-basis: 100%;\n    flex-grow: 0;\n    max-width: 100%;\n  }\n  .flex.order-sm12 {\n    order: 12;\n  }\n  .flex.sm11 {\n    flex-basis: 91.6666666667%;\n    flex-grow: 0;\n    max-width: 91.6666666667%;\n  }\n  .flex.order-sm11 {\n    order: 11;\n  }\n  .flex.sm10 {\n    flex-basis: 83.3333333333%;\n    flex-grow: 0;\n    max-width: 83.3333333333%;\n  }\n  .flex.order-sm10 {\n    order: 10;\n  }\n  .flex.sm9 {\n    flex-basis: 75%;\n    flex-grow: 0;\n    max-width: 75%;\n  }\n  .flex.order-sm9 {\n    order: 9;\n  }\n  .flex.sm8 {\n    flex-basis: 66.6666666667%;\n    flex-grow: 0;\n    max-width: 66.6666666667%;\n  }\n  .flex.order-sm8 {\n    order: 8;\n  }\n  .flex.sm7 {\n    flex-basis: 58.3333333333%;\n    flex-grow: 0;\n    max-width: 58.3333333333%;\n  }\n  .flex.order-sm7 {\n    order: 7;\n  }\n  .flex.sm6 {\n    flex-basis: 50%;\n    flex-grow: 0;\n    max-width: 50%;\n  }\n  .flex.order-sm6 {\n    order: 6;\n  }\n  .flex.sm5 {\n    flex-basis: 41.6666666667%;\n    flex-grow: 0;\n    max-width: 41.6666666667%;\n  }\n  .flex.order-sm5 {\n    order: 5;\n  }\n  .flex.sm4 {\n    flex-basis: 33.3333333333%;\n    flex-grow: 0;\n    max-width: 33.3333333333%;\n  }\n  .flex.order-sm4 {\n    order: 4;\n  }\n  .flex.sm3 {\n    flex-basis: 25%;\n    flex-grow: 0;\n    max-width: 25%;\n  }\n  .flex.order-sm3 {\n    order: 3;\n  }\n  .flex.sm2 {\n    flex-basis: 16.6666666667%;\n    flex-grow: 0;\n    max-width: 16.6666666667%;\n  }\n  .flex.order-sm2 {\n    order: 2;\n  }\n  .flex.sm1 {\n    flex-basis: 8.3333333333%;\n    flex-grow: 0;\n    max-width: 8.3333333333%;\n  }\n  .flex.order-sm1 {\n    order: 1;\n  }\n  .v-application--is-ltr .flex.offset-sm12 {\n    margin-left: 100%;\n  }\n  .v-application--is-rtl .flex.offset-sm12 {\n    margin-right: 100%;\n  }\n  .v-application--is-ltr .flex.offset-sm11 {\n    margin-left: 91.6666666667%;\n  }\n  .v-application--is-rtl .flex.offset-sm11 {\n    margin-right: 91.6666666667%;\n  }\n  .v-application--is-ltr .flex.offset-sm10 {\n    margin-left: 83.3333333333%;\n  }\n  .v-application--is-rtl .flex.offset-sm10 {\n    margin-right: 83.3333333333%;\n  }\n  .v-application--is-ltr .flex.offset-sm9 {\n    margin-left: 75%;\n  }\n  .v-application--is-rtl .flex.offset-sm9 {\n    margin-right: 75%;\n  }\n  .v-application--is-ltr .flex.offset-sm8 {\n    margin-left: 66.6666666667%;\n  }\n  .v-application--is-rtl .flex.offset-sm8 {\n    margin-right: 66.6666666667%;\n  }\n  .v-application--is-ltr .flex.offset-sm7 {\n    margin-left: 58.3333333333%;\n  }\n  .v-application--is-rtl .flex.offset-sm7 {\n    margin-right: 58.3333333333%;\n  }\n  .v-application--is-ltr .flex.offset-sm6 {\n    margin-left: 50%;\n  }\n  .v-application--is-rtl .flex.offset-sm6 {\n    margin-right: 50%;\n  }\n  .v-application--is-ltr .flex.offset-sm5 {\n    margin-left: 41.6666666667%;\n  }\n  .v-application--is-rtl .flex.offset-sm5 {\n    margin-right: 41.6666666667%;\n  }\n  .v-application--is-ltr .flex.offset-sm4 {\n    margin-left: 33.3333333333%;\n  }\n  .v-application--is-rtl .flex.offset-sm4 {\n    margin-right: 33.3333333333%;\n  }\n  .v-application--is-ltr .flex.offset-sm3 {\n    margin-left: 25%;\n  }\n  .v-application--is-rtl .flex.offset-sm3 {\n    margin-right: 25%;\n  }\n  .v-application--is-ltr .flex.offset-sm2 {\n    margin-left: 16.6666666667%;\n  }\n  .v-application--is-rtl .flex.offset-sm2 {\n    margin-right: 16.6666666667%;\n  }\n  .v-application--is-ltr .flex.offset-sm1 {\n    margin-left: 8.3333333333%;\n  }\n  .v-application--is-rtl .flex.offset-sm1 {\n    margin-right: 8.3333333333%;\n  }\n  .v-application--is-ltr .flex.offset-sm0 {\n    margin-left: 0%;\n  }\n  .v-application--is-rtl .flex.offset-sm0 {\n    margin-right: 0%;\n  }\n}\n@media all and (min-width: 960px) {\n  .flex.md12 {\n    flex-basis: 100%;\n    flex-grow: 0;\n    max-width: 100%;\n  }\n  .flex.order-md12 {\n    order: 12;\n  }\n  .flex.md11 {\n    flex-basis: 91.6666666667%;\n    flex-grow: 0;\n    max-width: 91.6666666667%;\n  }\n  .flex.order-md11 {\n    order: 11;\n  }\n  .flex.md10 {\n    flex-basis: 83.3333333333%;\n    flex-grow: 0;\n    max-width: 83.3333333333%;\n  }\n  .flex.order-md10 {\n    order: 10;\n  }\n  .flex.md9 {\n    flex-basis: 75%;\n    flex-grow: 0;\n    max-width: 75%;\n  }\n  .flex.order-md9 {\n    order: 9;\n  }\n  .flex.md8 {\n    flex-basis: 66.6666666667%;\n    flex-grow: 0;\n    max-width: 66.6666666667%;\n  }\n  .flex.order-md8 {\n    order: 8;\n  }\n  .flex.md7 {\n    flex-basis: 58.3333333333%;\n    flex-grow: 0;\n    max-width: 58.3333333333%;\n  }\n  .flex.order-md7 {\n    order: 7;\n  }\n  .flex.md6 {\n    flex-basis: 50%;\n    flex-grow: 0;\n    max-width: 50%;\n  }\n  .flex.order-md6 {\n    order: 6;\n  }\n  .flex.md5 {\n    flex-basis: 41.6666666667%;\n    flex-grow: 0;\n    max-width: 41.6666666667%;\n  }\n  .flex.order-md5 {\n    order: 5;\n  }\n  .flex.md4 {\n    flex-basis: 33.3333333333%;\n    flex-grow: 0;\n    max-width: 33.3333333333%;\n  }\n  .flex.order-md4 {\n    order: 4;\n  }\n  .flex.md3 {\n    flex-basis: 25%;\n    flex-grow: 0;\n    max-width: 25%;\n  }\n  .flex.order-md3 {\n    order: 3;\n  }\n  .flex.md2 {\n    flex-basis: 16.6666666667%;\n    flex-grow: 0;\n    max-width: 16.6666666667%;\n  }\n  .flex.order-md2 {\n    order: 2;\n  }\n  .flex.md1 {\n    flex-basis: 8.3333333333%;\n    flex-grow: 0;\n    max-width: 8.3333333333%;\n  }\n  .flex.order-md1 {\n    order: 1;\n  }\n  .v-application--is-ltr .flex.offset-md12 {\n    margin-left: 100%;\n  }\n  .v-application--is-rtl .flex.offset-md12 {\n    margin-right: 100%;\n  }\n  .v-application--is-ltr .flex.offset-md11 {\n    margin-left: 91.6666666667%;\n  }\n  .v-application--is-rtl .flex.offset-md11 {\n    margin-right: 91.6666666667%;\n  }\n  .v-application--is-ltr .flex.offset-md10 {\n    margin-left: 83.3333333333%;\n  }\n  .v-application--is-rtl .flex.offset-md10 {\n    margin-right: 83.3333333333%;\n  }\n  .v-application--is-ltr .flex.offset-md9 {\n    margin-left: 75%;\n  }\n  .v-application--is-rtl .flex.offset-md9 {\n    margin-right: 75%;\n  }\n  .v-application--is-ltr .flex.offset-md8 {\n    margin-left: 66.6666666667%;\n  }\n  .v-application--is-rtl .flex.offset-md8 {\n    margin-right: 66.6666666667%;\n  }\n  .v-application--is-ltr .flex.offset-md7 {\n    margin-left: 58.3333333333%;\n  }\n  .v-application--is-rtl .flex.offset-md7 {\n    margin-right: 58.3333333333%;\n  }\n  .v-application--is-ltr .flex.offset-md6 {\n    margin-left: 50%;\n  }\n  .v-application--is-rtl .flex.offset-md6 {\n    margin-right: 50%;\n  }\n  .v-application--is-ltr .flex.offset-md5 {\n    margin-left: 41.6666666667%;\n  }\n  .v-application--is-rtl .flex.offset-md5 {\n    margin-right: 41.6666666667%;\n  }\n  .v-application--is-ltr .flex.offset-md4 {\n    margin-left: 33.3333333333%;\n  }\n  .v-application--is-rtl .flex.offset-md4 {\n    margin-right: 33.3333333333%;\n  }\n  .v-application--is-ltr .flex.offset-md3 {\n    margin-left: 25%;\n  }\n  .v-application--is-rtl .flex.offset-md3 {\n    margin-right: 25%;\n  }\n  .v-application--is-ltr .flex.offset-md2 {\n    margin-left: 16.6666666667%;\n  }\n  .v-application--is-rtl .flex.offset-md2 {\n    margin-right: 16.6666666667%;\n  }\n  .v-application--is-ltr .flex.offset-md1 {\n    margin-left: 8.3333333333%;\n  }\n  .v-application--is-rtl .flex.offset-md1 {\n    margin-right: 8.3333333333%;\n  }\n  .v-application--is-ltr .flex.offset-md0 {\n    margin-left: 0%;\n  }\n  .v-application--is-rtl .flex.offset-md0 {\n    margin-right: 0%;\n  }\n}\n@media all and (min-width: 1264px) {\n  .flex.lg12 {\n    flex-basis: 100%;\n    flex-grow: 0;\n    max-width: 100%;\n  }\n  .flex.order-lg12 {\n    order: 12;\n  }\n  .flex.lg11 {\n    flex-basis: 91.6666666667%;\n    flex-grow: 0;\n    max-width: 91.6666666667%;\n  }\n  .flex.order-lg11 {\n    order: 11;\n  }\n  .flex.lg10 {\n    flex-basis: 83.3333333333%;\n    flex-grow: 0;\n    max-width: 83.3333333333%;\n  }\n  .flex.order-lg10 {\n    order: 10;\n  }\n  .flex.lg9 {\n    flex-basis: 75%;\n    flex-grow: 0;\n    max-width: 75%;\n  }\n  .flex.order-lg9 {\n    order: 9;\n  }\n  .flex.lg8 {\n    flex-basis: 66.6666666667%;\n    flex-grow: 0;\n    max-width: 66.6666666667%;\n  }\n  .flex.order-lg8 {\n    order: 8;\n  }\n  .flex.lg7 {\n    flex-basis: 58.3333333333%;\n    flex-grow: 0;\n    max-width: 58.3333333333%;\n  }\n  .flex.order-lg7 {\n    order: 7;\n  }\n  .flex.lg6 {\n    flex-basis: 50%;\n    flex-grow: 0;\n    max-width: 50%;\n  }\n  .flex.order-lg6 {\n    order: 6;\n  }\n  .flex.lg5 {\n    flex-basis: 41.6666666667%;\n    flex-grow: 0;\n    max-width: 41.6666666667%;\n  }\n  .flex.order-lg5 {\n    order: 5;\n  }\n  .flex.lg4 {\n    flex-basis: 33.3333333333%;\n    flex-grow: 0;\n    max-width: 33.3333333333%;\n  }\n  .flex.order-lg4 {\n    order: 4;\n  }\n  .flex.lg3 {\n    flex-basis: 25%;\n    flex-grow: 0;\n    max-width: 25%;\n  }\n  .flex.order-lg3 {\n    order: 3;\n  }\n  .flex.lg2 {\n    flex-basis: 16.6666666667%;\n    flex-grow: 0;\n    max-width: 16.6666666667%;\n  }\n  .flex.order-lg2 {\n    order: 2;\n  }\n  .flex.lg1 {\n    flex-basis: 8.3333333333%;\n    flex-grow: 0;\n    max-width: 8.3333333333%;\n  }\n  .flex.order-lg1 {\n    order: 1;\n  }\n  .v-application--is-ltr .flex.offset-lg12 {\n    margin-left: 100%;\n  }\n  .v-application--is-rtl .flex.offset-lg12 {\n    margin-right: 100%;\n  }\n  .v-application--is-ltr .flex.offset-lg11 {\n    margin-left: 91.6666666667%;\n  }\n  .v-application--is-rtl .flex.offset-lg11 {\n    margin-right: 91.6666666667%;\n  }\n  .v-application--is-ltr .flex.offset-lg10 {\n    margin-left: 83.3333333333%;\n  }\n  .v-application--is-rtl .flex.offset-lg10 {\n    margin-right: 83.3333333333%;\n  }\n  .v-application--is-ltr .flex.offset-lg9 {\n    margin-left: 75%;\n  }\n  .v-application--is-rtl .flex.offset-lg9 {\n    margin-right: 75%;\n  }\n  .v-application--is-ltr .flex.offset-lg8 {\n    margin-left: 66.6666666667%;\n  }\n  .v-application--is-rtl .flex.offset-lg8 {\n    margin-right: 66.6666666667%;\n  }\n  .v-application--is-ltr .flex.offset-lg7 {\n    margin-left: 58.3333333333%;\n  }\n  .v-application--is-rtl .flex.offset-lg7 {\n    margin-right: 58.3333333333%;\n  }\n  .v-application--is-ltr .flex.offset-lg6 {\n    margin-left: 50%;\n  }\n  .v-application--is-rtl .flex.offset-lg6 {\n    margin-right: 50%;\n  }\n  .v-application--is-ltr .flex.offset-lg5 {\n    margin-left: 41.6666666667%;\n  }\n  .v-application--is-rtl .flex.offset-lg5 {\n    margin-right: 41.6666666667%;\n  }\n  .v-application--is-ltr .flex.offset-lg4 {\n    margin-left: 33.3333333333%;\n  }\n  .v-application--is-rtl .flex.offset-lg4 {\n    margin-right: 33.3333333333%;\n  }\n  .v-application--is-ltr .flex.offset-lg3 {\n    margin-left: 25%;\n  }\n  .v-application--is-rtl .flex.offset-lg3 {\n    margin-right: 25%;\n  }\n  .v-application--is-ltr .flex.offset-lg2 {\n    margin-left: 16.6666666667%;\n  }\n  .v-application--is-rtl .flex.offset-lg2 {\n    margin-right: 16.6666666667%;\n  }\n  .v-application--is-ltr .flex.offset-lg1 {\n    margin-left: 8.3333333333%;\n  }\n  .v-application--is-rtl .flex.offset-lg1 {\n    margin-right: 8.3333333333%;\n  }\n  .v-application--is-ltr .flex.offset-lg0 {\n    margin-left: 0%;\n  }\n  .v-application--is-rtl .flex.offset-lg0 {\n    margin-right: 0%;\n  }\n}\n@media all and (min-width: 1904px) {\n  .flex.xl12 {\n    flex-basis: 100%;\n    flex-grow: 0;\n    max-width: 100%;\n  }\n  .flex.order-xl12 {\n    order: 12;\n  }\n  .flex.xl11 {\n    flex-basis: 91.6666666667%;\n    flex-grow: 0;\n    max-width: 91.6666666667%;\n  }\n  .flex.order-xl11 {\n    order: 11;\n  }\n  .flex.xl10 {\n    flex-basis: 83.3333333333%;\n    flex-grow: 0;\n    max-width: 83.3333333333%;\n  }\n  .flex.order-xl10 {\n    order: 10;\n  }\n  .flex.xl9 {\n    flex-basis: 75%;\n    flex-grow: 0;\n    max-width: 75%;\n  }\n  .flex.order-xl9 {\n    order: 9;\n  }\n  .flex.xl8 {\n    flex-basis: 66.6666666667%;\n    flex-grow: 0;\n    max-width: 66.6666666667%;\n  }\n  .flex.order-xl8 {\n    order: 8;\n  }\n  .flex.xl7 {\n    flex-basis: 58.3333333333%;\n    flex-grow: 0;\n    max-width: 58.3333333333%;\n  }\n  .flex.order-xl7 {\n    order: 7;\n  }\n  .flex.xl6 {\n    flex-basis: 50%;\n    flex-grow: 0;\n    max-width: 50%;\n  }\n  .flex.order-xl6 {\n    order: 6;\n  }\n  .flex.xl5 {\n    flex-basis: 41.6666666667%;\n    flex-grow: 0;\n    max-width: 41.6666666667%;\n  }\n  .flex.order-xl5 {\n    order: 5;\n  }\n  .flex.xl4 {\n    flex-basis: 33.3333333333%;\n    flex-grow: 0;\n    max-width: 33.3333333333%;\n  }\n  .flex.order-xl4 {\n    order: 4;\n  }\n  .flex.xl3 {\n    flex-basis: 25%;\n    flex-grow: 0;\n    max-width: 25%;\n  }\n  .flex.order-xl3 {\n    order: 3;\n  }\n  .flex.xl2 {\n    flex-basis: 16.6666666667%;\n    flex-grow: 0;\n    max-width: 16.6666666667%;\n  }\n  .flex.order-xl2 {\n    order: 2;\n  }\n  .flex.xl1 {\n    flex-basis: 8.3333333333%;\n    flex-grow: 0;\n    max-width: 8.3333333333%;\n  }\n  .flex.order-xl1 {\n    order: 1;\n  }\n  .v-application--is-ltr .flex.offset-xl12 {\n    margin-left: 100%;\n  }\n  .v-application--is-rtl .flex.offset-xl12 {\n    margin-right: 100%;\n  }\n  .v-application--is-ltr .flex.offset-xl11 {\n    margin-left: 91.6666666667%;\n  }\n  .v-application--is-rtl .flex.offset-xl11 {\n    margin-right: 91.6666666667%;\n  }\n  .v-application--is-ltr .flex.offset-xl10 {\n    margin-left: 83.3333333333%;\n  }\n  .v-application--is-rtl .flex.offset-xl10 {\n    margin-right: 83.3333333333%;\n  }\n  .v-application--is-ltr .flex.offset-xl9 {\n    margin-left: 75%;\n  }\n  .v-application--is-rtl .flex.offset-xl9 {\n    margin-right: 75%;\n  }\n  .v-application--is-ltr .flex.offset-xl8 {\n    margin-left: 66.6666666667%;\n  }\n  .v-application--is-rtl .flex.offset-xl8 {\n    margin-right: 66.6666666667%;\n  }\n  .v-application--is-ltr .flex.offset-xl7 {\n    margin-left: 58.3333333333%;\n  }\n  .v-application--is-rtl .flex.offset-xl7 {\n    margin-right: 58.3333333333%;\n  }\n  .v-application--is-ltr .flex.offset-xl6 {\n    margin-left: 50%;\n  }\n  .v-application--is-rtl .flex.offset-xl6 {\n    margin-right: 50%;\n  }\n  .v-application--is-ltr .flex.offset-xl5 {\n    margin-left: 41.6666666667%;\n  }\n  .v-application--is-rtl .flex.offset-xl5 {\n    margin-right: 41.6666666667%;\n  }\n  .v-application--is-ltr .flex.offset-xl4 {\n    margin-left: 33.3333333333%;\n  }\n  .v-application--is-rtl .flex.offset-xl4 {\n    margin-right: 33.3333333333%;\n  }\n  .v-application--is-ltr .flex.offset-xl3 {\n    margin-left: 25%;\n  }\n  .v-application--is-rtl .flex.offset-xl3 {\n    margin-right: 25%;\n  }\n  .v-application--is-ltr .flex.offset-xl2 {\n    margin-left: 16.6666666667%;\n  }\n  .v-application--is-rtl .flex.offset-xl2 {\n    margin-right: 16.6666666667%;\n  }\n  .v-application--is-ltr .flex.offset-xl1 {\n    margin-left: 8.3333333333%;\n  }\n  .v-application--is-rtl .flex.offset-xl1 {\n    margin-right: 8.3333333333%;\n  }\n  .v-application--is-ltr .flex.offset-xl0 {\n    margin-left: 0%;\n  }\n  .v-application--is-rtl .flex.offset-xl0 {\n    margin-right: 0%;\n  }\n}\n.flex,\n.child-flex > * {\n  flex: 1 1 auto;\n  max-width: 100%;\n}\n.flex.grow-shrink-0,\n.child-flex > *.grow-shrink-0 {\n  flex-grow: 0;\n  flex-shrink: 0;\n}\n\n.spacer {\n  flex-grow: 1 !important;\n}\n\n.grow {\n  flex-grow: 1 !important;\n  flex-shrink: 0 !important;\n}\n\n.shrink {\n  flex-grow: 0 !important;\n  flex-shrink: 1 !important;\n}\n\n.fill-height {\n  height: 100%;\n}", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-15.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-15.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-15.use[3]!./node_modules/vuetify/src/components/VMain/VMain.sass":
+/*!****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-15.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-15.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-15.use[3]!./node_modules/vuetify/src/components/VMain/VMain.sass ***!
+  \****************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".v-main {\n  display: flex;\n  flex: 1 0 auto;\n  max-width: 100%;\n  transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n}\n.v-main:not([data-booted=true]) {\n  transition: none !important;\n}\n.v-main__wrap {\n  flex: 1 1 auto;\n  max-width: 100%;\n  position: relative;\n}\n@-moz-document url-prefix() {\n  @media print {\n    .v-main {\n      display: block;\n    }\n  }\n}", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-15.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-15.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-15.use[3]!./node_modules/vuetify/src/components/VProgressCircular/VProgressCircular.sass":
 /*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-15.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-15.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-15.use[3]!./node_modules/vuetify/src/components/VProgressCircular/VProgressCircular.sass ***!
@@ -13190,6 +13458,30 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, "@charset \"UTF-8\";\n@-webkit-keyframes v-shake {\n  59% {\n    margin-left: 0;\n  }\n  60%, 80% {\n    margin-left: 2px;\n  }\n  70%, 90% {\n    margin-left: -2px;\n  }\n}\n@keyframes v-shake {\n  59% {\n    margin-left: 0;\n  }\n  60%, 80% {\n    margin-left: 2px;\n  }\n  70%, 90% {\n    margin-left: -2px;\n  }\n}\n.v-application .black {\n  background-color: #000000 !important;\n  border-color: #000000 !important;\n}\n\n.v-application .black--text {\n  color: #000000 !important;\n  caret-color: #000000 !important;\n}\n\n.v-application .white {\n  background-color: #FFFFFF !important;\n  border-color: #FFFFFF !important;\n}\n\n.v-application .white--text {\n  color: #FFFFFF !important;\n  caret-color: #FFFFFF !important;\n}\n\n.v-application .transparent {\n  background-color: transparent !important;\n  border-color: transparent !important;\n}\n\n.v-application .transparent--text {\n  color: transparent !important;\n  caret-color: transparent !important;\n}\n\n.v-application .red {\n  background-color: #F44336 !important;\n  border-color: #F44336 !important;\n}\n\n.v-application .red--text {\n  color: #F44336 !important;\n  caret-color: #F44336 !important;\n}\n\n.v-application .red.lighten-5 {\n  background-color: #FFEBEE !important;\n  border-color: #FFEBEE !important;\n}\n\n.v-application .red--text.text--lighten-5 {\n  color: #FFEBEE !important;\n  caret-color: #FFEBEE !important;\n}\n\n.v-application .red.lighten-4 {\n  background-color: #FFCDD2 !important;\n  border-color: #FFCDD2 !important;\n}\n\n.v-application .red--text.text--lighten-4 {\n  color: #FFCDD2 !important;\n  caret-color: #FFCDD2 !important;\n}\n\n.v-application .red.lighten-3 {\n  background-color: #EF9A9A !important;\n  border-color: #EF9A9A !important;\n}\n\n.v-application .red--text.text--lighten-3 {\n  color: #EF9A9A !important;\n  caret-color: #EF9A9A !important;\n}\n\n.v-application .red.lighten-2 {\n  background-color: #E57373 !important;\n  border-color: #E57373 !important;\n}\n\n.v-application .red--text.text--lighten-2 {\n  color: #E57373 !important;\n  caret-color: #E57373 !important;\n}\n\n.v-application .red.lighten-1 {\n  background-color: #EF5350 !important;\n  border-color: #EF5350 !important;\n}\n\n.v-application .red--text.text--lighten-1 {\n  color: #EF5350 !important;\n  caret-color: #EF5350 !important;\n}\n\n.v-application .red.darken-1 {\n  background-color: #E53935 !important;\n  border-color: #E53935 !important;\n}\n\n.v-application .red--text.text--darken-1 {\n  color: #E53935 !important;\n  caret-color: #E53935 !important;\n}\n\n.v-application .red.darken-2 {\n  background-color: #D32F2F !important;\n  border-color: #D32F2F !important;\n}\n\n.v-application .red--text.text--darken-2 {\n  color: #D32F2F !important;\n  caret-color: #D32F2F !important;\n}\n\n.v-application .red.darken-3 {\n  background-color: #C62828 !important;\n  border-color: #C62828 !important;\n}\n\n.v-application .red--text.text--darken-3 {\n  color: #C62828 !important;\n  caret-color: #C62828 !important;\n}\n\n.v-application .red.darken-4 {\n  background-color: #B71C1C !important;\n  border-color: #B71C1C !important;\n}\n\n.v-application .red--text.text--darken-4 {\n  color: #B71C1C !important;\n  caret-color: #B71C1C !important;\n}\n\n.v-application .red.accent-1 {\n  background-color: #FF8A80 !important;\n  border-color: #FF8A80 !important;\n}\n\n.v-application .red--text.text--accent-1 {\n  color: #FF8A80 !important;\n  caret-color: #FF8A80 !important;\n}\n\n.v-application .red.accent-2 {\n  background-color: #FF5252 !important;\n  border-color: #FF5252 !important;\n}\n\n.v-application .red--text.text--accent-2 {\n  color: #FF5252 !important;\n  caret-color: #FF5252 !important;\n}\n\n.v-application .red.accent-3 {\n  background-color: #FF1744 !important;\n  border-color: #FF1744 !important;\n}\n\n.v-application .red--text.text--accent-3 {\n  color: #FF1744 !important;\n  caret-color: #FF1744 !important;\n}\n\n.v-application .red.accent-4 {\n  background-color: #D50000 !important;\n  border-color: #D50000 !important;\n}\n\n.v-application .red--text.text--accent-4 {\n  color: #D50000 !important;\n  caret-color: #D50000 !important;\n}\n\n.v-application .pink {\n  background-color: #e91e63 !important;\n  border-color: #e91e63 !important;\n}\n\n.v-application .pink--text {\n  color: #e91e63 !important;\n  caret-color: #e91e63 !important;\n}\n\n.v-application .pink.lighten-5 {\n  background-color: #fce4ec !important;\n  border-color: #fce4ec !important;\n}\n\n.v-application .pink--text.text--lighten-5 {\n  color: #fce4ec !important;\n  caret-color: #fce4ec !important;\n}\n\n.v-application .pink.lighten-4 {\n  background-color: #f8bbd0 !important;\n  border-color: #f8bbd0 !important;\n}\n\n.v-application .pink--text.text--lighten-4 {\n  color: #f8bbd0 !important;\n  caret-color: #f8bbd0 !important;\n}\n\n.v-application .pink.lighten-3 {\n  background-color: #f48fb1 !important;\n  border-color: #f48fb1 !important;\n}\n\n.v-application .pink--text.text--lighten-3 {\n  color: #f48fb1 !important;\n  caret-color: #f48fb1 !important;\n}\n\n.v-application .pink.lighten-2 {\n  background-color: #f06292 !important;\n  border-color: #f06292 !important;\n}\n\n.v-application .pink--text.text--lighten-2 {\n  color: #f06292 !important;\n  caret-color: #f06292 !important;\n}\n\n.v-application .pink.lighten-1 {\n  background-color: #ec407a !important;\n  border-color: #ec407a !important;\n}\n\n.v-application .pink--text.text--lighten-1 {\n  color: #ec407a !important;\n  caret-color: #ec407a !important;\n}\n\n.v-application .pink.darken-1 {\n  background-color: #d81b60 !important;\n  border-color: #d81b60 !important;\n}\n\n.v-application .pink--text.text--darken-1 {\n  color: #d81b60 !important;\n  caret-color: #d81b60 !important;\n}\n\n.v-application .pink.darken-2 {\n  background-color: #c2185b !important;\n  border-color: #c2185b !important;\n}\n\n.v-application .pink--text.text--darken-2 {\n  color: #c2185b !important;\n  caret-color: #c2185b !important;\n}\n\n.v-application .pink.darken-3 {\n  background-color: #ad1457 !important;\n  border-color: #ad1457 !important;\n}\n\n.v-application .pink--text.text--darken-3 {\n  color: #ad1457 !important;\n  caret-color: #ad1457 !important;\n}\n\n.v-application .pink.darken-4 {\n  background-color: #880e4f !important;\n  border-color: #880e4f !important;\n}\n\n.v-application .pink--text.text--darken-4 {\n  color: #880e4f !important;\n  caret-color: #880e4f !important;\n}\n\n.v-application .pink.accent-1 {\n  background-color: #ff80ab !important;\n  border-color: #ff80ab !important;\n}\n\n.v-application .pink--text.text--accent-1 {\n  color: #ff80ab !important;\n  caret-color: #ff80ab !important;\n}\n\n.v-application .pink.accent-2 {\n  background-color: #ff4081 !important;\n  border-color: #ff4081 !important;\n}\n\n.v-application .pink--text.text--accent-2 {\n  color: #ff4081 !important;\n  caret-color: #ff4081 !important;\n}\n\n.v-application .pink.accent-3 {\n  background-color: #f50057 !important;\n  border-color: #f50057 !important;\n}\n\n.v-application .pink--text.text--accent-3 {\n  color: #f50057 !important;\n  caret-color: #f50057 !important;\n}\n\n.v-application .pink.accent-4 {\n  background-color: #c51162 !important;\n  border-color: #c51162 !important;\n}\n\n.v-application .pink--text.text--accent-4 {\n  color: #c51162 !important;\n  caret-color: #c51162 !important;\n}\n\n.v-application .purple {\n  background-color: #9c27b0 !important;\n  border-color: #9c27b0 !important;\n}\n\n.v-application .purple--text {\n  color: #9c27b0 !important;\n  caret-color: #9c27b0 !important;\n}\n\n.v-application .purple.lighten-5 {\n  background-color: #f3e5f5 !important;\n  border-color: #f3e5f5 !important;\n}\n\n.v-application .purple--text.text--lighten-5 {\n  color: #f3e5f5 !important;\n  caret-color: #f3e5f5 !important;\n}\n\n.v-application .purple.lighten-4 {\n  background-color: #e1bee7 !important;\n  border-color: #e1bee7 !important;\n}\n\n.v-application .purple--text.text--lighten-4 {\n  color: #e1bee7 !important;\n  caret-color: #e1bee7 !important;\n}\n\n.v-application .purple.lighten-3 {\n  background-color: #ce93d8 !important;\n  border-color: #ce93d8 !important;\n}\n\n.v-application .purple--text.text--lighten-3 {\n  color: #ce93d8 !important;\n  caret-color: #ce93d8 !important;\n}\n\n.v-application .purple.lighten-2 {\n  background-color: #ba68c8 !important;\n  border-color: #ba68c8 !important;\n}\n\n.v-application .purple--text.text--lighten-2 {\n  color: #ba68c8 !important;\n  caret-color: #ba68c8 !important;\n}\n\n.v-application .purple.lighten-1 {\n  background-color: #ab47bc !important;\n  border-color: #ab47bc !important;\n}\n\n.v-application .purple--text.text--lighten-1 {\n  color: #ab47bc !important;\n  caret-color: #ab47bc !important;\n}\n\n.v-application .purple.darken-1 {\n  background-color: #8e24aa !important;\n  border-color: #8e24aa !important;\n}\n\n.v-application .purple--text.text--darken-1 {\n  color: #8e24aa !important;\n  caret-color: #8e24aa !important;\n}\n\n.v-application .purple.darken-2 {\n  background-color: #7b1fa2 !important;\n  border-color: #7b1fa2 !important;\n}\n\n.v-application .purple--text.text--darken-2 {\n  color: #7b1fa2 !important;\n  caret-color: #7b1fa2 !important;\n}\n\n.v-application .purple.darken-3 {\n  background-color: #6a1b9a !important;\n  border-color: #6a1b9a !important;\n}\n\n.v-application .purple--text.text--darken-3 {\n  color: #6a1b9a !important;\n  caret-color: #6a1b9a !important;\n}\n\n.v-application .purple.darken-4 {\n  background-color: #4a148c !important;\n  border-color: #4a148c !important;\n}\n\n.v-application .purple--text.text--darken-4 {\n  color: #4a148c !important;\n  caret-color: #4a148c !important;\n}\n\n.v-application .purple.accent-1 {\n  background-color: #ea80fc !important;\n  border-color: #ea80fc !important;\n}\n\n.v-application .purple--text.text--accent-1 {\n  color: #ea80fc !important;\n  caret-color: #ea80fc !important;\n}\n\n.v-application .purple.accent-2 {\n  background-color: #e040fb !important;\n  border-color: #e040fb !important;\n}\n\n.v-application .purple--text.text--accent-2 {\n  color: #e040fb !important;\n  caret-color: #e040fb !important;\n}\n\n.v-application .purple.accent-3 {\n  background-color: #d500f9 !important;\n  border-color: #d500f9 !important;\n}\n\n.v-application .purple--text.text--accent-3 {\n  color: #d500f9 !important;\n  caret-color: #d500f9 !important;\n}\n\n.v-application .purple.accent-4 {\n  background-color: #aa00ff !important;\n  border-color: #aa00ff !important;\n}\n\n.v-application .purple--text.text--accent-4 {\n  color: #aa00ff !important;\n  caret-color: #aa00ff !important;\n}\n\n.v-application .deep-purple {\n  background-color: #673ab7 !important;\n  border-color: #673ab7 !important;\n}\n\n.v-application .deep-purple--text {\n  color: #673ab7 !important;\n  caret-color: #673ab7 !important;\n}\n\n.v-application .deep-purple.lighten-5 {\n  background-color: #ede7f6 !important;\n  border-color: #ede7f6 !important;\n}\n\n.v-application .deep-purple--text.text--lighten-5 {\n  color: #ede7f6 !important;\n  caret-color: #ede7f6 !important;\n}\n\n.v-application .deep-purple.lighten-4 {\n  background-color: #d1c4e9 !important;\n  border-color: #d1c4e9 !important;\n}\n\n.v-application .deep-purple--text.text--lighten-4 {\n  color: #d1c4e9 !important;\n  caret-color: #d1c4e9 !important;\n}\n\n.v-application .deep-purple.lighten-3 {\n  background-color: #b39ddb !important;\n  border-color: #b39ddb !important;\n}\n\n.v-application .deep-purple--text.text--lighten-3 {\n  color: #b39ddb !important;\n  caret-color: #b39ddb !important;\n}\n\n.v-application .deep-purple.lighten-2 {\n  background-color: #9575cd !important;\n  border-color: #9575cd !important;\n}\n\n.v-application .deep-purple--text.text--lighten-2 {\n  color: #9575cd !important;\n  caret-color: #9575cd !important;\n}\n\n.v-application .deep-purple.lighten-1 {\n  background-color: #7e57c2 !important;\n  border-color: #7e57c2 !important;\n}\n\n.v-application .deep-purple--text.text--lighten-1 {\n  color: #7e57c2 !important;\n  caret-color: #7e57c2 !important;\n}\n\n.v-application .deep-purple.darken-1 {\n  background-color: #5e35b1 !important;\n  border-color: #5e35b1 !important;\n}\n\n.v-application .deep-purple--text.text--darken-1 {\n  color: #5e35b1 !important;\n  caret-color: #5e35b1 !important;\n}\n\n.v-application .deep-purple.darken-2 {\n  background-color: #512da8 !important;\n  border-color: #512da8 !important;\n}\n\n.v-application .deep-purple--text.text--darken-2 {\n  color: #512da8 !important;\n  caret-color: #512da8 !important;\n}\n\n.v-application .deep-purple.darken-3 {\n  background-color: #4527a0 !important;\n  border-color: #4527a0 !important;\n}\n\n.v-application .deep-purple--text.text--darken-3 {\n  color: #4527a0 !important;\n  caret-color: #4527a0 !important;\n}\n\n.v-application .deep-purple.darken-4 {\n  background-color: #311b92 !important;\n  border-color: #311b92 !important;\n}\n\n.v-application .deep-purple--text.text--darken-4 {\n  color: #311b92 !important;\n  caret-color: #311b92 !important;\n}\n\n.v-application .deep-purple.accent-1 {\n  background-color: #b388ff !important;\n  border-color: #b388ff !important;\n}\n\n.v-application .deep-purple--text.text--accent-1 {\n  color: #b388ff !important;\n  caret-color: #b388ff !important;\n}\n\n.v-application .deep-purple.accent-2 {\n  background-color: #7c4dff !important;\n  border-color: #7c4dff !important;\n}\n\n.v-application .deep-purple--text.text--accent-2 {\n  color: #7c4dff !important;\n  caret-color: #7c4dff !important;\n}\n\n.v-application .deep-purple.accent-3 {\n  background-color: #651fff !important;\n  border-color: #651fff !important;\n}\n\n.v-application .deep-purple--text.text--accent-3 {\n  color: #651fff !important;\n  caret-color: #651fff !important;\n}\n\n.v-application .deep-purple.accent-4 {\n  background-color: #6200ea !important;\n  border-color: #6200ea !important;\n}\n\n.v-application .deep-purple--text.text--accent-4 {\n  color: #6200ea !important;\n  caret-color: #6200ea !important;\n}\n\n.v-application .indigo {\n  background-color: #3f51b5 !important;\n  border-color: #3f51b5 !important;\n}\n\n.v-application .indigo--text {\n  color: #3f51b5 !important;\n  caret-color: #3f51b5 !important;\n}\n\n.v-application .indigo.lighten-5 {\n  background-color: #e8eaf6 !important;\n  border-color: #e8eaf6 !important;\n}\n\n.v-application .indigo--text.text--lighten-5 {\n  color: #e8eaf6 !important;\n  caret-color: #e8eaf6 !important;\n}\n\n.v-application .indigo.lighten-4 {\n  background-color: #c5cae9 !important;\n  border-color: #c5cae9 !important;\n}\n\n.v-application .indigo--text.text--lighten-4 {\n  color: #c5cae9 !important;\n  caret-color: #c5cae9 !important;\n}\n\n.v-application .indigo.lighten-3 {\n  background-color: #9fa8da !important;\n  border-color: #9fa8da !important;\n}\n\n.v-application .indigo--text.text--lighten-3 {\n  color: #9fa8da !important;\n  caret-color: #9fa8da !important;\n}\n\n.v-application .indigo.lighten-2 {\n  background-color: #7986cb !important;\n  border-color: #7986cb !important;\n}\n\n.v-application .indigo--text.text--lighten-2 {\n  color: #7986cb !important;\n  caret-color: #7986cb !important;\n}\n\n.v-application .indigo.lighten-1 {\n  background-color: #5c6bc0 !important;\n  border-color: #5c6bc0 !important;\n}\n\n.v-application .indigo--text.text--lighten-1 {\n  color: #5c6bc0 !important;\n  caret-color: #5c6bc0 !important;\n}\n\n.v-application .indigo.darken-1 {\n  background-color: #3949ab !important;\n  border-color: #3949ab !important;\n}\n\n.v-application .indigo--text.text--darken-1 {\n  color: #3949ab !important;\n  caret-color: #3949ab !important;\n}\n\n.v-application .indigo.darken-2 {\n  background-color: #303f9f !important;\n  border-color: #303f9f !important;\n}\n\n.v-application .indigo--text.text--darken-2 {\n  color: #303f9f !important;\n  caret-color: #303f9f !important;\n}\n\n.v-application .indigo.darken-3 {\n  background-color: #283593 !important;\n  border-color: #283593 !important;\n}\n\n.v-application .indigo--text.text--darken-3 {\n  color: #283593 !important;\n  caret-color: #283593 !important;\n}\n\n.v-application .indigo.darken-4 {\n  background-color: #1a237e !important;\n  border-color: #1a237e !important;\n}\n\n.v-application .indigo--text.text--darken-4 {\n  color: #1a237e !important;\n  caret-color: #1a237e !important;\n}\n\n.v-application .indigo.accent-1 {\n  background-color: #8c9eff !important;\n  border-color: #8c9eff !important;\n}\n\n.v-application .indigo--text.text--accent-1 {\n  color: #8c9eff !important;\n  caret-color: #8c9eff !important;\n}\n\n.v-application .indigo.accent-2 {\n  background-color: #536dfe !important;\n  border-color: #536dfe !important;\n}\n\n.v-application .indigo--text.text--accent-2 {\n  color: #536dfe !important;\n  caret-color: #536dfe !important;\n}\n\n.v-application .indigo.accent-3 {\n  background-color: #3d5afe !important;\n  border-color: #3d5afe !important;\n}\n\n.v-application .indigo--text.text--accent-3 {\n  color: #3d5afe !important;\n  caret-color: #3d5afe !important;\n}\n\n.v-application .indigo.accent-4 {\n  background-color: #304ffe !important;\n  border-color: #304ffe !important;\n}\n\n.v-application .indigo--text.text--accent-4 {\n  color: #304ffe !important;\n  caret-color: #304ffe !important;\n}\n\n.v-application .blue {\n  background-color: #2196F3 !important;\n  border-color: #2196F3 !important;\n}\n\n.v-application .blue--text {\n  color: #2196F3 !important;\n  caret-color: #2196F3 !important;\n}\n\n.v-application .blue.lighten-5 {\n  background-color: #E3F2FD !important;\n  border-color: #E3F2FD !important;\n}\n\n.v-application .blue--text.text--lighten-5 {\n  color: #E3F2FD !important;\n  caret-color: #E3F2FD !important;\n}\n\n.v-application .blue.lighten-4 {\n  background-color: #BBDEFB !important;\n  border-color: #BBDEFB !important;\n}\n\n.v-application .blue--text.text--lighten-4 {\n  color: #BBDEFB !important;\n  caret-color: #BBDEFB !important;\n}\n\n.v-application .blue.lighten-3 {\n  background-color: #90CAF9 !important;\n  border-color: #90CAF9 !important;\n}\n\n.v-application .blue--text.text--lighten-3 {\n  color: #90CAF9 !important;\n  caret-color: #90CAF9 !important;\n}\n\n.v-application .blue.lighten-2 {\n  background-color: #64B5F6 !important;\n  border-color: #64B5F6 !important;\n}\n\n.v-application .blue--text.text--lighten-2 {\n  color: #64B5F6 !important;\n  caret-color: #64B5F6 !important;\n}\n\n.v-application .blue.lighten-1 {\n  background-color: #42A5F5 !important;\n  border-color: #42A5F5 !important;\n}\n\n.v-application .blue--text.text--lighten-1 {\n  color: #42A5F5 !important;\n  caret-color: #42A5F5 !important;\n}\n\n.v-application .blue.darken-1 {\n  background-color: #1E88E5 !important;\n  border-color: #1E88E5 !important;\n}\n\n.v-application .blue--text.text--darken-1 {\n  color: #1E88E5 !important;\n  caret-color: #1E88E5 !important;\n}\n\n.v-application .blue.darken-2 {\n  background-color: #1976D2 !important;\n  border-color: #1976D2 !important;\n}\n\n.v-application .blue--text.text--darken-2 {\n  color: #1976D2 !important;\n  caret-color: #1976D2 !important;\n}\n\n.v-application .blue.darken-3 {\n  background-color: #1565C0 !important;\n  border-color: #1565C0 !important;\n}\n\n.v-application .blue--text.text--darken-3 {\n  color: #1565C0 !important;\n  caret-color: #1565C0 !important;\n}\n\n.v-application .blue.darken-4 {\n  background-color: #0D47A1 !important;\n  border-color: #0D47A1 !important;\n}\n\n.v-application .blue--text.text--darken-4 {\n  color: #0D47A1 !important;\n  caret-color: #0D47A1 !important;\n}\n\n.v-application .blue.accent-1 {\n  background-color: #82B1FF !important;\n  border-color: #82B1FF !important;\n}\n\n.v-application .blue--text.text--accent-1 {\n  color: #82B1FF !important;\n  caret-color: #82B1FF !important;\n}\n\n.v-application .blue.accent-2 {\n  background-color: #448AFF !important;\n  border-color: #448AFF !important;\n}\n\n.v-application .blue--text.text--accent-2 {\n  color: #448AFF !important;\n  caret-color: #448AFF !important;\n}\n\n.v-application .blue.accent-3 {\n  background-color: #2979FF !important;\n  border-color: #2979FF !important;\n}\n\n.v-application .blue--text.text--accent-3 {\n  color: #2979FF !important;\n  caret-color: #2979FF !important;\n}\n\n.v-application .blue.accent-4 {\n  background-color: #2962FF !important;\n  border-color: #2962FF !important;\n}\n\n.v-application .blue--text.text--accent-4 {\n  color: #2962FF !important;\n  caret-color: #2962FF !important;\n}\n\n.v-application .light-blue {\n  background-color: #03a9f4 !important;\n  border-color: #03a9f4 !important;\n}\n\n.v-application .light-blue--text {\n  color: #03a9f4 !important;\n  caret-color: #03a9f4 !important;\n}\n\n.v-application .light-blue.lighten-5 {\n  background-color: #e1f5fe !important;\n  border-color: #e1f5fe !important;\n}\n\n.v-application .light-blue--text.text--lighten-5 {\n  color: #e1f5fe !important;\n  caret-color: #e1f5fe !important;\n}\n\n.v-application .light-blue.lighten-4 {\n  background-color: #b3e5fc !important;\n  border-color: #b3e5fc !important;\n}\n\n.v-application .light-blue--text.text--lighten-4 {\n  color: #b3e5fc !important;\n  caret-color: #b3e5fc !important;\n}\n\n.v-application .light-blue.lighten-3 {\n  background-color: #81d4fa !important;\n  border-color: #81d4fa !important;\n}\n\n.v-application .light-blue--text.text--lighten-3 {\n  color: #81d4fa !important;\n  caret-color: #81d4fa !important;\n}\n\n.v-application .light-blue.lighten-2 {\n  background-color: #4fc3f7 !important;\n  border-color: #4fc3f7 !important;\n}\n\n.v-application .light-blue--text.text--lighten-2 {\n  color: #4fc3f7 !important;\n  caret-color: #4fc3f7 !important;\n}\n\n.v-application .light-blue.lighten-1 {\n  background-color: #29b6f6 !important;\n  border-color: #29b6f6 !important;\n}\n\n.v-application .light-blue--text.text--lighten-1 {\n  color: #29b6f6 !important;\n  caret-color: #29b6f6 !important;\n}\n\n.v-application .light-blue.darken-1 {\n  background-color: #039be5 !important;\n  border-color: #039be5 !important;\n}\n\n.v-application .light-blue--text.text--darken-1 {\n  color: #039be5 !important;\n  caret-color: #039be5 !important;\n}\n\n.v-application .light-blue.darken-2 {\n  background-color: #0288d1 !important;\n  border-color: #0288d1 !important;\n}\n\n.v-application .light-blue--text.text--darken-2 {\n  color: #0288d1 !important;\n  caret-color: #0288d1 !important;\n}\n\n.v-application .light-blue.darken-3 {\n  background-color: #0277bd !important;\n  border-color: #0277bd !important;\n}\n\n.v-application .light-blue--text.text--darken-3 {\n  color: #0277bd !important;\n  caret-color: #0277bd !important;\n}\n\n.v-application .light-blue.darken-4 {\n  background-color: #01579b !important;\n  border-color: #01579b !important;\n}\n\n.v-application .light-blue--text.text--darken-4 {\n  color: #01579b !important;\n  caret-color: #01579b !important;\n}\n\n.v-application .light-blue.accent-1 {\n  background-color: #80d8ff !important;\n  border-color: #80d8ff !important;\n}\n\n.v-application .light-blue--text.text--accent-1 {\n  color: #80d8ff !important;\n  caret-color: #80d8ff !important;\n}\n\n.v-application .light-blue.accent-2 {\n  background-color: #40c4ff !important;\n  border-color: #40c4ff !important;\n}\n\n.v-application .light-blue--text.text--accent-2 {\n  color: #40c4ff !important;\n  caret-color: #40c4ff !important;\n}\n\n.v-application .light-blue.accent-3 {\n  background-color: #00b0ff !important;\n  border-color: #00b0ff !important;\n}\n\n.v-application .light-blue--text.text--accent-3 {\n  color: #00b0ff !important;\n  caret-color: #00b0ff !important;\n}\n\n.v-application .light-blue.accent-4 {\n  background-color: #0091ea !important;\n  border-color: #0091ea !important;\n}\n\n.v-application .light-blue--text.text--accent-4 {\n  color: #0091ea !important;\n  caret-color: #0091ea !important;\n}\n\n.v-application .cyan {\n  background-color: #00bcd4 !important;\n  border-color: #00bcd4 !important;\n}\n\n.v-application .cyan--text {\n  color: #00bcd4 !important;\n  caret-color: #00bcd4 !important;\n}\n\n.v-application .cyan.lighten-5 {\n  background-color: #e0f7fa !important;\n  border-color: #e0f7fa !important;\n}\n\n.v-application .cyan--text.text--lighten-5 {\n  color: #e0f7fa !important;\n  caret-color: #e0f7fa !important;\n}\n\n.v-application .cyan.lighten-4 {\n  background-color: #b2ebf2 !important;\n  border-color: #b2ebf2 !important;\n}\n\n.v-application .cyan--text.text--lighten-4 {\n  color: #b2ebf2 !important;\n  caret-color: #b2ebf2 !important;\n}\n\n.v-application .cyan.lighten-3 {\n  background-color: #80deea !important;\n  border-color: #80deea !important;\n}\n\n.v-application .cyan--text.text--lighten-3 {\n  color: #80deea !important;\n  caret-color: #80deea !important;\n}\n\n.v-application .cyan.lighten-2 {\n  background-color: #4dd0e1 !important;\n  border-color: #4dd0e1 !important;\n}\n\n.v-application .cyan--text.text--lighten-2 {\n  color: #4dd0e1 !important;\n  caret-color: #4dd0e1 !important;\n}\n\n.v-application .cyan.lighten-1 {\n  background-color: #26c6da !important;\n  border-color: #26c6da !important;\n}\n\n.v-application .cyan--text.text--lighten-1 {\n  color: #26c6da !important;\n  caret-color: #26c6da !important;\n}\n\n.v-application .cyan.darken-1 {\n  background-color: #00acc1 !important;\n  border-color: #00acc1 !important;\n}\n\n.v-application .cyan--text.text--darken-1 {\n  color: #00acc1 !important;\n  caret-color: #00acc1 !important;\n}\n\n.v-application .cyan.darken-2 {\n  background-color: #0097a7 !important;\n  border-color: #0097a7 !important;\n}\n\n.v-application .cyan--text.text--darken-2 {\n  color: #0097a7 !important;\n  caret-color: #0097a7 !important;\n}\n\n.v-application .cyan.darken-3 {\n  background-color: #00838f !important;\n  border-color: #00838f !important;\n}\n\n.v-application .cyan--text.text--darken-3 {\n  color: #00838f !important;\n  caret-color: #00838f !important;\n}\n\n.v-application .cyan.darken-4 {\n  background-color: #006064 !important;\n  border-color: #006064 !important;\n}\n\n.v-application .cyan--text.text--darken-4 {\n  color: #006064 !important;\n  caret-color: #006064 !important;\n}\n\n.v-application .cyan.accent-1 {\n  background-color: #84ffff !important;\n  border-color: #84ffff !important;\n}\n\n.v-application .cyan--text.text--accent-1 {\n  color: #84ffff !important;\n  caret-color: #84ffff !important;\n}\n\n.v-application .cyan.accent-2 {\n  background-color: #18ffff !important;\n  border-color: #18ffff !important;\n}\n\n.v-application .cyan--text.text--accent-2 {\n  color: #18ffff !important;\n  caret-color: #18ffff !important;\n}\n\n.v-application .cyan.accent-3 {\n  background-color: #00e5ff !important;\n  border-color: #00e5ff !important;\n}\n\n.v-application .cyan--text.text--accent-3 {\n  color: #00e5ff !important;\n  caret-color: #00e5ff !important;\n}\n\n.v-application .cyan.accent-4 {\n  background-color: #00b8d4 !important;\n  border-color: #00b8d4 !important;\n}\n\n.v-application .cyan--text.text--accent-4 {\n  color: #00b8d4 !important;\n  caret-color: #00b8d4 !important;\n}\n\n.v-application .teal {\n  background-color: #009688 !important;\n  border-color: #009688 !important;\n}\n\n.v-application .teal--text {\n  color: #009688 !important;\n  caret-color: #009688 !important;\n}\n\n.v-application .teal.lighten-5 {\n  background-color: #e0f2f1 !important;\n  border-color: #e0f2f1 !important;\n}\n\n.v-application .teal--text.text--lighten-5 {\n  color: #e0f2f1 !important;\n  caret-color: #e0f2f1 !important;\n}\n\n.v-application .teal.lighten-4 {\n  background-color: #b2dfdb !important;\n  border-color: #b2dfdb !important;\n}\n\n.v-application .teal--text.text--lighten-4 {\n  color: #b2dfdb !important;\n  caret-color: #b2dfdb !important;\n}\n\n.v-application .teal.lighten-3 {\n  background-color: #80cbc4 !important;\n  border-color: #80cbc4 !important;\n}\n\n.v-application .teal--text.text--lighten-3 {\n  color: #80cbc4 !important;\n  caret-color: #80cbc4 !important;\n}\n\n.v-application .teal.lighten-2 {\n  background-color: #4db6ac !important;\n  border-color: #4db6ac !important;\n}\n\n.v-application .teal--text.text--lighten-2 {\n  color: #4db6ac !important;\n  caret-color: #4db6ac !important;\n}\n\n.v-application .teal.lighten-1 {\n  background-color: #26a69a !important;\n  border-color: #26a69a !important;\n}\n\n.v-application .teal--text.text--lighten-1 {\n  color: #26a69a !important;\n  caret-color: #26a69a !important;\n}\n\n.v-application .teal.darken-1 {\n  background-color: #00897b !important;\n  border-color: #00897b !important;\n}\n\n.v-application .teal--text.text--darken-1 {\n  color: #00897b !important;\n  caret-color: #00897b !important;\n}\n\n.v-application .teal.darken-2 {\n  background-color: #00796b !important;\n  border-color: #00796b !important;\n}\n\n.v-application .teal--text.text--darken-2 {\n  color: #00796b !important;\n  caret-color: #00796b !important;\n}\n\n.v-application .teal.darken-3 {\n  background-color: #00695c !important;\n  border-color: #00695c !important;\n}\n\n.v-application .teal--text.text--darken-3 {\n  color: #00695c !important;\n  caret-color: #00695c !important;\n}\n\n.v-application .teal.darken-4 {\n  background-color: #004d40 !important;\n  border-color: #004d40 !important;\n}\n\n.v-application .teal--text.text--darken-4 {\n  color: #004d40 !important;\n  caret-color: #004d40 !important;\n}\n\n.v-application .teal.accent-1 {\n  background-color: #a7ffeb !important;\n  border-color: #a7ffeb !important;\n}\n\n.v-application .teal--text.text--accent-1 {\n  color: #a7ffeb !important;\n  caret-color: #a7ffeb !important;\n}\n\n.v-application .teal.accent-2 {\n  background-color: #64ffda !important;\n  border-color: #64ffda !important;\n}\n\n.v-application .teal--text.text--accent-2 {\n  color: #64ffda !important;\n  caret-color: #64ffda !important;\n}\n\n.v-application .teal.accent-3 {\n  background-color: #1de9b6 !important;\n  border-color: #1de9b6 !important;\n}\n\n.v-application .teal--text.text--accent-3 {\n  color: #1de9b6 !important;\n  caret-color: #1de9b6 !important;\n}\n\n.v-application .teal.accent-4 {\n  background-color: #00bfa5 !important;\n  border-color: #00bfa5 !important;\n}\n\n.v-application .teal--text.text--accent-4 {\n  color: #00bfa5 !important;\n  caret-color: #00bfa5 !important;\n}\n\n.v-application .green {\n  background-color: #4CAF50 !important;\n  border-color: #4CAF50 !important;\n}\n\n.v-application .green--text {\n  color: #4CAF50 !important;\n  caret-color: #4CAF50 !important;\n}\n\n.v-application .green.lighten-5 {\n  background-color: #E8F5E9 !important;\n  border-color: #E8F5E9 !important;\n}\n\n.v-application .green--text.text--lighten-5 {\n  color: #E8F5E9 !important;\n  caret-color: #E8F5E9 !important;\n}\n\n.v-application .green.lighten-4 {\n  background-color: #C8E6C9 !important;\n  border-color: #C8E6C9 !important;\n}\n\n.v-application .green--text.text--lighten-4 {\n  color: #C8E6C9 !important;\n  caret-color: #C8E6C9 !important;\n}\n\n.v-application .green.lighten-3 {\n  background-color: #A5D6A7 !important;\n  border-color: #A5D6A7 !important;\n}\n\n.v-application .green--text.text--lighten-3 {\n  color: #A5D6A7 !important;\n  caret-color: #A5D6A7 !important;\n}\n\n.v-application .green.lighten-2 {\n  background-color: #81C784 !important;\n  border-color: #81C784 !important;\n}\n\n.v-application .green--text.text--lighten-2 {\n  color: #81C784 !important;\n  caret-color: #81C784 !important;\n}\n\n.v-application .green.lighten-1 {\n  background-color: #66BB6A !important;\n  border-color: #66BB6A !important;\n}\n\n.v-application .green--text.text--lighten-1 {\n  color: #66BB6A !important;\n  caret-color: #66BB6A !important;\n}\n\n.v-application .green.darken-1 {\n  background-color: #43A047 !important;\n  border-color: #43A047 !important;\n}\n\n.v-application .green--text.text--darken-1 {\n  color: #43A047 !important;\n  caret-color: #43A047 !important;\n}\n\n.v-application .green.darken-2 {\n  background-color: #388E3C !important;\n  border-color: #388E3C !important;\n}\n\n.v-application .green--text.text--darken-2 {\n  color: #388E3C !important;\n  caret-color: #388E3C !important;\n}\n\n.v-application .green.darken-3 {\n  background-color: #2E7D32 !important;\n  border-color: #2E7D32 !important;\n}\n\n.v-application .green--text.text--darken-3 {\n  color: #2E7D32 !important;\n  caret-color: #2E7D32 !important;\n}\n\n.v-application .green.darken-4 {\n  background-color: #1B5E20 !important;\n  border-color: #1B5E20 !important;\n}\n\n.v-application .green--text.text--darken-4 {\n  color: #1B5E20 !important;\n  caret-color: #1B5E20 !important;\n}\n\n.v-application .green.accent-1 {\n  background-color: #B9F6CA !important;\n  border-color: #B9F6CA !important;\n}\n\n.v-application .green--text.text--accent-1 {\n  color: #B9F6CA !important;\n  caret-color: #B9F6CA !important;\n}\n\n.v-application .green.accent-2 {\n  background-color: #69F0AE !important;\n  border-color: #69F0AE !important;\n}\n\n.v-application .green--text.text--accent-2 {\n  color: #69F0AE !important;\n  caret-color: #69F0AE !important;\n}\n\n.v-application .green.accent-3 {\n  background-color: #00E676 !important;\n  border-color: #00E676 !important;\n}\n\n.v-application .green--text.text--accent-3 {\n  color: #00E676 !important;\n  caret-color: #00E676 !important;\n}\n\n.v-application .green.accent-4 {\n  background-color: #00C853 !important;\n  border-color: #00C853 !important;\n}\n\n.v-application .green--text.text--accent-4 {\n  color: #00C853 !important;\n  caret-color: #00C853 !important;\n}\n\n.v-application .light-green {\n  background-color: #8bc34a !important;\n  border-color: #8bc34a !important;\n}\n\n.v-application .light-green--text {\n  color: #8bc34a !important;\n  caret-color: #8bc34a !important;\n}\n\n.v-application .light-green.lighten-5 {\n  background-color: #f1f8e9 !important;\n  border-color: #f1f8e9 !important;\n}\n\n.v-application .light-green--text.text--lighten-5 {\n  color: #f1f8e9 !important;\n  caret-color: #f1f8e9 !important;\n}\n\n.v-application .light-green.lighten-4 {\n  background-color: #dcedc8 !important;\n  border-color: #dcedc8 !important;\n}\n\n.v-application .light-green--text.text--lighten-4 {\n  color: #dcedc8 !important;\n  caret-color: #dcedc8 !important;\n}\n\n.v-application .light-green.lighten-3 {\n  background-color: #c5e1a5 !important;\n  border-color: #c5e1a5 !important;\n}\n\n.v-application .light-green--text.text--lighten-3 {\n  color: #c5e1a5 !important;\n  caret-color: #c5e1a5 !important;\n}\n\n.v-application .light-green.lighten-2 {\n  background-color: #aed581 !important;\n  border-color: #aed581 !important;\n}\n\n.v-application .light-green--text.text--lighten-2 {\n  color: #aed581 !important;\n  caret-color: #aed581 !important;\n}\n\n.v-application .light-green.lighten-1 {\n  background-color: #9ccc65 !important;\n  border-color: #9ccc65 !important;\n}\n\n.v-application .light-green--text.text--lighten-1 {\n  color: #9ccc65 !important;\n  caret-color: #9ccc65 !important;\n}\n\n.v-application .light-green.darken-1 {\n  background-color: #7cb342 !important;\n  border-color: #7cb342 !important;\n}\n\n.v-application .light-green--text.text--darken-1 {\n  color: #7cb342 !important;\n  caret-color: #7cb342 !important;\n}\n\n.v-application .light-green.darken-2 {\n  background-color: #689f38 !important;\n  border-color: #689f38 !important;\n}\n\n.v-application .light-green--text.text--darken-2 {\n  color: #689f38 !important;\n  caret-color: #689f38 !important;\n}\n\n.v-application .light-green.darken-3 {\n  background-color: #558b2f !important;\n  border-color: #558b2f !important;\n}\n\n.v-application .light-green--text.text--darken-3 {\n  color: #558b2f !important;\n  caret-color: #558b2f !important;\n}\n\n.v-application .light-green.darken-4 {\n  background-color: #33691e !important;\n  border-color: #33691e !important;\n}\n\n.v-application .light-green--text.text--darken-4 {\n  color: #33691e !important;\n  caret-color: #33691e !important;\n}\n\n.v-application .light-green.accent-1 {\n  background-color: #ccff90 !important;\n  border-color: #ccff90 !important;\n}\n\n.v-application .light-green--text.text--accent-1 {\n  color: #ccff90 !important;\n  caret-color: #ccff90 !important;\n}\n\n.v-application .light-green.accent-2 {\n  background-color: #b2ff59 !important;\n  border-color: #b2ff59 !important;\n}\n\n.v-application .light-green--text.text--accent-2 {\n  color: #b2ff59 !important;\n  caret-color: #b2ff59 !important;\n}\n\n.v-application .light-green.accent-3 {\n  background-color: #76ff03 !important;\n  border-color: #76ff03 !important;\n}\n\n.v-application .light-green--text.text--accent-3 {\n  color: #76ff03 !important;\n  caret-color: #76ff03 !important;\n}\n\n.v-application .light-green.accent-4 {\n  background-color: #64dd17 !important;\n  border-color: #64dd17 !important;\n}\n\n.v-application .light-green--text.text--accent-4 {\n  color: #64dd17 !important;\n  caret-color: #64dd17 !important;\n}\n\n.v-application .lime {\n  background-color: #cddc39 !important;\n  border-color: #cddc39 !important;\n}\n\n.v-application .lime--text {\n  color: #cddc39 !important;\n  caret-color: #cddc39 !important;\n}\n\n.v-application .lime.lighten-5 {\n  background-color: #f9fbe7 !important;\n  border-color: #f9fbe7 !important;\n}\n\n.v-application .lime--text.text--lighten-5 {\n  color: #f9fbe7 !important;\n  caret-color: #f9fbe7 !important;\n}\n\n.v-application .lime.lighten-4 {\n  background-color: #f0f4c3 !important;\n  border-color: #f0f4c3 !important;\n}\n\n.v-application .lime--text.text--lighten-4 {\n  color: #f0f4c3 !important;\n  caret-color: #f0f4c3 !important;\n}\n\n.v-application .lime.lighten-3 {\n  background-color: #e6ee9c !important;\n  border-color: #e6ee9c !important;\n}\n\n.v-application .lime--text.text--lighten-3 {\n  color: #e6ee9c !important;\n  caret-color: #e6ee9c !important;\n}\n\n.v-application .lime.lighten-2 {\n  background-color: #dce775 !important;\n  border-color: #dce775 !important;\n}\n\n.v-application .lime--text.text--lighten-2 {\n  color: #dce775 !important;\n  caret-color: #dce775 !important;\n}\n\n.v-application .lime.lighten-1 {\n  background-color: #d4e157 !important;\n  border-color: #d4e157 !important;\n}\n\n.v-application .lime--text.text--lighten-1 {\n  color: #d4e157 !important;\n  caret-color: #d4e157 !important;\n}\n\n.v-application .lime.darken-1 {\n  background-color: #c0ca33 !important;\n  border-color: #c0ca33 !important;\n}\n\n.v-application .lime--text.text--darken-1 {\n  color: #c0ca33 !important;\n  caret-color: #c0ca33 !important;\n}\n\n.v-application .lime.darken-2 {\n  background-color: #afb42b !important;\n  border-color: #afb42b !important;\n}\n\n.v-application .lime--text.text--darken-2 {\n  color: #afb42b !important;\n  caret-color: #afb42b !important;\n}\n\n.v-application .lime.darken-3 {\n  background-color: #9e9d24 !important;\n  border-color: #9e9d24 !important;\n}\n\n.v-application .lime--text.text--darken-3 {\n  color: #9e9d24 !important;\n  caret-color: #9e9d24 !important;\n}\n\n.v-application .lime.darken-4 {\n  background-color: #827717 !important;\n  border-color: #827717 !important;\n}\n\n.v-application .lime--text.text--darken-4 {\n  color: #827717 !important;\n  caret-color: #827717 !important;\n}\n\n.v-application .lime.accent-1 {\n  background-color: #f4ff81 !important;\n  border-color: #f4ff81 !important;\n}\n\n.v-application .lime--text.text--accent-1 {\n  color: #f4ff81 !important;\n  caret-color: #f4ff81 !important;\n}\n\n.v-application .lime.accent-2 {\n  background-color: #eeff41 !important;\n  border-color: #eeff41 !important;\n}\n\n.v-application .lime--text.text--accent-2 {\n  color: #eeff41 !important;\n  caret-color: #eeff41 !important;\n}\n\n.v-application .lime.accent-3 {\n  background-color: #c6ff00 !important;\n  border-color: #c6ff00 !important;\n}\n\n.v-application .lime--text.text--accent-3 {\n  color: #c6ff00 !important;\n  caret-color: #c6ff00 !important;\n}\n\n.v-application .lime.accent-4 {\n  background-color: #aeea00 !important;\n  border-color: #aeea00 !important;\n}\n\n.v-application .lime--text.text--accent-4 {\n  color: #aeea00 !important;\n  caret-color: #aeea00 !important;\n}\n\n.v-application .yellow {\n  background-color: #ffeb3b !important;\n  border-color: #ffeb3b !important;\n}\n\n.v-application .yellow--text {\n  color: #ffeb3b !important;\n  caret-color: #ffeb3b !important;\n}\n\n.v-application .yellow.lighten-5 {\n  background-color: #fffde7 !important;\n  border-color: #fffde7 !important;\n}\n\n.v-application .yellow--text.text--lighten-5 {\n  color: #fffde7 !important;\n  caret-color: #fffde7 !important;\n}\n\n.v-application .yellow.lighten-4 {\n  background-color: #fff9c4 !important;\n  border-color: #fff9c4 !important;\n}\n\n.v-application .yellow--text.text--lighten-4 {\n  color: #fff9c4 !important;\n  caret-color: #fff9c4 !important;\n}\n\n.v-application .yellow.lighten-3 {\n  background-color: #fff59d !important;\n  border-color: #fff59d !important;\n}\n\n.v-application .yellow--text.text--lighten-3 {\n  color: #fff59d !important;\n  caret-color: #fff59d !important;\n}\n\n.v-application .yellow.lighten-2 {\n  background-color: #fff176 !important;\n  border-color: #fff176 !important;\n}\n\n.v-application .yellow--text.text--lighten-2 {\n  color: #fff176 !important;\n  caret-color: #fff176 !important;\n}\n\n.v-application .yellow.lighten-1 {\n  background-color: #ffee58 !important;\n  border-color: #ffee58 !important;\n}\n\n.v-application .yellow--text.text--lighten-1 {\n  color: #ffee58 !important;\n  caret-color: #ffee58 !important;\n}\n\n.v-application .yellow.darken-1 {\n  background-color: #fdd835 !important;\n  border-color: #fdd835 !important;\n}\n\n.v-application .yellow--text.text--darken-1 {\n  color: #fdd835 !important;\n  caret-color: #fdd835 !important;\n}\n\n.v-application .yellow.darken-2 {\n  background-color: #fbc02d !important;\n  border-color: #fbc02d !important;\n}\n\n.v-application .yellow--text.text--darken-2 {\n  color: #fbc02d !important;\n  caret-color: #fbc02d !important;\n}\n\n.v-application .yellow.darken-3 {\n  background-color: #f9a825 !important;\n  border-color: #f9a825 !important;\n}\n\n.v-application .yellow--text.text--darken-3 {\n  color: #f9a825 !important;\n  caret-color: #f9a825 !important;\n}\n\n.v-application .yellow.darken-4 {\n  background-color: #f57f17 !important;\n  border-color: #f57f17 !important;\n}\n\n.v-application .yellow--text.text--darken-4 {\n  color: #f57f17 !important;\n  caret-color: #f57f17 !important;\n}\n\n.v-application .yellow.accent-1 {\n  background-color: #ffff8d !important;\n  border-color: #ffff8d !important;\n}\n\n.v-application .yellow--text.text--accent-1 {\n  color: #ffff8d !important;\n  caret-color: #ffff8d !important;\n}\n\n.v-application .yellow.accent-2 {\n  background-color: #ffff00 !important;\n  border-color: #ffff00 !important;\n}\n\n.v-application .yellow--text.text--accent-2 {\n  color: #ffff00 !important;\n  caret-color: #ffff00 !important;\n}\n\n.v-application .yellow.accent-3 {\n  background-color: #ffea00 !important;\n  border-color: #ffea00 !important;\n}\n\n.v-application .yellow--text.text--accent-3 {\n  color: #ffea00 !important;\n  caret-color: #ffea00 !important;\n}\n\n.v-application .yellow.accent-4 {\n  background-color: #ffd600 !important;\n  border-color: #ffd600 !important;\n}\n\n.v-application .yellow--text.text--accent-4 {\n  color: #ffd600 !important;\n  caret-color: #ffd600 !important;\n}\n\n.v-application .amber {\n  background-color: #ffc107 !important;\n  border-color: #ffc107 !important;\n}\n\n.v-application .amber--text {\n  color: #ffc107 !important;\n  caret-color: #ffc107 !important;\n}\n\n.v-application .amber.lighten-5 {\n  background-color: #fff8e1 !important;\n  border-color: #fff8e1 !important;\n}\n\n.v-application .amber--text.text--lighten-5 {\n  color: #fff8e1 !important;\n  caret-color: #fff8e1 !important;\n}\n\n.v-application .amber.lighten-4 {\n  background-color: #ffecb3 !important;\n  border-color: #ffecb3 !important;\n}\n\n.v-application .amber--text.text--lighten-4 {\n  color: #ffecb3 !important;\n  caret-color: #ffecb3 !important;\n}\n\n.v-application .amber.lighten-3 {\n  background-color: #ffe082 !important;\n  border-color: #ffe082 !important;\n}\n\n.v-application .amber--text.text--lighten-3 {\n  color: #ffe082 !important;\n  caret-color: #ffe082 !important;\n}\n\n.v-application .amber.lighten-2 {\n  background-color: #ffd54f !important;\n  border-color: #ffd54f !important;\n}\n\n.v-application .amber--text.text--lighten-2 {\n  color: #ffd54f !important;\n  caret-color: #ffd54f !important;\n}\n\n.v-application .amber.lighten-1 {\n  background-color: #ffca28 !important;\n  border-color: #ffca28 !important;\n}\n\n.v-application .amber--text.text--lighten-1 {\n  color: #ffca28 !important;\n  caret-color: #ffca28 !important;\n}\n\n.v-application .amber.darken-1 {\n  background-color: #ffb300 !important;\n  border-color: #ffb300 !important;\n}\n\n.v-application .amber--text.text--darken-1 {\n  color: #ffb300 !important;\n  caret-color: #ffb300 !important;\n}\n\n.v-application .amber.darken-2 {\n  background-color: #ffa000 !important;\n  border-color: #ffa000 !important;\n}\n\n.v-application .amber--text.text--darken-2 {\n  color: #ffa000 !important;\n  caret-color: #ffa000 !important;\n}\n\n.v-application .amber.darken-3 {\n  background-color: #ff8f00 !important;\n  border-color: #ff8f00 !important;\n}\n\n.v-application .amber--text.text--darken-3 {\n  color: #ff8f00 !important;\n  caret-color: #ff8f00 !important;\n}\n\n.v-application .amber.darken-4 {\n  background-color: #ff6f00 !important;\n  border-color: #ff6f00 !important;\n}\n\n.v-application .amber--text.text--darken-4 {\n  color: #ff6f00 !important;\n  caret-color: #ff6f00 !important;\n}\n\n.v-application .amber.accent-1 {\n  background-color: #ffe57f !important;\n  border-color: #ffe57f !important;\n}\n\n.v-application .amber--text.text--accent-1 {\n  color: #ffe57f !important;\n  caret-color: #ffe57f !important;\n}\n\n.v-application .amber.accent-2 {\n  background-color: #ffd740 !important;\n  border-color: #ffd740 !important;\n}\n\n.v-application .amber--text.text--accent-2 {\n  color: #ffd740 !important;\n  caret-color: #ffd740 !important;\n}\n\n.v-application .amber.accent-3 {\n  background-color: #ffc400 !important;\n  border-color: #ffc400 !important;\n}\n\n.v-application .amber--text.text--accent-3 {\n  color: #ffc400 !important;\n  caret-color: #ffc400 !important;\n}\n\n.v-application .amber.accent-4 {\n  background-color: #ffab00 !important;\n  border-color: #ffab00 !important;\n}\n\n.v-application .amber--text.text--accent-4 {\n  color: #ffab00 !important;\n  caret-color: #ffab00 !important;\n}\n\n.v-application .orange {\n  background-color: #ff9800 !important;\n  border-color: #ff9800 !important;\n}\n\n.v-application .orange--text {\n  color: #ff9800 !important;\n  caret-color: #ff9800 !important;\n}\n\n.v-application .orange.lighten-5 {\n  background-color: #fff3e0 !important;\n  border-color: #fff3e0 !important;\n}\n\n.v-application .orange--text.text--lighten-5 {\n  color: #fff3e0 !important;\n  caret-color: #fff3e0 !important;\n}\n\n.v-application .orange.lighten-4 {\n  background-color: #ffe0b2 !important;\n  border-color: #ffe0b2 !important;\n}\n\n.v-application .orange--text.text--lighten-4 {\n  color: #ffe0b2 !important;\n  caret-color: #ffe0b2 !important;\n}\n\n.v-application .orange.lighten-3 {\n  background-color: #ffcc80 !important;\n  border-color: #ffcc80 !important;\n}\n\n.v-application .orange--text.text--lighten-3 {\n  color: #ffcc80 !important;\n  caret-color: #ffcc80 !important;\n}\n\n.v-application .orange.lighten-2 {\n  background-color: #ffb74d !important;\n  border-color: #ffb74d !important;\n}\n\n.v-application .orange--text.text--lighten-2 {\n  color: #ffb74d !important;\n  caret-color: #ffb74d !important;\n}\n\n.v-application .orange.lighten-1 {\n  background-color: #ffa726 !important;\n  border-color: #ffa726 !important;\n}\n\n.v-application .orange--text.text--lighten-1 {\n  color: #ffa726 !important;\n  caret-color: #ffa726 !important;\n}\n\n.v-application .orange.darken-1 {\n  background-color: #fb8c00 !important;\n  border-color: #fb8c00 !important;\n}\n\n.v-application .orange--text.text--darken-1 {\n  color: #fb8c00 !important;\n  caret-color: #fb8c00 !important;\n}\n\n.v-application .orange.darken-2 {\n  background-color: #f57c00 !important;\n  border-color: #f57c00 !important;\n}\n\n.v-application .orange--text.text--darken-2 {\n  color: #f57c00 !important;\n  caret-color: #f57c00 !important;\n}\n\n.v-application .orange.darken-3 {\n  background-color: #ef6c00 !important;\n  border-color: #ef6c00 !important;\n}\n\n.v-application .orange--text.text--darken-3 {\n  color: #ef6c00 !important;\n  caret-color: #ef6c00 !important;\n}\n\n.v-application .orange.darken-4 {\n  background-color: #e65100 !important;\n  border-color: #e65100 !important;\n}\n\n.v-application .orange--text.text--darken-4 {\n  color: #e65100 !important;\n  caret-color: #e65100 !important;\n}\n\n.v-application .orange.accent-1 {\n  background-color: #ffd180 !important;\n  border-color: #ffd180 !important;\n}\n\n.v-application .orange--text.text--accent-1 {\n  color: #ffd180 !important;\n  caret-color: #ffd180 !important;\n}\n\n.v-application .orange.accent-2 {\n  background-color: #ffab40 !important;\n  border-color: #ffab40 !important;\n}\n\n.v-application .orange--text.text--accent-2 {\n  color: #ffab40 !important;\n  caret-color: #ffab40 !important;\n}\n\n.v-application .orange.accent-3 {\n  background-color: #ff9100 !important;\n  border-color: #ff9100 !important;\n}\n\n.v-application .orange--text.text--accent-3 {\n  color: #ff9100 !important;\n  caret-color: #ff9100 !important;\n}\n\n.v-application .orange.accent-4 {\n  background-color: #ff6d00 !important;\n  border-color: #ff6d00 !important;\n}\n\n.v-application .orange--text.text--accent-4 {\n  color: #ff6d00 !important;\n  caret-color: #ff6d00 !important;\n}\n\n.v-application .deep-orange {\n  background-color: #ff5722 !important;\n  border-color: #ff5722 !important;\n}\n\n.v-application .deep-orange--text {\n  color: #ff5722 !important;\n  caret-color: #ff5722 !important;\n}\n\n.v-application .deep-orange.lighten-5 {\n  background-color: #fbe9e7 !important;\n  border-color: #fbe9e7 !important;\n}\n\n.v-application .deep-orange--text.text--lighten-5 {\n  color: #fbe9e7 !important;\n  caret-color: #fbe9e7 !important;\n}\n\n.v-application .deep-orange.lighten-4 {\n  background-color: #ffccbc !important;\n  border-color: #ffccbc !important;\n}\n\n.v-application .deep-orange--text.text--lighten-4 {\n  color: #ffccbc !important;\n  caret-color: #ffccbc !important;\n}\n\n.v-application .deep-orange.lighten-3 {\n  background-color: #ffab91 !important;\n  border-color: #ffab91 !important;\n}\n\n.v-application .deep-orange--text.text--lighten-3 {\n  color: #ffab91 !important;\n  caret-color: #ffab91 !important;\n}\n\n.v-application .deep-orange.lighten-2 {\n  background-color: #ff8a65 !important;\n  border-color: #ff8a65 !important;\n}\n\n.v-application .deep-orange--text.text--lighten-2 {\n  color: #ff8a65 !important;\n  caret-color: #ff8a65 !important;\n}\n\n.v-application .deep-orange.lighten-1 {\n  background-color: #ff7043 !important;\n  border-color: #ff7043 !important;\n}\n\n.v-application .deep-orange--text.text--lighten-1 {\n  color: #ff7043 !important;\n  caret-color: #ff7043 !important;\n}\n\n.v-application .deep-orange.darken-1 {\n  background-color: #f4511e !important;\n  border-color: #f4511e !important;\n}\n\n.v-application .deep-orange--text.text--darken-1 {\n  color: #f4511e !important;\n  caret-color: #f4511e !important;\n}\n\n.v-application .deep-orange.darken-2 {\n  background-color: #e64a19 !important;\n  border-color: #e64a19 !important;\n}\n\n.v-application .deep-orange--text.text--darken-2 {\n  color: #e64a19 !important;\n  caret-color: #e64a19 !important;\n}\n\n.v-application .deep-orange.darken-3 {\n  background-color: #d84315 !important;\n  border-color: #d84315 !important;\n}\n\n.v-application .deep-orange--text.text--darken-3 {\n  color: #d84315 !important;\n  caret-color: #d84315 !important;\n}\n\n.v-application .deep-orange.darken-4 {\n  background-color: #bf360c !important;\n  border-color: #bf360c !important;\n}\n\n.v-application .deep-orange--text.text--darken-4 {\n  color: #bf360c !important;\n  caret-color: #bf360c !important;\n}\n\n.v-application .deep-orange.accent-1 {\n  background-color: #ff9e80 !important;\n  border-color: #ff9e80 !important;\n}\n\n.v-application .deep-orange--text.text--accent-1 {\n  color: #ff9e80 !important;\n  caret-color: #ff9e80 !important;\n}\n\n.v-application .deep-orange.accent-2 {\n  background-color: #ff6e40 !important;\n  border-color: #ff6e40 !important;\n}\n\n.v-application .deep-orange--text.text--accent-2 {\n  color: #ff6e40 !important;\n  caret-color: #ff6e40 !important;\n}\n\n.v-application .deep-orange.accent-3 {\n  background-color: #ff3d00 !important;\n  border-color: #ff3d00 !important;\n}\n\n.v-application .deep-orange--text.text--accent-3 {\n  color: #ff3d00 !important;\n  caret-color: #ff3d00 !important;\n}\n\n.v-application .deep-orange.accent-4 {\n  background-color: #dd2c00 !important;\n  border-color: #dd2c00 !important;\n}\n\n.v-application .deep-orange--text.text--accent-4 {\n  color: #dd2c00 !important;\n  caret-color: #dd2c00 !important;\n}\n\n.v-application .brown {\n  background-color: #795548 !important;\n  border-color: #795548 !important;\n}\n\n.v-application .brown--text {\n  color: #795548 !important;\n  caret-color: #795548 !important;\n}\n\n.v-application .brown.lighten-5 {\n  background-color: #efebe9 !important;\n  border-color: #efebe9 !important;\n}\n\n.v-application .brown--text.text--lighten-5 {\n  color: #efebe9 !important;\n  caret-color: #efebe9 !important;\n}\n\n.v-application .brown.lighten-4 {\n  background-color: #d7ccc8 !important;\n  border-color: #d7ccc8 !important;\n}\n\n.v-application .brown--text.text--lighten-4 {\n  color: #d7ccc8 !important;\n  caret-color: #d7ccc8 !important;\n}\n\n.v-application .brown.lighten-3 {\n  background-color: #bcaaa4 !important;\n  border-color: #bcaaa4 !important;\n}\n\n.v-application .brown--text.text--lighten-3 {\n  color: #bcaaa4 !important;\n  caret-color: #bcaaa4 !important;\n}\n\n.v-application .brown.lighten-2 {\n  background-color: #a1887f !important;\n  border-color: #a1887f !important;\n}\n\n.v-application .brown--text.text--lighten-2 {\n  color: #a1887f !important;\n  caret-color: #a1887f !important;\n}\n\n.v-application .brown.lighten-1 {\n  background-color: #8d6e63 !important;\n  border-color: #8d6e63 !important;\n}\n\n.v-application .brown--text.text--lighten-1 {\n  color: #8d6e63 !important;\n  caret-color: #8d6e63 !important;\n}\n\n.v-application .brown.darken-1 {\n  background-color: #6d4c41 !important;\n  border-color: #6d4c41 !important;\n}\n\n.v-application .brown--text.text--darken-1 {\n  color: #6d4c41 !important;\n  caret-color: #6d4c41 !important;\n}\n\n.v-application .brown.darken-2 {\n  background-color: #5d4037 !important;\n  border-color: #5d4037 !important;\n}\n\n.v-application .brown--text.text--darken-2 {\n  color: #5d4037 !important;\n  caret-color: #5d4037 !important;\n}\n\n.v-application .brown.darken-3 {\n  background-color: #4e342e !important;\n  border-color: #4e342e !important;\n}\n\n.v-application .brown--text.text--darken-3 {\n  color: #4e342e !important;\n  caret-color: #4e342e !important;\n}\n\n.v-application .brown.darken-4 {\n  background-color: #3e2723 !important;\n  border-color: #3e2723 !important;\n}\n\n.v-application .brown--text.text--darken-4 {\n  color: #3e2723 !important;\n  caret-color: #3e2723 !important;\n}\n\n.v-application .blue-grey {\n  background-color: #607d8b !important;\n  border-color: #607d8b !important;\n}\n\n.v-application .blue-grey--text {\n  color: #607d8b !important;\n  caret-color: #607d8b !important;\n}\n\n.v-application .blue-grey.lighten-5 {\n  background-color: #eceff1 !important;\n  border-color: #eceff1 !important;\n}\n\n.v-application .blue-grey--text.text--lighten-5 {\n  color: #eceff1 !important;\n  caret-color: #eceff1 !important;\n}\n\n.v-application .blue-grey.lighten-4 {\n  background-color: #cfd8dc !important;\n  border-color: #cfd8dc !important;\n}\n\n.v-application .blue-grey--text.text--lighten-4 {\n  color: #cfd8dc !important;\n  caret-color: #cfd8dc !important;\n}\n\n.v-application .blue-grey.lighten-3 {\n  background-color: #b0bec5 !important;\n  border-color: #b0bec5 !important;\n}\n\n.v-application .blue-grey--text.text--lighten-3 {\n  color: #b0bec5 !important;\n  caret-color: #b0bec5 !important;\n}\n\n.v-application .blue-grey.lighten-2 {\n  background-color: #90a4ae !important;\n  border-color: #90a4ae !important;\n}\n\n.v-application .blue-grey--text.text--lighten-2 {\n  color: #90a4ae !important;\n  caret-color: #90a4ae !important;\n}\n\n.v-application .blue-grey.lighten-1 {\n  background-color: #78909c !important;\n  border-color: #78909c !important;\n}\n\n.v-application .blue-grey--text.text--lighten-1 {\n  color: #78909c !important;\n  caret-color: #78909c !important;\n}\n\n.v-application .blue-grey.darken-1 {\n  background-color: #546e7a !important;\n  border-color: #546e7a !important;\n}\n\n.v-application .blue-grey--text.text--darken-1 {\n  color: #546e7a !important;\n  caret-color: #546e7a !important;\n}\n\n.v-application .blue-grey.darken-2 {\n  background-color: #455a64 !important;\n  border-color: #455a64 !important;\n}\n\n.v-application .blue-grey--text.text--darken-2 {\n  color: #455a64 !important;\n  caret-color: #455a64 !important;\n}\n\n.v-application .blue-grey.darken-3 {\n  background-color: #37474f !important;\n  border-color: #37474f !important;\n}\n\n.v-application .blue-grey--text.text--darken-3 {\n  color: #37474f !important;\n  caret-color: #37474f !important;\n}\n\n.v-application .blue-grey.darken-4 {\n  background-color: #263238 !important;\n  border-color: #263238 !important;\n}\n\n.v-application .blue-grey--text.text--darken-4 {\n  color: #263238 !important;\n  caret-color: #263238 !important;\n}\n\n.v-application .grey {\n  background-color: #9e9e9e !important;\n  border-color: #9e9e9e !important;\n}\n\n.v-application .grey--text {\n  color: #9e9e9e !important;\n  caret-color: #9e9e9e !important;\n}\n\n.v-application .grey.lighten-5 {\n  background-color: #fafafa !important;\n  border-color: #fafafa !important;\n}\n\n.v-application .grey--text.text--lighten-5 {\n  color: #fafafa !important;\n  caret-color: #fafafa !important;\n}\n\n.v-application .grey.lighten-4 {\n  background-color: #f5f5f5 !important;\n  border-color: #f5f5f5 !important;\n}\n\n.v-application .grey--text.text--lighten-4 {\n  color: #f5f5f5 !important;\n  caret-color: #f5f5f5 !important;\n}\n\n.v-application .grey.lighten-3 {\n  background-color: #eeeeee !important;\n  border-color: #eeeeee !important;\n}\n\n.v-application .grey--text.text--lighten-3 {\n  color: #eeeeee !important;\n  caret-color: #eeeeee !important;\n}\n\n.v-application .grey.lighten-2 {\n  background-color: #e0e0e0 !important;\n  border-color: #e0e0e0 !important;\n}\n\n.v-application .grey--text.text--lighten-2 {\n  color: #e0e0e0 !important;\n  caret-color: #e0e0e0 !important;\n}\n\n.v-application .grey.lighten-1 {\n  background-color: #bdbdbd !important;\n  border-color: #bdbdbd !important;\n}\n\n.v-application .grey--text.text--lighten-1 {\n  color: #bdbdbd !important;\n  caret-color: #bdbdbd !important;\n}\n\n.v-application .grey.darken-1 {\n  background-color: #757575 !important;\n  border-color: #757575 !important;\n}\n\n.v-application .grey--text.text--darken-1 {\n  color: #757575 !important;\n  caret-color: #757575 !important;\n}\n\n.v-application .grey.darken-2 {\n  background-color: #616161 !important;\n  border-color: #616161 !important;\n}\n\n.v-application .grey--text.text--darken-2 {\n  color: #616161 !important;\n  caret-color: #616161 !important;\n}\n\n.v-application .grey.darken-3 {\n  background-color: #424242 !important;\n  border-color: #424242 !important;\n}\n\n.v-application .grey--text.text--darken-3 {\n  color: #424242 !important;\n  caret-color: #424242 !important;\n}\n\n.v-application .grey.darken-4 {\n  background-color: #212121 !important;\n  border-color: #212121 !important;\n}\n\n.v-application .grey--text.text--darken-4 {\n  color: #212121 !important;\n  caret-color: #212121 !important;\n}\n\n.v-application .shades.black {\n  background-color: #000000 !important;\n  border-color: #000000 !important;\n}\n\n.v-application .shades--text.text--black {\n  color: #000000 !important;\n  caret-color: #000000 !important;\n}\n\n.v-application .shades.white {\n  background-color: #FFFFFF !important;\n  border-color: #FFFFFF !important;\n}\n\n.v-application .shades--text.text--white {\n  color: #FFFFFF !important;\n  caret-color: #FFFFFF !important;\n}\n\n.v-application .shades.transparent {\n  background-color: transparent !important;\n  border-color: transparent !important;\n}\n\n.v-application .shades--text.text--transparent {\n  color: transparent !important;\n  caret-color: transparent !important;\n}\n\n/*!\n * ress.css • v2.0.4\n * MIT License\n * github.com/filipelinhares/ress\n */\n/* # =================================================================\n   # Global selectors\n   # ================================================================= */\nhtml {\n  box-sizing: border-box;\n  overflow-y: scroll; /* All browsers without overlaying scrollbars */\n  -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS */\n  word-break: normal;\n  -moz-tab-size: 4;\n  -o-tab-size: 4;\n     tab-size: 4;\n}\n\n*,\n::before,\n::after {\n  background-repeat: no-repeat; /* Set `background-repeat: no-repeat` to all elements and pseudo elements */\n  box-sizing: inherit;\n}\n\n::before,\n::after {\n  text-decoration: inherit; /* Inherit text-decoration and vertical align to ::before and ::after pseudo elements */\n  vertical-align: inherit;\n}\n\n* {\n  padding: 0; /* Reset `padding` and `margin` of all elements */\n  margin: 0;\n}\n\n/* # =================================================================\n   # General elements\n   # ================================================================= */\nhr {\n  overflow: visible; /* Show the overflow in Edge and IE */\n  height: 0; /* Add the correct box sizing in Firefox */\n}\n\ndetails,\nmain {\n  display: block; /* Render the `main` element consistently in IE. */\n}\n\nsummary {\n  display: list-item; /* Add the correct display in all browsers */\n}\n\nsmall {\n  font-size: 80%; /* Set font-size to 80% in `small` elements */\n}\n\n[hidden] {\n  display: none; /* Add the correct display in IE */\n}\n\nabbr[title] {\n  border-bottom: none; /* Remove the bottom border in Chrome 57 */\n  /* Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari */\n  text-decoration: underline;\n  -webkit-text-decoration: underline dotted;\n          text-decoration: underline dotted;\n}\n\na {\n  background-color: transparent; /* Remove the gray background on active links in IE 10 */\n}\n\na:active,\na:hover {\n  outline-width: 0; /* Remove the outline when hovering in all browsers */\n}\n\ncode,\nkbd,\npre,\nsamp {\n  font-family: monospace, monospace; /* Specify the font family of code elements */\n}\n\npre {\n  font-size: 1em; /* Correct the odd `em` font sizing in all browsers */\n}\n\nb,\nstrong {\n  font-weight: bolder; /* Add the correct font weight in Chrome, Edge, and Safari */\n}\n\n/* https://gist.github.com/unruthless/413930 */\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\n\nsub {\n  bottom: -0.25em;\n}\n\nsup {\n  top: -0.5em;\n}\n\n/* # =================================================================\n   # Forms\n   # ================================================================= */\ninput {\n  border-radius: 0;\n}\n\n/* Replace pointer cursor in disabled elements */\n[disabled] {\n  cursor: default;\n}\n\n[type=number]::-webkit-inner-spin-button,\n[type=number]::-webkit-outer-spin-button {\n  height: auto; /* Correct the cursor style of increment and decrement buttons in Chrome */\n}\n\n[type=search] {\n  -webkit-appearance: textfield; /* Correct the odd appearance in Chrome and Safari */\n  outline-offset: -2px; /* Correct the outline style in Safari */\n}\n\n[type=search]::-webkit-search-cancel-button,\n[type=search]::-webkit-search-decoration {\n  -webkit-appearance: none; /* Remove the inner padding in Chrome and Safari on macOS */\n}\n\ntextarea {\n  overflow: auto; /* Internet Explorer 11+ */\n  resize: vertical; /* Specify textarea resizability */\n}\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font: inherit; /* Specify font inheritance of form elements */\n}\n\noptgroup {\n  font-weight: bold; /* Restore the font weight unset by the previous rule */\n}\n\nbutton {\n  overflow: visible; /* Address `overflow` set to `hidden` in IE 8/9/10/11 */\n}\n\nbutton,\nselect {\n  text-transform: none; /* Firefox 40+, Internet Explorer 11- */\n}\n\n/* Apply cursor pointer to button elements */\nbutton,\n[type=button],\n[type=reset],\n[type=submit],\n[role=button] {\n  cursor: pointer;\n  color: inherit;\n}\n\n/* Remove inner padding and border in Firefox 4+ */\nbutton::-moz-focus-inner,\n[type=button]::-moz-focus-inner,\n[type=reset]::-moz-focus-inner,\n[type=submit]::-moz-focus-inner {\n  border-style: none;\n  padding: 0;\n}\n\n/* Replace focus style removed in the border reset above */\nbutton:-moz-focusring,\n[type=button]::-moz-focus-inner,\n[type=reset]::-moz-focus-inner,\n[type=submit]::-moz-focus-inner {\n  outline: 1px dotted ButtonText;\n}\n\nbutton,\nhtml [type=button],\n[type=reset],\n[type=submit] {\n  -webkit-appearance: button; /* Correct the inability to style clickable types in iOS */\n}\n\n/* Remove the default button styling in all browsers */\nbutton,\ninput,\nselect,\ntextarea {\n  background-color: transparent;\n  border-style: none;\n}\n\n/* Style select like a standard input */\nselect {\n  -moz-appearance: none; /* Firefox 36+ */\n  -webkit-appearance: none; /* Chrome 41+ */\n}\n\nselect::-ms-expand {\n  display: none; /* Internet Explorer 11+ */\n}\n\nselect::-ms-value {\n  color: currentColor; /* Internet Explorer 11+ */\n}\n\nlegend {\n  border: 0; /* Correct `color` not being inherited in IE 8/9/10/11 */\n  color: inherit; /* Correct the color inheritance from `fieldset` elements in IE */\n  display: table; /* Correct the text wrapping in Edge and IE */\n  max-width: 100%; /* Correct the text wrapping in Edge and IE */\n  white-space: normal; /* Correct the text wrapping in Edge and IE */\n  max-width: 100%; /* Correct the text wrapping in Edge 18- and IE */\n}\n\n::-webkit-file-upload-button {\n  /* Correct the inability to style clickable types in iOS and Safari */\n  -webkit-appearance: button;\n  color: inherit;\n  font: inherit; /* Change font properties to `inherit` in Chrome and Safari */\n}\n\n/* # =================================================================\n   # Specify media element style\n   # ================================================================= */\nimg {\n  border-style: none; /* Remove border when inside `a` element in IE 8/9/10 */\n}\n\n/* Add the correct vertical alignment in Chrome, Firefox, and Opera */\nprogress {\n  vertical-align: baseline;\n}\n\n/* # =================================================================\n   # Accessibility\n   # ================================================================= */\n/* Hide content from screens but not screenreaders */\n@media screen {\n  [hidden~=screen] {\n    display: inherit;\n  }\n  [hidden~=screen]:not(:active):not(:focus):not(:target) {\n    position: absolute !important;\n    clip: rect(0 0 0 0) !important;\n  }\n}\n/* Specify the progress cursor of updating elements */\n[aria-busy=true] {\n  cursor: progress;\n}\n\n/* Specify the pointer cursor of trigger elements */\n[aria-controls] {\n  cursor: pointer;\n}\n\n/* Specify the unstyled cursor of disabled, not-editable, or otherwise inoperable elements */\n[aria-disabled=true] {\n  cursor: default;\n}\n\n.v-application .elevation-24 {\n  box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12) !important;\n}\n\n.v-application .elevation-23 {\n  box-shadow: 0px 11px 14px -7px rgba(0, 0, 0, 0.2), 0px 23px 36px 3px rgba(0, 0, 0, 0.14), 0px 9px 44px 8px rgba(0, 0, 0, 0.12) !important;\n}\n\n.v-application .elevation-22 {\n  box-shadow: 0px 10px 14px -6px rgba(0, 0, 0, 0.2), 0px 22px 35px 3px rgba(0, 0, 0, 0.14), 0px 8px 42px 7px rgba(0, 0, 0, 0.12) !important;\n}\n\n.v-application .elevation-21 {\n  box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.2), 0px 21px 33px 3px rgba(0, 0, 0, 0.14), 0px 8px 40px 7px rgba(0, 0, 0, 0.12) !important;\n}\n\n.v-application .elevation-20 {\n  box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.2), 0px 20px 31px 3px rgba(0, 0, 0, 0.14), 0px 8px 38px 7px rgba(0, 0, 0, 0.12) !important;\n}\n\n.v-application .elevation-19 {\n  box-shadow: 0px 9px 12px -6px rgba(0, 0, 0, 0.2), 0px 19px 29px 2px rgba(0, 0, 0, 0.14), 0px 7px 36px 6px rgba(0, 0, 0, 0.12) !important;\n}\n\n.v-application .elevation-18 {\n  box-shadow: 0px 9px 11px -5px rgba(0, 0, 0, 0.2), 0px 18px 28px 2px rgba(0, 0, 0, 0.14), 0px 7px 34px 6px rgba(0, 0, 0, 0.12) !important;\n}\n\n.v-application .elevation-17 {\n  box-shadow: 0px 8px 11px -5px rgba(0, 0, 0, 0.2), 0px 17px 26px 2px rgba(0, 0, 0, 0.14), 0px 6px 32px 5px rgba(0, 0, 0, 0.12) !important;\n}\n\n.v-application .elevation-16 {\n  box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12) !important;\n}\n\n.v-application .elevation-15 {\n  box-shadow: 0px 8px 9px -5px rgba(0, 0, 0, 0.2), 0px 15px 22px 2px rgba(0, 0, 0, 0.14), 0px 6px 28px 5px rgba(0, 0, 0, 0.12) !important;\n}\n\n.v-application .elevation-14 {\n  box-shadow: 0px 7px 9px -4px rgba(0, 0, 0, 0.2), 0px 14px 21px 2px rgba(0, 0, 0, 0.14), 0px 5px 26px 4px rgba(0, 0, 0, 0.12) !important;\n}\n\n.v-application .elevation-13 {\n  box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 13px 19px 2px rgba(0, 0, 0, 0.14), 0px 5px 24px 4px rgba(0, 0, 0, 0.12) !important;\n}\n\n.v-application .elevation-12 {\n  box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 12px 17px 2px rgba(0, 0, 0, 0.14), 0px 5px 22px 4px rgba(0, 0, 0, 0.12) !important;\n}\n\n.v-application .elevation-11 {\n  box-shadow: 0px 6px 7px -4px rgba(0, 0, 0, 0.2), 0px 11px 15px 1px rgba(0, 0, 0, 0.14), 0px 4px 20px 3px rgba(0, 0, 0, 0.12) !important;\n}\n\n.v-application .elevation-10 {\n  box-shadow: 0px 6px 6px -3px rgba(0, 0, 0, 0.2), 0px 10px 14px 1px rgba(0, 0, 0, 0.14), 0px 4px 18px 3px rgba(0, 0, 0, 0.12) !important;\n}\n\n.v-application .elevation-9 {\n  box-shadow: 0px 5px 6px -3px rgba(0, 0, 0, 0.2), 0px 9px 12px 1px rgba(0, 0, 0, 0.14), 0px 3px 16px 2px rgba(0, 0, 0, 0.12) !important;\n}\n\n.v-application .elevation-8 {\n  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12) !important;\n}\n\n.v-application .elevation-7 {\n  box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.2), 0px 7px 10px 1px rgba(0, 0, 0, 0.14), 0px 2px 16px 1px rgba(0, 0, 0, 0.12) !important;\n}\n\n.v-application .elevation-6 {\n  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12) !important;\n}\n\n.v-application .elevation-5 {\n  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12) !important;\n}\n\n.v-application .elevation-4 {\n  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12) !important;\n}\n\n.v-application .elevation-3 {\n  box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12) !important;\n}\n\n.v-application .elevation-2 {\n  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12) !important;\n}\n\n.v-application .elevation-1 {\n  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12) !important;\n}\n\n.v-application .elevation-0 {\n  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12) !important;\n}\n\n.carousel-transition-enter {\n  transform: translate(100%, 0);\n}\n.carousel-transition-leave, .carousel-transition-leave-to {\n  position: absolute;\n  top: 0;\n  transform: translate(-100%, 0);\n}\n\n.carousel-reverse-transition-enter {\n  transform: translate(-100%, 0);\n}\n.carousel-reverse-transition-leave, .carousel-reverse-transition-leave-to {\n  position: absolute;\n  top: 0;\n  transform: translate(100%, 0);\n}\n\n.dialog-transition-enter-active, .dialog-transition-leave-active {\n  pointer-events: none !important;\n}\n.dialog-transition-enter, .dialog-transition-leave-to {\n  transform: scale(0.5);\n  opacity: 0;\n}\n.dialog-transition-enter-to, .dialog-transition-leave {\n  opacity: 1;\n}\n\n.dialog-bottom-transition-enter, .dialog-bottom-transition-leave-to {\n  transform: translateY(100%);\n}\n\n.dialog-top-transition-enter, .dialog-top-transition-leave-to {\n  transform: translateY(-100%);\n}\n\n.picker-transition-enter-active, .picker-transition-leave-active,\n.picker-reverse-transition-enter-active,\n.picker-reverse-transition-leave-active {\n  transition: 0.3s cubic-bezier(0, 0, 0.2, 1);\n}\n.picker-transition-enter, .picker-transition-leave-to,\n.picker-reverse-transition-enter,\n.picker-reverse-transition-leave-to {\n  opacity: 0;\n}\n.picker-transition-leave, .picker-transition-leave-active, .picker-transition-leave-to,\n.picker-reverse-transition-leave,\n.picker-reverse-transition-leave-active,\n.picker-reverse-transition-leave-to {\n  position: absolute !important;\n}\n\n.picker-transition-enter {\n  transform: translate(0, 100%);\n}\n.picker-transition-leave-to {\n  transform: translate(0, -100%);\n}\n\n.picker-reverse-transition-enter {\n  transform: translate(0, -100%);\n}\n.picker-reverse-transition-leave-to {\n  transform: translate(0, 100%);\n}\n\n.picker-title-transition-enter-to, .picker-title-transition-leave {\n  transform: translate(0, 0);\n}\n.picker-title-transition-enter {\n  transform: translate(-100%, 0);\n}\n.picker-title-transition-leave-to {\n  opacity: 0;\n  transform: translate(100%, 0);\n}\n.picker-title-transition-leave, .picker-title-transition-leave-to, .picker-title-transition-leave-active {\n  position: absolute !important;\n}\n\n.tab-transition-enter {\n  transform: translate(100%, 0);\n}\n.tab-transition-leave, .tab-transition-leave-active {\n  position: absolute;\n  top: 0;\n}\n.tab-transition-leave-to {\n  position: absolute;\n  transform: translate(-100%, 0);\n}\n\n.tab-reverse-transition-enter {\n  transform: translate(-100%, 0);\n}\n.tab-reverse-transition-leave, .tab-reverse-transition-leave-to {\n  top: 0;\n  position: absolute;\n  transform: translate(100%, 0);\n}\n\n.expand-transition-enter-active, .expand-transition-leave-active {\n  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1) !important;\n}\n.expand-transition-move {\n  transition: transform 0.6s;\n}\n\n.expand-x-transition-enter-active, .expand-x-transition-leave-active {\n  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1) !important;\n}\n.expand-x-transition-move {\n  transition: transform 0.6s;\n}\n\n.scale-transition-enter-active, .scale-transition-leave-active {\n  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1) !important;\n}\n.scale-transition-move {\n  transition: transform 0.6s;\n}\n.scale-transition-enter, .scale-transition-leave, .scale-transition-leave-to {\n  opacity: 0;\n  transform: scale(0);\n}\n\n.scale-rotate-transition-enter-active, .scale-rotate-transition-leave-active {\n  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1) !important;\n}\n.scale-rotate-transition-move {\n  transition: transform 0.6s;\n}\n.scale-rotate-transition-enter, .scale-rotate-transition-leave, .scale-rotate-transition-leave-to {\n  opacity: 0;\n  transform: scale(0) rotate(-45deg);\n}\n\n.scale-rotate-reverse-transition-enter-active, .scale-rotate-reverse-transition-leave-active {\n  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1) !important;\n}\n.scale-rotate-reverse-transition-move {\n  transition: transform 0.6s;\n}\n.scale-rotate-reverse-transition-enter, .scale-rotate-reverse-transition-leave, .scale-rotate-reverse-transition-leave-to {\n  opacity: 0;\n  transform: scale(0) rotate(45deg);\n}\n\n.message-transition-enter-active, .message-transition-leave-active {\n  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1) !important;\n}\n.message-transition-move {\n  transition: transform 0.6s;\n}\n.message-transition-enter, .message-transition-leave-to {\n  opacity: 0;\n  transform: translateY(-15px);\n}\n.message-transition-leave, .message-transition-leave-active {\n  position: absolute;\n}\n\n.slide-y-transition-enter-active, .slide-y-transition-leave-active {\n  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1) !important;\n}\n.slide-y-transition-move {\n  transition: transform 0.6s;\n}\n.slide-y-transition-enter, .slide-y-transition-leave-to {\n  opacity: 0;\n  transform: translateY(-15px);\n}\n\n.slide-y-reverse-transition-enter-active, .slide-y-reverse-transition-leave-active {\n  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1) !important;\n}\n.slide-y-reverse-transition-move {\n  transition: transform 0.6s;\n}\n.slide-y-reverse-transition-enter, .slide-y-reverse-transition-leave-to {\n  opacity: 0;\n  transform: translateY(15px);\n}\n\n.scroll-y-transition-enter-active, .scroll-y-transition-leave-active {\n  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1) !important;\n}\n.scroll-y-transition-move {\n  transition: transform 0.6s;\n}\n.scroll-y-transition-enter, .scroll-y-transition-leave-to {\n  opacity: 0;\n}\n.scroll-y-transition-enter {\n  transform: translateY(-15px);\n}\n.scroll-y-transition-leave-to {\n  transform: translateY(15px);\n}\n\n.scroll-y-reverse-transition-enter-active, .scroll-y-reverse-transition-leave-active {\n  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1) !important;\n}\n.scroll-y-reverse-transition-move {\n  transition: transform 0.6s;\n}\n.scroll-y-reverse-transition-enter, .scroll-y-reverse-transition-leave-to {\n  opacity: 0;\n}\n.scroll-y-reverse-transition-enter {\n  transform: translateY(15px);\n}\n.scroll-y-reverse-transition-leave-to {\n  transform: translateY(-15px);\n}\n\n.scroll-x-transition-enter-active, .scroll-x-transition-leave-active {\n  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1) !important;\n}\n.scroll-x-transition-move {\n  transition: transform 0.6s;\n}\n.scroll-x-transition-enter, .scroll-x-transition-leave-to {\n  opacity: 0;\n}\n.scroll-x-transition-enter {\n  transform: translateX(-15px);\n}\n.scroll-x-transition-leave-to {\n  transform: translateX(15px);\n}\n\n.scroll-x-reverse-transition-enter-active, .scroll-x-reverse-transition-leave-active {\n  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1) !important;\n}\n.scroll-x-reverse-transition-move {\n  transition: transform 0.6s;\n}\n.scroll-x-reverse-transition-enter, .scroll-x-reverse-transition-leave-to {\n  opacity: 0;\n}\n.scroll-x-reverse-transition-enter {\n  transform: translateX(15px);\n}\n.scroll-x-reverse-transition-leave-to {\n  transform: translateX(-15px);\n}\n\n.slide-x-transition-enter-active, .slide-x-transition-leave-active {\n  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1) !important;\n}\n.slide-x-transition-move {\n  transition: transform 0.6s;\n}\n.slide-x-transition-enter, .slide-x-transition-leave-to {\n  opacity: 0;\n  transform: translateX(-15px);\n}\n\n.slide-x-reverse-transition-enter-active, .slide-x-reverse-transition-leave-active {\n  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1) !important;\n}\n.slide-x-reverse-transition-move {\n  transition: transform 0.6s;\n}\n.slide-x-reverse-transition-enter, .slide-x-reverse-transition-leave-to {\n  opacity: 0;\n  transform: translateX(15px);\n}\n\n.fade-transition-enter-active, .fade-transition-leave-active {\n  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1) !important;\n}\n.fade-transition-move {\n  transition: transform 0.6s;\n}\n.fade-transition-enter, .fade-transition-leave-to {\n  opacity: 0 !important;\n}\n\n.fab-transition-enter-active, .fab-transition-leave-active {\n  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1) !important;\n}\n.fab-transition-move {\n  transition: transform 0.6s;\n}\n.fab-transition-enter, .fab-transition-leave-to {\n  transform: scale(0) rotate(-45deg);\n}\n\n.v-application .blockquote {\n  padding: 16px 0 16px 24px;\n  font-size: 18px;\n  font-weight: 300;\n}\n\n.v-application code, .v-application kbd {\n  border-radius: 3px;\n  font-size: 85%;\n  font-weight: normal;\n}\n.v-application code {\n  padding: 0.2em 0.4em;\n}\n.v-application kbd {\n  padding: 0.2em 0.4rem;\n  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);\n}\n\n.theme--light.v-application code {\n  background-color: rgba(0, 0, 0, 0.05);\n  color: currentColor;\n}\n.theme--light.v-application kbd {\n  background: #212529;\n  color: #FFFFFF;\n}\n\n.theme--dark.v-application code {\n  background-color: rgba(255, 255, 255, 0.1);\n  color: currentColor;\n}\n.theme--dark.v-application kbd {\n  background: #212529;\n  color: #FFFFFF;\n}\n\nhtml {\n  font-size: 16px;\n  overflow-x: hidden;\n  text-rendering: optimizeLegibility;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n}\n\nhtml.overflow-y-hidden {\n  overflow-y: hidden !important;\n}\n\n.v-application {\n  font-family: \"Roboto\", sans-serif;\n  line-height: 1.5;\n}\n.v-application ::-ms-clear,\n.v-application ::-ms-reveal {\n  display: none;\n}\n\n@supports (-webkit-touch-callout: none) {\n  body {\n    cursor: pointer;\n  }\n}\n.v-application .theme--light.heading {\n  color: rgba(0, 0, 0, 0.87);\n}\n\n.v-application .theme--dark.heading {\n  color: #FFFFFF;\n}\n\n.v-application ul, .v-application ol {\n  padding-left: 24px;\n}\n\n.v-application .display-4 {\n  font-size: 6rem !important;\n  font-weight: 300;\n  line-height: 6rem;\n  letter-spacing: -0.015625em !important;\n  font-family: \"Roboto\", sans-serif !important;\n}\n.v-application .display-3 {\n  font-size: 3.75rem !important;\n  font-weight: 300;\n  line-height: 3.75rem;\n  letter-spacing: -0.0083333333em !important;\n  font-family: \"Roboto\", sans-serif !important;\n}\n.v-application .display-2 {\n  font-size: 3rem !important;\n  font-weight: 400;\n  line-height: 3.125rem;\n  letter-spacing: normal !important;\n  font-family: \"Roboto\", sans-serif !important;\n}\n.v-application .display-1 {\n  font-size: 2.125rem !important;\n  font-weight: 400;\n  line-height: 2.5rem;\n  letter-spacing: 0.0073529412em !important;\n  font-family: \"Roboto\", sans-serif !important;\n}\n.v-application .headline {\n  font-size: 1.5rem !important;\n  font-weight: 400;\n  line-height: 2rem;\n  letter-spacing: normal !important;\n  font-family: \"Roboto\", sans-serif !important;\n}\n.v-application .title {\n  font-size: 1.25rem !important;\n  font-weight: 500;\n  line-height: 2rem;\n  letter-spacing: 0.0125em !important;\n  font-family: \"Roboto\", sans-serif !important;\n}\n.v-application .subtitle-2 {\n  font-size: 0.875rem !important;\n  font-weight: 500;\n  letter-spacing: 0.0071428571em !important;\n  line-height: 1.375rem;\n  font-family: \"Roboto\", sans-serif !important;\n}\n.v-application .subtitle-1 {\n  font-size: 1rem !important;\n  font-weight: normal;\n  letter-spacing: 0.009375em !important;\n  line-height: 1.75rem;\n  font-family: \"Roboto\", sans-serif !important;\n}\n.v-application .body-2 {\n  font-size: 0.875rem !important;\n  font-weight: 400;\n  letter-spacing: 0.0178571429em !important;\n  line-height: 1.25rem;\n  font-family: \"Roboto\", sans-serif !important;\n}\n.v-application .body-1 {\n  font-size: 1rem !important;\n  font-weight: 400;\n  letter-spacing: 0.03125em !important;\n  line-height: 1.5rem;\n  font-family: \"Roboto\", sans-serif !important;\n}\n.v-application .caption {\n  font-size: 0.75rem !important;\n  font-weight: 400;\n  letter-spacing: 0.0333333333em !important;\n  line-height: 1.25rem;\n  font-family: \"Roboto\", sans-serif !important;\n}\n.v-application .overline {\n  font-size: 0.75rem !important;\n  font-weight: 500;\n  letter-spacing: 0.1666666667em !important;\n  line-height: 2rem;\n  text-transform: uppercase;\n  font-family: \"Roboto\", sans-serif !important;\n}\n.v-application p {\n  margin-bottom: 16px;\n}\n\n@media only print {\n  .v-application .hidden-print-only {\n    display: none !important;\n  }\n}\n@media only screen {\n  .v-application .hidden-screen-only {\n    display: none !important;\n  }\n}\n@media only screen and (max-width: 599.98px) {\n  .v-application .hidden-xs-only {\n    display: none !important;\n  }\n}\n@media only screen and (min-width: 600px) and (max-width: 959.98px) {\n  .v-application .hidden-sm-only {\n    display: none !important;\n  }\n}\n@media only screen and (max-width: 959.98px) {\n  .v-application .hidden-sm-and-down {\n    display: none !important;\n  }\n}\n@media only screen and (min-width: 600px) {\n  .v-application .hidden-sm-and-up {\n    display: none !important;\n  }\n}\n@media only screen and (min-width: 960px) and (max-width: 1263.98px) {\n  .v-application .hidden-md-only {\n    display: none !important;\n  }\n}\n@media only screen and (max-width: 1263.98px) {\n  .v-application .hidden-md-and-down {\n    display: none !important;\n  }\n}\n@media only screen and (min-width: 960px) {\n  .v-application .hidden-md-and-up {\n    display: none !important;\n  }\n}\n@media only screen and (min-width: 1264px) and (max-width: 1903.98px) {\n  .v-application .hidden-lg-only {\n    display: none !important;\n  }\n}\n@media only screen and (max-width: 1903.98px) {\n  .v-application .hidden-lg-and-down {\n    display: none !important;\n  }\n}\n@media only screen and (min-width: 1264px) {\n  .v-application .hidden-lg-and-up {\n    display: none !important;\n  }\n}\n@media only screen and (min-width: 1904px) {\n  .v-application .hidden-xl-only {\n    display: none !important;\n  }\n}\n\n.d-sr-only,\n.d-sr-only-focusable:not(:focus) {\n  border: 0 !important;\n  clip: rect(0, 0, 0, 0) !important;\n  height: 1px !important;\n  margin: -1px !important;\n  overflow: hidden !important;\n  padding: 0 !important;\n  position: absolute !important;\n  white-space: nowrap !important;\n  width: 1px !important;\n}\n\n.v-application .font-weight-thin {\n  font-weight: 100 !important;\n}\n.v-application .font-weight-light {\n  font-weight: 300 !important;\n}\n.v-application .font-weight-regular {\n  font-weight: 400 !important;\n}\n.v-application .font-weight-medium {\n  font-weight: 500 !important;\n}\n.v-application .font-weight-bold {\n  font-weight: 700 !important;\n}\n.v-application .font-weight-black {\n  font-weight: 900 !important;\n}\n.v-application .font-italic {\n  font-style: italic !important;\n}\n\n.v-application .transition-fast-out-slow-in {\n  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;\n}\n.v-application .transition-linear-out-slow-in {\n  transition: 0.3s cubic-bezier(0, 0, 0.2, 1) !important;\n}\n.v-application .transition-fast-out-linear-in {\n  transition: 0.3s cubic-bezier(0.4, 0, 1, 1) !important;\n}\n.v-application .transition-ease-in-out {\n  transition: 0.3s cubic-bezier(0.4, 0, 0.6, 1) !important;\n}\n.v-application .transition-fast-in-fast-out {\n  transition: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;\n}\n.v-application .transition-swing {\n  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1) !important;\n}\n\n.v-application .overflow-auto {\n  overflow: auto !important;\n}\n\n.v-application .overflow-hidden {\n  overflow: hidden !important;\n}\n\n.v-application .overflow-visible {\n  overflow: visible !important;\n}\n\n.v-application .overflow-x-auto {\n  overflow-x: auto !important;\n}\n\n.v-application .overflow-x-hidden {\n  overflow-x: hidden !important;\n}\n\n.v-application .overflow-y-auto {\n  overflow-y: auto !important;\n}\n\n.v-application .overflow-y-hidden {\n  overflow-y: hidden !important;\n}\n\n.v-application .d-none {\n  display: none !important;\n}\n\n.v-application .d-inline {\n  display: inline !important;\n}\n\n.v-application .d-inline-block {\n  display: inline-block !important;\n}\n\n.v-application .d-block {\n  display: block !important;\n}\n\n.v-application .d-table {\n  display: table !important;\n}\n\n.v-application .d-table-row {\n  display: table-row !important;\n}\n\n.v-application .d-table-cell {\n  display: table-cell !important;\n}\n\n.v-application .d-flex {\n  display: flex !important;\n}\n\n.v-application .d-inline-flex {\n  display: inline-flex !important;\n}\n\n.v-application .float-none {\n  float: none !important;\n}\n\n.v-application .float-left {\n  float: left !important;\n}\n\n.v-application .float-right {\n  float: right !important;\n}\n\n.v-application--is-rtl .float-end {\n  float: left !important;\n}\n\n.v-application--is-rtl .float-start {\n  float: right !important;\n}\n\n.v-application--is-ltr .float-end {\n  float: right !important;\n}\n\n.v-application--is-ltr .float-start {\n  float: left !important;\n}\n\n.v-application .flex-fill {\n  flex: 1 1 auto !important;\n}\n\n.v-application .flex-row {\n  flex-direction: row !important;\n}\n\n.v-application .flex-column {\n  flex-direction: column !important;\n}\n\n.v-application .flex-row-reverse {\n  flex-direction: row-reverse !important;\n}\n\n.v-application .flex-column-reverse {\n  flex-direction: column-reverse !important;\n}\n\n.v-application .flex-grow-0 {\n  flex-grow: 0 !important;\n}\n\n.v-application .flex-grow-1 {\n  flex-grow: 1 !important;\n}\n\n.v-application .flex-shrink-0 {\n  flex-shrink: 0 !important;\n}\n\n.v-application .flex-shrink-1 {\n  flex-shrink: 1 !important;\n}\n\n.v-application .flex-wrap {\n  flex-wrap: wrap !important;\n}\n\n.v-application .flex-nowrap {\n  flex-wrap: nowrap !important;\n}\n\n.v-application .flex-wrap-reverse {\n  flex-wrap: wrap-reverse !important;\n}\n\n.v-application .justify-start {\n  justify-content: flex-start !important;\n}\n\n.v-application .justify-end {\n  justify-content: flex-end !important;\n}\n\n.v-application .justify-center {\n  justify-content: center !important;\n}\n\n.v-application .justify-space-between {\n  justify-content: space-between !important;\n}\n\n.v-application .justify-space-around {\n  justify-content: space-around !important;\n}\n\n.v-application .align-start {\n  align-items: flex-start !important;\n}\n\n.v-application .align-end {\n  align-items: flex-end !important;\n}\n\n.v-application .align-center {\n  align-items: center !important;\n}\n\n.v-application .align-baseline {\n  align-items: baseline !important;\n}\n\n.v-application .align-stretch {\n  align-items: stretch !important;\n}\n\n.v-application .align-content-start {\n  align-content: flex-start !important;\n}\n\n.v-application .align-content-end {\n  align-content: flex-end !important;\n}\n\n.v-application .align-content-center {\n  align-content: center !important;\n}\n\n.v-application .align-content-space-between {\n  align-content: space-between !important;\n}\n\n.v-application .align-content-space-around {\n  align-content: space-around !important;\n}\n\n.v-application .align-content-stretch {\n  align-content: stretch !important;\n}\n\n.v-application .align-self-auto {\n  align-self: auto !important;\n}\n\n.v-application .align-self-start {\n  align-self: flex-start !important;\n}\n\n.v-application .align-self-end {\n  align-self: flex-end !important;\n}\n\n.v-application .align-self-center {\n  align-self: center !important;\n}\n\n.v-application .align-self-baseline {\n  align-self: baseline !important;\n}\n\n.v-application .align-self-stretch {\n  align-self: stretch !important;\n}\n\n.v-application .order-first {\n  order: -1 !important;\n}\n\n.v-application .order-0 {\n  order: 0 !important;\n}\n\n.v-application .order-1 {\n  order: 1 !important;\n}\n\n.v-application .order-2 {\n  order: 2 !important;\n}\n\n.v-application .order-3 {\n  order: 3 !important;\n}\n\n.v-application .order-4 {\n  order: 4 !important;\n}\n\n.v-application .order-5 {\n  order: 5 !important;\n}\n\n.v-application .order-6 {\n  order: 6 !important;\n}\n\n.v-application .order-7 {\n  order: 7 !important;\n}\n\n.v-application .order-8 {\n  order: 8 !important;\n}\n\n.v-application .order-9 {\n  order: 9 !important;\n}\n\n.v-application .order-10 {\n  order: 10 !important;\n}\n\n.v-application .order-11 {\n  order: 11 !important;\n}\n\n.v-application .order-12 {\n  order: 12 !important;\n}\n\n.v-application .order-last {\n  order: 13 !important;\n}\n\n.v-application .ma-0 {\n  margin: 0px !important;\n}\n\n.v-application .ma-1 {\n  margin: 4px !important;\n}\n\n.v-application .ma-2 {\n  margin: 8px !important;\n}\n\n.v-application .ma-3 {\n  margin: 12px !important;\n}\n\n.v-application .ma-4 {\n  margin: 16px !important;\n}\n\n.v-application .ma-5 {\n  margin: 20px !important;\n}\n\n.v-application .ma-6 {\n  margin: 24px !important;\n}\n\n.v-application .ma-7 {\n  margin: 28px !important;\n}\n\n.v-application .ma-8 {\n  margin: 32px !important;\n}\n\n.v-application .ma-9 {\n  margin: 36px !important;\n}\n\n.v-application .ma-10 {\n  margin: 40px !important;\n}\n\n.v-application .ma-11 {\n  margin: 44px !important;\n}\n\n.v-application .ma-12 {\n  margin: 48px !important;\n}\n\n.v-application .ma-13 {\n  margin: 52px !important;\n}\n\n.v-application .ma-14 {\n  margin: 56px !important;\n}\n\n.v-application .ma-15 {\n  margin: 60px !important;\n}\n\n.v-application .ma-16 {\n  margin: 64px !important;\n}\n\n.v-application .ma-auto {\n  margin: auto !important;\n}\n\n.v-application .mx-0 {\n  margin-right: 0px !important;\n  margin-left: 0px !important;\n}\n\n.v-application .mx-1 {\n  margin-right: 4px !important;\n  margin-left: 4px !important;\n}\n\n.v-application .mx-2 {\n  margin-right: 8px !important;\n  margin-left: 8px !important;\n}\n\n.v-application .mx-3 {\n  margin-right: 12px !important;\n  margin-left: 12px !important;\n}\n\n.v-application .mx-4 {\n  margin-right: 16px !important;\n  margin-left: 16px !important;\n}\n\n.v-application .mx-5 {\n  margin-right: 20px !important;\n  margin-left: 20px !important;\n}\n\n.v-application .mx-6 {\n  margin-right: 24px !important;\n  margin-left: 24px !important;\n}\n\n.v-application .mx-7 {\n  margin-right: 28px !important;\n  margin-left: 28px !important;\n}\n\n.v-application .mx-8 {\n  margin-right: 32px !important;\n  margin-left: 32px !important;\n}\n\n.v-application .mx-9 {\n  margin-right: 36px !important;\n  margin-left: 36px !important;\n}\n\n.v-application .mx-10 {\n  margin-right: 40px !important;\n  margin-left: 40px !important;\n}\n\n.v-application .mx-11 {\n  margin-right: 44px !important;\n  margin-left: 44px !important;\n}\n\n.v-application .mx-12 {\n  margin-right: 48px !important;\n  margin-left: 48px !important;\n}\n\n.v-application .mx-13 {\n  margin-right: 52px !important;\n  margin-left: 52px !important;\n}\n\n.v-application .mx-14 {\n  margin-right: 56px !important;\n  margin-left: 56px !important;\n}\n\n.v-application .mx-15 {\n  margin-right: 60px !important;\n  margin-left: 60px !important;\n}\n\n.v-application .mx-16 {\n  margin-right: 64px !important;\n  margin-left: 64px !important;\n}\n\n.v-application .mx-auto {\n  margin-right: auto !important;\n  margin-left: auto !important;\n}\n\n.v-application .my-0 {\n  margin-top: 0px !important;\n  margin-bottom: 0px !important;\n}\n\n.v-application .my-1 {\n  margin-top: 4px !important;\n  margin-bottom: 4px !important;\n}\n\n.v-application .my-2 {\n  margin-top: 8px !important;\n  margin-bottom: 8px !important;\n}\n\n.v-application .my-3 {\n  margin-top: 12px !important;\n  margin-bottom: 12px !important;\n}\n\n.v-application .my-4 {\n  margin-top: 16px !important;\n  margin-bottom: 16px !important;\n}\n\n.v-application .my-5 {\n  margin-top: 20px !important;\n  margin-bottom: 20px !important;\n}\n\n.v-application .my-6 {\n  margin-top: 24px !important;\n  margin-bottom: 24px !important;\n}\n\n.v-application .my-7 {\n  margin-top: 28px !important;\n  margin-bottom: 28px !important;\n}\n\n.v-application .my-8 {\n  margin-top: 32px !important;\n  margin-bottom: 32px !important;\n}\n\n.v-application .my-9 {\n  margin-top: 36px !important;\n  margin-bottom: 36px !important;\n}\n\n.v-application .my-10 {\n  margin-top: 40px !important;\n  margin-bottom: 40px !important;\n}\n\n.v-application .my-11 {\n  margin-top: 44px !important;\n  margin-bottom: 44px !important;\n}\n\n.v-application .my-12 {\n  margin-top: 48px !important;\n  margin-bottom: 48px !important;\n}\n\n.v-application .my-13 {\n  margin-top: 52px !important;\n  margin-bottom: 52px !important;\n}\n\n.v-application .my-14 {\n  margin-top: 56px !important;\n  margin-bottom: 56px !important;\n}\n\n.v-application .my-15 {\n  margin-top: 60px !important;\n  margin-bottom: 60px !important;\n}\n\n.v-application .my-16 {\n  margin-top: 64px !important;\n  margin-bottom: 64px !important;\n}\n\n.v-application .my-auto {\n  margin-top: auto !important;\n  margin-bottom: auto !important;\n}\n\n.v-application .mt-0 {\n  margin-top: 0px !important;\n}\n\n.v-application .mt-1 {\n  margin-top: 4px !important;\n}\n\n.v-application .mt-2 {\n  margin-top: 8px !important;\n}\n\n.v-application .mt-3 {\n  margin-top: 12px !important;\n}\n\n.v-application .mt-4 {\n  margin-top: 16px !important;\n}\n\n.v-application .mt-5 {\n  margin-top: 20px !important;\n}\n\n.v-application .mt-6 {\n  margin-top: 24px !important;\n}\n\n.v-application .mt-7 {\n  margin-top: 28px !important;\n}\n\n.v-application .mt-8 {\n  margin-top: 32px !important;\n}\n\n.v-application .mt-9 {\n  margin-top: 36px !important;\n}\n\n.v-application .mt-10 {\n  margin-top: 40px !important;\n}\n\n.v-application .mt-11 {\n  margin-top: 44px !important;\n}\n\n.v-application .mt-12 {\n  margin-top: 48px !important;\n}\n\n.v-application .mt-13 {\n  margin-top: 52px !important;\n}\n\n.v-application .mt-14 {\n  margin-top: 56px !important;\n}\n\n.v-application .mt-15 {\n  margin-top: 60px !important;\n}\n\n.v-application .mt-16 {\n  margin-top: 64px !important;\n}\n\n.v-application .mt-auto {\n  margin-top: auto !important;\n}\n\n.v-application .mr-0 {\n  margin-right: 0px !important;\n}\n\n.v-application .mr-1 {\n  margin-right: 4px !important;\n}\n\n.v-application .mr-2 {\n  margin-right: 8px !important;\n}\n\n.v-application .mr-3 {\n  margin-right: 12px !important;\n}\n\n.v-application .mr-4 {\n  margin-right: 16px !important;\n}\n\n.v-application .mr-5 {\n  margin-right: 20px !important;\n}\n\n.v-application .mr-6 {\n  margin-right: 24px !important;\n}\n\n.v-application .mr-7 {\n  margin-right: 28px !important;\n}\n\n.v-application .mr-8 {\n  margin-right: 32px !important;\n}\n\n.v-application .mr-9 {\n  margin-right: 36px !important;\n}\n\n.v-application .mr-10 {\n  margin-right: 40px !important;\n}\n\n.v-application .mr-11 {\n  margin-right: 44px !important;\n}\n\n.v-application .mr-12 {\n  margin-right: 48px !important;\n}\n\n.v-application .mr-13 {\n  margin-right: 52px !important;\n}\n\n.v-application .mr-14 {\n  margin-right: 56px !important;\n}\n\n.v-application .mr-15 {\n  margin-right: 60px !important;\n}\n\n.v-application .mr-16 {\n  margin-right: 64px !important;\n}\n\n.v-application .mr-auto {\n  margin-right: auto !important;\n}\n\n.v-application .mb-0 {\n  margin-bottom: 0px !important;\n}\n\n.v-application .mb-1 {\n  margin-bottom: 4px !important;\n}\n\n.v-application .mb-2 {\n  margin-bottom: 8px !important;\n}\n\n.v-application .mb-3 {\n  margin-bottom: 12px !important;\n}\n\n.v-application .mb-4 {\n  margin-bottom: 16px !important;\n}\n\n.v-application .mb-5 {\n  margin-bottom: 20px !important;\n}\n\n.v-application .mb-6 {\n  margin-bottom: 24px !important;\n}\n\n.v-application .mb-7 {\n  margin-bottom: 28px !important;\n}\n\n.v-application .mb-8 {\n  margin-bottom: 32px !important;\n}\n\n.v-application .mb-9 {\n  margin-bottom: 36px !important;\n}\n\n.v-application .mb-10 {\n  margin-bottom: 40px !important;\n}\n\n.v-application .mb-11 {\n  margin-bottom: 44px !important;\n}\n\n.v-application .mb-12 {\n  margin-bottom: 48px !important;\n}\n\n.v-application .mb-13 {\n  margin-bottom: 52px !important;\n}\n\n.v-application .mb-14 {\n  margin-bottom: 56px !important;\n}\n\n.v-application .mb-15 {\n  margin-bottom: 60px !important;\n}\n\n.v-application .mb-16 {\n  margin-bottom: 64px !important;\n}\n\n.v-application .mb-auto {\n  margin-bottom: auto !important;\n}\n\n.v-application .ml-0 {\n  margin-left: 0px !important;\n}\n\n.v-application .ml-1 {\n  margin-left: 4px !important;\n}\n\n.v-application .ml-2 {\n  margin-left: 8px !important;\n}\n\n.v-application .ml-3 {\n  margin-left: 12px !important;\n}\n\n.v-application .ml-4 {\n  margin-left: 16px !important;\n}\n\n.v-application .ml-5 {\n  margin-left: 20px !important;\n}\n\n.v-application .ml-6 {\n  margin-left: 24px !important;\n}\n\n.v-application .ml-7 {\n  margin-left: 28px !important;\n}\n\n.v-application .ml-8 {\n  margin-left: 32px !important;\n}\n\n.v-application .ml-9 {\n  margin-left: 36px !important;\n}\n\n.v-application .ml-10 {\n  margin-left: 40px !important;\n}\n\n.v-application .ml-11 {\n  margin-left: 44px !important;\n}\n\n.v-application .ml-12 {\n  margin-left: 48px !important;\n}\n\n.v-application .ml-13 {\n  margin-left: 52px !important;\n}\n\n.v-application .ml-14 {\n  margin-left: 56px !important;\n}\n\n.v-application .ml-15 {\n  margin-left: 60px !important;\n}\n\n.v-application .ml-16 {\n  margin-left: 64px !important;\n}\n\n.v-application .ml-auto {\n  margin-left: auto !important;\n}\n\n.v-application--is-ltr .ms-0 {\n  margin-left: 0px !important;\n}\n\n.v-application--is-rtl .ms-0 {\n  margin-right: 0px !important;\n}\n\n.v-application--is-ltr .ms-1 {\n  margin-left: 4px !important;\n}\n\n.v-application--is-rtl .ms-1 {\n  margin-right: 4px !important;\n}\n\n.v-application--is-ltr .ms-2 {\n  margin-left: 8px !important;\n}\n\n.v-application--is-rtl .ms-2 {\n  margin-right: 8px !important;\n}\n\n.v-application--is-ltr .ms-3 {\n  margin-left: 12px !important;\n}\n\n.v-application--is-rtl .ms-3 {\n  margin-right: 12px !important;\n}\n\n.v-application--is-ltr .ms-4 {\n  margin-left: 16px !important;\n}\n\n.v-application--is-rtl .ms-4 {\n  margin-right: 16px !important;\n}\n\n.v-application--is-ltr .ms-5 {\n  margin-left: 20px !important;\n}\n\n.v-application--is-rtl .ms-5 {\n  margin-right: 20px !important;\n}\n\n.v-application--is-ltr .ms-6 {\n  margin-left: 24px !important;\n}\n\n.v-application--is-rtl .ms-6 {\n  margin-right: 24px !important;\n}\n\n.v-application--is-ltr .ms-7 {\n  margin-left: 28px !important;\n}\n\n.v-application--is-rtl .ms-7 {\n  margin-right: 28px !important;\n}\n\n.v-application--is-ltr .ms-8 {\n  margin-left: 32px !important;\n}\n\n.v-application--is-rtl .ms-8 {\n  margin-right: 32px !important;\n}\n\n.v-application--is-ltr .ms-9 {\n  margin-left: 36px !important;\n}\n\n.v-application--is-rtl .ms-9 {\n  margin-right: 36px !important;\n}\n\n.v-application--is-ltr .ms-10 {\n  margin-left: 40px !important;\n}\n\n.v-application--is-rtl .ms-10 {\n  margin-right: 40px !important;\n}\n\n.v-application--is-ltr .ms-11 {\n  margin-left: 44px !important;\n}\n\n.v-application--is-rtl .ms-11 {\n  margin-right: 44px !important;\n}\n\n.v-application--is-ltr .ms-12 {\n  margin-left: 48px !important;\n}\n\n.v-application--is-rtl .ms-12 {\n  margin-right: 48px !important;\n}\n\n.v-application--is-ltr .ms-13 {\n  margin-left: 52px !important;\n}\n\n.v-application--is-rtl .ms-13 {\n  margin-right: 52px !important;\n}\n\n.v-application--is-ltr .ms-14 {\n  margin-left: 56px !important;\n}\n\n.v-application--is-rtl .ms-14 {\n  margin-right: 56px !important;\n}\n\n.v-application--is-ltr .ms-15 {\n  margin-left: 60px !important;\n}\n\n.v-application--is-rtl .ms-15 {\n  margin-right: 60px !important;\n}\n\n.v-application--is-ltr .ms-16 {\n  margin-left: 64px !important;\n}\n\n.v-application--is-rtl .ms-16 {\n  margin-right: 64px !important;\n}\n\n.v-application--is-ltr .ms-auto {\n  margin-left: auto !important;\n}\n\n.v-application--is-rtl .ms-auto {\n  margin-right: auto !important;\n}\n\n.v-application--is-ltr .me-0 {\n  margin-right: 0px !important;\n}\n\n.v-application--is-rtl .me-0 {\n  margin-left: 0px !important;\n}\n\n.v-application--is-ltr .me-1 {\n  margin-right: 4px !important;\n}\n\n.v-application--is-rtl .me-1 {\n  margin-left: 4px !important;\n}\n\n.v-application--is-ltr .me-2 {\n  margin-right: 8px !important;\n}\n\n.v-application--is-rtl .me-2 {\n  margin-left: 8px !important;\n}\n\n.v-application--is-ltr .me-3 {\n  margin-right: 12px !important;\n}\n\n.v-application--is-rtl .me-3 {\n  margin-left: 12px !important;\n}\n\n.v-application--is-ltr .me-4 {\n  margin-right: 16px !important;\n}\n\n.v-application--is-rtl .me-4 {\n  margin-left: 16px !important;\n}\n\n.v-application--is-ltr .me-5 {\n  margin-right: 20px !important;\n}\n\n.v-application--is-rtl .me-5 {\n  margin-left: 20px !important;\n}\n\n.v-application--is-ltr .me-6 {\n  margin-right: 24px !important;\n}\n\n.v-application--is-rtl .me-6 {\n  margin-left: 24px !important;\n}\n\n.v-application--is-ltr .me-7 {\n  margin-right: 28px !important;\n}\n\n.v-application--is-rtl .me-7 {\n  margin-left: 28px !important;\n}\n\n.v-application--is-ltr .me-8 {\n  margin-right: 32px !important;\n}\n\n.v-application--is-rtl .me-8 {\n  margin-left: 32px !important;\n}\n\n.v-application--is-ltr .me-9 {\n  margin-right: 36px !important;\n}\n\n.v-application--is-rtl .me-9 {\n  margin-left: 36px !important;\n}\n\n.v-application--is-ltr .me-10 {\n  margin-right: 40px !important;\n}\n\n.v-application--is-rtl .me-10 {\n  margin-left: 40px !important;\n}\n\n.v-application--is-ltr .me-11 {\n  margin-right: 44px !important;\n}\n\n.v-application--is-rtl .me-11 {\n  margin-left: 44px !important;\n}\n\n.v-application--is-ltr .me-12 {\n  margin-right: 48px !important;\n}\n\n.v-application--is-rtl .me-12 {\n  margin-left: 48px !important;\n}\n\n.v-application--is-ltr .me-13 {\n  margin-right: 52px !important;\n}\n\n.v-application--is-rtl .me-13 {\n  margin-left: 52px !important;\n}\n\n.v-application--is-ltr .me-14 {\n  margin-right: 56px !important;\n}\n\n.v-application--is-rtl .me-14 {\n  margin-left: 56px !important;\n}\n\n.v-application--is-ltr .me-15 {\n  margin-right: 60px !important;\n}\n\n.v-application--is-rtl .me-15 {\n  margin-left: 60px !important;\n}\n\n.v-application--is-ltr .me-16 {\n  margin-right: 64px !important;\n}\n\n.v-application--is-rtl .me-16 {\n  margin-left: 64px !important;\n}\n\n.v-application--is-ltr .me-auto {\n  margin-right: auto !important;\n}\n\n.v-application--is-rtl .me-auto {\n  margin-left: auto !important;\n}\n\n.v-application .ma-n1 {\n  margin: -4px !important;\n}\n\n.v-application .ma-n2 {\n  margin: -8px !important;\n}\n\n.v-application .ma-n3 {\n  margin: -12px !important;\n}\n\n.v-application .ma-n4 {\n  margin: -16px !important;\n}\n\n.v-application .ma-n5 {\n  margin: -20px !important;\n}\n\n.v-application .ma-n6 {\n  margin: -24px !important;\n}\n\n.v-application .ma-n7 {\n  margin: -28px !important;\n}\n\n.v-application .ma-n8 {\n  margin: -32px !important;\n}\n\n.v-application .ma-n9 {\n  margin: -36px !important;\n}\n\n.v-application .ma-n10 {\n  margin: -40px !important;\n}\n\n.v-application .ma-n11 {\n  margin: -44px !important;\n}\n\n.v-application .ma-n12 {\n  margin: -48px !important;\n}\n\n.v-application .ma-n13 {\n  margin: -52px !important;\n}\n\n.v-application .ma-n14 {\n  margin: -56px !important;\n}\n\n.v-application .ma-n15 {\n  margin: -60px !important;\n}\n\n.v-application .ma-n16 {\n  margin: -64px !important;\n}\n\n.v-application .mx-n1 {\n  margin-right: -4px !important;\n  margin-left: -4px !important;\n}\n\n.v-application .mx-n2 {\n  margin-right: -8px !important;\n  margin-left: -8px !important;\n}\n\n.v-application .mx-n3 {\n  margin-right: -12px !important;\n  margin-left: -12px !important;\n}\n\n.v-application .mx-n4 {\n  margin-right: -16px !important;\n  margin-left: -16px !important;\n}\n\n.v-application .mx-n5 {\n  margin-right: -20px !important;\n  margin-left: -20px !important;\n}\n\n.v-application .mx-n6 {\n  margin-right: -24px !important;\n  margin-left: -24px !important;\n}\n\n.v-application .mx-n7 {\n  margin-right: -28px !important;\n  margin-left: -28px !important;\n}\n\n.v-application .mx-n8 {\n  margin-right: -32px !important;\n  margin-left: -32px !important;\n}\n\n.v-application .mx-n9 {\n  margin-right: -36px !important;\n  margin-left: -36px !important;\n}\n\n.v-application .mx-n10 {\n  margin-right: -40px !important;\n  margin-left: -40px !important;\n}\n\n.v-application .mx-n11 {\n  margin-right: -44px !important;\n  margin-left: -44px !important;\n}\n\n.v-application .mx-n12 {\n  margin-right: -48px !important;\n  margin-left: -48px !important;\n}\n\n.v-application .mx-n13 {\n  margin-right: -52px !important;\n  margin-left: -52px !important;\n}\n\n.v-application .mx-n14 {\n  margin-right: -56px !important;\n  margin-left: -56px !important;\n}\n\n.v-application .mx-n15 {\n  margin-right: -60px !important;\n  margin-left: -60px !important;\n}\n\n.v-application .mx-n16 {\n  margin-right: -64px !important;\n  margin-left: -64px !important;\n}\n\n.v-application .my-n1 {\n  margin-top: -4px !important;\n  margin-bottom: -4px !important;\n}\n\n.v-application .my-n2 {\n  margin-top: -8px !important;\n  margin-bottom: -8px !important;\n}\n\n.v-application .my-n3 {\n  margin-top: -12px !important;\n  margin-bottom: -12px !important;\n}\n\n.v-application .my-n4 {\n  margin-top: -16px !important;\n  margin-bottom: -16px !important;\n}\n\n.v-application .my-n5 {\n  margin-top: -20px !important;\n  margin-bottom: -20px !important;\n}\n\n.v-application .my-n6 {\n  margin-top: -24px !important;\n  margin-bottom: -24px !important;\n}\n\n.v-application .my-n7 {\n  margin-top: -28px !important;\n  margin-bottom: -28px !important;\n}\n\n.v-application .my-n8 {\n  margin-top: -32px !important;\n  margin-bottom: -32px !important;\n}\n\n.v-application .my-n9 {\n  margin-top: -36px !important;\n  margin-bottom: -36px !important;\n}\n\n.v-application .my-n10 {\n  margin-top: -40px !important;\n  margin-bottom: -40px !important;\n}\n\n.v-application .my-n11 {\n  margin-top: -44px !important;\n  margin-bottom: -44px !important;\n}\n\n.v-application .my-n12 {\n  margin-top: -48px !important;\n  margin-bottom: -48px !important;\n}\n\n.v-application .my-n13 {\n  margin-top: -52px !important;\n  margin-bottom: -52px !important;\n}\n\n.v-application .my-n14 {\n  margin-top: -56px !important;\n  margin-bottom: -56px !important;\n}\n\n.v-application .my-n15 {\n  margin-top: -60px !important;\n  margin-bottom: -60px !important;\n}\n\n.v-application .my-n16 {\n  margin-top: -64px !important;\n  margin-bottom: -64px !important;\n}\n\n.v-application .mt-n1 {\n  margin-top: -4px !important;\n}\n\n.v-application .mt-n2 {\n  margin-top: -8px !important;\n}\n\n.v-application .mt-n3 {\n  margin-top: -12px !important;\n}\n\n.v-application .mt-n4 {\n  margin-top: -16px !important;\n}\n\n.v-application .mt-n5 {\n  margin-top: -20px !important;\n}\n\n.v-application .mt-n6 {\n  margin-top: -24px !important;\n}\n\n.v-application .mt-n7 {\n  margin-top: -28px !important;\n}\n\n.v-application .mt-n8 {\n  margin-top: -32px !important;\n}\n\n.v-application .mt-n9 {\n  margin-top: -36px !important;\n}\n\n.v-application .mt-n10 {\n  margin-top: -40px !important;\n}\n\n.v-application .mt-n11 {\n  margin-top: -44px !important;\n}\n\n.v-application .mt-n12 {\n  margin-top: -48px !important;\n}\n\n.v-application .mt-n13 {\n  margin-top: -52px !important;\n}\n\n.v-application .mt-n14 {\n  margin-top: -56px !important;\n}\n\n.v-application .mt-n15 {\n  margin-top: -60px !important;\n}\n\n.v-application .mt-n16 {\n  margin-top: -64px !important;\n}\n\n.v-application .mr-n1 {\n  margin-right: -4px !important;\n}\n\n.v-application .mr-n2 {\n  margin-right: -8px !important;\n}\n\n.v-application .mr-n3 {\n  margin-right: -12px !important;\n}\n\n.v-application .mr-n4 {\n  margin-right: -16px !important;\n}\n\n.v-application .mr-n5 {\n  margin-right: -20px !important;\n}\n\n.v-application .mr-n6 {\n  margin-right: -24px !important;\n}\n\n.v-application .mr-n7 {\n  margin-right: -28px !important;\n}\n\n.v-application .mr-n8 {\n  margin-right: -32px !important;\n}\n\n.v-application .mr-n9 {\n  margin-right: -36px !important;\n}\n\n.v-application .mr-n10 {\n  margin-right: -40px !important;\n}\n\n.v-application .mr-n11 {\n  margin-right: -44px !important;\n}\n\n.v-application .mr-n12 {\n  margin-right: -48px !important;\n}\n\n.v-application .mr-n13 {\n  margin-right: -52px !important;\n}\n\n.v-application .mr-n14 {\n  margin-right: -56px !important;\n}\n\n.v-application .mr-n15 {\n  margin-right: -60px !important;\n}\n\n.v-application .mr-n16 {\n  margin-right: -64px !important;\n}\n\n.v-application .mb-n1 {\n  margin-bottom: -4px !important;\n}\n\n.v-application .mb-n2 {\n  margin-bottom: -8px !important;\n}\n\n.v-application .mb-n3 {\n  margin-bottom: -12px !important;\n}\n\n.v-application .mb-n4 {\n  margin-bottom: -16px !important;\n}\n\n.v-application .mb-n5 {\n  margin-bottom: -20px !important;\n}\n\n.v-application .mb-n6 {\n  margin-bottom: -24px !important;\n}\n\n.v-application .mb-n7 {\n  margin-bottom: -28px !important;\n}\n\n.v-application .mb-n8 {\n  margin-bottom: -32px !important;\n}\n\n.v-application .mb-n9 {\n  margin-bottom: -36px !important;\n}\n\n.v-application .mb-n10 {\n  margin-bottom: -40px !important;\n}\n\n.v-application .mb-n11 {\n  margin-bottom: -44px !important;\n}\n\n.v-application .mb-n12 {\n  margin-bottom: -48px !important;\n}\n\n.v-application .mb-n13 {\n  margin-bottom: -52px !important;\n}\n\n.v-application .mb-n14 {\n  margin-bottom: -56px !important;\n}\n\n.v-application .mb-n15 {\n  margin-bottom: -60px !important;\n}\n\n.v-application .mb-n16 {\n  margin-bottom: -64px !important;\n}\n\n.v-application .ml-n1 {\n  margin-left: -4px !important;\n}\n\n.v-application .ml-n2 {\n  margin-left: -8px !important;\n}\n\n.v-application .ml-n3 {\n  margin-left: -12px !important;\n}\n\n.v-application .ml-n4 {\n  margin-left: -16px !important;\n}\n\n.v-application .ml-n5 {\n  margin-left: -20px !important;\n}\n\n.v-application .ml-n6 {\n  margin-left: -24px !important;\n}\n\n.v-application .ml-n7 {\n  margin-left: -28px !important;\n}\n\n.v-application .ml-n8 {\n  margin-left: -32px !important;\n}\n\n.v-application .ml-n9 {\n  margin-left: -36px !important;\n}\n\n.v-application .ml-n10 {\n  margin-left: -40px !important;\n}\n\n.v-application .ml-n11 {\n  margin-left: -44px !important;\n}\n\n.v-application .ml-n12 {\n  margin-left: -48px !important;\n}\n\n.v-application .ml-n13 {\n  margin-left: -52px !important;\n}\n\n.v-application .ml-n14 {\n  margin-left: -56px !important;\n}\n\n.v-application .ml-n15 {\n  margin-left: -60px !important;\n}\n\n.v-application .ml-n16 {\n  margin-left: -64px !important;\n}\n\n.v-application--is-ltr .ms-n1 {\n  margin-left: -4px !important;\n}\n\n.v-application--is-rtl .ms-n1 {\n  margin-right: -4px !important;\n}\n\n.v-application--is-ltr .ms-n2 {\n  margin-left: -8px !important;\n}\n\n.v-application--is-rtl .ms-n2 {\n  margin-right: -8px !important;\n}\n\n.v-application--is-ltr .ms-n3 {\n  margin-left: -12px !important;\n}\n\n.v-application--is-rtl .ms-n3 {\n  margin-right: -12px !important;\n}\n\n.v-application--is-ltr .ms-n4 {\n  margin-left: -16px !important;\n}\n\n.v-application--is-rtl .ms-n4 {\n  margin-right: -16px !important;\n}\n\n.v-application--is-ltr .ms-n5 {\n  margin-left: -20px !important;\n}\n\n.v-application--is-rtl .ms-n5 {\n  margin-right: -20px !important;\n}\n\n.v-application--is-ltr .ms-n6 {\n  margin-left: -24px !important;\n}\n\n.v-application--is-rtl .ms-n6 {\n  margin-right: -24px !important;\n}\n\n.v-application--is-ltr .ms-n7 {\n  margin-left: -28px !important;\n}\n\n.v-application--is-rtl .ms-n7 {\n  margin-right: -28px !important;\n}\n\n.v-application--is-ltr .ms-n8 {\n  margin-left: -32px !important;\n}\n\n.v-application--is-rtl .ms-n8 {\n  margin-right: -32px !important;\n}\n\n.v-application--is-ltr .ms-n9 {\n  margin-left: -36px !important;\n}\n\n.v-application--is-rtl .ms-n9 {\n  margin-right: -36px !important;\n}\n\n.v-application--is-ltr .ms-n10 {\n  margin-left: -40px !important;\n}\n\n.v-application--is-rtl .ms-n10 {\n  margin-right: -40px !important;\n}\n\n.v-application--is-ltr .ms-n11 {\n  margin-left: -44px !important;\n}\n\n.v-application--is-rtl .ms-n11 {\n  margin-right: -44px !important;\n}\n\n.v-application--is-ltr .ms-n12 {\n  margin-left: -48px !important;\n}\n\n.v-application--is-rtl .ms-n12 {\n  margin-right: -48px !important;\n}\n\n.v-application--is-ltr .ms-n13 {\n  margin-left: -52px !important;\n}\n\n.v-application--is-rtl .ms-n13 {\n  margin-right: -52px !important;\n}\n\n.v-application--is-ltr .ms-n14 {\n  margin-left: -56px !important;\n}\n\n.v-application--is-rtl .ms-n14 {\n  margin-right: -56px !important;\n}\n\n.v-application--is-ltr .ms-n15 {\n  margin-left: -60px !important;\n}\n\n.v-application--is-rtl .ms-n15 {\n  margin-right: -60px !important;\n}\n\n.v-application--is-ltr .ms-n16 {\n  margin-left: -64px !important;\n}\n\n.v-application--is-rtl .ms-n16 {\n  margin-right: -64px !important;\n}\n\n.v-application--is-ltr .me-n1 {\n  margin-right: -4px !important;\n}\n\n.v-application--is-rtl .me-n1 {\n  margin-left: -4px !important;\n}\n\n.v-application--is-ltr .me-n2 {\n  margin-right: -8px !important;\n}\n\n.v-application--is-rtl .me-n2 {\n  margin-left: -8px !important;\n}\n\n.v-application--is-ltr .me-n3 {\n  margin-right: -12px !important;\n}\n\n.v-application--is-rtl .me-n3 {\n  margin-left: -12px !important;\n}\n\n.v-application--is-ltr .me-n4 {\n  margin-right: -16px !important;\n}\n\n.v-application--is-rtl .me-n4 {\n  margin-left: -16px !important;\n}\n\n.v-application--is-ltr .me-n5 {\n  margin-right: -20px !important;\n}\n\n.v-application--is-rtl .me-n5 {\n  margin-left: -20px !important;\n}\n\n.v-application--is-ltr .me-n6 {\n  margin-right: -24px !important;\n}\n\n.v-application--is-rtl .me-n6 {\n  margin-left: -24px !important;\n}\n\n.v-application--is-ltr .me-n7 {\n  margin-right: -28px !important;\n}\n\n.v-application--is-rtl .me-n7 {\n  margin-left: -28px !important;\n}\n\n.v-application--is-ltr .me-n8 {\n  margin-right: -32px !important;\n}\n\n.v-application--is-rtl .me-n8 {\n  margin-left: -32px !important;\n}\n\n.v-application--is-ltr .me-n9 {\n  margin-right: -36px !important;\n}\n\n.v-application--is-rtl .me-n9 {\n  margin-left: -36px !important;\n}\n\n.v-application--is-ltr .me-n10 {\n  margin-right: -40px !important;\n}\n\n.v-application--is-rtl .me-n10 {\n  margin-left: -40px !important;\n}\n\n.v-application--is-ltr .me-n11 {\n  margin-right: -44px !important;\n}\n\n.v-application--is-rtl .me-n11 {\n  margin-left: -44px !important;\n}\n\n.v-application--is-ltr .me-n12 {\n  margin-right: -48px !important;\n}\n\n.v-application--is-rtl .me-n12 {\n  margin-left: -48px !important;\n}\n\n.v-application--is-ltr .me-n13 {\n  margin-right: -52px !important;\n}\n\n.v-application--is-rtl .me-n13 {\n  margin-left: -52px !important;\n}\n\n.v-application--is-ltr .me-n14 {\n  margin-right: -56px !important;\n}\n\n.v-application--is-rtl .me-n14 {\n  margin-left: -56px !important;\n}\n\n.v-application--is-ltr .me-n15 {\n  margin-right: -60px !important;\n}\n\n.v-application--is-rtl .me-n15 {\n  margin-left: -60px !important;\n}\n\n.v-application--is-ltr .me-n16 {\n  margin-right: -64px !important;\n}\n\n.v-application--is-rtl .me-n16 {\n  margin-left: -64px !important;\n}\n\n.v-application .pa-0 {\n  padding: 0px !important;\n}\n\n.v-application .pa-1 {\n  padding: 4px !important;\n}\n\n.v-application .pa-2 {\n  padding: 8px !important;\n}\n\n.v-application .pa-3 {\n  padding: 12px !important;\n}\n\n.v-application .pa-4 {\n  padding: 16px !important;\n}\n\n.v-application .pa-5 {\n  padding: 20px !important;\n}\n\n.v-application .pa-6 {\n  padding: 24px !important;\n}\n\n.v-application .pa-7 {\n  padding: 28px !important;\n}\n\n.v-application .pa-8 {\n  padding: 32px !important;\n}\n\n.v-application .pa-9 {\n  padding: 36px !important;\n}\n\n.v-application .pa-10 {\n  padding: 40px !important;\n}\n\n.v-application .pa-11 {\n  padding: 44px !important;\n}\n\n.v-application .pa-12 {\n  padding: 48px !important;\n}\n\n.v-application .pa-13 {\n  padding: 52px !important;\n}\n\n.v-application .pa-14 {\n  padding: 56px !important;\n}\n\n.v-application .pa-15 {\n  padding: 60px !important;\n}\n\n.v-application .pa-16 {\n  padding: 64px !important;\n}\n\n.v-application .px-0 {\n  padding-right: 0px !important;\n  padding-left: 0px !important;\n}\n\n.v-application .px-1 {\n  padding-right: 4px !important;\n  padding-left: 4px !important;\n}\n\n.v-application .px-2 {\n  padding-right: 8px !important;\n  padding-left: 8px !important;\n}\n\n.v-application .px-3 {\n  padding-right: 12px !important;\n  padding-left: 12px !important;\n}\n\n.v-application .px-4 {\n  padding-right: 16px !important;\n  padding-left: 16px !important;\n}\n\n.v-application .px-5 {\n  padding-right: 20px !important;\n  padding-left: 20px !important;\n}\n\n.v-application .px-6 {\n  padding-right: 24px !important;\n  padding-left: 24px !important;\n}\n\n.v-application .px-7 {\n  padding-right: 28px !important;\n  padding-left: 28px !important;\n}\n\n.v-application .px-8 {\n  padding-right: 32px !important;\n  padding-left: 32px !important;\n}\n\n.v-application .px-9 {\n  padding-right: 36px !important;\n  padding-left: 36px !important;\n}\n\n.v-application .px-10 {\n  padding-right: 40px !important;\n  padding-left: 40px !important;\n}\n\n.v-application .px-11 {\n  padding-right: 44px !important;\n  padding-left: 44px !important;\n}\n\n.v-application .px-12 {\n  padding-right: 48px !important;\n  padding-left: 48px !important;\n}\n\n.v-application .px-13 {\n  padding-right: 52px !important;\n  padding-left: 52px !important;\n}\n\n.v-application .px-14 {\n  padding-right: 56px !important;\n  padding-left: 56px !important;\n}\n\n.v-application .px-15 {\n  padding-right: 60px !important;\n  padding-left: 60px !important;\n}\n\n.v-application .px-16 {\n  padding-right: 64px !important;\n  padding-left: 64px !important;\n}\n\n.v-application .py-0 {\n  padding-top: 0px !important;\n  padding-bottom: 0px !important;\n}\n\n.v-application .py-1 {\n  padding-top: 4px !important;\n  padding-bottom: 4px !important;\n}\n\n.v-application .py-2 {\n  padding-top: 8px !important;\n  padding-bottom: 8px !important;\n}\n\n.v-application .py-3 {\n  padding-top: 12px !important;\n  padding-bottom: 12px !important;\n}\n\n.v-application .py-4 {\n  padding-top: 16px !important;\n  padding-bottom: 16px !important;\n}\n\n.v-application .py-5 {\n  padding-top: 20px !important;\n  padding-bottom: 20px !important;\n}\n\n.v-application .py-6 {\n  padding-top: 24px !important;\n  padding-bottom: 24px !important;\n}\n\n.v-application .py-7 {\n  padding-top: 28px !important;\n  padding-bottom: 28px !important;\n}\n\n.v-application .py-8 {\n  padding-top: 32px !important;\n  padding-bottom: 32px !important;\n}\n\n.v-application .py-9 {\n  padding-top: 36px !important;\n  padding-bottom: 36px !important;\n}\n\n.v-application .py-10 {\n  padding-top: 40px !important;\n  padding-bottom: 40px !important;\n}\n\n.v-application .py-11 {\n  padding-top: 44px !important;\n  padding-bottom: 44px !important;\n}\n\n.v-application .py-12 {\n  padding-top: 48px !important;\n  padding-bottom: 48px !important;\n}\n\n.v-application .py-13 {\n  padding-top: 52px !important;\n  padding-bottom: 52px !important;\n}\n\n.v-application .py-14 {\n  padding-top: 56px !important;\n  padding-bottom: 56px !important;\n}\n\n.v-application .py-15 {\n  padding-top: 60px !important;\n  padding-bottom: 60px !important;\n}\n\n.v-application .py-16 {\n  padding-top: 64px !important;\n  padding-bottom: 64px !important;\n}\n\n.v-application .pt-0 {\n  padding-top: 0px !important;\n}\n\n.v-application .pt-1 {\n  padding-top: 4px !important;\n}\n\n.v-application .pt-2 {\n  padding-top: 8px !important;\n}\n\n.v-application .pt-3 {\n  padding-top: 12px !important;\n}\n\n.v-application .pt-4 {\n  padding-top: 16px !important;\n}\n\n.v-application .pt-5 {\n  padding-top: 20px !important;\n}\n\n.v-application .pt-6 {\n  padding-top: 24px !important;\n}\n\n.v-application .pt-7 {\n  padding-top: 28px !important;\n}\n\n.v-application .pt-8 {\n  padding-top: 32px !important;\n}\n\n.v-application .pt-9 {\n  padding-top: 36px !important;\n}\n\n.v-application .pt-10 {\n  padding-top: 40px !important;\n}\n\n.v-application .pt-11 {\n  padding-top: 44px !important;\n}\n\n.v-application .pt-12 {\n  padding-top: 48px !important;\n}\n\n.v-application .pt-13 {\n  padding-top: 52px !important;\n}\n\n.v-application .pt-14 {\n  padding-top: 56px !important;\n}\n\n.v-application .pt-15 {\n  padding-top: 60px !important;\n}\n\n.v-application .pt-16 {\n  padding-top: 64px !important;\n}\n\n.v-application .pr-0 {\n  padding-right: 0px !important;\n}\n\n.v-application .pr-1 {\n  padding-right: 4px !important;\n}\n\n.v-application .pr-2 {\n  padding-right: 8px !important;\n}\n\n.v-application .pr-3 {\n  padding-right: 12px !important;\n}\n\n.v-application .pr-4 {\n  padding-right: 16px !important;\n}\n\n.v-application .pr-5 {\n  padding-right: 20px !important;\n}\n\n.v-application .pr-6 {\n  padding-right: 24px !important;\n}\n\n.v-application .pr-7 {\n  padding-right: 28px !important;\n}\n\n.v-application .pr-8 {\n  padding-right: 32px !important;\n}\n\n.v-application .pr-9 {\n  padding-right: 36px !important;\n}\n\n.v-application .pr-10 {\n  padding-right: 40px !important;\n}\n\n.v-application .pr-11 {\n  padding-right: 44px !important;\n}\n\n.v-application .pr-12 {\n  padding-right: 48px !important;\n}\n\n.v-application .pr-13 {\n  padding-right: 52px !important;\n}\n\n.v-application .pr-14 {\n  padding-right: 56px !important;\n}\n\n.v-application .pr-15 {\n  padding-right: 60px !important;\n}\n\n.v-application .pr-16 {\n  padding-right: 64px !important;\n}\n\n.v-application .pb-0 {\n  padding-bottom: 0px !important;\n}\n\n.v-application .pb-1 {\n  padding-bottom: 4px !important;\n}\n\n.v-application .pb-2 {\n  padding-bottom: 8px !important;\n}\n\n.v-application .pb-3 {\n  padding-bottom: 12px !important;\n}\n\n.v-application .pb-4 {\n  padding-bottom: 16px !important;\n}\n\n.v-application .pb-5 {\n  padding-bottom: 20px !important;\n}\n\n.v-application .pb-6 {\n  padding-bottom: 24px !important;\n}\n\n.v-application .pb-7 {\n  padding-bottom: 28px !important;\n}\n\n.v-application .pb-8 {\n  padding-bottom: 32px !important;\n}\n\n.v-application .pb-9 {\n  padding-bottom: 36px !important;\n}\n\n.v-application .pb-10 {\n  padding-bottom: 40px !important;\n}\n\n.v-application .pb-11 {\n  padding-bottom: 44px !important;\n}\n\n.v-application .pb-12 {\n  padding-bottom: 48px !important;\n}\n\n.v-application .pb-13 {\n  padding-bottom: 52px !important;\n}\n\n.v-application .pb-14 {\n  padding-bottom: 56px !important;\n}\n\n.v-application .pb-15 {\n  padding-bottom: 60px !important;\n}\n\n.v-application .pb-16 {\n  padding-bottom: 64px !important;\n}\n\n.v-application .pl-0 {\n  padding-left: 0px !important;\n}\n\n.v-application .pl-1 {\n  padding-left: 4px !important;\n}\n\n.v-application .pl-2 {\n  padding-left: 8px !important;\n}\n\n.v-application .pl-3 {\n  padding-left: 12px !important;\n}\n\n.v-application .pl-4 {\n  padding-left: 16px !important;\n}\n\n.v-application .pl-5 {\n  padding-left: 20px !important;\n}\n\n.v-application .pl-6 {\n  padding-left: 24px !important;\n}\n\n.v-application .pl-7 {\n  padding-left: 28px !important;\n}\n\n.v-application .pl-8 {\n  padding-left: 32px !important;\n}\n\n.v-application .pl-9 {\n  padding-left: 36px !important;\n}\n\n.v-application .pl-10 {\n  padding-left: 40px !important;\n}\n\n.v-application .pl-11 {\n  padding-left: 44px !important;\n}\n\n.v-application .pl-12 {\n  padding-left: 48px !important;\n}\n\n.v-application .pl-13 {\n  padding-left: 52px !important;\n}\n\n.v-application .pl-14 {\n  padding-left: 56px !important;\n}\n\n.v-application .pl-15 {\n  padding-left: 60px !important;\n}\n\n.v-application .pl-16 {\n  padding-left: 64px !important;\n}\n\n.v-application--is-ltr .ps-0 {\n  padding-left: 0px !important;\n}\n\n.v-application--is-rtl .ps-0 {\n  padding-right: 0px !important;\n}\n\n.v-application--is-ltr .ps-1 {\n  padding-left: 4px !important;\n}\n\n.v-application--is-rtl .ps-1 {\n  padding-right: 4px !important;\n}\n\n.v-application--is-ltr .ps-2 {\n  padding-left: 8px !important;\n}\n\n.v-application--is-rtl .ps-2 {\n  padding-right: 8px !important;\n}\n\n.v-application--is-ltr .ps-3 {\n  padding-left: 12px !important;\n}\n\n.v-application--is-rtl .ps-3 {\n  padding-right: 12px !important;\n}\n\n.v-application--is-ltr .ps-4 {\n  padding-left: 16px !important;\n}\n\n.v-application--is-rtl .ps-4 {\n  padding-right: 16px !important;\n}\n\n.v-application--is-ltr .ps-5 {\n  padding-left: 20px !important;\n}\n\n.v-application--is-rtl .ps-5 {\n  padding-right: 20px !important;\n}\n\n.v-application--is-ltr .ps-6 {\n  padding-left: 24px !important;\n}\n\n.v-application--is-rtl .ps-6 {\n  padding-right: 24px !important;\n}\n\n.v-application--is-ltr .ps-7 {\n  padding-left: 28px !important;\n}\n\n.v-application--is-rtl .ps-7 {\n  padding-right: 28px !important;\n}\n\n.v-application--is-ltr .ps-8 {\n  padding-left: 32px !important;\n}\n\n.v-application--is-rtl .ps-8 {\n  padding-right: 32px !important;\n}\n\n.v-application--is-ltr .ps-9 {\n  padding-left: 36px !important;\n}\n\n.v-application--is-rtl .ps-9 {\n  padding-right: 36px !important;\n}\n\n.v-application--is-ltr .ps-10 {\n  padding-left: 40px !important;\n}\n\n.v-application--is-rtl .ps-10 {\n  padding-right: 40px !important;\n}\n\n.v-application--is-ltr .ps-11 {\n  padding-left: 44px !important;\n}\n\n.v-application--is-rtl .ps-11 {\n  padding-right: 44px !important;\n}\n\n.v-application--is-ltr .ps-12 {\n  padding-left: 48px !important;\n}\n\n.v-application--is-rtl .ps-12 {\n  padding-right: 48px !important;\n}\n\n.v-application--is-ltr .ps-13 {\n  padding-left: 52px !important;\n}\n\n.v-application--is-rtl .ps-13 {\n  padding-right: 52px !important;\n}\n\n.v-application--is-ltr .ps-14 {\n  padding-left: 56px !important;\n}\n\n.v-application--is-rtl .ps-14 {\n  padding-right: 56px !important;\n}\n\n.v-application--is-ltr .ps-15 {\n  padding-left: 60px !important;\n}\n\n.v-application--is-rtl .ps-15 {\n  padding-right: 60px !important;\n}\n\n.v-application--is-ltr .ps-16 {\n  padding-left: 64px !important;\n}\n\n.v-application--is-rtl .ps-16 {\n  padding-right: 64px !important;\n}\n\n.v-application--is-ltr .pe-0 {\n  padding-right: 0px !important;\n}\n\n.v-application--is-rtl .pe-0 {\n  padding-left: 0px !important;\n}\n\n.v-application--is-ltr .pe-1 {\n  padding-right: 4px !important;\n}\n\n.v-application--is-rtl .pe-1 {\n  padding-left: 4px !important;\n}\n\n.v-application--is-ltr .pe-2 {\n  padding-right: 8px !important;\n}\n\n.v-application--is-rtl .pe-2 {\n  padding-left: 8px !important;\n}\n\n.v-application--is-ltr .pe-3 {\n  padding-right: 12px !important;\n}\n\n.v-application--is-rtl .pe-3 {\n  padding-left: 12px !important;\n}\n\n.v-application--is-ltr .pe-4 {\n  padding-right: 16px !important;\n}\n\n.v-application--is-rtl .pe-4 {\n  padding-left: 16px !important;\n}\n\n.v-application--is-ltr .pe-5 {\n  padding-right: 20px !important;\n}\n\n.v-application--is-rtl .pe-5 {\n  padding-left: 20px !important;\n}\n\n.v-application--is-ltr .pe-6 {\n  padding-right: 24px !important;\n}\n\n.v-application--is-rtl .pe-6 {\n  padding-left: 24px !important;\n}\n\n.v-application--is-ltr .pe-7 {\n  padding-right: 28px !important;\n}\n\n.v-application--is-rtl .pe-7 {\n  padding-left: 28px !important;\n}\n\n.v-application--is-ltr .pe-8 {\n  padding-right: 32px !important;\n}\n\n.v-application--is-rtl .pe-8 {\n  padding-left: 32px !important;\n}\n\n.v-application--is-ltr .pe-9 {\n  padding-right: 36px !important;\n}\n\n.v-application--is-rtl .pe-9 {\n  padding-left: 36px !important;\n}\n\n.v-application--is-ltr .pe-10 {\n  padding-right: 40px !important;\n}\n\n.v-application--is-rtl .pe-10 {\n  padding-left: 40px !important;\n}\n\n.v-application--is-ltr .pe-11 {\n  padding-right: 44px !important;\n}\n\n.v-application--is-rtl .pe-11 {\n  padding-left: 44px !important;\n}\n\n.v-application--is-ltr .pe-12 {\n  padding-right: 48px !important;\n}\n\n.v-application--is-rtl .pe-12 {\n  padding-left: 48px !important;\n}\n\n.v-application--is-ltr .pe-13 {\n  padding-right: 52px !important;\n}\n\n.v-application--is-rtl .pe-13 {\n  padding-left: 52px !important;\n}\n\n.v-application--is-ltr .pe-14 {\n  padding-right: 56px !important;\n}\n\n.v-application--is-rtl .pe-14 {\n  padding-left: 56px !important;\n}\n\n.v-application--is-ltr .pe-15 {\n  padding-right: 60px !important;\n}\n\n.v-application--is-rtl .pe-15 {\n  padding-left: 60px !important;\n}\n\n.v-application--is-ltr .pe-16 {\n  padding-right: 64px !important;\n}\n\n.v-application--is-rtl .pe-16 {\n  padding-left: 64px !important;\n}\n\n.v-application .rounded-0 {\n  border-radius: 0 !important;\n}\n\n.v-application .rounded-sm {\n  border-radius: 2px !important;\n}\n\n.v-application .rounded {\n  border-radius: 4px !important;\n}\n\n.v-application .rounded-lg {\n  border-radius: 8px !important;\n}\n\n.v-application .rounded-xl {\n  border-radius: 24px !important;\n}\n\n.v-application .rounded-pill {\n  border-radius: 9999px !important;\n}\n\n.v-application .rounded-circle {\n  border-radius: 50% !important;\n}\n\n.v-application .rounded-t-0 {\n  border-top-left-radius: 0 !important;\n  border-top-right-radius: 0 !important;\n}\n\n.v-application .rounded-t-sm {\n  border-top-left-radius: 2px !important;\n  border-top-right-radius: 2px !important;\n}\n\n.v-application .rounded-t {\n  border-top-left-radius: 4px !important;\n  border-top-right-radius: 4px !important;\n}\n\n.v-application .rounded-t-lg {\n  border-top-left-radius: 8px !important;\n  border-top-right-radius: 8px !important;\n}\n\n.v-application .rounded-t-xl {\n  border-top-left-radius: 24px !important;\n  border-top-right-radius: 24px !important;\n}\n\n.v-application .rounded-t-pill {\n  border-top-left-radius: 9999px !important;\n  border-top-right-radius: 9999px !important;\n}\n\n.v-application .rounded-t-circle {\n  border-top-left-radius: 50% !important;\n  border-top-right-radius: 50% !important;\n}\n\n.v-application .rounded-r-0 {\n  border-top-right-radius: 0 !important;\n  border-bottom-right-radius: 0 !important;\n}\n\n.v-application .rounded-r-sm {\n  border-top-right-radius: 2px !important;\n  border-bottom-right-radius: 2px !important;\n}\n\n.v-application .rounded-r {\n  border-top-right-radius: 4px !important;\n  border-bottom-right-radius: 4px !important;\n}\n\n.v-application .rounded-r-lg {\n  border-top-right-radius: 8px !important;\n  border-bottom-right-radius: 8px !important;\n}\n\n.v-application .rounded-r-xl {\n  border-top-right-radius: 24px !important;\n  border-bottom-right-radius: 24px !important;\n}\n\n.v-application .rounded-r-pill {\n  border-top-right-radius: 9999px !important;\n  border-bottom-right-radius: 9999px !important;\n}\n\n.v-application .rounded-r-circle {\n  border-top-right-radius: 50% !important;\n  border-bottom-right-radius: 50% !important;\n}\n\n.v-application .rounded-b-0 {\n  border-bottom-left-radius: 0 !important;\n  border-bottom-right-radius: 0 !important;\n}\n\n.v-application .rounded-b-sm {\n  border-bottom-left-radius: 2px !important;\n  border-bottom-right-radius: 2px !important;\n}\n\n.v-application .rounded-b {\n  border-bottom-left-radius: 4px !important;\n  border-bottom-right-radius: 4px !important;\n}\n\n.v-application .rounded-b-lg {\n  border-bottom-left-radius: 8px !important;\n  border-bottom-right-radius: 8px !important;\n}\n\n.v-application .rounded-b-xl {\n  border-bottom-left-radius: 24px !important;\n  border-bottom-right-radius: 24px !important;\n}\n\n.v-application .rounded-b-pill {\n  border-bottom-left-radius: 9999px !important;\n  border-bottom-right-radius: 9999px !important;\n}\n\n.v-application .rounded-b-circle {\n  border-bottom-left-radius: 50% !important;\n  border-bottom-right-radius: 50% !important;\n}\n\n.v-application .rounded-l-0 {\n  border-top-left-radius: 0 !important;\n  border-bottom-left-radius: 0 !important;\n}\n\n.v-application .rounded-l-sm {\n  border-top-left-radius: 2px !important;\n  border-bottom-left-radius: 2px !important;\n}\n\n.v-application .rounded-l {\n  border-top-left-radius: 4px !important;\n  border-bottom-left-radius: 4px !important;\n}\n\n.v-application .rounded-l-lg {\n  border-top-left-radius: 8px !important;\n  border-bottom-left-radius: 8px !important;\n}\n\n.v-application .rounded-l-xl {\n  border-top-left-radius: 24px !important;\n  border-bottom-left-radius: 24px !important;\n}\n\n.v-application .rounded-l-pill {\n  border-top-left-radius: 9999px !important;\n  border-bottom-left-radius: 9999px !important;\n}\n\n.v-application .rounded-l-circle {\n  border-top-left-radius: 50% !important;\n  border-bottom-left-radius: 50% !important;\n}\n\n.v-application .rounded-tl-0 {\n  border-top-left-radius: 0 !important;\n}\n\n.v-application .rounded-tl-sm {\n  border-top-left-radius: 2px !important;\n}\n\n.v-application .rounded-tl {\n  border-top-left-radius: 4px !important;\n}\n\n.v-application .rounded-tl-lg {\n  border-top-left-radius: 8px !important;\n}\n\n.v-application .rounded-tl-xl {\n  border-top-left-radius: 24px !important;\n}\n\n.v-application .rounded-tl-pill {\n  border-top-left-radius: 9999px !important;\n}\n\n.v-application .rounded-tl-circle {\n  border-top-left-radius: 50% !important;\n}\n\n.v-application .rounded-tr-0 {\n  border-top-right-radius: 0 !important;\n}\n\n.v-application .rounded-tr-sm {\n  border-top-right-radius: 2px !important;\n}\n\n.v-application .rounded-tr {\n  border-top-right-radius: 4px !important;\n}\n\n.v-application .rounded-tr-lg {\n  border-top-right-radius: 8px !important;\n}\n\n.v-application .rounded-tr-xl {\n  border-top-right-radius: 24px !important;\n}\n\n.v-application .rounded-tr-pill {\n  border-top-right-radius: 9999px !important;\n}\n\n.v-application .rounded-tr-circle {\n  border-top-right-radius: 50% !important;\n}\n\n.v-application .rounded-br-0 {\n  border-bottom-right-radius: 0 !important;\n}\n\n.v-application .rounded-br-sm {\n  border-bottom-right-radius: 2px !important;\n}\n\n.v-application .rounded-br {\n  border-bottom-right-radius: 4px !important;\n}\n\n.v-application .rounded-br-lg {\n  border-bottom-right-radius: 8px !important;\n}\n\n.v-application .rounded-br-xl {\n  border-bottom-right-radius: 24px !important;\n}\n\n.v-application .rounded-br-pill {\n  border-bottom-right-radius: 9999px !important;\n}\n\n.v-application .rounded-br-circle {\n  border-bottom-right-radius: 50% !important;\n}\n\n.v-application .rounded-bl-0 {\n  border-bottom-left-radius: 0 !important;\n}\n\n.v-application .rounded-bl-sm {\n  border-bottom-left-radius: 2px !important;\n}\n\n.v-application .rounded-bl {\n  border-bottom-left-radius: 4px !important;\n}\n\n.v-application .rounded-bl-lg {\n  border-bottom-left-radius: 8px !important;\n}\n\n.v-application .rounded-bl-xl {\n  border-bottom-left-radius: 24px !important;\n}\n\n.v-application .rounded-bl-pill {\n  border-bottom-left-radius: 9999px !important;\n}\n\n.v-application .rounded-bl-circle {\n  border-bottom-left-radius: 50% !important;\n}\n\n.v-application .text-left {\n  text-align: left !important;\n}\n\n.v-application .text-right {\n  text-align: right !important;\n}\n\n.v-application .text-center {\n  text-align: center !important;\n}\n\n.v-application .text-justify {\n  text-align: justify !important;\n}\n\n.v-application .text-start {\n  text-align: start !important;\n}\n\n.v-application .text-end {\n  text-align: end !important;\n}\n\n.v-application .text-decoration-line-through {\n  text-decoration: line-through !important;\n}\n\n.v-application .text-decoration-none {\n  text-decoration: none !important;\n}\n\n.v-application .text-decoration-overline {\n  text-decoration: overline !important;\n}\n\n.v-application .text-decoration-underline {\n  text-decoration: underline !important;\n}\n\n.v-application .text-wrap {\n  white-space: normal !important;\n}\n\n.v-application .text-no-wrap {\n  white-space: nowrap !important;\n}\n\n.v-application .text-pre {\n  white-space: pre !important;\n}\n\n.v-application .text-pre-line {\n  white-space: pre-line !important;\n}\n\n.v-application .text-pre-wrap {\n  white-space: pre-wrap !important;\n}\n\n.v-application .text-break {\n  overflow-wrap: break-word !important;\n  word-break: break-word !important;\n}\n\n.v-application .text-truncate {\n  white-space: nowrap !important;\n  overflow: hidden !important;\n  text-overflow: ellipsis !important;\n}\n\n.v-application .text-none {\n  text-transform: none !important;\n}\n\n.v-application .text-capitalize {\n  text-transform: capitalize !important;\n}\n\n.v-application .text-lowercase {\n  text-transform: lowercase !important;\n}\n\n.v-application .text-uppercase {\n  text-transform: uppercase !important;\n}\n\n.v-application .text-h1 {\n  font-size: 6rem !important;\n  font-weight: 300;\n  line-height: 6rem;\n  letter-spacing: -0.015625em !important;\n  font-family: \"Roboto\", sans-serif !important;\n}\n\n.v-application .text-h2 {\n  font-size: 3.75rem !important;\n  font-weight: 300;\n  line-height: 3.75rem;\n  letter-spacing: -0.0083333333em !important;\n  font-family: \"Roboto\", sans-serif !important;\n}\n\n.v-application .text-h3 {\n  font-size: 3rem !important;\n  font-weight: 400;\n  line-height: 3.125rem;\n  letter-spacing: normal !important;\n  font-family: \"Roboto\", sans-serif !important;\n}\n\n.v-application .text-h4 {\n  font-size: 2.125rem !important;\n  font-weight: 400;\n  line-height: 2.5rem;\n  letter-spacing: 0.0073529412em !important;\n  font-family: \"Roboto\", sans-serif !important;\n}\n\n.v-application .text-h5 {\n  font-size: 1.5rem !important;\n  font-weight: 400;\n  line-height: 2rem;\n  letter-spacing: normal !important;\n  font-family: \"Roboto\", sans-serif !important;\n}\n\n.v-application .text-h6 {\n  font-size: 1.25rem !important;\n  font-weight: 500;\n  line-height: 2rem;\n  letter-spacing: 0.0125em !important;\n  font-family: \"Roboto\", sans-serif !important;\n}\n\n.v-application .text-subtitle-1 {\n  font-size: 1rem !important;\n  font-weight: normal;\n  line-height: 1.75rem;\n  letter-spacing: 0.009375em !important;\n  font-family: \"Roboto\", sans-serif !important;\n}\n\n.v-application .text-subtitle-2 {\n  font-size: 0.875rem !important;\n  font-weight: 500;\n  line-height: 1.375rem;\n  letter-spacing: 0.0071428571em !important;\n  font-family: \"Roboto\", sans-serif !important;\n}\n\n.v-application .text-body-1 {\n  font-size: 1rem !important;\n  font-weight: 400;\n  line-height: 1.5rem;\n  letter-spacing: 0.03125em !important;\n  font-family: \"Roboto\", sans-serif !important;\n}\n\n.v-application .text-body-2 {\n  font-size: 0.875rem !important;\n  font-weight: 400;\n  line-height: 1.25rem;\n  letter-spacing: 0.0178571429em !important;\n  font-family: \"Roboto\", sans-serif !important;\n}\n\n.v-application .text-button {\n  font-size: 0.875rem !important;\n  font-weight: 500;\n  line-height: 2.25rem;\n  letter-spacing: 0.0892857143em !important;\n  font-family: \"Roboto\", sans-serif !important;\n  text-transform: uppercase !important;\n}\n\n.v-application .text-caption {\n  font-size: 0.75rem !important;\n  font-weight: 400;\n  line-height: 1.25rem;\n  letter-spacing: 0.0333333333em !important;\n  font-family: \"Roboto\", sans-serif !important;\n}\n\n.v-application .text-overline {\n  font-size: 0.75rem !important;\n  font-weight: 500;\n  line-height: 2rem;\n  letter-spacing: 0.1666666667em !important;\n  font-family: \"Roboto\", sans-serif !important;\n  text-transform: uppercase !important;\n}\n\n@media (min-width: 600px) {\n  .v-application .d-sm-none {\n    display: none !important;\n  }\n  .v-application .d-sm-inline {\n    display: inline !important;\n  }\n  .v-application .d-sm-inline-block {\n    display: inline-block !important;\n  }\n  .v-application .d-sm-block {\n    display: block !important;\n  }\n  .v-application .d-sm-table {\n    display: table !important;\n  }\n  .v-application .d-sm-table-row {\n    display: table-row !important;\n  }\n  .v-application .d-sm-table-cell {\n    display: table-cell !important;\n  }\n  .v-application .d-sm-flex {\n    display: flex !important;\n  }\n  .v-application .d-sm-inline-flex {\n    display: inline-flex !important;\n  }\n  .v-application .float-sm-none {\n    float: none !important;\n  }\n  .v-application .float-sm-left {\n    float: left !important;\n  }\n  .v-application .float-sm-right {\n    float: right !important;\n  }\n  .v-application--is-rtl .float-sm-end {\n    float: left !important;\n  }\n  .v-application--is-rtl .float-sm-start {\n    float: right !important;\n  }\n  .v-application--is-ltr .float-sm-end {\n    float: right !important;\n  }\n  .v-application--is-ltr .float-sm-start {\n    float: left !important;\n  }\n  .v-application .flex-sm-fill {\n    flex: 1 1 auto !important;\n  }\n  .v-application .flex-sm-row {\n    flex-direction: row !important;\n  }\n  .v-application .flex-sm-column {\n    flex-direction: column !important;\n  }\n  .v-application .flex-sm-row-reverse {\n    flex-direction: row-reverse !important;\n  }\n  .v-application .flex-sm-column-reverse {\n    flex-direction: column-reverse !important;\n  }\n  .v-application .flex-sm-grow-0 {\n    flex-grow: 0 !important;\n  }\n  .v-application .flex-sm-grow-1 {\n    flex-grow: 1 !important;\n  }\n  .v-application .flex-sm-shrink-0 {\n    flex-shrink: 0 !important;\n  }\n  .v-application .flex-sm-shrink-1 {\n    flex-shrink: 1 !important;\n  }\n  .v-application .flex-sm-wrap {\n    flex-wrap: wrap !important;\n  }\n  .v-application .flex-sm-nowrap {\n    flex-wrap: nowrap !important;\n  }\n  .v-application .flex-sm-wrap-reverse {\n    flex-wrap: wrap-reverse !important;\n  }\n  .v-application .justify-sm-start {\n    justify-content: flex-start !important;\n  }\n  .v-application .justify-sm-end {\n    justify-content: flex-end !important;\n  }\n  .v-application .justify-sm-center {\n    justify-content: center !important;\n  }\n  .v-application .justify-sm-space-between {\n    justify-content: space-between !important;\n  }\n  .v-application .justify-sm-space-around {\n    justify-content: space-around !important;\n  }\n  .v-application .align-sm-start {\n    align-items: flex-start !important;\n  }\n  .v-application .align-sm-end {\n    align-items: flex-end !important;\n  }\n  .v-application .align-sm-center {\n    align-items: center !important;\n  }\n  .v-application .align-sm-baseline {\n    align-items: baseline !important;\n  }\n  .v-application .align-sm-stretch {\n    align-items: stretch !important;\n  }\n  .v-application .align-content-sm-start {\n    align-content: flex-start !important;\n  }\n  .v-application .align-content-sm-end {\n    align-content: flex-end !important;\n  }\n  .v-application .align-content-sm-center {\n    align-content: center !important;\n  }\n  .v-application .align-content-sm-space-between {\n    align-content: space-between !important;\n  }\n  .v-application .align-content-sm-space-around {\n    align-content: space-around !important;\n  }\n  .v-application .align-content-sm-stretch {\n    align-content: stretch !important;\n  }\n  .v-application .align-self-sm-auto {\n    align-self: auto !important;\n  }\n  .v-application .align-self-sm-start {\n    align-self: flex-start !important;\n  }\n  .v-application .align-self-sm-end {\n    align-self: flex-end !important;\n  }\n  .v-application .align-self-sm-center {\n    align-self: center !important;\n  }\n  .v-application .align-self-sm-baseline {\n    align-self: baseline !important;\n  }\n  .v-application .align-self-sm-stretch {\n    align-self: stretch !important;\n  }\n  .v-application .order-sm-first {\n    order: -1 !important;\n  }\n  .v-application .order-sm-0 {\n    order: 0 !important;\n  }\n  .v-application .order-sm-1 {\n    order: 1 !important;\n  }\n  .v-application .order-sm-2 {\n    order: 2 !important;\n  }\n  .v-application .order-sm-3 {\n    order: 3 !important;\n  }\n  .v-application .order-sm-4 {\n    order: 4 !important;\n  }\n  .v-application .order-sm-5 {\n    order: 5 !important;\n  }\n  .v-application .order-sm-6 {\n    order: 6 !important;\n  }\n  .v-application .order-sm-7 {\n    order: 7 !important;\n  }\n  .v-application .order-sm-8 {\n    order: 8 !important;\n  }\n  .v-application .order-sm-9 {\n    order: 9 !important;\n  }\n  .v-application .order-sm-10 {\n    order: 10 !important;\n  }\n  .v-application .order-sm-11 {\n    order: 11 !important;\n  }\n  .v-application .order-sm-12 {\n    order: 12 !important;\n  }\n  .v-application .order-sm-last {\n    order: 13 !important;\n  }\n  .v-application .ma-sm-0 {\n    margin: 0px !important;\n  }\n  .v-application .ma-sm-1 {\n    margin: 4px !important;\n  }\n  .v-application .ma-sm-2 {\n    margin: 8px !important;\n  }\n  .v-application .ma-sm-3 {\n    margin: 12px !important;\n  }\n  .v-application .ma-sm-4 {\n    margin: 16px !important;\n  }\n  .v-application .ma-sm-5 {\n    margin: 20px !important;\n  }\n  .v-application .ma-sm-6 {\n    margin: 24px !important;\n  }\n  .v-application .ma-sm-7 {\n    margin: 28px !important;\n  }\n  .v-application .ma-sm-8 {\n    margin: 32px !important;\n  }\n  .v-application .ma-sm-9 {\n    margin: 36px !important;\n  }\n  .v-application .ma-sm-10 {\n    margin: 40px !important;\n  }\n  .v-application .ma-sm-11 {\n    margin: 44px !important;\n  }\n  .v-application .ma-sm-12 {\n    margin: 48px !important;\n  }\n  .v-application .ma-sm-13 {\n    margin: 52px !important;\n  }\n  .v-application .ma-sm-14 {\n    margin: 56px !important;\n  }\n  .v-application .ma-sm-15 {\n    margin: 60px !important;\n  }\n  .v-application .ma-sm-16 {\n    margin: 64px !important;\n  }\n  .v-application .ma-sm-auto {\n    margin: auto !important;\n  }\n  .v-application .mx-sm-0 {\n    margin-right: 0px !important;\n    margin-left: 0px !important;\n  }\n  .v-application .mx-sm-1 {\n    margin-right: 4px !important;\n    margin-left: 4px !important;\n  }\n  .v-application .mx-sm-2 {\n    margin-right: 8px !important;\n    margin-left: 8px !important;\n  }\n  .v-application .mx-sm-3 {\n    margin-right: 12px !important;\n    margin-left: 12px !important;\n  }\n  .v-application .mx-sm-4 {\n    margin-right: 16px !important;\n    margin-left: 16px !important;\n  }\n  .v-application .mx-sm-5 {\n    margin-right: 20px !important;\n    margin-left: 20px !important;\n  }\n  .v-application .mx-sm-6 {\n    margin-right: 24px !important;\n    margin-left: 24px !important;\n  }\n  .v-application .mx-sm-7 {\n    margin-right: 28px !important;\n    margin-left: 28px !important;\n  }\n  .v-application .mx-sm-8 {\n    margin-right: 32px !important;\n    margin-left: 32px !important;\n  }\n  .v-application .mx-sm-9 {\n    margin-right: 36px !important;\n    margin-left: 36px !important;\n  }\n  .v-application .mx-sm-10 {\n    margin-right: 40px !important;\n    margin-left: 40px !important;\n  }\n  .v-application .mx-sm-11 {\n    margin-right: 44px !important;\n    margin-left: 44px !important;\n  }\n  .v-application .mx-sm-12 {\n    margin-right: 48px !important;\n    margin-left: 48px !important;\n  }\n  .v-application .mx-sm-13 {\n    margin-right: 52px !important;\n    margin-left: 52px !important;\n  }\n  .v-application .mx-sm-14 {\n    margin-right: 56px !important;\n    margin-left: 56px !important;\n  }\n  .v-application .mx-sm-15 {\n    margin-right: 60px !important;\n    margin-left: 60px !important;\n  }\n  .v-application .mx-sm-16 {\n    margin-right: 64px !important;\n    margin-left: 64px !important;\n  }\n  .v-application .mx-sm-auto {\n    margin-right: auto !important;\n    margin-left: auto !important;\n  }\n  .v-application .my-sm-0 {\n    margin-top: 0px !important;\n    margin-bottom: 0px !important;\n  }\n  .v-application .my-sm-1 {\n    margin-top: 4px !important;\n    margin-bottom: 4px !important;\n  }\n  .v-application .my-sm-2 {\n    margin-top: 8px !important;\n    margin-bottom: 8px !important;\n  }\n  .v-application .my-sm-3 {\n    margin-top: 12px !important;\n    margin-bottom: 12px !important;\n  }\n  .v-application .my-sm-4 {\n    margin-top: 16px !important;\n    margin-bottom: 16px !important;\n  }\n  .v-application .my-sm-5 {\n    margin-top: 20px !important;\n    margin-bottom: 20px !important;\n  }\n  .v-application .my-sm-6 {\n    margin-top: 24px !important;\n    margin-bottom: 24px !important;\n  }\n  .v-application .my-sm-7 {\n    margin-top: 28px !important;\n    margin-bottom: 28px !important;\n  }\n  .v-application .my-sm-8 {\n    margin-top: 32px !important;\n    margin-bottom: 32px !important;\n  }\n  .v-application .my-sm-9 {\n    margin-top: 36px !important;\n    margin-bottom: 36px !important;\n  }\n  .v-application .my-sm-10 {\n    margin-top: 40px !important;\n    margin-bottom: 40px !important;\n  }\n  .v-application .my-sm-11 {\n    margin-top: 44px !important;\n    margin-bottom: 44px !important;\n  }\n  .v-application .my-sm-12 {\n    margin-top: 48px !important;\n    margin-bottom: 48px !important;\n  }\n  .v-application .my-sm-13 {\n    margin-top: 52px !important;\n    margin-bottom: 52px !important;\n  }\n  .v-application .my-sm-14 {\n    margin-top: 56px !important;\n    margin-bottom: 56px !important;\n  }\n  .v-application .my-sm-15 {\n    margin-top: 60px !important;\n    margin-bottom: 60px !important;\n  }\n  .v-application .my-sm-16 {\n    margin-top: 64px !important;\n    margin-bottom: 64px !important;\n  }\n  .v-application .my-sm-auto {\n    margin-top: auto !important;\n    margin-bottom: auto !important;\n  }\n  .v-application .mt-sm-0 {\n    margin-top: 0px !important;\n  }\n  .v-application .mt-sm-1 {\n    margin-top: 4px !important;\n  }\n  .v-application .mt-sm-2 {\n    margin-top: 8px !important;\n  }\n  .v-application .mt-sm-3 {\n    margin-top: 12px !important;\n  }\n  .v-application .mt-sm-4 {\n    margin-top: 16px !important;\n  }\n  .v-application .mt-sm-5 {\n    margin-top: 20px !important;\n  }\n  .v-application .mt-sm-6 {\n    margin-top: 24px !important;\n  }\n  .v-application .mt-sm-7 {\n    margin-top: 28px !important;\n  }\n  .v-application .mt-sm-8 {\n    margin-top: 32px !important;\n  }\n  .v-application .mt-sm-9 {\n    margin-top: 36px !important;\n  }\n  .v-application .mt-sm-10 {\n    margin-top: 40px !important;\n  }\n  .v-application .mt-sm-11 {\n    margin-top: 44px !important;\n  }\n  .v-application .mt-sm-12 {\n    margin-top: 48px !important;\n  }\n  .v-application .mt-sm-13 {\n    margin-top: 52px !important;\n  }\n  .v-application .mt-sm-14 {\n    margin-top: 56px !important;\n  }\n  .v-application .mt-sm-15 {\n    margin-top: 60px !important;\n  }\n  .v-application .mt-sm-16 {\n    margin-top: 64px !important;\n  }\n  .v-application .mt-sm-auto {\n    margin-top: auto !important;\n  }\n  .v-application .mr-sm-0 {\n    margin-right: 0px !important;\n  }\n  .v-application .mr-sm-1 {\n    margin-right: 4px !important;\n  }\n  .v-application .mr-sm-2 {\n    margin-right: 8px !important;\n  }\n  .v-application .mr-sm-3 {\n    margin-right: 12px !important;\n  }\n  .v-application .mr-sm-4 {\n    margin-right: 16px !important;\n  }\n  .v-application .mr-sm-5 {\n    margin-right: 20px !important;\n  }\n  .v-application .mr-sm-6 {\n    margin-right: 24px !important;\n  }\n  .v-application .mr-sm-7 {\n    margin-right: 28px !important;\n  }\n  .v-application .mr-sm-8 {\n    margin-right: 32px !important;\n  }\n  .v-application .mr-sm-9 {\n    margin-right: 36px !important;\n  }\n  .v-application .mr-sm-10 {\n    margin-right: 40px !important;\n  }\n  .v-application .mr-sm-11 {\n    margin-right: 44px !important;\n  }\n  .v-application .mr-sm-12 {\n    margin-right: 48px !important;\n  }\n  .v-application .mr-sm-13 {\n    margin-right: 52px !important;\n  }\n  .v-application .mr-sm-14 {\n    margin-right: 56px !important;\n  }\n  .v-application .mr-sm-15 {\n    margin-right: 60px !important;\n  }\n  .v-application .mr-sm-16 {\n    margin-right: 64px !important;\n  }\n  .v-application .mr-sm-auto {\n    margin-right: auto !important;\n  }\n  .v-application .mb-sm-0 {\n    margin-bottom: 0px !important;\n  }\n  .v-application .mb-sm-1 {\n    margin-bottom: 4px !important;\n  }\n  .v-application .mb-sm-2 {\n    margin-bottom: 8px !important;\n  }\n  .v-application .mb-sm-3 {\n    margin-bottom: 12px !important;\n  }\n  .v-application .mb-sm-4 {\n    margin-bottom: 16px !important;\n  }\n  .v-application .mb-sm-5 {\n    margin-bottom: 20px !important;\n  }\n  .v-application .mb-sm-6 {\n    margin-bottom: 24px !important;\n  }\n  .v-application .mb-sm-7 {\n    margin-bottom: 28px !important;\n  }\n  .v-application .mb-sm-8 {\n    margin-bottom: 32px !important;\n  }\n  .v-application .mb-sm-9 {\n    margin-bottom: 36px !important;\n  }\n  .v-application .mb-sm-10 {\n    margin-bottom: 40px !important;\n  }\n  .v-application .mb-sm-11 {\n    margin-bottom: 44px !important;\n  }\n  .v-application .mb-sm-12 {\n    margin-bottom: 48px !important;\n  }\n  .v-application .mb-sm-13 {\n    margin-bottom: 52px !important;\n  }\n  .v-application .mb-sm-14 {\n    margin-bottom: 56px !important;\n  }\n  .v-application .mb-sm-15 {\n    margin-bottom: 60px !important;\n  }\n  .v-application .mb-sm-16 {\n    margin-bottom: 64px !important;\n  }\n  .v-application .mb-sm-auto {\n    margin-bottom: auto !important;\n  }\n  .v-application .ml-sm-0 {\n    margin-left: 0px !important;\n  }\n  .v-application .ml-sm-1 {\n    margin-left: 4px !important;\n  }\n  .v-application .ml-sm-2 {\n    margin-left: 8px !important;\n  }\n  .v-application .ml-sm-3 {\n    margin-left: 12px !important;\n  }\n  .v-application .ml-sm-4 {\n    margin-left: 16px !important;\n  }\n  .v-application .ml-sm-5 {\n    margin-left: 20px !important;\n  }\n  .v-application .ml-sm-6 {\n    margin-left: 24px !important;\n  }\n  .v-application .ml-sm-7 {\n    margin-left: 28px !important;\n  }\n  .v-application .ml-sm-8 {\n    margin-left: 32px !important;\n  }\n  .v-application .ml-sm-9 {\n    margin-left: 36px !important;\n  }\n  .v-application .ml-sm-10 {\n    margin-left: 40px !important;\n  }\n  .v-application .ml-sm-11 {\n    margin-left: 44px !important;\n  }\n  .v-application .ml-sm-12 {\n    margin-left: 48px !important;\n  }\n  .v-application .ml-sm-13 {\n    margin-left: 52px !important;\n  }\n  .v-application .ml-sm-14 {\n    margin-left: 56px !important;\n  }\n  .v-application .ml-sm-15 {\n    margin-left: 60px !important;\n  }\n  .v-application .ml-sm-16 {\n    margin-left: 64px !important;\n  }\n  .v-application .ml-sm-auto {\n    margin-left: auto !important;\n  }\n  .v-application--is-ltr .ms-sm-0 {\n    margin-left: 0px !important;\n  }\n  .v-application--is-rtl .ms-sm-0 {\n    margin-right: 0px !important;\n  }\n  .v-application--is-ltr .ms-sm-1 {\n    margin-left: 4px !important;\n  }\n  .v-application--is-rtl .ms-sm-1 {\n    margin-right: 4px !important;\n  }\n  .v-application--is-ltr .ms-sm-2 {\n    margin-left: 8px !important;\n  }\n  .v-application--is-rtl .ms-sm-2 {\n    margin-right: 8px !important;\n  }\n  .v-application--is-ltr .ms-sm-3 {\n    margin-left: 12px !important;\n  }\n  .v-application--is-rtl .ms-sm-3 {\n    margin-right: 12px !important;\n  }\n  .v-application--is-ltr .ms-sm-4 {\n    margin-left: 16px !important;\n  }\n  .v-application--is-rtl .ms-sm-4 {\n    margin-right: 16px !important;\n  }\n  .v-application--is-ltr .ms-sm-5 {\n    margin-left: 20px !important;\n  }\n  .v-application--is-rtl .ms-sm-5 {\n    margin-right: 20px !important;\n  }\n  .v-application--is-ltr .ms-sm-6 {\n    margin-left: 24px !important;\n  }\n  .v-application--is-rtl .ms-sm-6 {\n    margin-right: 24px !important;\n  }\n  .v-application--is-ltr .ms-sm-7 {\n    margin-left: 28px !important;\n  }\n  .v-application--is-rtl .ms-sm-7 {\n    margin-right: 28px !important;\n  }\n  .v-application--is-ltr .ms-sm-8 {\n    margin-left: 32px !important;\n  }\n  .v-application--is-rtl .ms-sm-8 {\n    margin-right: 32px !important;\n  }\n  .v-application--is-ltr .ms-sm-9 {\n    margin-left: 36px !important;\n  }\n  .v-application--is-rtl .ms-sm-9 {\n    margin-right: 36px !important;\n  }\n  .v-application--is-ltr .ms-sm-10 {\n    margin-left: 40px !important;\n  }\n  .v-application--is-rtl .ms-sm-10 {\n    margin-right: 40px !important;\n  }\n  .v-application--is-ltr .ms-sm-11 {\n    margin-left: 44px !important;\n  }\n  .v-application--is-rtl .ms-sm-11 {\n    margin-right: 44px !important;\n  }\n  .v-application--is-ltr .ms-sm-12 {\n    margin-left: 48px !important;\n  }\n  .v-application--is-rtl .ms-sm-12 {\n    margin-right: 48px !important;\n  }\n  .v-application--is-ltr .ms-sm-13 {\n    margin-left: 52px !important;\n  }\n  .v-application--is-rtl .ms-sm-13 {\n    margin-right: 52px !important;\n  }\n  .v-application--is-ltr .ms-sm-14 {\n    margin-left: 56px !important;\n  }\n  .v-application--is-rtl .ms-sm-14 {\n    margin-right: 56px !important;\n  }\n  .v-application--is-ltr .ms-sm-15 {\n    margin-left: 60px !important;\n  }\n  .v-application--is-rtl .ms-sm-15 {\n    margin-right: 60px !important;\n  }\n  .v-application--is-ltr .ms-sm-16 {\n    margin-left: 64px !important;\n  }\n  .v-application--is-rtl .ms-sm-16 {\n    margin-right: 64px !important;\n  }\n  .v-application--is-ltr .ms-sm-auto {\n    margin-left: auto !important;\n  }\n  .v-application--is-rtl .ms-sm-auto {\n    margin-right: auto !important;\n  }\n  .v-application--is-ltr .me-sm-0 {\n    margin-right: 0px !important;\n  }\n  .v-application--is-rtl .me-sm-0 {\n    margin-left: 0px !important;\n  }\n  .v-application--is-ltr .me-sm-1 {\n    margin-right: 4px !important;\n  }\n  .v-application--is-rtl .me-sm-1 {\n    margin-left: 4px !important;\n  }\n  .v-application--is-ltr .me-sm-2 {\n    margin-right: 8px !important;\n  }\n  .v-application--is-rtl .me-sm-2 {\n    margin-left: 8px !important;\n  }\n  .v-application--is-ltr .me-sm-3 {\n    margin-right: 12px !important;\n  }\n  .v-application--is-rtl .me-sm-3 {\n    margin-left: 12px !important;\n  }\n  .v-application--is-ltr .me-sm-4 {\n    margin-right: 16px !important;\n  }\n  .v-application--is-rtl .me-sm-4 {\n    margin-left: 16px !important;\n  }\n  .v-application--is-ltr .me-sm-5 {\n    margin-right: 20px !important;\n  }\n  .v-application--is-rtl .me-sm-5 {\n    margin-left: 20px !important;\n  }\n  .v-application--is-ltr .me-sm-6 {\n    margin-right: 24px !important;\n  }\n  .v-application--is-rtl .me-sm-6 {\n    margin-left: 24px !important;\n  }\n  .v-application--is-ltr .me-sm-7 {\n    margin-right: 28px !important;\n  }\n  .v-application--is-rtl .me-sm-7 {\n    margin-left: 28px !important;\n  }\n  .v-application--is-ltr .me-sm-8 {\n    margin-right: 32px !important;\n  }\n  .v-application--is-rtl .me-sm-8 {\n    margin-left: 32px !important;\n  }\n  .v-application--is-ltr .me-sm-9 {\n    margin-right: 36px !important;\n  }\n  .v-application--is-rtl .me-sm-9 {\n    margin-left: 36px !important;\n  }\n  .v-application--is-ltr .me-sm-10 {\n    margin-right: 40px !important;\n  }\n  .v-application--is-rtl .me-sm-10 {\n    margin-left: 40px !important;\n  }\n  .v-application--is-ltr .me-sm-11 {\n    margin-right: 44px !important;\n  }\n  .v-application--is-rtl .me-sm-11 {\n    margin-left: 44px !important;\n  }\n  .v-application--is-ltr .me-sm-12 {\n    margin-right: 48px !important;\n  }\n  .v-application--is-rtl .me-sm-12 {\n    margin-left: 48px !important;\n  }\n  .v-application--is-ltr .me-sm-13 {\n    margin-right: 52px !important;\n  }\n  .v-application--is-rtl .me-sm-13 {\n    margin-left: 52px !important;\n  }\n  .v-application--is-ltr .me-sm-14 {\n    margin-right: 56px !important;\n  }\n  .v-application--is-rtl .me-sm-14 {\n    margin-left: 56px !important;\n  }\n  .v-application--is-ltr .me-sm-15 {\n    margin-right: 60px !important;\n  }\n  .v-application--is-rtl .me-sm-15 {\n    margin-left: 60px !important;\n  }\n  .v-application--is-ltr .me-sm-16 {\n    margin-right: 64px !important;\n  }\n  .v-application--is-rtl .me-sm-16 {\n    margin-left: 64px !important;\n  }\n  .v-application--is-ltr .me-sm-auto {\n    margin-right: auto !important;\n  }\n  .v-application--is-rtl .me-sm-auto {\n    margin-left: auto !important;\n  }\n  .v-application .ma-sm-n1 {\n    margin: -4px !important;\n  }\n  .v-application .ma-sm-n2 {\n    margin: -8px !important;\n  }\n  .v-application .ma-sm-n3 {\n    margin: -12px !important;\n  }\n  .v-application .ma-sm-n4 {\n    margin: -16px !important;\n  }\n  .v-application .ma-sm-n5 {\n    margin: -20px !important;\n  }\n  .v-application .ma-sm-n6 {\n    margin: -24px !important;\n  }\n  .v-application .ma-sm-n7 {\n    margin: -28px !important;\n  }\n  .v-application .ma-sm-n8 {\n    margin: -32px !important;\n  }\n  .v-application .ma-sm-n9 {\n    margin: -36px !important;\n  }\n  .v-application .ma-sm-n10 {\n    margin: -40px !important;\n  }\n  .v-application .ma-sm-n11 {\n    margin: -44px !important;\n  }\n  .v-application .ma-sm-n12 {\n    margin: -48px !important;\n  }\n  .v-application .ma-sm-n13 {\n    margin: -52px !important;\n  }\n  .v-application .ma-sm-n14 {\n    margin: -56px !important;\n  }\n  .v-application .ma-sm-n15 {\n    margin: -60px !important;\n  }\n  .v-application .ma-sm-n16 {\n    margin: -64px !important;\n  }\n  .v-application .mx-sm-n1 {\n    margin-right: -4px !important;\n    margin-left: -4px !important;\n  }\n  .v-application .mx-sm-n2 {\n    margin-right: -8px !important;\n    margin-left: -8px !important;\n  }\n  .v-application .mx-sm-n3 {\n    margin-right: -12px !important;\n    margin-left: -12px !important;\n  }\n  .v-application .mx-sm-n4 {\n    margin-right: -16px !important;\n    margin-left: -16px !important;\n  }\n  .v-application .mx-sm-n5 {\n    margin-right: -20px !important;\n    margin-left: -20px !important;\n  }\n  .v-application .mx-sm-n6 {\n    margin-right: -24px !important;\n    margin-left: -24px !important;\n  }\n  .v-application .mx-sm-n7 {\n    margin-right: -28px !important;\n    margin-left: -28px !important;\n  }\n  .v-application .mx-sm-n8 {\n    margin-right: -32px !important;\n    margin-left: -32px !important;\n  }\n  .v-application .mx-sm-n9 {\n    margin-right: -36px !important;\n    margin-left: -36px !important;\n  }\n  .v-application .mx-sm-n10 {\n    margin-right: -40px !important;\n    margin-left: -40px !important;\n  }\n  .v-application .mx-sm-n11 {\n    margin-right: -44px !important;\n    margin-left: -44px !important;\n  }\n  .v-application .mx-sm-n12 {\n    margin-right: -48px !important;\n    margin-left: -48px !important;\n  }\n  .v-application .mx-sm-n13 {\n    margin-right: -52px !important;\n    margin-left: -52px !important;\n  }\n  .v-application .mx-sm-n14 {\n    margin-right: -56px !important;\n    margin-left: -56px !important;\n  }\n  .v-application .mx-sm-n15 {\n    margin-right: -60px !important;\n    margin-left: -60px !important;\n  }\n  .v-application .mx-sm-n16 {\n    margin-right: -64px !important;\n    margin-left: -64px !important;\n  }\n  .v-application .my-sm-n1 {\n    margin-top: -4px !important;\n    margin-bottom: -4px !important;\n  }\n  .v-application .my-sm-n2 {\n    margin-top: -8px !important;\n    margin-bottom: -8px !important;\n  }\n  .v-application .my-sm-n3 {\n    margin-top: -12px !important;\n    margin-bottom: -12px !important;\n  }\n  .v-application .my-sm-n4 {\n    margin-top: -16px !important;\n    margin-bottom: -16px !important;\n  }\n  .v-application .my-sm-n5 {\n    margin-top: -20px !important;\n    margin-bottom: -20px !important;\n  }\n  .v-application .my-sm-n6 {\n    margin-top: -24px !important;\n    margin-bottom: -24px !important;\n  }\n  .v-application .my-sm-n7 {\n    margin-top: -28px !important;\n    margin-bottom: -28px !important;\n  }\n  .v-application .my-sm-n8 {\n    margin-top: -32px !important;\n    margin-bottom: -32px !important;\n  }\n  .v-application .my-sm-n9 {\n    margin-top: -36px !important;\n    margin-bottom: -36px !important;\n  }\n  .v-application .my-sm-n10 {\n    margin-top: -40px !important;\n    margin-bottom: -40px !important;\n  }\n  .v-application .my-sm-n11 {\n    margin-top: -44px !important;\n    margin-bottom: -44px !important;\n  }\n  .v-application .my-sm-n12 {\n    margin-top: -48px !important;\n    margin-bottom: -48px !important;\n  }\n  .v-application .my-sm-n13 {\n    margin-top: -52px !important;\n    margin-bottom: -52px !important;\n  }\n  .v-application .my-sm-n14 {\n    margin-top: -56px !important;\n    margin-bottom: -56px !important;\n  }\n  .v-application .my-sm-n15 {\n    margin-top: -60px !important;\n    margin-bottom: -60px !important;\n  }\n  .v-application .my-sm-n16 {\n    margin-top: -64px !important;\n    margin-bottom: -64px !important;\n  }\n  .v-application .mt-sm-n1 {\n    margin-top: -4px !important;\n  }\n  .v-application .mt-sm-n2 {\n    margin-top: -8px !important;\n  }\n  .v-application .mt-sm-n3 {\n    margin-top: -12px !important;\n  }\n  .v-application .mt-sm-n4 {\n    margin-top: -16px !important;\n  }\n  .v-application .mt-sm-n5 {\n    margin-top: -20px !important;\n  }\n  .v-application .mt-sm-n6 {\n    margin-top: -24px !important;\n  }\n  .v-application .mt-sm-n7 {\n    margin-top: -28px !important;\n  }\n  .v-application .mt-sm-n8 {\n    margin-top: -32px !important;\n  }\n  .v-application .mt-sm-n9 {\n    margin-top: -36px !important;\n  }\n  .v-application .mt-sm-n10 {\n    margin-top: -40px !important;\n  }\n  .v-application .mt-sm-n11 {\n    margin-top: -44px !important;\n  }\n  .v-application .mt-sm-n12 {\n    margin-top: -48px !important;\n  }\n  .v-application .mt-sm-n13 {\n    margin-top: -52px !important;\n  }\n  .v-application .mt-sm-n14 {\n    margin-top: -56px !important;\n  }\n  .v-application .mt-sm-n15 {\n    margin-top: -60px !important;\n  }\n  .v-application .mt-sm-n16 {\n    margin-top: -64px !important;\n  }\n  .v-application .mr-sm-n1 {\n    margin-right: -4px !important;\n  }\n  .v-application .mr-sm-n2 {\n    margin-right: -8px !important;\n  }\n  .v-application .mr-sm-n3 {\n    margin-right: -12px !important;\n  }\n  .v-application .mr-sm-n4 {\n    margin-right: -16px !important;\n  }\n  .v-application .mr-sm-n5 {\n    margin-right: -20px !important;\n  }\n  .v-application .mr-sm-n6 {\n    margin-right: -24px !important;\n  }\n  .v-application .mr-sm-n7 {\n    margin-right: -28px !important;\n  }\n  .v-application .mr-sm-n8 {\n    margin-right: -32px !important;\n  }\n  .v-application .mr-sm-n9 {\n    margin-right: -36px !important;\n  }\n  .v-application .mr-sm-n10 {\n    margin-right: -40px !important;\n  }\n  .v-application .mr-sm-n11 {\n    margin-right: -44px !important;\n  }\n  .v-application .mr-sm-n12 {\n    margin-right: -48px !important;\n  }\n  .v-application .mr-sm-n13 {\n    margin-right: -52px !important;\n  }\n  .v-application .mr-sm-n14 {\n    margin-right: -56px !important;\n  }\n  .v-application .mr-sm-n15 {\n    margin-right: -60px !important;\n  }\n  .v-application .mr-sm-n16 {\n    margin-right: -64px !important;\n  }\n  .v-application .mb-sm-n1 {\n    margin-bottom: -4px !important;\n  }\n  .v-application .mb-sm-n2 {\n    margin-bottom: -8px !important;\n  }\n  .v-application .mb-sm-n3 {\n    margin-bottom: -12px !important;\n  }\n  .v-application .mb-sm-n4 {\n    margin-bottom: -16px !important;\n  }\n  .v-application .mb-sm-n5 {\n    margin-bottom: -20px !important;\n  }\n  .v-application .mb-sm-n6 {\n    margin-bottom: -24px !important;\n  }\n  .v-application .mb-sm-n7 {\n    margin-bottom: -28px !important;\n  }\n  .v-application .mb-sm-n8 {\n    margin-bottom: -32px !important;\n  }\n  .v-application .mb-sm-n9 {\n    margin-bottom: -36px !important;\n  }\n  .v-application .mb-sm-n10 {\n    margin-bottom: -40px !important;\n  }\n  .v-application .mb-sm-n11 {\n    margin-bottom: -44px !important;\n  }\n  .v-application .mb-sm-n12 {\n    margin-bottom: -48px !important;\n  }\n  .v-application .mb-sm-n13 {\n    margin-bottom: -52px !important;\n  }\n  .v-application .mb-sm-n14 {\n    margin-bottom: -56px !important;\n  }\n  .v-application .mb-sm-n15 {\n    margin-bottom: -60px !important;\n  }\n  .v-application .mb-sm-n16 {\n    margin-bottom: -64px !important;\n  }\n  .v-application .ml-sm-n1 {\n    margin-left: -4px !important;\n  }\n  .v-application .ml-sm-n2 {\n    margin-left: -8px !important;\n  }\n  .v-application .ml-sm-n3 {\n    margin-left: -12px !important;\n  }\n  .v-application .ml-sm-n4 {\n    margin-left: -16px !important;\n  }\n  .v-application .ml-sm-n5 {\n    margin-left: -20px !important;\n  }\n  .v-application .ml-sm-n6 {\n    margin-left: -24px !important;\n  }\n  .v-application .ml-sm-n7 {\n    margin-left: -28px !important;\n  }\n  .v-application .ml-sm-n8 {\n    margin-left: -32px !important;\n  }\n  .v-application .ml-sm-n9 {\n    margin-left: -36px !important;\n  }\n  .v-application .ml-sm-n10 {\n    margin-left: -40px !important;\n  }\n  .v-application .ml-sm-n11 {\n    margin-left: -44px !important;\n  }\n  .v-application .ml-sm-n12 {\n    margin-left: -48px !important;\n  }\n  .v-application .ml-sm-n13 {\n    margin-left: -52px !important;\n  }\n  .v-application .ml-sm-n14 {\n    margin-left: -56px !important;\n  }\n  .v-application .ml-sm-n15 {\n    margin-left: -60px !important;\n  }\n  .v-application .ml-sm-n16 {\n    margin-left: -64px !important;\n  }\n  .v-application--is-ltr .ms-sm-n1 {\n    margin-left: -4px !important;\n  }\n  .v-application--is-rtl .ms-sm-n1 {\n    margin-right: -4px !important;\n  }\n  .v-application--is-ltr .ms-sm-n2 {\n    margin-left: -8px !important;\n  }\n  .v-application--is-rtl .ms-sm-n2 {\n    margin-right: -8px !important;\n  }\n  .v-application--is-ltr .ms-sm-n3 {\n    margin-left: -12px !important;\n  }\n  .v-application--is-rtl .ms-sm-n3 {\n    margin-right: -12px !important;\n  }\n  .v-application--is-ltr .ms-sm-n4 {\n    margin-left: -16px !important;\n  }\n  .v-application--is-rtl .ms-sm-n4 {\n    margin-right: -16px !important;\n  }\n  .v-application--is-ltr .ms-sm-n5 {\n    margin-left: -20px !important;\n  }\n  .v-application--is-rtl .ms-sm-n5 {\n    margin-right: -20px !important;\n  }\n  .v-application--is-ltr .ms-sm-n6 {\n    margin-left: -24px !important;\n  }\n  .v-application--is-rtl .ms-sm-n6 {\n    margin-right: -24px !important;\n  }\n  .v-application--is-ltr .ms-sm-n7 {\n    margin-left: -28px !important;\n  }\n  .v-application--is-rtl .ms-sm-n7 {\n    margin-right: -28px !important;\n  }\n  .v-application--is-ltr .ms-sm-n8 {\n    margin-left: -32px !important;\n  }\n  .v-application--is-rtl .ms-sm-n8 {\n    margin-right: -32px !important;\n  }\n  .v-application--is-ltr .ms-sm-n9 {\n    margin-left: -36px !important;\n  }\n  .v-application--is-rtl .ms-sm-n9 {\n    margin-right: -36px !important;\n  }\n  .v-application--is-ltr .ms-sm-n10 {\n    margin-left: -40px !important;\n  }\n  .v-application--is-rtl .ms-sm-n10 {\n    margin-right: -40px !important;\n  }\n  .v-application--is-ltr .ms-sm-n11 {\n    margin-left: -44px !important;\n  }\n  .v-application--is-rtl .ms-sm-n11 {\n    margin-right: -44px !important;\n  }\n  .v-application--is-ltr .ms-sm-n12 {\n    margin-left: -48px !important;\n  }\n  .v-application--is-rtl .ms-sm-n12 {\n    margin-right: -48px !important;\n  }\n  .v-application--is-ltr .ms-sm-n13 {\n    margin-left: -52px !important;\n  }\n  .v-application--is-rtl .ms-sm-n13 {\n    margin-right: -52px !important;\n  }\n  .v-application--is-ltr .ms-sm-n14 {\n    margin-left: -56px !important;\n  }\n  .v-application--is-rtl .ms-sm-n14 {\n    margin-right: -56px !important;\n  }\n  .v-application--is-ltr .ms-sm-n15 {\n    margin-left: -60px !important;\n  }\n  .v-application--is-rtl .ms-sm-n15 {\n    margin-right: -60px !important;\n  }\n  .v-application--is-ltr .ms-sm-n16 {\n    margin-left: -64px !important;\n  }\n  .v-application--is-rtl .ms-sm-n16 {\n    margin-right: -64px !important;\n  }\n  .v-application--is-ltr .me-sm-n1 {\n    margin-right: -4px !important;\n  }\n  .v-application--is-rtl .me-sm-n1 {\n    margin-left: -4px !important;\n  }\n  .v-application--is-ltr .me-sm-n2 {\n    margin-right: -8px !important;\n  }\n  .v-application--is-rtl .me-sm-n2 {\n    margin-left: -8px !important;\n  }\n  .v-application--is-ltr .me-sm-n3 {\n    margin-right: -12px !important;\n  }\n  .v-application--is-rtl .me-sm-n3 {\n    margin-left: -12px !important;\n  }\n  .v-application--is-ltr .me-sm-n4 {\n    margin-right: -16px !important;\n  }\n  .v-application--is-rtl .me-sm-n4 {\n    margin-left: -16px !important;\n  }\n  .v-application--is-ltr .me-sm-n5 {\n    margin-right: -20px !important;\n  }\n  .v-application--is-rtl .me-sm-n5 {\n    margin-left: -20px !important;\n  }\n  .v-application--is-ltr .me-sm-n6 {\n    margin-right: -24px !important;\n  }\n  .v-application--is-rtl .me-sm-n6 {\n    margin-left: -24px !important;\n  }\n  .v-application--is-ltr .me-sm-n7 {\n    margin-right: -28px !important;\n  }\n  .v-application--is-rtl .me-sm-n7 {\n    margin-left: -28px !important;\n  }\n  .v-application--is-ltr .me-sm-n8 {\n    margin-right: -32px !important;\n  }\n  .v-application--is-rtl .me-sm-n8 {\n    margin-left: -32px !important;\n  }\n  .v-application--is-ltr .me-sm-n9 {\n    margin-right: -36px !important;\n  }\n  .v-application--is-rtl .me-sm-n9 {\n    margin-left: -36px !important;\n  }\n  .v-application--is-ltr .me-sm-n10 {\n    margin-right: -40px !important;\n  }\n  .v-application--is-rtl .me-sm-n10 {\n    margin-left: -40px !important;\n  }\n  .v-application--is-ltr .me-sm-n11 {\n    margin-right: -44px !important;\n  }\n  .v-application--is-rtl .me-sm-n11 {\n    margin-left: -44px !important;\n  }\n  .v-application--is-ltr .me-sm-n12 {\n    margin-right: -48px !important;\n  }\n  .v-application--is-rtl .me-sm-n12 {\n    margin-left: -48px !important;\n  }\n  .v-application--is-ltr .me-sm-n13 {\n    margin-right: -52px !important;\n  }\n  .v-application--is-rtl .me-sm-n13 {\n    margin-left: -52px !important;\n  }\n  .v-application--is-ltr .me-sm-n14 {\n    margin-right: -56px !important;\n  }\n  .v-application--is-rtl .me-sm-n14 {\n    margin-left: -56px !important;\n  }\n  .v-application--is-ltr .me-sm-n15 {\n    margin-right: -60px !important;\n  }\n  .v-application--is-rtl .me-sm-n15 {\n    margin-left: -60px !important;\n  }\n  .v-application--is-ltr .me-sm-n16 {\n    margin-right: -64px !important;\n  }\n  .v-application--is-rtl .me-sm-n16 {\n    margin-left: -64px !important;\n  }\n  .v-application .pa-sm-0 {\n    padding: 0px !important;\n  }\n  .v-application .pa-sm-1 {\n    padding: 4px !important;\n  }\n  .v-application .pa-sm-2 {\n    padding: 8px !important;\n  }\n  .v-application .pa-sm-3 {\n    padding: 12px !important;\n  }\n  .v-application .pa-sm-4 {\n    padding: 16px !important;\n  }\n  .v-application .pa-sm-5 {\n    padding: 20px !important;\n  }\n  .v-application .pa-sm-6 {\n    padding: 24px !important;\n  }\n  .v-application .pa-sm-7 {\n    padding: 28px !important;\n  }\n  .v-application .pa-sm-8 {\n    padding: 32px !important;\n  }\n  .v-application .pa-sm-9 {\n    padding: 36px !important;\n  }\n  .v-application .pa-sm-10 {\n    padding: 40px !important;\n  }\n  .v-application .pa-sm-11 {\n    padding: 44px !important;\n  }\n  .v-application .pa-sm-12 {\n    padding: 48px !important;\n  }\n  .v-application .pa-sm-13 {\n    padding: 52px !important;\n  }\n  .v-application .pa-sm-14 {\n    padding: 56px !important;\n  }\n  .v-application .pa-sm-15 {\n    padding: 60px !important;\n  }\n  .v-application .pa-sm-16 {\n    padding: 64px !important;\n  }\n  .v-application .px-sm-0 {\n    padding-right: 0px !important;\n    padding-left: 0px !important;\n  }\n  .v-application .px-sm-1 {\n    padding-right: 4px !important;\n    padding-left: 4px !important;\n  }\n  .v-application .px-sm-2 {\n    padding-right: 8px !important;\n    padding-left: 8px !important;\n  }\n  .v-application .px-sm-3 {\n    padding-right: 12px !important;\n    padding-left: 12px !important;\n  }\n  .v-application .px-sm-4 {\n    padding-right: 16px !important;\n    padding-left: 16px !important;\n  }\n  .v-application .px-sm-5 {\n    padding-right: 20px !important;\n    padding-left: 20px !important;\n  }\n  .v-application .px-sm-6 {\n    padding-right: 24px !important;\n    padding-left: 24px !important;\n  }\n  .v-application .px-sm-7 {\n    padding-right: 28px !important;\n    padding-left: 28px !important;\n  }\n  .v-application .px-sm-8 {\n    padding-right: 32px !important;\n    padding-left: 32px !important;\n  }\n  .v-application .px-sm-9 {\n    padding-right: 36px !important;\n    padding-left: 36px !important;\n  }\n  .v-application .px-sm-10 {\n    padding-right: 40px !important;\n    padding-left: 40px !important;\n  }\n  .v-application .px-sm-11 {\n    padding-right: 44px !important;\n    padding-left: 44px !important;\n  }\n  .v-application .px-sm-12 {\n    padding-right: 48px !important;\n    padding-left: 48px !important;\n  }\n  .v-application .px-sm-13 {\n    padding-right: 52px !important;\n    padding-left: 52px !important;\n  }\n  .v-application .px-sm-14 {\n    padding-right: 56px !important;\n    padding-left: 56px !important;\n  }\n  .v-application .px-sm-15 {\n    padding-right: 60px !important;\n    padding-left: 60px !important;\n  }\n  .v-application .px-sm-16 {\n    padding-right: 64px !important;\n    padding-left: 64px !important;\n  }\n  .v-application .py-sm-0 {\n    padding-top: 0px !important;\n    padding-bottom: 0px !important;\n  }\n  .v-application .py-sm-1 {\n    padding-top: 4px !important;\n    padding-bottom: 4px !important;\n  }\n  .v-application .py-sm-2 {\n    padding-top: 8px !important;\n    padding-bottom: 8px !important;\n  }\n  .v-application .py-sm-3 {\n    padding-top: 12px !important;\n    padding-bottom: 12px !important;\n  }\n  .v-application .py-sm-4 {\n    padding-top: 16px !important;\n    padding-bottom: 16px !important;\n  }\n  .v-application .py-sm-5 {\n    padding-top: 20px !important;\n    padding-bottom: 20px !important;\n  }\n  .v-application .py-sm-6 {\n    padding-top: 24px !important;\n    padding-bottom: 24px !important;\n  }\n  .v-application .py-sm-7 {\n    padding-top: 28px !important;\n    padding-bottom: 28px !important;\n  }\n  .v-application .py-sm-8 {\n    padding-top: 32px !important;\n    padding-bottom: 32px !important;\n  }\n  .v-application .py-sm-9 {\n    padding-top: 36px !important;\n    padding-bottom: 36px !important;\n  }\n  .v-application .py-sm-10 {\n    padding-top: 40px !important;\n    padding-bottom: 40px !important;\n  }\n  .v-application .py-sm-11 {\n    padding-top: 44px !important;\n    padding-bottom: 44px !important;\n  }\n  .v-application .py-sm-12 {\n    padding-top: 48px !important;\n    padding-bottom: 48px !important;\n  }\n  .v-application .py-sm-13 {\n    padding-top: 52px !important;\n    padding-bottom: 52px !important;\n  }\n  .v-application .py-sm-14 {\n    padding-top: 56px !important;\n    padding-bottom: 56px !important;\n  }\n  .v-application .py-sm-15 {\n    padding-top: 60px !important;\n    padding-bottom: 60px !important;\n  }\n  .v-application .py-sm-16 {\n    padding-top: 64px !important;\n    padding-bottom: 64px !important;\n  }\n  .v-application .pt-sm-0 {\n    padding-top: 0px !important;\n  }\n  .v-application .pt-sm-1 {\n    padding-top: 4px !important;\n  }\n  .v-application .pt-sm-2 {\n    padding-top: 8px !important;\n  }\n  .v-application .pt-sm-3 {\n    padding-top: 12px !important;\n  }\n  .v-application .pt-sm-4 {\n    padding-top: 16px !important;\n  }\n  .v-application .pt-sm-5 {\n    padding-top: 20px !important;\n  }\n  .v-application .pt-sm-6 {\n    padding-top: 24px !important;\n  }\n  .v-application .pt-sm-7 {\n    padding-top: 28px !important;\n  }\n  .v-application .pt-sm-8 {\n    padding-top: 32px !important;\n  }\n  .v-application .pt-sm-9 {\n    padding-top: 36px !important;\n  }\n  .v-application .pt-sm-10 {\n    padding-top: 40px !important;\n  }\n  .v-application .pt-sm-11 {\n    padding-top: 44px !important;\n  }\n  .v-application .pt-sm-12 {\n    padding-top: 48px !important;\n  }\n  .v-application .pt-sm-13 {\n    padding-top: 52px !important;\n  }\n  .v-application .pt-sm-14 {\n    padding-top: 56px !important;\n  }\n  .v-application .pt-sm-15 {\n    padding-top: 60px !important;\n  }\n  .v-application .pt-sm-16 {\n    padding-top: 64px !important;\n  }\n  .v-application .pr-sm-0 {\n    padding-right: 0px !important;\n  }\n  .v-application .pr-sm-1 {\n    padding-right: 4px !important;\n  }\n  .v-application .pr-sm-2 {\n    padding-right: 8px !important;\n  }\n  .v-application .pr-sm-3 {\n    padding-right: 12px !important;\n  }\n  .v-application .pr-sm-4 {\n    padding-right: 16px !important;\n  }\n  .v-application .pr-sm-5 {\n    padding-right: 20px !important;\n  }\n  .v-application .pr-sm-6 {\n    padding-right: 24px !important;\n  }\n  .v-application .pr-sm-7 {\n    padding-right: 28px !important;\n  }\n  .v-application .pr-sm-8 {\n    padding-right: 32px !important;\n  }\n  .v-application .pr-sm-9 {\n    padding-right: 36px !important;\n  }\n  .v-application .pr-sm-10 {\n    padding-right: 40px !important;\n  }\n  .v-application .pr-sm-11 {\n    padding-right: 44px !important;\n  }\n  .v-application .pr-sm-12 {\n    padding-right: 48px !important;\n  }\n  .v-application .pr-sm-13 {\n    padding-right: 52px !important;\n  }\n  .v-application .pr-sm-14 {\n    padding-right: 56px !important;\n  }\n  .v-application .pr-sm-15 {\n    padding-right: 60px !important;\n  }\n  .v-application .pr-sm-16 {\n    padding-right: 64px !important;\n  }\n  .v-application .pb-sm-0 {\n    padding-bottom: 0px !important;\n  }\n  .v-application .pb-sm-1 {\n    padding-bottom: 4px !important;\n  }\n  .v-application .pb-sm-2 {\n    padding-bottom: 8px !important;\n  }\n  .v-application .pb-sm-3 {\n    padding-bottom: 12px !important;\n  }\n  .v-application .pb-sm-4 {\n    padding-bottom: 16px !important;\n  }\n  .v-application .pb-sm-5 {\n    padding-bottom: 20px !important;\n  }\n  .v-application .pb-sm-6 {\n    padding-bottom: 24px !important;\n  }\n  .v-application .pb-sm-7 {\n    padding-bottom: 28px !important;\n  }\n  .v-application .pb-sm-8 {\n    padding-bottom: 32px !important;\n  }\n  .v-application .pb-sm-9 {\n    padding-bottom: 36px !important;\n  }\n  .v-application .pb-sm-10 {\n    padding-bottom: 40px !important;\n  }\n  .v-application .pb-sm-11 {\n    padding-bottom: 44px !important;\n  }\n  .v-application .pb-sm-12 {\n    padding-bottom: 48px !important;\n  }\n  .v-application .pb-sm-13 {\n    padding-bottom: 52px !important;\n  }\n  .v-application .pb-sm-14 {\n    padding-bottom: 56px !important;\n  }\n  .v-application .pb-sm-15 {\n    padding-bottom: 60px !important;\n  }\n  .v-application .pb-sm-16 {\n    padding-bottom: 64px !important;\n  }\n  .v-application .pl-sm-0 {\n    padding-left: 0px !important;\n  }\n  .v-application .pl-sm-1 {\n    padding-left: 4px !important;\n  }\n  .v-application .pl-sm-2 {\n    padding-left: 8px !important;\n  }\n  .v-application .pl-sm-3 {\n    padding-left: 12px !important;\n  }\n  .v-application .pl-sm-4 {\n    padding-left: 16px !important;\n  }\n  .v-application .pl-sm-5 {\n    padding-left: 20px !important;\n  }\n  .v-application .pl-sm-6 {\n    padding-left: 24px !important;\n  }\n  .v-application .pl-sm-7 {\n    padding-left: 28px !important;\n  }\n  .v-application .pl-sm-8 {\n    padding-left: 32px !important;\n  }\n  .v-application .pl-sm-9 {\n    padding-left: 36px !important;\n  }\n  .v-application .pl-sm-10 {\n    padding-left: 40px !important;\n  }\n  .v-application .pl-sm-11 {\n    padding-left: 44px !important;\n  }\n  .v-application .pl-sm-12 {\n    padding-left: 48px !important;\n  }\n  .v-application .pl-sm-13 {\n    padding-left: 52px !important;\n  }\n  .v-application .pl-sm-14 {\n    padding-left: 56px !important;\n  }\n  .v-application .pl-sm-15 {\n    padding-left: 60px !important;\n  }\n  .v-application .pl-sm-16 {\n    padding-left: 64px !important;\n  }\n  .v-application--is-ltr .ps-sm-0 {\n    padding-left: 0px !important;\n  }\n  .v-application--is-rtl .ps-sm-0 {\n    padding-right: 0px !important;\n  }\n  .v-application--is-ltr .ps-sm-1 {\n    padding-left: 4px !important;\n  }\n  .v-application--is-rtl .ps-sm-1 {\n    padding-right: 4px !important;\n  }\n  .v-application--is-ltr .ps-sm-2 {\n    padding-left: 8px !important;\n  }\n  .v-application--is-rtl .ps-sm-2 {\n    padding-right: 8px !important;\n  }\n  .v-application--is-ltr .ps-sm-3 {\n    padding-left: 12px !important;\n  }\n  .v-application--is-rtl .ps-sm-3 {\n    padding-right: 12px !important;\n  }\n  .v-application--is-ltr .ps-sm-4 {\n    padding-left: 16px !important;\n  }\n  .v-application--is-rtl .ps-sm-4 {\n    padding-right: 16px !important;\n  }\n  .v-application--is-ltr .ps-sm-5 {\n    padding-left: 20px !important;\n  }\n  .v-application--is-rtl .ps-sm-5 {\n    padding-right: 20px !important;\n  }\n  .v-application--is-ltr .ps-sm-6 {\n    padding-left: 24px !important;\n  }\n  .v-application--is-rtl .ps-sm-6 {\n    padding-right: 24px !important;\n  }\n  .v-application--is-ltr .ps-sm-7 {\n    padding-left: 28px !important;\n  }\n  .v-application--is-rtl .ps-sm-7 {\n    padding-right: 28px !important;\n  }\n  .v-application--is-ltr .ps-sm-8 {\n    padding-left: 32px !important;\n  }\n  .v-application--is-rtl .ps-sm-8 {\n    padding-right: 32px !important;\n  }\n  .v-application--is-ltr .ps-sm-9 {\n    padding-left: 36px !important;\n  }\n  .v-application--is-rtl .ps-sm-9 {\n    padding-right: 36px !important;\n  }\n  .v-application--is-ltr .ps-sm-10 {\n    padding-left: 40px !important;\n  }\n  .v-application--is-rtl .ps-sm-10 {\n    padding-right: 40px !important;\n  }\n  .v-application--is-ltr .ps-sm-11 {\n    padding-left: 44px !important;\n  }\n  .v-application--is-rtl .ps-sm-11 {\n    padding-right: 44px !important;\n  }\n  .v-application--is-ltr .ps-sm-12 {\n    padding-left: 48px !important;\n  }\n  .v-application--is-rtl .ps-sm-12 {\n    padding-right: 48px !important;\n  }\n  .v-application--is-ltr .ps-sm-13 {\n    padding-left: 52px !important;\n  }\n  .v-application--is-rtl .ps-sm-13 {\n    padding-right: 52px !important;\n  }\n  .v-application--is-ltr .ps-sm-14 {\n    padding-left: 56px !important;\n  }\n  .v-application--is-rtl .ps-sm-14 {\n    padding-right: 56px !important;\n  }\n  .v-application--is-ltr .ps-sm-15 {\n    padding-left: 60px !important;\n  }\n  .v-application--is-rtl .ps-sm-15 {\n    padding-right: 60px !important;\n  }\n  .v-application--is-ltr .ps-sm-16 {\n    padding-left: 64px !important;\n  }\n  .v-application--is-rtl .ps-sm-16 {\n    padding-right: 64px !important;\n  }\n  .v-application--is-ltr .pe-sm-0 {\n    padding-right: 0px !important;\n  }\n  .v-application--is-rtl .pe-sm-0 {\n    padding-left: 0px !important;\n  }\n  .v-application--is-ltr .pe-sm-1 {\n    padding-right: 4px !important;\n  }\n  .v-application--is-rtl .pe-sm-1 {\n    padding-left: 4px !important;\n  }\n  .v-application--is-ltr .pe-sm-2 {\n    padding-right: 8px !important;\n  }\n  .v-application--is-rtl .pe-sm-2 {\n    padding-left: 8px !important;\n  }\n  .v-application--is-ltr .pe-sm-3 {\n    padding-right: 12px !important;\n  }\n  .v-application--is-rtl .pe-sm-3 {\n    padding-left: 12px !important;\n  }\n  .v-application--is-ltr .pe-sm-4 {\n    padding-right: 16px !important;\n  }\n  .v-application--is-rtl .pe-sm-4 {\n    padding-left: 16px !important;\n  }\n  .v-application--is-ltr .pe-sm-5 {\n    padding-right: 20px !important;\n  }\n  .v-application--is-rtl .pe-sm-5 {\n    padding-left: 20px !important;\n  }\n  .v-application--is-ltr .pe-sm-6 {\n    padding-right: 24px !important;\n  }\n  .v-application--is-rtl .pe-sm-6 {\n    padding-left: 24px !important;\n  }\n  .v-application--is-ltr .pe-sm-7 {\n    padding-right: 28px !important;\n  }\n  .v-application--is-rtl .pe-sm-7 {\n    padding-left: 28px !important;\n  }\n  .v-application--is-ltr .pe-sm-8 {\n    padding-right: 32px !important;\n  }\n  .v-application--is-rtl .pe-sm-8 {\n    padding-left: 32px !important;\n  }\n  .v-application--is-ltr .pe-sm-9 {\n    padding-right: 36px !important;\n  }\n  .v-application--is-rtl .pe-sm-9 {\n    padding-left: 36px !important;\n  }\n  .v-application--is-ltr .pe-sm-10 {\n    padding-right: 40px !important;\n  }\n  .v-application--is-rtl .pe-sm-10 {\n    padding-left: 40px !important;\n  }\n  .v-application--is-ltr .pe-sm-11 {\n    padding-right: 44px !important;\n  }\n  .v-application--is-rtl .pe-sm-11 {\n    padding-left: 44px !important;\n  }\n  .v-application--is-ltr .pe-sm-12 {\n    padding-right: 48px !important;\n  }\n  .v-application--is-rtl .pe-sm-12 {\n    padding-left: 48px !important;\n  }\n  .v-application--is-ltr .pe-sm-13 {\n    padding-right: 52px !important;\n  }\n  .v-application--is-rtl .pe-sm-13 {\n    padding-left: 52px !important;\n  }\n  .v-application--is-ltr .pe-sm-14 {\n    padding-right: 56px !important;\n  }\n  .v-application--is-rtl .pe-sm-14 {\n    padding-left: 56px !important;\n  }\n  .v-application--is-ltr .pe-sm-15 {\n    padding-right: 60px !important;\n  }\n  .v-application--is-rtl .pe-sm-15 {\n    padding-left: 60px !important;\n  }\n  .v-application--is-ltr .pe-sm-16 {\n    padding-right: 64px !important;\n  }\n  .v-application--is-rtl .pe-sm-16 {\n    padding-left: 64px !important;\n  }\n  .v-application .text-sm-left {\n    text-align: left !important;\n  }\n  .v-application .text-sm-right {\n    text-align: right !important;\n  }\n  .v-application .text-sm-center {\n    text-align: center !important;\n  }\n  .v-application .text-sm-justify {\n    text-align: justify !important;\n  }\n  .v-application .text-sm-start {\n    text-align: start !important;\n  }\n  .v-application .text-sm-end {\n    text-align: end !important;\n  }\n  .v-application .text-sm-h1 {\n    font-size: 6rem !important;\n    font-weight: 300;\n    line-height: 6rem;\n    letter-spacing: -0.015625em !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-sm-h2 {\n    font-size: 3.75rem !important;\n    font-weight: 300;\n    line-height: 3.75rem;\n    letter-spacing: -0.0083333333em !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-sm-h3 {\n    font-size: 3rem !important;\n    font-weight: 400;\n    line-height: 3.125rem;\n    letter-spacing: normal !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-sm-h4 {\n    font-size: 2.125rem !important;\n    font-weight: 400;\n    line-height: 2.5rem;\n    letter-spacing: 0.0073529412em !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-sm-h5 {\n    font-size: 1.5rem !important;\n    font-weight: 400;\n    line-height: 2rem;\n    letter-spacing: normal !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-sm-h6 {\n    font-size: 1.25rem !important;\n    font-weight: 500;\n    line-height: 2rem;\n    letter-spacing: 0.0125em !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-sm-subtitle-1 {\n    font-size: 1rem !important;\n    font-weight: normal;\n    line-height: 1.75rem;\n    letter-spacing: 0.009375em !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-sm-subtitle-2 {\n    font-size: 0.875rem !important;\n    font-weight: 500;\n    line-height: 1.375rem;\n    letter-spacing: 0.0071428571em !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-sm-body-1 {\n    font-size: 1rem !important;\n    font-weight: 400;\n    line-height: 1.5rem;\n    letter-spacing: 0.03125em !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-sm-body-2 {\n    font-size: 0.875rem !important;\n    font-weight: 400;\n    line-height: 1.25rem;\n    letter-spacing: 0.0178571429em !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-sm-button {\n    font-size: 0.875rem !important;\n    font-weight: 500;\n    line-height: 2.25rem;\n    letter-spacing: 0.0892857143em !important;\n    font-family: \"Roboto\", sans-serif !important;\n    text-transform: uppercase !important;\n  }\n  .v-application .text-sm-caption {\n    font-size: 0.75rem !important;\n    font-weight: 400;\n    line-height: 1.25rem;\n    letter-spacing: 0.0333333333em !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-sm-overline {\n    font-size: 0.75rem !important;\n    font-weight: 500;\n    line-height: 2rem;\n    letter-spacing: 0.1666666667em !important;\n    font-family: \"Roboto\", sans-serif !important;\n    text-transform: uppercase !important;\n  }\n}\n@media (min-width: 960px) {\n  .v-application .d-md-none {\n    display: none !important;\n  }\n  .v-application .d-md-inline {\n    display: inline !important;\n  }\n  .v-application .d-md-inline-block {\n    display: inline-block !important;\n  }\n  .v-application .d-md-block {\n    display: block !important;\n  }\n  .v-application .d-md-table {\n    display: table !important;\n  }\n  .v-application .d-md-table-row {\n    display: table-row !important;\n  }\n  .v-application .d-md-table-cell {\n    display: table-cell !important;\n  }\n  .v-application .d-md-flex {\n    display: flex !important;\n  }\n  .v-application .d-md-inline-flex {\n    display: inline-flex !important;\n  }\n  .v-application .float-md-none {\n    float: none !important;\n  }\n  .v-application .float-md-left {\n    float: left !important;\n  }\n  .v-application .float-md-right {\n    float: right !important;\n  }\n  .v-application--is-rtl .float-md-end {\n    float: left !important;\n  }\n  .v-application--is-rtl .float-md-start {\n    float: right !important;\n  }\n  .v-application--is-ltr .float-md-end {\n    float: right !important;\n  }\n  .v-application--is-ltr .float-md-start {\n    float: left !important;\n  }\n  .v-application .flex-md-fill {\n    flex: 1 1 auto !important;\n  }\n  .v-application .flex-md-row {\n    flex-direction: row !important;\n  }\n  .v-application .flex-md-column {\n    flex-direction: column !important;\n  }\n  .v-application .flex-md-row-reverse {\n    flex-direction: row-reverse !important;\n  }\n  .v-application .flex-md-column-reverse {\n    flex-direction: column-reverse !important;\n  }\n  .v-application .flex-md-grow-0 {\n    flex-grow: 0 !important;\n  }\n  .v-application .flex-md-grow-1 {\n    flex-grow: 1 !important;\n  }\n  .v-application .flex-md-shrink-0 {\n    flex-shrink: 0 !important;\n  }\n  .v-application .flex-md-shrink-1 {\n    flex-shrink: 1 !important;\n  }\n  .v-application .flex-md-wrap {\n    flex-wrap: wrap !important;\n  }\n  .v-application .flex-md-nowrap {\n    flex-wrap: nowrap !important;\n  }\n  .v-application .flex-md-wrap-reverse {\n    flex-wrap: wrap-reverse !important;\n  }\n  .v-application .justify-md-start {\n    justify-content: flex-start !important;\n  }\n  .v-application .justify-md-end {\n    justify-content: flex-end !important;\n  }\n  .v-application .justify-md-center {\n    justify-content: center !important;\n  }\n  .v-application .justify-md-space-between {\n    justify-content: space-between !important;\n  }\n  .v-application .justify-md-space-around {\n    justify-content: space-around !important;\n  }\n  .v-application .align-md-start {\n    align-items: flex-start !important;\n  }\n  .v-application .align-md-end {\n    align-items: flex-end !important;\n  }\n  .v-application .align-md-center {\n    align-items: center !important;\n  }\n  .v-application .align-md-baseline {\n    align-items: baseline !important;\n  }\n  .v-application .align-md-stretch {\n    align-items: stretch !important;\n  }\n  .v-application .align-content-md-start {\n    align-content: flex-start !important;\n  }\n  .v-application .align-content-md-end {\n    align-content: flex-end !important;\n  }\n  .v-application .align-content-md-center {\n    align-content: center !important;\n  }\n  .v-application .align-content-md-space-between {\n    align-content: space-between !important;\n  }\n  .v-application .align-content-md-space-around {\n    align-content: space-around !important;\n  }\n  .v-application .align-content-md-stretch {\n    align-content: stretch !important;\n  }\n  .v-application .align-self-md-auto {\n    align-self: auto !important;\n  }\n  .v-application .align-self-md-start {\n    align-self: flex-start !important;\n  }\n  .v-application .align-self-md-end {\n    align-self: flex-end !important;\n  }\n  .v-application .align-self-md-center {\n    align-self: center !important;\n  }\n  .v-application .align-self-md-baseline {\n    align-self: baseline !important;\n  }\n  .v-application .align-self-md-stretch {\n    align-self: stretch !important;\n  }\n  .v-application .order-md-first {\n    order: -1 !important;\n  }\n  .v-application .order-md-0 {\n    order: 0 !important;\n  }\n  .v-application .order-md-1 {\n    order: 1 !important;\n  }\n  .v-application .order-md-2 {\n    order: 2 !important;\n  }\n  .v-application .order-md-3 {\n    order: 3 !important;\n  }\n  .v-application .order-md-4 {\n    order: 4 !important;\n  }\n  .v-application .order-md-5 {\n    order: 5 !important;\n  }\n  .v-application .order-md-6 {\n    order: 6 !important;\n  }\n  .v-application .order-md-7 {\n    order: 7 !important;\n  }\n  .v-application .order-md-8 {\n    order: 8 !important;\n  }\n  .v-application .order-md-9 {\n    order: 9 !important;\n  }\n  .v-application .order-md-10 {\n    order: 10 !important;\n  }\n  .v-application .order-md-11 {\n    order: 11 !important;\n  }\n  .v-application .order-md-12 {\n    order: 12 !important;\n  }\n  .v-application .order-md-last {\n    order: 13 !important;\n  }\n  .v-application .ma-md-0 {\n    margin: 0px !important;\n  }\n  .v-application .ma-md-1 {\n    margin: 4px !important;\n  }\n  .v-application .ma-md-2 {\n    margin: 8px !important;\n  }\n  .v-application .ma-md-3 {\n    margin: 12px !important;\n  }\n  .v-application .ma-md-4 {\n    margin: 16px !important;\n  }\n  .v-application .ma-md-5 {\n    margin: 20px !important;\n  }\n  .v-application .ma-md-6 {\n    margin: 24px !important;\n  }\n  .v-application .ma-md-7 {\n    margin: 28px !important;\n  }\n  .v-application .ma-md-8 {\n    margin: 32px !important;\n  }\n  .v-application .ma-md-9 {\n    margin: 36px !important;\n  }\n  .v-application .ma-md-10 {\n    margin: 40px !important;\n  }\n  .v-application .ma-md-11 {\n    margin: 44px !important;\n  }\n  .v-application .ma-md-12 {\n    margin: 48px !important;\n  }\n  .v-application .ma-md-13 {\n    margin: 52px !important;\n  }\n  .v-application .ma-md-14 {\n    margin: 56px !important;\n  }\n  .v-application .ma-md-15 {\n    margin: 60px !important;\n  }\n  .v-application .ma-md-16 {\n    margin: 64px !important;\n  }\n  .v-application .ma-md-auto {\n    margin: auto !important;\n  }\n  .v-application .mx-md-0 {\n    margin-right: 0px !important;\n    margin-left: 0px !important;\n  }\n  .v-application .mx-md-1 {\n    margin-right: 4px !important;\n    margin-left: 4px !important;\n  }\n  .v-application .mx-md-2 {\n    margin-right: 8px !important;\n    margin-left: 8px !important;\n  }\n  .v-application .mx-md-3 {\n    margin-right: 12px !important;\n    margin-left: 12px !important;\n  }\n  .v-application .mx-md-4 {\n    margin-right: 16px !important;\n    margin-left: 16px !important;\n  }\n  .v-application .mx-md-5 {\n    margin-right: 20px !important;\n    margin-left: 20px !important;\n  }\n  .v-application .mx-md-6 {\n    margin-right: 24px !important;\n    margin-left: 24px !important;\n  }\n  .v-application .mx-md-7 {\n    margin-right: 28px !important;\n    margin-left: 28px !important;\n  }\n  .v-application .mx-md-8 {\n    margin-right: 32px !important;\n    margin-left: 32px !important;\n  }\n  .v-application .mx-md-9 {\n    margin-right: 36px !important;\n    margin-left: 36px !important;\n  }\n  .v-application .mx-md-10 {\n    margin-right: 40px !important;\n    margin-left: 40px !important;\n  }\n  .v-application .mx-md-11 {\n    margin-right: 44px !important;\n    margin-left: 44px !important;\n  }\n  .v-application .mx-md-12 {\n    margin-right: 48px !important;\n    margin-left: 48px !important;\n  }\n  .v-application .mx-md-13 {\n    margin-right: 52px !important;\n    margin-left: 52px !important;\n  }\n  .v-application .mx-md-14 {\n    margin-right: 56px !important;\n    margin-left: 56px !important;\n  }\n  .v-application .mx-md-15 {\n    margin-right: 60px !important;\n    margin-left: 60px !important;\n  }\n  .v-application .mx-md-16 {\n    margin-right: 64px !important;\n    margin-left: 64px !important;\n  }\n  .v-application .mx-md-auto {\n    margin-right: auto !important;\n    margin-left: auto !important;\n  }\n  .v-application .my-md-0 {\n    margin-top: 0px !important;\n    margin-bottom: 0px !important;\n  }\n  .v-application .my-md-1 {\n    margin-top: 4px !important;\n    margin-bottom: 4px !important;\n  }\n  .v-application .my-md-2 {\n    margin-top: 8px !important;\n    margin-bottom: 8px !important;\n  }\n  .v-application .my-md-3 {\n    margin-top: 12px !important;\n    margin-bottom: 12px !important;\n  }\n  .v-application .my-md-4 {\n    margin-top: 16px !important;\n    margin-bottom: 16px !important;\n  }\n  .v-application .my-md-5 {\n    margin-top: 20px !important;\n    margin-bottom: 20px !important;\n  }\n  .v-application .my-md-6 {\n    margin-top: 24px !important;\n    margin-bottom: 24px !important;\n  }\n  .v-application .my-md-7 {\n    margin-top: 28px !important;\n    margin-bottom: 28px !important;\n  }\n  .v-application .my-md-8 {\n    margin-top: 32px !important;\n    margin-bottom: 32px !important;\n  }\n  .v-application .my-md-9 {\n    margin-top: 36px !important;\n    margin-bottom: 36px !important;\n  }\n  .v-application .my-md-10 {\n    margin-top: 40px !important;\n    margin-bottom: 40px !important;\n  }\n  .v-application .my-md-11 {\n    margin-top: 44px !important;\n    margin-bottom: 44px !important;\n  }\n  .v-application .my-md-12 {\n    margin-top: 48px !important;\n    margin-bottom: 48px !important;\n  }\n  .v-application .my-md-13 {\n    margin-top: 52px !important;\n    margin-bottom: 52px !important;\n  }\n  .v-application .my-md-14 {\n    margin-top: 56px !important;\n    margin-bottom: 56px !important;\n  }\n  .v-application .my-md-15 {\n    margin-top: 60px !important;\n    margin-bottom: 60px !important;\n  }\n  .v-application .my-md-16 {\n    margin-top: 64px !important;\n    margin-bottom: 64px !important;\n  }\n  .v-application .my-md-auto {\n    margin-top: auto !important;\n    margin-bottom: auto !important;\n  }\n  .v-application .mt-md-0 {\n    margin-top: 0px !important;\n  }\n  .v-application .mt-md-1 {\n    margin-top: 4px !important;\n  }\n  .v-application .mt-md-2 {\n    margin-top: 8px !important;\n  }\n  .v-application .mt-md-3 {\n    margin-top: 12px !important;\n  }\n  .v-application .mt-md-4 {\n    margin-top: 16px !important;\n  }\n  .v-application .mt-md-5 {\n    margin-top: 20px !important;\n  }\n  .v-application .mt-md-6 {\n    margin-top: 24px !important;\n  }\n  .v-application .mt-md-7 {\n    margin-top: 28px !important;\n  }\n  .v-application .mt-md-8 {\n    margin-top: 32px !important;\n  }\n  .v-application .mt-md-9 {\n    margin-top: 36px !important;\n  }\n  .v-application .mt-md-10 {\n    margin-top: 40px !important;\n  }\n  .v-application .mt-md-11 {\n    margin-top: 44px !important;\n  }\n  .v-application .mt-md-12 {\n    margin-top: 48px !important;\n  }\n  .v-application .mt-md-13 {\n    margin-top: 52px !important;\n  }\n  .v-application .mt-md-14 {\n    margin-top: 56px !important;\n  }\n  .v-application .mt-md-15 {\n    margin-top: 60px !important;\n  }\n  .v-application .mt-md-16 {\n    margin-top: 64px !important;\n  }\n  .v-application .mt-md-auto {\n    margin-top: auto !important;\n  }\n  .v-application .mr-md-0 {\n    margin-right: 0px !important;\n  }\n  .v-application .mr-md-1 {\n    margin-right: 4px !important;\n  }\n  .v-application .mr-md-2 {\n    margin-right: 8px !important;\n  }\n  .v-application .mr-md-3 {\n    margin-right: 12px !important;\n  }\n  .v-application .mr-md-4 {\n    margin-right: 16px !important;\n  }\n  .v-application .mr-md-5 {\n    margin-right: 20px !important;\n  }\n  .v-application .mr-md-6 {\n    margin-right: 24px !important;\n  }\n  .v-application .mr-md-7 {\n    margin-right: 28px !important;\n  }\n  .v-application .mr-md-8 {\n    margin-right: 32px !important;\n  }\n  .v-application .mr-md-9 {\n    margin-right: 36px !important;\n  }\n  .v-application .mr-md-10 {\n    margin-right: 40px !important;\n  }\n  .v-application .mr-md-11 {\n    margin-right: 44px !important;\n  }\n  .v-application .mr-md-12 {\n    margin-right: 48px !important;\n  }\n  .v-application .mr-md-13 {\n    margin-right: 52px !important;\n  }\n  .v-application .mr-md-14 {\n    margin-right: 56px !important;\n  }\n  .v-application .mr-md-15 {\n    margin-right: 60px !important;\n  }\n  .v-application .mr-md-16 {\n    margin-right: 64px !important;\n  }\n  .v-application .mr-md-auto {\n    margin-right: auto !important;\n  }\n  .v-application .mb-md-0 {\n    margin-bottom: 0px !important;\n  }\n  .v-application .mb-md-1 {\n    margin-bottom: 4px !important;\n  }\n  .v-application .mb-md-2 {\n    margin-bottom: 8px !important;\n  }\n  .v-application .mb-md-3 {\n    margin-bottom: 12px !important;\n  }\n  .v-application .mb-md-4 {\n    margin-bottom: 16px !important;\n  }\n  .v-application .mb-md-5 {\n    margin-bottom: 20px !important;\n  }\n  .v-application .mb-md-6 {\n    margin-bottom: 24px !important;\n  }\n  .v-application .mb-md-7 {\n    margin-bottom: 28px !important;\n  }\n  .v-application .mb-md-8 {\n    margin-bottom: 32px !important;\n  }\n  .v-application .mb-md-9 {\n    margin-bottom: 36px !important;\n  }\n  .v-application .mb-md-10 {\n    margin-bottom: 40px !important;\n  }\n  .v-application .mb-md-11 {\n    margin-bottom: 44px !important;\n  }\n  .v-application .mb-md-12 {\n    margin-bottom: 48px !important;\n  }\n  .v-application .mb-md-13 {\n    margin-bottom: 52px !important;\n  }\n  .v-application .mb-md-14 {\n    margin-bottom: 56px !important;\n  }\n  .v-application .mb-md-15 {\n    margin-bottom: 60px !important;\n  }\n  .v-application .mb-md-16 {\n    margin-bottom: 64px !important;\n  }\n  .v-application .mb-md-auto {\n    margin-bottom: auto !important;\n  }\n  .v-application .ml-md-0 {\n    margin-left: 0px !important;\n  }\n  .v-application .ml-md-1 {\n    margin-left: 4px !important;\n  }\n  .v-application .ml-md-2 {\n    margin-left: 8px !important;\n  }\n  .v-application .ml-md-3 {\n    margin-left: 12px !important;\n  }\n  .v-application .ml-md-4 {\n    margin-left: 16px !important;\n  }\n  .v-application .ml-md-5 {\n    margin-left: 20px !important;\n  }\n  .v-application .ml-md-6 {\n    margin-left: 24px !important;\n  }\n  .v-application .ml-md-7 {\n    margin-left: 28px !important;\n  }\n  .v-application .ml-md-8 {\n    margin-left: 32px !important;\n  }\n  .v-application .ml-md-9 {\n    margin-left: 36px !important;\n  }\n  .v-application .ml-md-10 {\n    margin-left: 40px !important;\n  }\n  .v-application .ml-md-11 {\n    margin-left: 44px !important;\n  }\n  .v-application .ml-md-12 {\n    margin-left: 48px !important;\n  }\n  .v-application .ml-md-13 {\n    margin-left: 52px !important;\n  }\n  .v-application .ml-md-14 {\n    margin-left: 56px !important;\n  }\n  .v-application .ml-md-15 {\n    margin-left: 60px !important;\n  }\n  .v-application .ml-md-16 {\n    margin-left: 64px !important;\n  }\n  .v-application .ml-md-auto {\n    margin-left: auto !important;\n  }\n  .v-application--is-ltr .ms-md-0 {\n    margin-left: 0px !important;\n  }\n  .v-application--is-rtl .ms-md-0 {\n    margin-right: 0px !important;\n  }\n  .v-application--is-ltr .ms-md-1 {\n    margin-left: 4px !important;\n  }\n  .v-application--is-rtl .ms-md-1 {\n    margin-right: 4px !important;\n  }\n  .v-application--is-ltr .ms-md-2 {\n    margin-left: 8px !important;\n  }\n  .v-application--is-rtl .ms-md-2 {\n    margin-right: 8px !important;\n  }\n  .v-application--is-ltr .ms-md-3 {\n    margin-left: 12px !important;\n  }\n  .v-application--is-rtl .ms-md-3 {\n    margin-right: 12px !important;\n  }\n  .v-application--is-ltr .ms-md-4 {\n    margin-left: 16px !important;\n  }\n  .v-application--is-rtl .ms-md-4 {\n    margin-right: 16px !important;\n  }\n  .v-application--is-ltr .ms-md-5 {\n    margin-left: 20px !important;\n  }\n  .v-application--is-rtl .ms-md-5 {\n    margin-right: 20px !important;\n  }\n  .v-application--is-ltr .ms-md-6 {\n    margin-left: 24px !important;\n  }\n  .v-application--is-rtl .ms-md-6 {\n    margin-right: 24px !important;\n  }\n  .v-application--is-ltr .ms-md-7 {\n    margin-left: 28px !important;\n  }\n  .v-application--is-rtl .ms-md-7 {\n    margin-right: 28px !important;\n  }\n  .v-application--is-ltr .ms-md-8 {\n    margin-left: 32px !important;\n  }\n  .v-application--is-rtl .ms-md-8 {\n    margin-right: 32px !important;\n  }\n  .v-application--is-ltr .ms-md-9 {\n    margin-left: 36px !important;\n  }\n  .v-application--is-rtl .ms-md-9 {\n    margin-right: 36px !important;\n  }\n  .v-application--is-ltr .ms-md-10 {\n    margin-left: 40px !important;\n  }\n  .v-application--is-rtl .ms-md-10 {\n    margin-right: 40px !important;\n  }\n  .v-application--is-ltr .ms-md-11 {\n    margin-left: 44px !important;\n  }\n  .v-application--is-rtl .ms-md-11 {\n    margin-right: 44px !important;\n  }\n  .v-application--is-ltr .ms-md-12 {\n    margin-left: 48px !important;\n  }\n  .v-application--is-rtl .ms-md-12 {\n    margin-right: 48px !important;\n  }\n  .v-application--is-ltr .ms-md-13 {\n    margin-left: 52px !important;\n  }\n  .v-application--is-rtl .ms-md-13 {\n    margin-right: 52px !important;\n  }\n  .v-application--is-ltr .ms-md-14 {\n    margin-left: 56px !important;\n  }\n  .v-application--is-rtl .ms-md-14 {\n    margin-right: 56px !important;\n  }\n  .v-application--is-ltr .ms-md-15 {\n    margin-left: 60px !important;\n  }\n  .v-application--is-rtl .ms-md-15 {\n    margin-right: 60px !important;\n  }\n  .v-application--is-ltr .ms-md-16 {\n    margin-left: 64px !important;\n  }\n  .v-application--is-rtl .ms-md-16 {\n    margin-right: 64px !important;\n  }\n  .v-application--is-ltr .ms-md-auto {\n    margin-left: auto !important;\n  }\n  .v-application--is-rtl .ms-md-auto {\n    margin-right: auto !important;\n  }\n  .v-application--is-ltr .me-md-0 {\n    margin-right: 0px !important;\n  }\n  .v-application--is-rtl .me-md-0 {\n    margin-left: 0px !important;\n  }\n  .v-application--is-ltr .me-md-1 {\n    margin-right: 4px !important;\n  }\n  .v-application--is-rtl .me-md-1 {\n    margin-left: 4px !important;\n  }\n  .v-application--is-ltr .me-md-2 {\n    margin-right: 8px !important;\n  }\n  .v-application--is-rtl .me-md-2 {\n    margin-left: 8px !important;\n  }\n  .v-application--is-ltr .me-md-3 {\n    margin-right: 12px !important;\n  }\n  .v-application--is-rtl .me-md-3 {\n    margin-left: 12px !important;\n  }\n  .v-application--is-ltr .me-md-4 {\n    margin-right: 16px !important;\n  }\n  .v-application--is-rtl .me-md-4 {\n    margin-left: 16px !important;\n  }\n  .v-application--is-ltr .me-md-5 {\n    margin-right: 20px !important;\n  }\n  .v-application--is-rtl .me-md-5 {\n    margin-left: 20px !important;\n  }\n  .v-application--is-ltr .me-md-6 {\n    margin-right: 24px !important;\n  }\n  .v-application--is-rtl .me-md-6 {\n    margin-left: 24px !important;\n  }\n  .v-application--is-ltr .me-md-7 {\n    margin-right: 28px !important;\n  }\n  .v-application--is-rtl .me-md-7 {\n    margin-left: 28px !important;\n  }\n  .v-application--is-ltr .me-md-8 {\n    margin-right: 32px !important;\n  }\n  .v-application--is-rtl .me-md-8 {\n    margin-left: 32px !important;\n  }\n  .v-application--is-ltr .me-md-9 {\n    margin-right: 36px !important;\n  }\n  .v-application--is-rtl .me-md-9 {\n    margin-left: 36px !important;\n  }\n  .v-application--is-ltr .me-md-10 {\n    margin-right: 40px !important;\n  }\n  .v-application--is-rtl .me-md-10 {\n    margin-left: 40px !important;\n  }\n  .v-application--is-ltr .me-md-11 {\n    margin-right: 44px !important;\n  }\n  .v-application--is-rtl .me-md-11 {\n    margin-left: 44px !important;\n  }\n  .v-application--is-ltr .me-md-12 {\n    margin-right: 48px !important;\n  }\n  .v-application--is-rtl .me-md-12 {\n    margin-left: 48px !important;\n  }\n  .v-application--is-ltr .me-md-13 {\n    margin-right: 52px !important;\n  }\n  .v-application--is-rtl .me-md-13 {\n    margin-left: 52px !important;\n  }\n  .v-application--is-ltr .me-md-14 {\n    margin-right: 56px !important;\n  }\n  .v-application--is-rtl .me-md-14 {\n    margin-left: 56px !important;\n  }\n  .v-application--is-ltr .me-md-15 {\n    margin-right: 60px !important;\n  }\n  .v-application--is-rtl .me-md-15 {\n    margin-left: 60px !important;\n  }\n  .v-application--is-ltr .me-md-16 {\n    margin-right: 64px !important;\n  }\n  .v-application--is-rtl .me-md-16 {\n    margin-left: 64px !important;\n  }\n  .v-application--is-ltr .me-md-auto {\n    margin-right: auto !important;\n  }\n  .v-application--is-rtl .me-md-auto {\n    margin-left: auto !important;\n  }\n  .v-application .ma-md-n1 {\n    margin: -4px !important;\n  }\n  .v-application .ma-md-n2 {\n    margin: -8px !important;\n  }\n  .v-application .ma-md-n3 {\n    margin: -12px !important;\n  }\n  .v-application .ma-md-n4 {\n    margin: -16px !important;\n  }\n  .v-application .ma-md-n5 {\n    margin: -20px !important;\n  }\n  .v-application .ma-md-n6 {\n    margin: -24px !important;\n  }\n  .v-application .ma-md-n7 {\n    margin: -28px !important;\n  }\n  .v-application .ma-md-n8 {\n    margin: -32px !important;\n  }\n  .v-application .ma-md-n9 {\n    margin: -36px !important;\n  }\n  .v-application .ma-md-n10 {\n    margin: -40px !important;\n  }\n  .v-application .ma-md-n11 {\n    margin: -44px !important;\n  }\n  .v-application .ma-md-n12 {\n    margin: -48px !important;\n  }\n  .v-application .ma-md-n13 {\n    margin: -52px !important;\n  }\n  .v-application .ma-md-n14 {\n    margin: -56px !important;\n  }\n  .v-application .ma-md-n15 {\n    margin: -60px !important;\n  }\n  .v-application .ma-md-n16 {\n    margin: -64px !important;\n  }\n  .v-application .mx-md-n1 {\n    margin-right: -4px !important;\n    margin-left: -4px !important;\n  }\n  .v-application .mx-md-n2 {\n    margin-right: -8px !important;\n    margin-left: -8px !important;\n  }\n  .v-application .mx-md-n3 {\n    margin-right: -12px !important;\n    margin-left: -12px !important;\n  }\n  .v-application .mx-md-n4 {\n    margin-right: -16px !important;\n    margin-left: -16px !important;\n  }\n  .v-application .mx-md-n5 {\n    margin-right: -20px !important;\n    margin-left: -20px !important;\n  }\n  .v-application .mx-md-n6 {\n    margin-right: -24px !important;\n    margin-left: -24px !important;\n  }\n  .v-application .mx-md-n7 {\n    margin-right: -28px !important;\n    margin-left: -28px !important;\n  }\n  .v-application .mx-md-n8 {\n    margin-right: -32px !important;\n    margin-left: -32px !important;\n  }\n  .v-application .mx-md-n9 {\n    margin-right: -36px !important;\n    margin-left: -36px !important;\n  }\n  .v-application .mx-md-n10 {\n    margin-right: -40px !important;\n    margin-left: -40px !important;\n  }\n  .v-application .mx-md-n11 {\n    margin-right: -44px !important;\n    margin-left: -44px !important;\n  }\n  .v-application .mx-md-n12 {\n    margin-right: -48px !important;\n    margin-left: -48px !important;\n  }\n  .v-application .mx-md-n13 {\n    margin-right: -52px !important;\n    margin-left: -52px !important;\n  }\n  .v-application .mx-md-n14 {\n    margin-right: -56px !important;\n    margin-left: -56px !important;\n  }\n  .v-application .mx-md-n15 {\n    margin-right: -60px !important;\n    margin-left: -60px !important;\n  }\n  .v-application .mx-md-n16 {\n    margin-right: -64px !important;\n    margin-left: -64px !important;\n  }\n  .v-application .my-md-n1 {\n    margin-top: -4px !important;\n    margin-bottom: -4px !important;\n  }\n  .v-application .my-md-n2 {\n    margin-top: -8px !important;\n    margin-bottom: -8px !important;\n  }\n  .v-application .my-md-n3 {\n    margin-top: -12px !important;\n    margin-bottom: -12px !important;\n  }\n  .v-application .my-md-n4 {\n    margin-top: -16px !important;\n    margin-bottom: -16px !important;\n  }\n  .v-application .my-md-n5 {\n    margin-top: -20px !important;\n    margin-bottom: -20px !important;\n  }\n  .v-application .my-md-n6 {\n    margin-top: -24px !important;\n    margin-bottom: -24px !important;\n  }\n  .v-application .my-md-n7 {\n    margin-top: -28px !important;\n    margin-bottom: -28px !important;\n  }\n  .v-application .my-md-n8 {\n    margin-top: -32px !important;\n    margin-bottom: -32px !important;\n  }\n  .v-application .my-md-n9 {\n    margin-top: -36px !important;\n    margin-bottom: -36px !important;\n  }\n  .v-application .my-md-n10 {\n    margin-top: -40px !important;\n    margin-bottom: -40px !important;\n  }\n  .v-application .my-md-n11 {\n    margin-top: -44px !important;\n    margin-bottom: -44px !important;\n  }\n  .v-application .my-md-n12 {\n    margin-top: -48px !important;\n    margin-bottom: -48px !important;\n  }\n  .v-application .my-md-n13 {\n    margin-top: -52px !important;\n    margin-bottom: -52px !important;\n  }\n  .v-application .my-md-n14 {\n    margin-top: -56px !important;\n    margin-bottom: -56px !important;\n  }\n  .v-application .my-md-n15 {\n    margin-top: -60px !important;\n    margin-bottom: -60px !important;\n  }\n  .v-application .my-md-n16 {\n    margin-top: -64px !important;\n    margin-bottom: -64px !important;\n  }\n  .v-application .mt-md-n1 {\n    margin-top: -4px !important;\n  }\n  .v-application .mt-md-n2 {\n    margin-top: -8px !important;\n  }\n  .v-application .mt-md-n3 {\n    margin-top: -12px !important;\n  }\n  .v-application .mt-md-n4 {\n    margin-top: -16px !important;\n  }\n  .v-application .mt-md-n5 {\n    margin-top: -20px !important;\n  }\n  .v-application .mt-md-n6 {\n    margin-top: -24px !important;\n  }\n  .v-application .mt-md-n7 {\n    margin-top: -28px !important;\n  }\n  .v-application .mt-md-n8 {\n    margin-top: -32px !important;\n  }\n  .v-application .mt-md-n9 {\n    margin-top: -36px !important;\n  }\n  .v-application .mt-md-n10 {\n    margin-top: -40px !important;\n  }\n  .v-application .mt-md-n11 {\n    margin-top: -44px !important;\n  }\n  .v-application .mt-md-n12 {\n    margin-top: -48px !important;\n  }\n  .v-application .mt-md-n13 {\n    margin-top: -52px !important;\n  }\n  .v-application .mt-md-n14 {\n    margin-top: -56px !important;\n  }\n  .v-application .mt-md-n15 {\n    margin-top: -60px !important;\n  }\n  .v-application .mt-md-n16 {\n    margin-top: -64px !important;\n  }\n  .v-application .mr-md-n1 {\n    margin-right: -4px !important;\n  }\n  .v-application .mr-md-n2 {\n    margin-right: -8px !important;\n  }\n  .v-application .mr-md-n3 {\n    margin-right: -12px !important;\n  }\n  .v-application .mr-md-n4 {\n    margin-right: -16px !important;\n  }\n  .v-application .mr-md-n5 {\n    margin-right: -20px !important;\n  }\n  .v-application .mr-md-n6 {\n    margin-right: -24px !important;\n  }\n  .v-application .mr-md-n7 {\n    margin-right: -28px !important;\n  }\n  .v-application .mr-md-n8 {\n    margin-right: -32px !important;\n  }\n  .v-application .mr-md-n9 {\n    margin-right: -36px !important;\n  }\n  .v-application .mr-md-n10 {\n    margin-right: -40px !important;\n  }\n  .v-application .mr-md-n11 {\n    margin-right: -44px !important;\n  }\n  .v-application .mr-md-n12 {\n    margin-right: -48px !important;\n  }\n  .v-application .mr-md-n13 {\n    margin-right: -52px !important;\n  }\n  .v-application .mr-md-n14 {\n    margin-right: -56px !important;\n  }\n  .v-application .mr-md-n15 {\n    margin-right: -60px !important;\n  }\n  .v-application .mr-md-n16 {\n    margin-right: -64px !important;\n  }\n  .v-application .mb-md-n1 {\n    margin-bottom: -4px !important;\n  }\n  .v-application .mb-md-n2 {\n    margin-bottom: -8px !important;\n  }\n  .v-application .mb-md-n3 {\n    margin-bottom: -12px !important;\n  }\n  .v-application .mb-md-n4 {\n    margin-bottom: -16px !important;\n  }\n  .v-application .mb-md-n5 {\n    margin-bottom: -20px !important;\n  }\n  .v-application .mb-md-n6 {\n    margin-bottom: -24px !important;\n  }\n  .v-application .mb-md-n7 {\n    margin-bottom: -28px !important;\n  }\n  .v-application .mb-md-n8 {\n    margin-bottom: -32px !important;\n  }\n  .v-application .mb-md-n9 {\n    margin-bottom: -36px !important;\n  }\n  .v-application .mb-md-n10 {\n    margin-bottom: -40px !important;\n  }\n  .v-application .mb-md-n11 {\n    margin-bottom: -44px !important;\n  }\n  .v-application .mb-md-n12 {\n    margin-bottom: -48px !important;\n  }\n  .v-application .mb-md-n13 {\n    margin-bottom: -52px !important;\n  }\n  .v-application .mb-md-n14 {\n    margin-bottom: -56px !important;\n  }\n  .v-application .mb-md-n15 {\n    margin-bottom: -60px !important;\n  }\n  .v-application .mb-md-n16 {\n    margin-bottom: -64px !important;\n  }\n  .v-application .ml-md-n1 {\n    margin-left: -4px !important;\n  }\n  .v-application .ml-md-n2 {\n    margin-left: -8px !important;\n  }\n  .v-application .ml-md-n3 {\n    margin-left: -12px !important;\n  }\n  .v-application .ml-md-n4 {\n    margin-left: -16px !important;\n  }\n  .v-application .ml-md-n5 {\n    margin-left: -20px !important;\n  }\n  .v-application .ml-md-n6 {\n    margin-left: -24px !important;\n  }\n  .v-application .ml-md-n7 {\n    margin-left: -28px !important;\n  }\n  .v-application .ml-md-n8 {\n    margin-left: -32px !important;\n  }\n  .v-application .ml-md-n9 {\n    margin-left: -36px !important;\n  }\n  .v-application .ml-md-n10 {\n    margin-left: -40px !important;\n  }\n  .v-application .ml-md-n11 {\n    margin-left: -44px !important;\n  }\n  .v-application .ml-md-n12 {\n    margin-left: -48px !important;\n  }\n  .v-application .ml-md-n13 {\n    margin-left: -52px !important;\n  }\n  .v-application .ml-md-n14 {\n    margin-left: -56px !important;\n  }\n  .v-application .ml-md-n15 {\n    margin-left: -60px !important;\n  }\n  .v-application .ml-md-n16 {\n    margin-left: -64px !important;\n  }\n  .v-application--is-ltr .ms-md-n1 {\n    margin-left: -4px !important;\n  }\n  .v-application--is-rtl .ms-md-n1 {\n    margin-right: -4px !important;\n  }\n  .v-application--is-ltr .ms-md-n2 {\n    margin-left: -8px !important;\n  }\n  .v-application--is-rtl .ms-md-n2 {\n    margin-right: -8px !important;\n  }\n  .v-application--is-ltr .ms-md-n3 {\n    margin-left: -12px !important;\n  }\n  .v-application--is-rtl .ms-md-n3 {\n    margin-right: -12px !important;\n  }\n  .v-application--is-ltr .ms-md-n4 {\n    margin-left: -16px !important;\n  }\n  .v-application--is-rtl .ms-md-n4 {\n    margin-right: -16px !important;\n  }\n  .v-application--is-ltr .ms-md-n5 {\n    margin-left: -20px !important;\n  }\n  .v-application--is-rtl .ms-md-n5 {\n    margin-right: -20px !important;\n  }\n  .v-application--is-ltr .ms-md-n6 {\n    margin-left: -24px !important;\n  }\n  .v-application--is-rtl .ms-md-n6 {\n    margin-right: -24px !important;\n  }\n  .v-application--is-ltr .ms-md-n7 {\n    margin-left: -28px !important;\n  }\n  .v-application--is-rtl .ms-md-n7 {\n    margin-right: -28px !important;\n  }\n  .v-application--is-ltr .ms-md-n8 {\n    margin-left: -32px !important;\n  }\n  .v-application--is-rtl .ms-md-n8 {\n    margin-right: -32px !important;\n  }\n  .v-application--is-ltr .ms-md-n9 {\n    margin-left: -36px !important;\n  }\n  .v-application--is-rtl .ms-md-n9 {\n    margin-right: -36px !important;\n  }\n  .v-application--is-ltr .ms-md-n10 {\n    margin-left: -40px !important;\n  }\n  .v-application--is-rtl .ms-md-n10 {\n    margin-right: -40px !important;\n  }\n  .v-application--is-ltr .ms-md-n11 {\n    margin-left: -44px !important;\n  }\n  .v-application--is-rtl .ms-md-n11 {\n    margin-right: -44px !important;\n  }\n  .v-application--is-ltr .ms-md-n12 {\n    margin-left: -48px !important;\n  }\n  .v-application--is-rtl .ms-md-n12 {\n    margin-right: -48px !important;\n  }\n  .v-application--is-ltr .ms-md-n13 {\n    margin-left: -52px !important;\n  }\n  .v-application--is-rtl .ms-md-n13 {\n    margin-right: -52px !important;\n  }\n  .v-application--is-ltr .ms-md-n14 {\n    margin-left: -56px !important;\n  }\n  .v-application--is-rtl .ms-md-n14 {\n    margin-right: -56px !important;\n  }\n  .v-application--is-ltr .ms-md-n15 {\n    margin-left: -60px !important;\n  }\n  .v-application--is-rtl .ms-md-n15 {\n    margin-right: -60px !important;\n  }\n  .v-application--is-ltr .ms-md-n16 {\n    margin-left: -64px !important;\n  }\n  .v-application--is-rtl .ms-md-n16 {\n    margin-right: -64px !important;\n  }\n  .v-application--is-ltr .me-md-n1 {\n    margin-right: -4px !important;\n  }\n  .v-application--is-rtl .me-md-n1 {\n    margin-left: -4px !important;\n  }\n  .v-application--is-ltr .me-md-n2 {\n    margin-right: -8px !important;\n  }\n  .v-application--is-rtl .me-md-n2 {\n    margin-left: -8px !important;\n  }\n  .v-application--is-ltr .me-md-n3 {\n    margin-right: -12px !important;\n  }\n  .v-application--is-rtl .me-md-n3 {\n    margin-left: -12px !important;\n  }\n  .v-application--is-ltr .me-md-n4 {\n    margin-right: -16px !important;\n  }\n  .v-application--is-rtl .me-md-n4 {\n    margin-left: -16px !important;\n  }\n  .v-application--is-ltr .me-md-n5 {\n    margin-right: -20px !important;\n  }\n  .v-application--is-rtl .me-md-n5 {\n    margin-left: -20px !important;\n  }\n  .v-application--is-ltr .me-md-n6 {\n    margin-right: -24px !important;\n  }\n  .v-application--is-rtl .me-md-n6 {\n    margin-left: -24px !important;\n  }\n  .v-application--is-ltr .me-md-n7 {\n    margin-right: -28px !important;\n  }\n  .v-application--is-rtl .me-md-n7 {\n    margin-left: -28px !important;\n  }\n  .v-application--is-ltr .me-md-n8 {\n    margin-right: -32px !important;\n  }\n  .v-application--is-rtl .me-md-n8 {\n    margin-left: -32px !important;\n  }\n  .v-application--is-ltr .me-md-n9 {\n    margin-right: -36px !important;\n  }\n  .v-application--is-rtl .me-md-n9 {\n    margin-left: -36px !important;\n  }\n  .v-application--is-ltr .me-md-n10 {\n    margin-right: -40px !important;\n  }\n  .v-application--is-rtl .me-md-n10 {\n    margin-left: -40px !important;\n  }\n  .v-application--is-ltr .me-md-n11 {\n    margin-right: -44px !important;\n  }\n  .v-application--is-rtl .me-md-n11 {\n    margin-left: -44px !important;\n  }\n  .v-application--is-ltr .me-md-n12 {\n    margin-right: -48px !important;\n  }\n  .v-application--is-rtl .me-md-n12 {\n    margin-left: -48px !important;\n  }\n  .v-application--is-ltr .me-md-n13 {\n    margin-right: -52px !important;\n  }\n  .v-application--is-rtl .me-md-n13 {\n    margin-left: -52px !important;\n  }\n  .v-application--is-ltr .me-md-n14 {\n    margin-right: -56px !important;\n  }\n  .v-application--is-rtl .me-md-n14 {\n    margin-left: -56px !important;\n  }\n  .v-application--is-ltr .me-md-n15 {\n    margin-right: -60px !important;\n  }\n  .v-application--is-rtl .me-md-n15 {\n    margin-left: -60px !important;\n  }\n  .v-application--is-ltr .me-md-n16 {\n    margin-right: -64px !important;\n  }\n  .v-application--is-rtl .me-md-n16 {\n    margin-left: -64px !important;\n  }\n  .v-application .pa-md-0 {\n    padding: 0px !important;\n  }\n  .v-application .pa-md-1 {\n    padding: 4px !important;\n  }\n  .v-application .pa-md-2 {\n    padding: 8px !important;\n  }\n  .v-application .pa-md-3 {\n    padding: 12px !important;\n  }\n  .v-application .pa-md-4 {\n    padding: 16px !important;\n  }\n  .v-application .pa-md-5 {\n    padding: 20px !important;\n  }\n  .v-application .pa-md-6 {\n    padding: 24px !important;\n  }\n  .v-application .pa-md-7 {\n    padding: 28px !important;\n  }\n  .v-application .pa-md-8 {\n    padding: 32px !important;\n  }\n  .v-application .pa-md-9 {\n    padding: 36px !important;\n  }\n  .v-application .pa-md-10 {\n    padding: 40px !important;\n  }\n  .v-application .pa-md-11 {\n    padding: 44px !important;\n  }\n  .v-application .pa-md-12 {\n    padding: 48px !important;\n  }\n  .v-application .pa-md-13 {\n    padding: 52px !important;\n  }\n  .v-application .pa-md-14 {\n    padding: 56px !important;\n  }\n  .v-application .pa-md-15 {\n    padding: 60px !important;\n  }\n  .v-application .pa-md-16 {\n    padding: 64px !important;\n  }\n  .v-application .px-md-0 {\n    padding-right: 0px !important;\n    padding-left: 0px !important;\n  }\n  .v-application .px-md-1 {\n    padding-right: 4px !important;\n    padding-left: 4px !important;\n  }\n  .v-application .px-md-2 {\n    padding-right: 8px !important;\n    padding-left: 8px !important;\n  }\n  .v-application .px-md-3 {\n    padding-right: 12px !important;\n    padding-left: 12px !important;\n  }\n  .v-application .px-md-4 {\n    padding-right: 16px !important;\n    padding-left: 16px !important;\n  }\n  .v-application .px-md-5 {\n    padding-right: 20px !important;\n    padding-left: 20px !important;\n  }\n  .v-application .px-md-6 {\n    padding-right: 24px !important;\n    padding-left: 24px !important;\n  }\n  .v-application .px-md-7 {\n    padding-right: 28px !important;\n    padding-left: 28px !important;\n  }\n  .v-application .px-md-8 {\n    padding-right: 32px !important;\n    padding-left: 32px !important;\n  }\n  .v-application .px-md-9 {\n    padding-right: 36px !important;\n    padding-left: 36px !important;\n  }\n  .v-application .px-md-10 {\n    padding-right: 40px !important;\n    padding-left: 40px !important;\n  }\n  .v-application .px-md-11 {\n    padding-right: 44px !important;\n    padding-left: 44px !important;\n  }\n  .v-application .px-md-12 {\n    padding-right: 48px !important;\n    padding-left: 48px !important;\n  }\n  .v-application .px-md-13 {\n    padding-right: 52px !important;\n    padding-left: 52px !important;\n  }\n  .v-application .px-md-14 {\n    padding-right: 56px !important;\n    padding-left: 56px !important;\n  }\n  .v-application .px-md-15 {\n    padding-right: 60px !important;\n    padding-left: 60px !important;\n  }\n  .v-application .px-md-16 {\n    padding-right: 64px !important;\n    padding-left: 64px !important;\n  }\n  .v-application .py-md-0 {\n    padding-top: 0px !important;\n    padding-bottom: 0px !important;\n  }\n  .v-application .py-md-1 {\n    padding-top: 4px !important;\n    padding-bottom: 4px !important;\n  }\n  .v-application .py-md-2 {\n    padding-top: 8px !important;\n    padding-bottom: 8px !important;\n  }\n  .v-application .py-md-3 {\n    padding-top: 12px !important;\n    padding-bottom: 12px !important;\n  }\n  .v-application .py-md-4 {\n    padding-top: 16px !important;\n    padding-bottom: 16px !important;\n  }\n  .v-application .py-md-5 {\n    padding-top: 20px !important;\n    padding-bottom: 20px !important;\n  }\n  .v-application .py-md-6 {\n    padding-top: 24px !important;\n    padding-bottom: 24px !important;\n  }\n  .v-application .py-md-7 {\n    padding-top: 28px !important;\n    padding-bottom: 28px !important;\n  }\n  .v-application .py-md-8 {\n    padding-top: 32px !important;\n    padding-bottom: 32px !important;\n  }\n  .v-application .py-md-9 {\n    padding-top: 36px !important;\n    padding-bottom: 36px !important;\n  }\n  .v-application .py-md-10 {\n    padding-top: 40px !important;\n    padding-bottom: 40px !important;\n  }\n  .v-application .py-md-11 {\n    padding-top: 44px !important;\n    padding-bottom: 44px !important;\n  }\n  .v-application .py-md-12 {\n    padding-top: 48px !important;\n    padding-bottom: 48px !important;\n  }\n  .v-application .py-md-13 {\n    padding-top: 52px !important;\n    padding-bottom: 52px !important;\n  }\n  .v-application .py-md-14 {\n    padding-top: 56px !important;\n    padding-bottom: 56px !important;\n  }\n  .v-application .py-md-15 {\n    padding-top: 60px !important;\n    padding-bottom: 60px !important;\n  }\n  .v-application .py-md-16 {\n    padding-top: 64px !important;\n    padding-bottom: 64px !important;\n  }\n  .v-application .pt-md-0 {\n    padding-top: 0px !important;\n  }\n  .v-application .pt-md-1 {\n    padding-top: 4px !important;\n  }\n  .v-application .pt-md-2 {\n    padding-top: 8px !important;\n  }\n  .v-application .pt-md-3 {\n    padding-top: 12px !important;\n  }\n  .v-application .pt-md-4 {\n    padding-top: 16px !important;\n  }\n  .v-application .pt-md-5 {\n    padding-top: 20px !important;\n  }\n  .v-application .pt-md-6 {\n    padding-top: 24px !important;\n  }\n  .v-application .pt-md-7 {\n    padding-top: 28px !important;\n  }\n  .v-application .pt-md-8 {\n    padding-top: 32px !important;\n  }\n  .v-application .pt-md-9 {\n    padding-top: 36px !important;\n  }\n  .v-application .pt-md-10 {\n    padding-top: 40px !important;\n  }\n  .v-application .pt-md-11 {\n    padding-top: 44px !important;\n  }\n  .v-application .pt-md-12 {\n    padding-top: 48px !important;\n  }\n  .v-application .pt-md-13 {\n    padding-top: 52px !important;\n  }\n  .v-application .pt-md-14 {\n    padding-top: 56px !important;\n  }\n  .v-application .pt-md-15 {\n    padding-top: 60px !important;\n  }\n  .v-application .pt-md-16 {\n    padding-top: 64px !important;\n  }\n  .v-application .pr-md-0 {\n    padding-right: 0px !important;\n  }\n  .v-application .pr-md-1 {\n    padding-right: 4px !important;\n  }\n  .v-application .pr-md-2 {\n    padding-right: 8px !important;\n  }\n  .v-application .pr-md-3 {\n    padding-right: 12px !important;\n  }\n  .v-application .pr-md-4 {\n    padding-right: 16px !important;\n  }\n  .v-application .pr-md-5 {\n    padding-right: 20px !important;\n  }\n  .v-application .pr-md-6 {\n    padding-right: 24px !important;\n  }\n  .v-application .pr-md-7 {\n    padding-right: 28px !important;\n  }\n  .v-application .pr-md-8 {\n    padding-right: 32px !important;\n  }\n  .v-application .pr-md-9 {\n    padding-right: 36px !important;\n  }\n  .v-application .pr-md-10 {\n    padding-right: 40px !important;\n  }\n  .v-application .pr-md-11 {\n    padding-right: 44px !important;\n  }\n  .v-application .pr-md-12 {\n    padding-right: 48px !important;\n  }\n  .v-application .pr-md-13 {\n    padding-right: 52px !important;\n  }\n  .v-application .pr-md-14 {\n    padding-right: 56px !important;\n  }\n  .v-application .pr-md-15 {\n    padding-right: 60px !important;\n  }\n  .v-application .pr-md-16 {\n    padding-right: 64px !important;\n  }\n  .v-application .pb-md-0 {\n    padding-bottom: 0px !important;\n  }\n  .v-application .pb-md-1 {\n    padding-bottom: 4px !important;\n  }\n  .v-application .pb-md-2 {\n    padding-bottom: 8px !important;\n  }\n  .v-application .pb-md-3 {\n    padding-bottom: 12px !important;\n  }\n  .v-application .pb-md-4 {\n    padding-bottom: 16px !important;\n  }\n  .v-application .pb-md-5 {\n    padding-bottom: 20px !important;\n  }\n  .v-application .pb-md-6 {\n    padding-bottom: 24px !important;\n  }\n  .v-application .pb-md-7 {\n    padding-bottom: 28px !important;\n  }\n  .v-application .pb-md-8 {\n    padding-bottom: 32px !important;\n  }\n  .v-application .pb-md-9 {\n    padding-bottom: 36px !important;\n  }\n  .v-application .pb-md-10 {\n    padding-bottom: 40px !important;\n  }\n  .v-application .pb-md-11 {\n    padding-bottom: 44px !important;\n  }\n  .v-application .pb-md-12 {\n    padding-bottom: 48px !important;\n  }\n  .v-application .pb-md-13 {\n    padding-bottom: 52px !important;\n  }\n  .v-application .pb-md-14 {\n    padding-bottom: 56px !important;\n  }\n  .v-application .pb-md-15 {\n    padding-bottom: 60px !important;\n  }\n  .v-application .pb-md-16 {\n    padding-bottom: 64px !important;\n  }\n  .v-application .pl-md-0 {\n    padding-left: 0px !important;\n  }\n  .v-application .pl-md-1 {\n    padding-left: 4px !important;\n  }\n  .v-application .pl-md-2 {\n    padding-left: 8px !important;\n  }\n  .v-application .pl-md-3 {\n    padding-left: 12px !important;\n  }\n  .v-application .pl-md-4 {\n    padding-left: 16px !important;\n  }\n  .v-application .pl-md-5 {\n    padding-left: 20px !important;\n  }\n  .v-application .pl-md-6 {\n    padding-left: 24px !important;\n  }\n  .v-application .pl-md-7 {\n    padding-left: 28px !important;\n  }\n  .v-application .pl-md-8 {\n    padding-left: 32px !important;\n  }\n  .v-application .pl-md-9 {\n    padding-left: 36px !important;\n  }\n  .v-application .pl-md-10 {\n    padding-left: 40px !important;\n  }\n  .v-application .pl-md-11 {\n    padding-left: 44px !important;\n  }\n  .v-application .pl-md-12 {\n    padding-left: 48px !important;\n  }\n  .v-application .pl-md-13 {\n    padding-left: 52px !important;\n  }\n  .v-application .pl-md-14 {\n    padding-left: 56px !important;\n  }\n  .v-application .pl-md-15 {\n    padding-left: 60px !important;\n  }\n  .v-application .pl-md-16 {\n    padding-left: 64px !important;\n  }\n  .v-application--is-ltr .ps-md-0 {\n    padding-left: 0px !important;\n  }\n  .v-application--is-rtl .ps-md-0 {\n    padding-right: 0px !important;\n  }\n  .v-application--is-ltr .ps-md-1 {\n    padding-left: 4px !important;\n  }\n  .v-application--is-rtl .ps-md-1 {\n    padding-right: 4px !important;\n  }\n  .v-application--is-ltr .ps-md-2 {\n    padding-left: 8px !important;\n  }\n  .v-application--is-rtl .ps-md-2 {\n    padding-right: 8px !important;\n  }\n  .v-application--is-ltr .ps-md-3 {\n    padding-left: 12px !important;\n  }\n  .v-application--is-rtl .ps-md-3 {\n    padding-right: 12px !important;\n  }\n  .v-application--is-ltr .ps-md-4 {\n    padding-left: 16px !important;\n  }\n  .v-application--is-rtl .ps-md-4 {\n    padding-right: 16px !important;\n  }\n  .v-application--is-ltr .ps-md-5 {\n    padding-left: 20px !important;\n  }\n  .v-application--is-rtl .ps-md-5 {\n    padding-right: 20px !important;\n  }\n  .v-application--is-ltr .ps-md-6 {\n    padding-left: 24px !important;\n  }\n  .v-application--is-rtl .ps-md-6 {\n    padding-right: 24px !important;\n  }\n  .v-application--is-ltr .ps-md-7 {\n    padding-left: 28px !important;\n  }\n  .v-application--is-rtl .ps-md-7 {\n    padding-right: 28px !important;\n  }\n  .v-application--is-ltr .ps-md-8 {\n    padding-left: 32px !important;\n  }\n  .v-application--is-rtl .ps-md-8 {\n    padding-right: 32px !important;\n  }\n  .v-application--is-ltr .ps-md-9 {\n    padding-left: 36px !important;\n  }\n  .v-application--is-rtl .ps-md-9 {\n    padding-right: 36px !important;\n  }\n  .v-application--is-ltr .ps-md-10 {\n    padding-left: 40px !important;\n  }\n  .v-application--is-rtl .ps-md-10 {\n    padding-right: 40px !important;\n  }\n  .v-application--is-ltr .ps-md-11 {\n    padding-left: 44px !important;\n  }\n  .v-application--is-rtl .ps-md-11 {\n    padding-right: 44px !important;\n  }\n  .v-application--is-ltr .ps-md-12 {\n    padding-left: 48px !important;\n  }\n  .v-application--is-rtl .ps-md-12 {\n    padding-right: 48px !important;\n  }\n  .v-application--is-ltr .ps-md-13 {\n    padding-left: 52px !important;\n  }\n  .v-application--is-rtl .ps-md-13 {\n    padding-right: 52px !important;\n  }\n  .v-application--is-ltr .ps-md-14 {\n    padding-left: 56px !important;\n  }\n  .v-application--is-rtl .ps-md-14 {\n    padding-right: 56px !important;\n  }\n  .v-application--is-ltr .ps-md-15 {\n    padding-left: 60px !important;\n  }\n  .v-application--is-rtl .ps-md-15 {\n    padding-right: 60px !important;\n  }\n  .v-application--is-ltr .ps-md-16 {\n    padding-left: 64px !important;\n  }\n  .v-application--is-rtl .ps-md-16 {\n    padding-right: 64px !important;\n  }\n  .v-application--is-ltr .pe-md-0 {\n    padding-right: 0px !important;\n  }\n  .v-application--is-rtl .pe-md-0 {\n    padding-left: 0px !important;\n  }\n  .v-application--is-ltr .pe-md-1 {\n    padding-right: 4px !important;\n  }\n  .v-application--is-rtl .pe-md-1 {\n    padding-left: 4px !important;\n  }\n  .v-application--is-ltr .pe-md-2 {\n    padding-right: 8px !important;\n  }\n  .v-application--is-rtl .pe-md-2 {\n    padding-left: 8px !important;\n  }\n  .v-application--is-ltr .pe-md-3 {\n    padding-right: 12px !important;\n  }\n  .v-application--is-rtl .pe-md-3 {\n    padding-left: 12px !important;\n  }\n  .v-application--is-ltr .pe-md-4 {\n    padding-right: 16px !important;\n  }\n  .v-application--is-rtl .pe-md-4 {\n    padding-left: 16px !important;\n  }\n  .v-application--is-ltr .pe-md-5 {\n    padding-right: 20px !important;\n  }\n  .v-application--is-rtl .pe-md-5 {\n    padding-left: 20px !important;\n  }\n  .v-application--is-ltr .pe-md-6 {\n    padding-right: 24px !important;\n  }\n  .v-application--is-rtl .pe-md-6 {\n    padding-left: 24px !important;\n  }\n  .v-application--is-ltr .pe-md-7 {\n    padding-right: 28px !important;\n  }\n  .v-application--is-rtl .pe-md-7 {\n    padding-left: 28px !important;\n  }\n  .v-application--is-ltr .pe-md-8 {\n    padding-right: 32px !important;\n  }\n  .v-application--is-rtl .pe-md-8 {\n    padding-left: 32px !important;\n  }\n  .v-application--is-ltr .pe-md-9 {\n    padding-right: 36px !important;\n  }\n  .v-application--is-rtl .pe-md-9 {\n    padding-left: 36px !important;\n  }\n  .v-application--is-ltr .pe-md-10 {\n    padding-right: 40px !important;\n  }\n  .v-application--is-rtl .pe-md-10 {\n    padding-left: 40px !important;\n  }\n  .v-application--is-ltr .pe-md-11 {\n    padding-right: 44px !important;\n  }\n  .v-application--is-rtl .pe-md-11 {\n    padding-left: 44px !important;\n  }\n  .v-application--is-ltr .pe-md-12 {\n    padding-right: 48px !important;\n  }\n  .v-application--is-rtl .pe-md-12 {\n    padding-left: 48px !important;\n  }\n  .v-application--is-ltr .pe-md-13 {\n    padding-right: 52px !important;\n  }\n  .v-application--is-rtl .pe-md-13 {\n    padding-left: 52px !important;\n  }\n  .v-application--is-ltr .pe-md-14 {\n    padding-right: 56px !important;\n  }\n  .v-application--is-rtl .pe-md-14 {\n    padding-left: 56px !important;\n  }\n  .v-application--is-ltr .pe-md-15 {\n    padding-right: 60px !important;\n  }\n  .v-application--is-rtl .pe-md-15 {\n    padding-left: 60px !important;\n  }\n  .v-application--is-ltr .pe-md-16 {\n    padding-right: 64px !important;\n  }\n  .v-application--is-rtl .pe-md-16 {\n    padding-left: 64px !important;\n  }\n  .v-application .text-md-left {\n    text-align: left !important;\n  }\n  .v-application .text-md-right {\n    text-align: right !important;\n  }\n  .v-application .text-md-center {\n    text-align: center !important;\n  }\n  .v-application .text-md-justify {\n    text-align: justify !important;\n  }\n  .v-application .text-md-start {\n    text-align: start !important;\n  }\n  .v-application .text-md-end {\n    text-align: end !important;\n  }\n  .v-application .text-md-h1 {\n    font-size: 6rem !important;\n    font-weight: 300;\n    line-height: 6rem;\n    letter-spacing: -0.015625em !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-md-h2 {\n    font-size: 3.75rem !important;\n    font-weight: 300;\n    line-height: 3.75rem;\n    letter-spacing: -0.0083333333em !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-md-h3 {\n    font-size: 3rem !important;\n    font-weight: 400;\n    line-height: 3.125rem;\n    letter-spacing: normal !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-md-h4 {\n    font-size: 2.125rem !important;\n    font-weight: 400;\n    line-height: 2.5rem;\n    letter-spacing: 0.0073529412em !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-md-h5 {\n    font-size: 1.5rem !important;\n    font-weight: 400;\n    line-height: 2rem;\n    letter-spacing: normal !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-md-h6 {\n    font-size: 1.25rem !important;\n    font-weight: 500;\n    line-height: 2rem;\n    letter-spacing: 0.0125em !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-md-subtitle-1 {\n    font-size: 1rem !important;\n    font-weight: normal;\n    line-height: 1.75rem;\n    letter-spacing: 0.009375em !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-md-subtitle-2 {\n    font-size: 0.875rem !important;\n    font-weight: 500;\n    line-height: 1.375rem;\n    letter-spacing: 0.0071428571em !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-md-body-1 {\n    font-size: 1rem !important;\n    font-weight: 400;\n    line-height: 1.5rem;\n    letter-spacing: 0.03125em !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-md-body-2 {\n    font-size: 0.875rem !important;\n    font-weight: 400;\n    line-height: 1.25rem;\n    letter-spacing: 0.0178571429em !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-md-button {\n    font-size: 0.875rem !important;\n    font-weight: 500;\n    line-height: 2.25rem;\n    letter-spacing: 0.0892857143em !important;\n    font-family: \"Roboto\", sans-serif !important;\n    text-transform: uppercase !important;\n  }\n  .v-application .text-md-caption {\n    font-size: 0.75rem !important;\n    font-weight: 400;\n    line-height: 1.25rem;\n    letter-spacing: 0.0333333333em !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-md-overline {\n    font-size: 0.75rem !important;\n    font-weight: 500;\n    line-height: 2rem;\n    letter-spacing: 0.1666666667em !important;\n    font-family: \"Roboto\", sans-serif !important;\n    text-transform: uppercase !important;\n  }\n}\n@media (min-width: 1264px) {\n  .v-application .d-lg-none {\n    display: none !important;\n  }\n  .v-application .d-lg-inline {\n    display: inline !important;\n  }\n  .v-application .d-lg-inline-block {\n    display: inline-block !important;\n  }\n  .v-application .d-lg-block {\n    display: block !important;\n  }\n  .v-application .d-lg-table {\n    display: table !important;\n  }\n  .v-application .d-lg-table-row {\n    display: table-row !important;\n  }\n  .v-application .d-lg-table-cell {\n    display: table-cell !important;\n  }\n  .v-application .d-lg-flex {\n    display: flex !important;\n  }\n  .v-application .d-lg-inline-flex {\n    display: inline-flex !important;\n  }\n  .v-application .float-lg-none {\n    float: none !important;\n  }\n  .v-application .float-lg-left {\n    float: left !important;\n  }\n  .v-application .float-lg-right {\n    float: right !important;\n  }\n  .v-application--is-rtl .float-lg-end {\n    float: left !important;\n  }\n  .v-application--is-rtl .float-lg-start {\n    float: right !important;\n  }\n  .v-application--is-ltr .float-lg-end {\n    float: right !important;\n  }\n  .v-application--is-ltr .float-lg-start {\n    float: left !important;\n  }\n  .v-application .flex-lg-fill {\n    flex: 1 1 auto !important;\n  }\n  .v-application .flex-lg-row {\n    flex-direction: row !important;\n  }\n  .v-application .flex-lg-column {\n    flex-direction: column !important;\n  }\n  .v-application .flex-lg-row-reverse {\n    flex-direction: row-reverse !important;\n  }\n  .v-application .flex-lg-column-reverse {\n    flex-direction: column-reverse !important;\n  }\n  .v-application .flex-lg-grow-0 {\n    flex-grow: 0 !important;\n  }\n  .v-application .flex-lg-grow-1 {\n    flex-grow: 1 !important;\n  }\n  .v-application .flex-lg-shrink-0 {\n    flex-shrink: 0 !important;\n  }\n  .v-application .flex-lg-shrink-1 {\n    flex-shrink: 1 !important;\n  }\n  .v-application .flex-lg-wrap {\n    flex-wrap: wrap !important;\n  }\n  .v-application .flex-lg-nowrap {\n    flex-wrap: nowrap !important;\n  }\n  .v-application .flex-lg-wrap-reverse {\n    flex-wrap: wrap-reverse !important;\n  }\n  .v-application .justify-lg-start {\n    justify-content: flex-start !important;\n  }\n  .v-application .justify-lg-end {\n    justify-content: flex-end !important;\n  }\n  .v-application .justify-lg-center {\n    justify-content: center !important;\n  }\n  .v-application .justify-lg-space-between {\n    justify-content: space-between !important;\n  }\n  .v-application .justify-lg-space-around {\n    justify-content: space-around !important;\n  }\n  .v-application .align-lg-start {\n    align-items: flex-start !important;\n  }\n  .v-application .align-lg-end {\n    align-items: flex-end !important;\n  }\n  .v-application .align-lg-center {\n    align-items: center !important;\n  }\n  .v-application .align-lg-baseline {\n    align-items: baseline !important;\n  }\n  .v-application .align-lg-stretch {\n    align-items: stretch !important;\n  }\n  .v-application .align-content-lg-start {\n    align-content: flex-start !important;\n  }\n  .v-application .align-content-lg-end {\n    align-content: flex-end !important;\n  }\n  .v-application .align-content-lg-center {\n    align-content: center !important;\n  }\n  .v-application .align-content-lg-space-between {\n    align-content: space-between !important;\n  }\n  .v-application .align-content-lg-space-around {\n    align-content: space-around !important;\n  }\n  .v-application .align-content-lg-stretch {\n    align-content: stretch !important;\n  }\n  .v-application .align-self-lg-auto {\n    align-self: auto !important;\n  }\n  .v-application .align-self-lg-start {\n    align-self: flex-start !important;\n  }\n  .v-application .align-self-lg-end {\n    align-self: flex-end !important;\n  }\n  .v-application .align-self-lg-center {\n    align-self: center !important;\n  }\n  .v-application .align-self-lg-baseline {\n    align-self: baseline !important;\n  }\n  .v-application .align-self-lg-stretch {\n    align-self: stretch !important;\n  }\n  .v-application .order-lg-first {\n    order: -1 !important;\n  }\n  .v-application .order-lg-0 {\n    order: 0 !important;\n  }\n  .v-application .order-lg-1 {\n    order: 1 !important;\n  }\n  .v-application .order-lg-2 {\n    order: 2 !important;\n  }\n  .v-application .order-lg-3 {\n    order: 3 !important;\n  }\n  .v-application .order-lg-4 {\n    order: 4 !important;\n  }\n  .v-application .order-lg-5 {\n    order: 5 !important;\n  }\n  .v-application .order-lg-6 {\n    order: 6 !important;\n  }\n  .v-application .order-lg-7 {\n    order: 7 !important;\n  }\n  .v-application .order-lg-8 {\n    order: 8 !important;\n  }\n  .v-application .order-lg-9 {\n    order: 9 !important;\n  }\n  .v-application .order-lg-10 {\n    order: 10 !important;\n  }\n  .v-application .order-lg-11 {\n    order: 11 !important;\n  }\n  .v-application .order-lg-12 {\n    order: 12 !important;\n  }\n  .v-application .order-lg-last {\n    order: 13 !important;\n  }\n  .v-application .ma-lg-0 {\n    margin: 0px !important;\n  }\n  .v-application .ma-lg-1 {\n    margin: 4px !important;\n  }\n  .v-application .ma-lg-2 {\n    margin: 8px !important;\n  }\n  .v-application .ma-lg-3 {\n    margin: 12px !important;\n  }\n  .v-application .ma-lg-4 {\n    margin: 16px !important;\n  }\n  .v-application .ma-lg-5 {\n    margin: 20px !important;\n  }\n  .v-application .ma-lg-6 {\n    margin: 24px !important;\n  }\n  .v-application .ma-lg-7 {\n    margin: 28px !important;\n  }\n  .v-application .ma-lg-8 {\n    margin: 32px !important;\n  }\n  .v-application .ma-lg-9 {\n    margin: 36px !important;\n  }\n  .v-application .ma-lg-10 {\n    margin: 40px !important;\n  }\n  .v-application .ma-lg-11 {\n    margin: 44px !important;\n  }\n  .v-application .ma-lg-12 {\n    margin: 48px !important;\n  }\n  .v-application .ma-lg-13 {\n    margin: 52px !important;\n  }\n  .v-application .ma-lg-14 {\n    margin: 56px !important;\n  }\n  .v-application .ma-lg-15 {\n    margin: 60px !important;\n  }\n  .v-application .ma-lg-16 {\n    margin: 64px !important;\n  }\n  .v-application .ma-lg-auto {\n    margin: auto !important;\n  }\n  .v-application .mx-lg-0 {\n    margin-right: 0px !important;\n    margin-left: 0px !important;\n  }\n  .v-application .mx-lg-1 {\n    margin-right: 4px !important;\n    margin-left: 4px !important;\n  }\n  .v-application .mx-lg-2 {\n    margin-right: 8px !important;\n    margin-left: 8px !important;\n  }\n  .v-application .mx-lg-3 {\n    margin-right: 12px !important;\n    margin-left: 12px !important;\n  }\n  .v-application .mx-lg-4 {\n    margin-right: 16px !important;\n    margin-left: 16px !important;\n  }\n  .v-application .mx-lg-5 {\n    margin-right: 20px !important;\n    margin-left: 20px !important;\n  }\n  .v-application .mx-lg-6 {\n    margin-right: 24px !important;\n    margin-left: 24px !important;\n  }\n  .v-application .mx-lg-7 {\n    margin-right: 28px !important;\n    margin-left: 28px !important;\n  }\n  .v-application .mx-lg-8 {\n    margin-right: 32px !important;\n    margin-left: 32px !important;\n  }\n  .v-application .mx-lg-9 {\n    margin-right: 36px !important;\n    margin-left: 36px !important;\n  }\n  .v-application .mx-lg-10 {\n    margin-right: 40px !important;\n    margin-left: 40px !important;\n  }\n  .v-application .mx-lg-11 {\n    margin-right: 44px !important;\n    margin-left: 44px !important;\n  }\n  .v-application .mx-lg-12 {\n    margin-right: 48px !important;\n    margin-left: 48px !important;\n  }\n  .v-application .mx-lg-13 {\n    margin-right: 52px !important;\n    margin-left: 52px !important;\n  }\n  .v-application .mx-lg-14 {\n    margin-right: 56px !important;\n    margin-left: 56px !important;\n  }\n  .v-application .mx-lg-15 {\n    margin-right: 60px !important;\n    margin-left: 60px !important;\n  }\n  .v-application .mx-lg-16 {\n    margin-right: 64px !important;\n    margin-left: 64px !important;\n  }\n  .v-application .mx-lg-auto {\n    margin-right: auto !important;\n    margin-left: auto !important;\n  }\n  .v-application .my-lg-0 {\n    margin-top: 0px !important;\n    margin-bottom: 0px !important;\n  }\n  .v-application .my-lg-1 {\n    margin-top: 4px !important;\n    margin-bottom: 4px !important;\n  }\n  .v-application .my-lg-2 {\n    margin-top: 8px !important;\n    margin-bottom: 8px !important;\n  }\n  .v-application .my-lg-3 {\n    margin-top: 12px !important;\n    margin-bottom: 12px !important;\n  }\n  .v-application .my-lg-4 {\n    margin-top: 16px !important;\n    margin-bottom: 16px !important;\n  }\n  .v-application .my-lg-5 {\n    margin-top: 20px !important;\n    margin-bottom: 20px !important;\n  }\n  .v-application .my-lg-6 {\n    margin-top: 24px !important;\n    margin-bottom: 24px !important;\n  }\n  .v-application .my-lg-7 {\n    margin-top: 28px !important;\n    margin-bottom: 28px !important;\n  }\n  .v-application .my-lg-8 {\n    margin-top: 32px !important;\n    margin-bottom: 32px !important;\n  }\n  .v-application .my-lg-9 {\n    margin-top: 36px !important;\n    margin-bottom: 36px !important;\n  }\n  .v-application .my-lg-10 {\n    margin-top: 40px !important;\n    margin-bottom: 40px !important;\n  }\n  .v-application .my-lg-11 {\n    margin-top: 44px !important;\n    margin-bottom: 44px !important;\n  }\n  .v-application .my-lg-12 {\n    margin-top: 48px !important;\n    margin-bottom: 48px !important;\n  }\n  .v-application .my-lg-13 {\n    margin-top: 52px !important;\n    margin-bottom: 52px !important;\n  }\n  .v-application .my-lg-14 {\n    margin-top: 56px !important;\n    margin-bottom: 56px !important;\n  }\n  .v-application .my-lg-15 {\n    margin-top: 60px !important;\n    margin-bottom: 60px !important;\n  }\n  .v-application .my-lg-16 {\n    margin-top: 64px !important;\n    margin-bottom: 64px !important;\n  }\n  .v-application .my-lg-auto {\n    margin-top: auto !important;\n    margin-bottom: auto !important;\n  }\n  .v-application .mt-lg-0 {\n    margin-top: 0px !important;\n  }\n  .v-application .mt-lg-1 {\n    margin-top: 4px !important;\n  }\n  .v-application .mt-lg-2 {\n    margin-top: 8px !important;\n  }\n  .v-application .mt-lg-3 {\n    margin-top: 12px !important;\n  }\n  .v-application .mt-lg-4 {\n    margin-top: 16px !important;\n  }\n  .v-application .mt-lg-5 {\n    margin-top: 20px !important;\n  }\n  .v-application .mt-lg-6 {\n    margin-top: 24px !important;\n  }\n  .v-application .mt-lg-7 {\n    margin-top: 28px !important;\n  }\n  .v-application .mt-lg-8 {\n    margin-top: 32px !important;\n  }\n  .v-application .mt-lg-9 {\n    margin-top: 36px !important;\n  }\n  .v-application .mt-lg-10 {\n    margin-top: 40px !important;\n  }\n  .v-application .mt-lg-11 {\n    margin-top: 44px !important;\n  }\n  .v-application .mt-lg-12 {\n    margin-top: 48px !important;\n  }\n  .v-application .mt-lg-13 {\n    margin-top: 52px !important;\n  }\n  .v-application .mt-lg-14 {\n    margin-top: 56px !important;\n  }\n  .v-application .mt-lg-15 {\n    margin-top: 60px !important;\n  }\n  .v-application .mt-lg-16 {\n    margin-top: 64px !important;\n  }\n  .v-application .mt-lg-auto {\n    margin-top: auto !important;\n  }\n  .v-application .mr-lg-0 {\n    margin-right: 0px !important;\n  }\n  .v-application .mr-lg-1 {\n    margin-right: 4px !important;\n  }\n  .v-application .mr-lg-2 {\n    margin-right: 8px !important;\n  }\n  .v-application .mr-lg-3 {\n    margin-right: 12px !important;\n  }\n  .v-application .mr-lg-4 {\n    margin-right: 16px !important;\n  }\n  .v-application .mr-lg-5 {\n    margin-right: 20px !important;\n  }\n  .v-application .mr-lg-6 {\n    margin-right: 24px !important;\n  }\n  .v-application .mr-lg-7 {\n    margin-right: 28px !important;\n  }\n  .v-application .mr-lg-8 {\n    margin-right: 32px !important;\n  }\n  .v-application .mr-lg-9 {\n    margin-right: 36px !important;\n  }\n  .v-application .mr-lg-10 {\n    margin-right: 40px !important;\n  }\n  .v-application .mr-lg-11 {\n    margin-right: 44px !important;\n  }\n  .v-application .mr-lg-12 {\n    margin-right: 48px !important;\n  }\n  .v-application .mr-lg-13 {\n    margin-right: 52px !important;\n  }\n  .v-application .mr-lg-14 {\n    margin-right: 56px !important;\n  }\n  .v-application .mr-lg-15 {\n    margin-right: 60px !important;\n  }\n  .v-application .mr-lg-16 {\n    margin-right: 64px !important;\n  }\n  .v-application .mr-lg-auto {\n    margin-right: auto !important;\n  }\n  .v-application .mb-lg-0 {\n    margin-bottom: 0px !important;\n  }\n  .v-application .mb-lg-1 {\n    margin-bottom: 4px !important;\n  }\n  .v-application .mb-lg-2 {\n    margin-bottom: 8px !important;\n  }\n  .v-application .mb-lg-3 {\n    margin-bottom: 12px !important;\n  }\n  .v-application .mb-lg-4 {\n    margin-bottom: 16px !important;\n  }\n  .v-application .mb-lg-5 {\n    margin-bottom: 20px !important;\n  }\n  .v-application .mb-lg-6 {\n    margin-bottom: 24px !important;\n  }\n  .v-application .mb-lg-7 {\n    margin-bottom: 28px !important;\n  }\n  .v-application .mb-lg-8 {\n    margin-bottom: 32px !important;\n  }\n  .v-application .mb-lg-9 {\n    margin-bottom: 36px !important;\n  }\n  .v-application .mb-lg-10 {\n    margin-bottom: 40px !important;\n  }\n  .v-application .mb-lg-11 {\n    margin-bottom: 44px !important;\n  }\n  .v-application .mb-lg-12 {\n    margin-bottom: 48px !important;\n  }\n  .v-application .mb-lg-13 {\n    margin-bottom: 52px !important;\n  }\n  .v-application .mb-lg-14 {\n    margin-bottom: 56px !important;\n  }\n  .v-application .mb-lg-15 {\n    margin-bottom: 60px !important;\n  }\n  .v-application .mb-lg-16 {\n    margin-bottom: 64px !important;\n  }\n  .v-application .mb-lg-auto {\n    margin-bottom: auto !important;\n  }\n  .v-application .ml-lg-0 {\n    margin-left: 0px !important;\n  }\n  .v-application .ml-lg-1 {\n    margin-left: 4px !important;\n  }\n  .v-application .ml-lg-2 {\n    margin-left: 8px !important;\n  }\n  .v-application .ml-lg-3 {\n    margin-left: 12px !important;\n  }\n  .v-application .ml-lg-4 {\n    margin-left: 16px !important;\n  }\n  .v-application .ml-lg-5 {\n    margin-left: 20px !important;\n  }\n  .v-application .ml-lg-6 {\n    margin-left: 24px !important;\n  }\n  .v-application .ml-lg-7 {\n    margin-left: 28px !important;\n  }\n  .v-application .ml-lg-8 {\n    margin-left: 32px !important;\n  }\n  .v-application .ml-lg-9 {\n    margin-left: 36px !important;\n  }\n  .v-application .ml-lg-10 {\n    margin-left: 40px !important;\n  }\n  .v-application .ml-lg-11 {\n    margin-left: 44px !important;\n  }\n  .v-application .ml-lg-12 {\n    margin-left: 48px !important;\n  }\n  .v-application .ml-lg-13 {\n    margin-left: 52px !important;\n  }\n  .v-application .ml-lg-14 {\n    margin-left: 56px !important;\n  }\n  .v-application .ml-lg-15 {\n    margin-left: 60px !important;\n  }\n  .v-application .ml-lg-16 {\n    margin-left: 64px !important;\n  }\n  .v-application .ml-lg-auto {\n    margin-left: auto !important;\n  }\n  .v-application--is-ltr .ms-lg-0 {\n    margin-left: 0px !important;\n  }\n  .v-application--is-rtl .ms-lg-0 {\n    margin-right: 0px !important;\n  }\n  .v-application--is-ltr .ms-lg-1 {\n    margin-left: 4px !important;\n  }\n  .v-application--is-rtl .ms-lg-1 {\n    margin-right: 4px !important;\n  }\n  .v-application--is-ltr .ms-lg-2 {\n    margin-left: 8px !important;\n  }\n  .v-application--is-rtl .ms-lg-2 {\n    margin-right: 8px !important;\n  }\n  .v-application--is-ltr .ms-lg-3 {\n    margin-left: 12px !important;\n  }\n  .v-application--is-rtl .ms-lg-3 {\n    margin-right: 12px !important;\n  }\n  .v-application--is-ltr .ms-lg-4 {\n    margin-left: 16px !important;\n  }\n  .v-application--is-rtl .ms-lg-4 {\n    margin-right: 16px !important;\n  }\n  .v-application--is-ltr .ms-lg-5 {\n    margin-left: 20px !important;\n  }\n  .v-application--is-rtl .ms-lg-5 {\n    margin-right: 20px !important;\n  }\n  .v-application--is-ltr .ms-lg-6 {\n    margin-left: 24px !important;\n  }\n  .v-application--is-rtl .ms-lg-6 {\n    margin-right: 24px !important;\n  }\n  .v-application--is-ltr .ms-lg-7 {\n    margin-left: 28px !important;\n  }\n  .v-application--is-rtl .ms-lg-7 {\n    margin-right: 28px !important;\n  }\n  .v-application--is-ltr .ms-lg-8 {\n    margin-left: 32px !important;\n  }\n  .v-application--is-rtl .ms-lg-8 {\n    margin-right: 32px !important;\n  }\n  .v-application--is-ltr .ms-lg-9 {\n    margin-left: 36px !important;\n  }\n  .v-application--is-rtl .ms-lg-9 {\n    margin-right: 36px !important;\n  }\n  .v-application--is-ltr .ms-lg-10 {\n    margin-left: 40px !important;\n  }\n  .v-application--is-rtl .ms-lg-10 {\n    margin-right: 40px !important;\n  }\n  .v-application--is-ltr .ms-lg-11 {\n    margin-left: 44px !important;\n  }\n  .v-application--is-rtl .ms-lg-11 {\n    margin-right: 44px !important;\n  }\n  .v-application--is-ltr .ms-lg-12 {\n    margin-left: 48px !important;\n  }\n  .v-application--is-rtl .ms-lg-12 {\n    margin-right: 48px !important;\n  }\n  .v-application--is-ltr .ms-lg-13 {\n    margin-left: 52px !important;\n  }\n  .v-application--is-rtl .ms-lg-13 {\n    margin-right: 52px !important;\n  }\n  .v-application--is-ltr .ms-lg-14 {\n    margin-left: 56px !important;\n  }\n  .v-application--is-rtl .ms-lg-14 {\n    margin-right: 56px !important;\n  }\n  .v-application--is-ltr .ms-lg-15 {\n    margin-left: 60px !important;\n  }\n  .v-application--is-rtl .ms-lg-15 {\n    margin-right: 60px !important;\n  }\n  .v-application--is-ltr .ms-lg-16 {\n    margin-left: 64px !important;\n  }\n  .v-application--is-rtl .ms-lg-16 {\n    margin-right: 64px !important;\n  }\n  .v-application--is-ltr .ms-lg-auto {\n    margin-left: auto !important;\n  }\n  .v-application--is-rtl .ms-lg-auto {\n    margin-right: auto !important;\n  }\n  .v-application--is-ltr .me-lg-0 {\n    margin-right: 0px !important;\n  }\n  .v-application--is-rtl .me-lg-0 {\n    margin-left: 0px !important;\n  }\n  .v-application--is-ltr .me-lg-1 {\n    margin-right: 4px !important;\n  }\n  .v-application--is-rtl .me-lg-1 {\n    margin-left: 4px !important;\n  }\n  .v-application--is-ltr .me-lg-2 {\n    margin-right: 8px !important;\n  }\n  .v-application--is-rtl .me-lg-2 {\n    margin-left: 8px !important;\n  }\n  .v-application--is-ltr .me-lg-3 {\n    margin-right: 12px !important;\n  }\n  .v-application--is-rtl .me-lg-3 {\n    margin-left: 12px !important;\n  }\n  .v-application--is-ltr .me-lg-4 {\n    margin-right: 16px !important;\n  }\n  .v-application--is-rtl .me-lg-4 {\n    margin-left: 16px !important;\n  }\n  .v-application--is-ltr .me-lg-5 {\n    margin-right: 20px !important;\n  }\n  .v-application--is-rtl .me-lg-5 {\n    margin-left: 20px !important;\n  }\n  .v-application--is-ltr .me-lg-6 {\n    margin-right: 24px !important;\n  }\n  .v-application--is-rtl .me-lg-6 {\n    margin-left: 24px !important;\n  }\n  .v-application--is-ltr .me-lg-7 {\n    margin-right: 28px !important;\n  }\n  .v-application--is-rtl .me-lg-7 {\n    margin-left: 28px !important;\n  }\n  .v-application--is-ltr .me-lg-8 {\n    margin-right: 32px !important;\n  }\n  .v-application--is-rtl .me-lg-8 {\n    margin-left: 32px !important;\n  }\n  .v-application--is-ltr .me-lg-9 {\n    margin-right: 36px !important;\n  }\n  .v-application--is-rtl .me-lg-9 {\n    margin-left: 36px !important;\n  }\n  .v-application--is-ltr .me-lg-10 {\n    margin-right: 40px !important;\n  }\n  .v-application--is-rtl .me-lg-10 {\n    margin-left: 40px !important;\n  }\n  .v-application--is-ltr .me-lg-11 {\n    margin-right: 44px !important;\n  }\n  .v-application--is-rtl .me-lg-11 {\n    margin-left: 44px !important;\n  }\n  .v-application--is-ltr .me-lg-12 {\n    margin-right: 48px !important;\n  }\n  .v-application--is-rtl .me-lg-12 {\n    margin-left: 48px !important;\n  }\n  .v-application--is-ltr .me-lg-13 {\n    margin-right: 52px !important;\n  }\n  .v-application--is-rtl .me-lg-13 {\n    margin-left: 52px !important;\n  }\n  .v-application--is-ltr .me-lg-14 {\n    margin-right: 56px !important;\n  }\n  .v-application--is-rtl .me-lg-14 {\n    margin-left: 56px !important;\n  }\n  .v-application--is-ltr .me-lg-15 {\n    margin-right: 60px !important;\n  }\n  .v-application--is-rtl .me-lg-15 {\n    margin-left: 60px !important;\n  }\n  .v-application--is-ltr .me-lg-16 {\n    margin-right: 64px !important;\n  }\n  .v-application--is-rtl .me-lg-16 {\n    margin-left: 64px !important;\n  }\n  .v-application--is-ltr .me-lg-auto {\n    margin-right: auto !important;\n  }\n  .v-application--is-rtl .me-lg-auto {\n    margin-left: auto !important;\n  }\n  .v-application .ma-lg-n1 {\n    margin: -4px !important;\n  }\n  .v-application .ma-lg-n2 {\n    margin: -8px !important;\n  }\n  .v-application .ma-lg-n3 {\n    margin: -12px !important;\n  }\n  .v-application .ma-lg-n4 {\n    margin: -16px !important;\n  }\n  .v-application .ma-lg-n5 {\n    margin: -20px !important;\n  }\n  .v-application .ma-lg-n6 {\n    margin: -24px !important;\n  }\n  .v-application .ma-lg-n7 {\n    margin: -28px !important;\n  }\n  .v-application .ma-lg-n8 {\n    margin: -32px !important;\n  }\n  .v-application .ma-lg-n9 {\n    margin: -36px !important;\n  }\n  .v-application .ma-lg-n10 {\n    margin: -40px !important;\n  }\n  .v-application .ma-lg-n11 {\n    margin: -44px !important;\n  }\n  .v-application .ma-lg-n12 {\n    margin: -48px !important;\n  }\n  .v-application .ma-lg-n13 {\n    margin: -52px !important;\n  }\n  .v-application .ma-lg-n14 {\n    margin: -56px !important;\n  }\n  .v-application .ma-lg-n15 {\n    margin: -60px !important;\n  }\n  .v-application .ma-lg-n16 {\n    margin: -64px !important;\n  }\n  .v-application .mx-lg-n1 {\n    margin-right: -4px !important;\n    margin-left: -4px !important;\n  }\n  .v-application .mx-lg-n2 {\n    margin-right: -8px !important;\n    margin-left: -8px !important;\n  }\n  .v-application .mx-lg-n3 {\n    margin-right: -12px !important;\n    margin-left: -12px !important;\n  }\n  .v-application .mx-lg-n4 {\n    margin-right: -16px !important;\n    margin-left: -16px !important;\n  }\n  .v-application .mx-lg-n5 {\n    margin-right: -20px !important;\n    margin-left: -20px !important;\n  }\n  .v-application .mx-lg-n6 {\n    margin-right: -24px !important;\n    margin-left: -24px !important;\n  }\n  .v-application .mx-lg-n7 {\n    margin-right: -28px !important;\n    margin-left: -28px !important;\n  }\n  .v-application .mx-lg-n8 {\n    margin-right: -32px !important;\n    margin-left: -32px !important;\n  }\n  .v-application .mx-lg-n9 {\n    margin-right: -36px !important;\n    margin-left: -36px !important;\n  }\n  .v-application .mx-lg-n10 {\n    margin-right: -40px !important;\n    margin-left: -40px !important;\n  }\n  .v-application .mx-lg-n11 {\n    margin-right: -44px !important;\n    margin-left: -44px !important;\n  }\n  .v-application .mx-lg-n12 {\n    margin-right: -48px !important;\n    margin-left: -48px !important;\n  }\n  .v-application .mx-lg-n13 {\n    margin-right: -52px !important;\n    margin-left: -52px !important;\n  }\n  .v-application .mx-lg-n14 {\n    margin-right: -56px !important;\n    margin-left: -56px !important;\n  }\n  .v-application .mx-lg-n15 {\n    margin-right: -60px !important;\n    margin-left: -60px !important;\n  }\n  .v-application .mx-lg-n16 {\n    margin-right: -64px !important;\n    margin-left: -64px !important;\n  }\n  .v-application .my-lg-n1 {\n    margin-top: -4px !important;\n    margin-bottom: -4px !important;\n  }\n  .v-application .my-lg-n2 {\n    margin-top: -8px !important;\n    margin-bottom: -8px !important;\n  }\n  .v-application .my-lg-n3 {\n    margin-top: -12px !important;\n    margin-bottom: -12px !important;\n  }\n  .v-application .my-lg-n4 {\n    margin-top: -16px !important;\n    margin-bottom: -16px !important;\n  }\n  .v-application .my-lg-n5 {\n    margin-top: -20px !important;\n    margin-bottom: -20px !important;\n  }\n  .v-application .my-lg-n6 {\n    margin-top: -24px !important;\n    margin-bottom: -24px !important;\n  }\n  .v-application .my-lg-n7 {\n    margin-top: -28px !important;\n    margin-bottom: -28px !important;\n  }\n  .v-application .my-lg-n8 {\n    margin-top: -32px !important;\n    margin-bottom: -32px !important;\n  }\n  .v-application .my-lg-n9 {\n    margin-top: -36px !important;\n    margin-bottom: -36px !important;\n  }\n  .v-application .my-lg-n10 {\n    margin-top: -40px !important;\n    margin-bottom: -40px !important;\n  }\n  .v-application .my-lg-n11 {\n    margin-top: -44px !important;\n    margin-bottom: -44px !important;\n  }\n  .v-application .my-lg-n12 {\n    margin-top: -48px !important;\n    margin-bottom: -48px !important;\n  }\n  .v-application .my-lg-n13 {\n    margin-top: -52px !important;\n    margin-bottom: -52px !important;\n  }\n  .v-application .my-lg-n14 {\n    margin-top: -56px !important;\n    margin-bottom: -56px !important;\n  }\n  .v-application .my-lg-n15 {\n    margin-top: -60px !important;\n    margin-bottom: -60px !important;\n  }\n  .v-application .my-lg-n16 {\n    margin-top: -64px !important;\n    margin-bottom: -64px !important;\n  }\n  .v-application .mt-lg-n1 {\n    margin-top: -4px !important;\n  }\n  .v-application .mt-lg-n2 {\n    margin-top: -8px !important;\n  }\n  .v-application .mt-lg-n3 {\n    margin-top: -12px !important;\n  }\n  .v-application .mt-lg-n4 {\n    margin-top: -16px !important;\n  }\n  .v-application .mt-lg-n5 {\n    margin-top: -20px !important;\n  }\n  .v-application .mt-lg-n6 {\n    margin-top: -24px !important;\n  }\n  .v-application .mt-lg-n7 {\n    margin-top: -28px !important;\n  }\n  .v-application .mt-lg-n8 {\n    margin-top: -32px !important;\n  }\n  .v-application .mt-lg-n9 {\n    margin-top: -36px !important;\n  }\n  .v-application .mt-lg-n10 {\n    margin-top: -40px !important;\n  }\n  .v-application .mt-lg-n11 {\n    margin-top: -44px !important;\n  }\n  .v-application .mt-lg-n12 {\n    margin-top: -48px !important;\n  }\n  .v-application .mt-lg-n13 {\n    margin-top: -52px !important;\n  }\n  .v-application .mt-lg-n14 {\n    margin-top: -56px !important;\n  }\n  .v-application .mt-lg-n15 {\n    margin-top: -60px !important;\n  }\n  .v-application .mt-lg-n16 {\n    margin-top: -64px !important;\n  }\n  .v-application .mr-lg-n1 {\n    margin-right: -4px !important;\n  }\n  .v-application .mr-lg-n2 {\n    margin-right: -8px !important;\n  }\n  .v-application .mr-lg-n3 {\n    margin-right: -12px !important;\n  }\n  .v-application .mr-lg-n4 {\n    margin-right: -16px !important;\n  }\n  .v-application .mr-lg-n5 {\n    margin-right: -20px !important;\n  }\n  .v-application .mr-lg-n6 {\n    margin-right: -24px !important;\n  }\n  .v-application .mr-lg-n7 {\n    margin-right: -28px !important;\n  }\n  .v-application .mr-lg-n8 {\n    margin-right: -32px !important;\n  }\n  .v-application .mr-lg-n9 {\n    margin-right: -36px !important;\n  }\n  .v-application .mr-lg-n10 {\n    margin-right: -40px !important;\n  }\n  .v-application .mr-lg-n11 {\n    margin-right: -44px !important;\n  }\n  .v-application .mr-lg-n12 {\n    margin-right: -48px !important;\n  }\n  .v-application .mr-lg-n13 {\n    margin-right: -52px !important;\n  }\n  .v-application .mr-lg-n14 {\n    margin-right: -56px !important;\n  }\n  .v-application .mr-lg-n15 {\n    margin-right: -60px !important;\n  }\n  .v-application .mr-lg-n16 {\n    margin-right: -64px !important;\n  }\n  .v-application .mb-lg-n1 {\n    margin-bottom: -4px !important;\n  }\n  .v-application .mb-lg-n2 {\n    margin-bottom: -8px !important;\n  }\n  .v-application .mb-lg-n3 {\n    margin-bottom: -12px !important;\n  }\n  .v-application .mb-lg-n4 {\n    margin-bottom: -16px !important;\n  }\n  .v-application .mb-lg-n5 {\n    margin-bottom: -20px !important;\n  }\n  .v-application .mb-lg-n6 {\n    margin-bottom: -24px !important;\n  }\n  .v-application .mb-lg-n7 {\n    margin-bottom: -28px !important;\n  }\n  .v-application .mb-lg-n8 {\n    margin-bottom: -32px !important;\n  }\n  .v-application .mb-lg-n9 {\n    margin-bottom: -36px !important;\n  }\n  .v-application .mb-lg-n10 {\n    margin-bottom: -40px !important;\n  }\n  .v-application .mb-lg-n11 {\n    margin-bottom: -44px !important;\n  }\n  .v-application .mb-lg-n12 {\n    margin-bottom: -48px !important;\n  }\n  .v-application .mb-lg-n13 {\n    margin-bottom: -52px !important;\n  }\n  .v-application .mb-lg-n14 {\n    margin-bottom: -56px !important;\n  }\n  .v-application .mb-lg-n15 {\n    margin-bottom: -60px !important;\n  }\n  .v-application .mb-lg-n16 {\n    margin-bottom: -64px !important;\n  }\n  .v-application .ml-lg-n1 {\n    margin-left: -4px !important;\n  }\n  .v-application .ml-lg-n2 {\n    margin-left: -8px !important;\n  }\n  .v-application .ml-lg-n3 {\n    margin-left: -12px !important;\n  }\n  .v-application .ml-lg-n4 {\n    margin-left: -16px !important;\n  }\n  .v-application .ml-lg-n5 {\n    margin-left: -20px !important;\n  }\n  .v-application .ml-lg-n6 {\n    margin-left: -24px !important;\n  }\n  .v-application .ml-lg-n7 {\n    margin-left: -28px !important;\n  }\n  .v-application .ml-lg-n8 {\n    margin-left: -32px !important;\n  }\n  .v-application .ml-lg-n9 {\n    margin-left: -36px !important;\n  }\n  .v-application .ml-lg-n10 {\n    margin-left: -40px !important;\n  }\n  .v-application .ml-lg-n11 {\n    margin-left: -44px !important;\n  }\n  .v-application .ml-lg-n12 {\n    margin-left: -48px !important;\n  }\n  .v-application .ml-lg-n13 {\n    margin-left: -52px !important;\n  }\n  .v-application .ml-lg-n14 {\n    margin-left: -56px !important;\n  }\n  .v-application .ml-lg-n15 {\n    margin-left: -60px !important;\n  }\n  .v-application .ml-lg-n16 {\n    margin-left: -64px !important;\n  }\n  .v-application--is-ltr .ms-lg-n1 {\n    margin-left: -4px !important;\n  }\n  .v-application--is-rtl .ms-lg-n1 {\n    margin-right: -4px !important;\n  }\n  .v-application--is-ltr .ms-lg-n2 {\n    margin-left: -8px !important;\n  }\n  .v-application--is-rtl .ms-lg-n2 {\n    margin-right: -8px !important;\n  }\n  .v-application--is-ltr .ms-lg-n3 {\n    margin-left: -12px !important;\n  }\n  .v-application--is-rtl .ms-lg-n3 {\n    margin-right: -12px !important;\n  }\n  .v-application--is-ltr .ms-lg-n4 {\n    margin-left: -16px !important;\n  }\n  .v-application--is-rtl .ms-lg-n4 {\n    margin-right: -16px !important;\n  }\n  .v-application--is-ltr .ms-lg-n5 {\n    margin-left: -20px !important;\n  }\n  .v-application--is-rtl .ms-lg-n5 {\n    margin-right: -20px !important;\n  }\n  .v-application--is-ltr .ms-lg-n6 {\n    margin-left: -24px !important;\n  }\n  .v-application--is-rtl .ms-lg-n6 {\n    margin-right: -24px !important;\n  }\n  .v-application--is-ltr .ms-lg-n7 {\n    margin-left: -28px !important;\n  }\n  .v-application--is-rtl .ms-lg-n7 {\n    margin-right: -28px !important;\n  }\n  .v-application--is-ltr .ms-lg-n8 {\n    margin-left: -32px !important;\n  }\n  .v-application--is-rtl .ms-lg-n8 {\n    margin-right: -32px !important;\n  }\n  .v-application--is-ltr .ms-lg-n9 {\n    margin-left: -36px !important;\n  }\n  .v-application--is-rtl .ms-lg-n9 {\n    margin-right: -36px !important;\n  }\n  .v-application--is-ltr .ms-lg-n10 {\n    margin-left: -40px !important;\n  }\n  .v-application--is-rtl .ms-lg-n10 {\n    margin-right: -40px !important;\n  }\n  .v-application--is-ltr .ms-lg-n11 {\n    margin-left: -44px !important;\n  }\n  .v-application--is-rtl .ms-lg-n11 {\n    margin-right: -44px !important;\n  }\n  .v-application--is-ltr .ms-lg-n12 {\n    margin-left: -48px !important;\n  }\n  .v-application--is-rtl .ms-lg-n12 {\n    margin-right: -48px !important;\n  }\n  .v-application--is-ltr .ms-lg-n13 {\n    margin-left: -52px !important;\n  }\n  .v-application--is-rtl .ms-lg-n13 {\n    margin-right: -52px !important;\n  }\n  .v-application--is-ltr .ms-lg-n14 {\n    margin-left: -56px !important;\n  }\n  .v-application--is-rtl .ms-lg-n14 {\n    margin-right: -56px !important;\n  }\n  .v-application--is-ltr .ms-lg-n15 {\n    margin-left: -60px !important;\n  }\n  .v-application--is-rtl .ms-lg-n15 {\n    margin-right: -60px !important;\n  }\n  .v-application--is-ltr .ms-lg-n16 {\n    margin-left: -64px !important;\n  }\n  .v-application--is-rtl .ms-lg-n16 {\n    margin-right: -64px !important;\n  }\n  .v-application--is-ltr .me-lg-n1 {\n    margin-right: -4px !important;\n  }\n  .v-application--is-rtl .me-lg-n1 {\n    margin-left: -4px !important;\n  }\n  .v-application--is-ltr .me-lg-n2 {\n    margin-right: -8px !important;\n  }\n  .v-application--is-rtl .me-lg-n2 {\n    margin-left: -8px !important;\n  }\n  .v-application--is-ltr .me-lg-n3 {\n    margin-right: -12px !important;\n  }\n  .v-application--is-rtl .me-lg-n3 {\n    margin-left: -12px !important;\n  }\n  .v-application--is-ltr .me-lg-n4 {\n    margin-right: -16px !important;\n  }\n  .v-application--is-rtl .me-lg-n4 {\n    margin-left: -16px !important;\n  }\n  .v-application--is-ltr .me-lg-n5 {\n    margin-right: -20px !important;\n  }\n  .v-application--is-rtl .me-lg-n5 {\n    margin-left: -20px !important;\n  }\n  .v-application--is-ltr .me-lg-n6 {\n    margin-right: -24px !important;\n  }\n  .v-application--is-rtl .me-lg-n6 {\n    margin-left: -24px !important;\n  }\n  .v-application--is-ltr .me-lg-n7 {\n    margin-right: -28px !important;\n  }\n  .v-application--is-rtl .me-lg-n7 {\n    margin-left: -28px !important;\n  }\n  .v-application--is-ltr .me-lg-n8 {\n    margin-right: -32px !important;\n  }\n  .v-application--is-rtl .me-lg-n8 {\n    margin-left: -32px !important;\n  }\n  .v-application--is-ltr .me-lg-n9 {\n    margin-right: -36px !important;\n  }\n  .v-application--is-rtl .me-lg-n9 {\n    margin-left: -36px !important;\n  }\n  .v-application--is-ltr .me-lg-n10 {\n    margin-right: -40px !important;\n  }\n  .v-application--is-rtl .me-lg-n10 {\n    margin-left: -40px !important;\n  }\n  .v-application--is-ltr .me-lg-n11 {\n    margin-right: -44px !important;\n  }\n  .v-application--is-rtl .me-lg-n11 {\n    margin-left: -44px !important;\n  }\n  .v-application--is-ltr .me-lg-n12 {\n    margin-right: -48px !important;\n  }\n  .v-application--is-rtl .me-lg-n12 {\n    margin-left: -48px !important;\n  }\n  .v-application--is-ltr .me-lg-n13 {\n    margin-right: -52px !important;\n  }\n  .v-application--is-rtl .me-lg-n13 {\n    margin-left: -52px !important;\n  }\n  .v-application--is-ltr .me-lg-n14 {\n    margin-right: -56px !important;\n  }\n  .v-application--is-rtl .me-lg-n14 {\n    margin-left: -56px !important;\n  }\n  .v-application--is-ltr .me-lg-n15 {\n    margin-right: -60px !important;\n  }\n  .v-application--is-rtl .me-lg-n15 {\n    margin-left: -60px !important;\n  }\n  .v-application--is-ltr .me-lg-n16 {\n    margin-right: -64px !important;\n  }\n  .v-application--is-rtl .me-lg-n16 {\n    margin-left: -64px !important;\n  }\n  .v-application .pa-lg-0 {\n    padding: 0px !important;\n  }\n  .v-application .pa-lg-1 {\n    padding: 4px !important;\n  }\n  .v-application .pa-lg-2 {\n    padding: 8px !important;\n  }\n  .v-application .pa-lg-3 {\n    padding: 12px !important;\n  }\n  .v-application .pa-lg-4 {\n    padding: 16px !important;\n  }\n  .v-application .pa-lg-5 {\n    padding: 20px !important;\n  }\n  .v-application .pa-lg-6 {\n    padding: 24px !important;\n  }\n  .v-application .pa-lg-7 {\n    padding: 28px !important;\n  }\n  .v-application .pa-lg-8 {\n    padding: 32px !important;\n  }\n  .v-application .pa-lg-9 {\n    padding: 36px !important;\n  }\n  .v-application .pa-lg-10 {\n    padding: 40px !important;\n  }\n  .v-application .pa-lg-11 {\n    padding: 44px !important;\n  }\n  .v-application .pa-lg-12 {\n    padding: 48px !important;\n  }\n  .v-application .pa-lg-13 {\n    padding: 52px !important;\n  }\n  .v-application .pa-lg-14 {\n    padding: 56px !important;\n  }\n  .v-application .pa-lg-15 {\n    padding: 60px !important;\n  }\n  .v-application .pa-lg-16 {\n    padding: 64px !important;\n  }\n  .v-application .px-lg-0 {\n    padding-right: 0px !important;\n    padding-left: 0px !important;\n  }\n  .v-application .px-lg-1 {\n    padding-right: 4px !important;\n    padding-left: 4px !important;\n  }\n  .v-application .px-lg-2 {\n    padding-right: 8px !important;\n    padding-left: 8px !important;\n  }\n  .v-application .px-lg-3 {\n    padding-right: 12px !important;\n    padding-left: 12px !important;\n  }\n  .v-application .px-lg-4 {\n    padding-right: 16px !important;\n    padding-left: 16px !important;\n  }\n  .v-application .px-lg-5 {\n    padding-right: 20px !important;\n    padding-left: 20px !important;\n  }\n  .v-application .px-lg-6 {\n    padding-right: 24px !important;\n    padding-left: 24px !important;\n  }\n  .v-application .px-lg-7 {\n    padding-right: 28px !important;\n    padding-left: 28px !important;\n  }\n  .v-application .px-lg-8 {\n    padding-right: 32px !important;\n    padding-left: 32px !important;\n  }\n  .v-application .px-lg-9 {\n    padding-right: 36px !important;\n    padding-left: 36px !important;\n  }\n  .v-application .px-lg-10 {\n    padding-right: 40px !important;\n    padding-left: 40px !important;\n  }\n  .v-application .px-lg-11 {\n    padding-right: 44px !important;\n    padding-left: 44px !important;\n  }\n  .v-application .px-lg-12 {\n    padding-right: 48px !important;\n    padding-left: 48px !important;\n  }\n  .v-application .px-lg-13 {\n    padding-right: 52px !important;\n    padding-left: 52px !important;\n  }\n  .v-application .px-lg-14 {\n    padding-right: 56px !important;\n    padding-left: 56px !important;\n  }\n  .v-application .px-lg-15 {\n    padding-right: 60px !important;\n    padding-left: 60px !important;\n  }\n  .v-application .px-lg-16 {\n    padding-right: 64px !important;\n    padding-left: 64px !important;\n  }\n  .v-application .py-lg-0 {\n    padding-top: 0px !important;\n    padding-bottom: 0px !important;\n  }\n  .v-application .py-lg-1 {\n    padding-top: 4px !important;\n    padding-bottom: 4px !important;\n  }\n  .v-application .py-lg-2 {\n    padding-top: 8px !important;\n    padding-bottom: 8px !important;\n  }\n  .v-application .py-lg-3 {\n    padding-top: 12px !important;\n    padding-bottom: 12px !important;\n  }\n  .v-application .py-lg-4 {\n    padding-top: 16px !important;\n    padding-bottom: 16px !important;\n  }\n  .v-application .py-lg-5 {\n    padding-top: 20px !important;\n    padding-bottom: 20px !important;\n  }\n  .v-application .py-lg-6 {\n    padding-top: 24px !important;\n    padding-bottom: 24px !important;\n  }\n  .v-application .py-lg-7 {\n    padding-top: 28px !important;\n    padding-bottom: 28px !important;\n  }\n  .v-application .py-lg-8 {\n    padding-top: 32px !important;\n    padding-bottom: 32px !important;\n  }\n  .v-application .py-lg-9 {\n    padding-top: 36px !important;\n    padding-bottom: 36px !important;\n  }\n  .v-application .py-lg-10 {\n    padding-top: 40px !important;\n    padding-bottom: 40px !important;\n  }\n  .v-application .py-lg-11 {\n    padding-top: 44px !important;\n    padding-bottom: 44px !important;\n  }\n  .v-application .py-lg-12 {\n    padding-top: 48px !important;\n    padding-bottom: 48px !important;\n  }\n  .v-application .py-lg-13 {\n    padding-top: 52px !important;\n    padding-bottom: 52px !important;\n  }\n  .v-application .py-lg-14 {\n    padding-top: 56px !important;\n    padding-bottom: 56px !important;\n  }\n  .v-application .py-lg-15 {\n    padding-top: 60px !important;\n    padding-bottom: 60px !important;\n  }\n  .v-application .py-lg-16 {\n    padding-top: 64px !important;\n    padding-bottom: 64px !important;\n  }\n  .v-application .pt-lg-0 {\n    padding-top: 0px !important;\n  }\n  .v-application .pt-lg-1 {\n    padding-top: 4px !important;\n  }\n  .v-application .pt-lg-2 {\n    padding-top: 8px !important;\n  }\n  .v-application .pt-lg-3 {\n    padding-top: 12px !important;\n  }\n  .v-application .pt-lg-4 {\n    padding-top: 16px !important;\n  }\n  .v-application .pt-lg-5 {\n    padding-top: 20px !important;\n  }\n  .v-application .pt-lg-6 {\n    padding-top: 24px !important;\n  }\n  .v-application .pt-lg-7 {\n    padding-top: 28px !important;\n  }\n  .v-application .pt-lg-8 {\n    padding-top: 32px !important;\n  }\n  .v-application .pt-lg-9 {\n    padding-top: 36px !important;\n  }\n  .v-application .pt-lg-10 {\n    padding-top: 40px !important;\n  }\n  .v-application .pt-lg-11 {\n    padding-top: 44px !important;\n  }\n  .v-application .pt-lg-12 {\n    padding-top: 48px !important;\n  }\n  .v-application .pt-lg-13 {\n    padding-top: 52px !important;\n  }\n  .v-application .pt-lg-14 {\n    padding-top: 56px !important;\n  }\n  .v-application .pt-lg-15 {\n    padding-top: 60px !important;\n  }\n  .v-application .pt-lg-16 {\n    padding-top: 64px !important;\n  }\n  .v-application .pr-lg-0 {\n    padding-right: 0px !important;\n  }\n  .v-application .pr-lg-1 {\n    padding-right: 4px !important;\n  }\n  .v-application .pr-lg-2 {\n    padding-right: 8px !important;\n  }\n  .v-application .pr-lg-3 {\n    padding-right: 12px !important;\n  }\n  .v-application .pr-lg-4 {\n    padding-right: 16px !important;\n  }\n  .v-application .pr-lg-5 {\n    padding-right: 20px !important;\n  }\n  .v-application .pr-lg-6 {\n    padding-right: 24px !important;\n  }\n  .v-application .pr-lg-7 {\n    padding-right: 28px !important;\n  }\n  .v-application .pr-lg-8 {\n    padding-right: 32px !important;\n  }\n  .v-application .pr-lg-9 {\n    padding-right: 36px !important;\n  }\n  .v-application .pr-lg-10 {\n    padding-right: 40px !important;\n  }\n  .v-application .pr-lg-11 {\n    padding-right: 44px !important;\n  }\n  .v-application .pr-lg-12 {\n    padding-right: 48px !important;\n  }\n  .v-application .pr-lg-13 {\n    padding-right: 52px !important;\n  }\n  .v-application .pr-lg-14 {\n    padding-right: 56px !important;\n  }\n  .v-application .pr-lg-15 {\n    padding-right: 60px !important;\n  }\n  .v-application .pr-lg-16 {\n    padding-right: 64px !important;\n  }\n  .v-application .pb-lg-0 {\n    padding-bottom: 0px !important;\n  }\n  .v-application .pb-lg-1 {\n    padding-bottom: 4px !important;\n  }\n  .v-application .pb-lg-2 {\n    padding-bottom: 8px !important;\n  }\n  .v-application .pb-lg-3 {\n    padding-bottom: 12px !important;\n  }\n  .v-application .pb-lg-4 {\n    padding-bottom: 16px !important;\n  }\n  .v-application .pb-lg-5 {\n    padding-bottom: 20px !important;\n  }\n  .v-application .pb-lg-6 {\n    padding-bottom: 24px !important;\n  }\n  .v-application .pb-lg-7 {\n    padding-bottom: 28px !important;\n  }\n  .v-application .pb-lg-8 {\n    padding-bottom: 32px !important;\n  }\n  .v-application .pb-lg-9 {\n    padding-bottom: 36px !important;\n  }\n  .v-application .pb-lg-10 {\n    padding-bottom: 40px !important;\n  }\n  .v-application .pb-lg-11 {\n    padding-bottom: 44px !important;\n  }\n  .v-application .pb-lg-12 {\n    padding-bottom: 48px !important;\n  }\n  .v-application .pb-lg-13 {\n    padding-bottom: 52px !important;\n  }\n  .v-application .pb-lg-14 {\n    padding-bottom: 56px !important;\n  }\n  .v-application .pb-lg-15 {\n    padding-bottom: 60px !important;\n  }\n  .v-application .pb-lg-16 {\n    padding-bottom: 64px !important;\n  }\n  .v-application .pl-lg-0 {\n    padding-left: 0px !important;\n  }\n  .v-application .pl-lg-1 {\n    padding-left: 4px !important;\n  }\n  .v-application .pl-lg-2 {\n    padding-left: 8px !important;\n  }\n  .v-application .pl-lg-3 {\n    padding-left: 12px !important;\n  }\n  .v-application .pl-lg-4 {\n    padding-left: 16px !important;\n  }\n  .v-application .pl-lg-5 {\n    padding-left: 20px !important;\n  }\n  .v-application .pl-lg-6 {\n    padding-left: 24px !important;\n  }\n  .v-application .pl-lg-7 {\n    padding-left: 28px !important;\n  }\n  .v-application .pl-lg-8 {\n    padding-left: 32px !important;\n  }\n  .v-application .pl-lg-9 {\n    padding-left: 36px !important;\n  }\n  .v-application .pl-lg-10 {\n    padding-left: 40px !important;\n  }\n  .v-application .pl-lg-11 {\n    padding-left: 44px !important;\n  }\n  .v-application .pl-lg-12 {\n    padding-left: 48px !important;\n  }\n  .v-application .pl-lg-13 {\n    padding-left: 52px !important;\n  }\n  .v-application .pl-lg-14 {\n    padding-left: 56px !important;\n  }\n  .v-application .pl-lg-15 {\n    padding-left: 60px !important;\n  }\n  .v-application .pl-lg-16 {\n    padding-left: 64px !important;\n  }\n  .v-application--is-ltr .ps-lg-0 {\n    padding-left: 0px !important;\n  }\n  .v-application--is-rtl .ps-lg-0 {\n    padding-right: 0px !important;\n  }\n  .v-application--is-ltr .ps-lg-1 {\n    padding-left: 4px !important;\n  }\n  .v-application--is-rtl .ps-lg-1 {\n    padding-right: 4px !important;\n  }\n  .v-application--is-ltr .ps-lg-2 {\n    padding-left: 8px !important;\n  }\n  .v-application--is-rtl .ps-lg-2 {\n    padding-right: 8px !important;\n  }\n  .v-application--is-ltr .ps-lg-3 {\n    padding-left: 12px !important;\n  }\n  .v-application--is-rtl .ps-lg-3 {\n    padding-right: 12px !important;\n  }\n  .v-application--is-ltr .ps-lg-4 {\n    padding-left: 16px !important;\n  }\n  .v-application--is-rtl .ps-lg-4 {\n    padding-right: 16px !important;\n  }\n  .v-application--is-ltr .ps-lg-5 {\n    padding-left: 20px !important;\n  }\n  .v-application--is-rtl .ps-lg-5 {\n    padding-right: 20px !important;\n  }\n  .v-application--is-ltr .ps-lg-6 {\n    padding-left: 24px !important;\n  }\n  .v-application--is-rtl .ps-lg-6 {\n    padding-right: 24px !important;\n  }\n  .v-application--is-ltr .ps-lg-7 {\n    padding-left: 28px !important;\n  }\n  .v-application--is-rtl .ps-lg-7 {\n    padding-right: 28px !important;\n  }\n  .v-application--is-ltr .ps-lg-8 {\n    padding-left: 32px !important;\n  }\n  .v-application--is-rtl .ps-lg-8 {\n    padding-right: 32px !important;\n  }\n  .v-application--is-ltr .ps-lg-9 {\n    padding-left: 36px !important;\n  }\n  .v-application--is-rtl .ps-lg-9 {\n    padding-right: 36px !important;\n  }\n  .v-application--is-ltr .ps-lg-10 {\n    padding-left: 40px !important;\n  }\n  .v-application--is-rtl .ps-lg-10 {\n    padding-right: 40px !important;\n  }\n  .v-application--is-ltr .ps-lg-11 {\n    padding-left: 44px !important;\n  }\n  .v-application--is-rtl .ps-lg-11 {\n    padding-right: 44px !important;\n  }\n  .v-application--is-ltr .ps-lg-12 {\n    padding-left: 48px !important;\n  }\n  .v-application--is-rtl .ps-lg-12 {\n    padding-right: 48px !important;\n  }\n  .v-application--is-ltr .ps-lg-13 {\n    padding-left: 52px !important;\n  }\n  .v-application--is-rtl .ps-lg-13 {\n    padding-right: 52px !important;\n  }\n  .v-application--is-ltr .ps-lg-14 {\n    padding-left: 56px !important;\n  }\n  .v-application--is-rtl .ps-lg-14 {\n    padding-right: 56px !important;\n  }\n  .v-application--is-ltr .ps-lg-15 {\n    padding-left: 60px !important;\n  }\n  .v-application--is-rtl .ps-lg-15 {\n    padding-right: 60px !important;\n  }\n  .v-application--is-ltr .ps-lg-16 {\n    padding-left: 64px !important;\n  }\n  .v-application--is-rtl .ps-lg-16 {\n    padding-right: 64px !important;\n  }\n  .v-application--is-ltr .pe-lg-0 {\n    padding-right: 0px !important;\n  }\n  .v-application--is-rtl .pe-lg-0 {\n    padding-left: 0px !important;\n  }\n  .v-application--is-ltr .pe-lg-1 {\n    padding-right: 4px !important;\n  }\n  .v-application--is-rtl .pe-lg-1 {\n    padding-left: 4px !important;\n  }\n  .v-application--is-ltr .pe-lg-2 {\n    padding-right: 8px !important;\n  }\n  .v-application--is-rtl .pe-lg-2 {\n    padding-left: 8px !important;\n  }\n  .v-application--is-ltr .pe-lg-3 {\n    padding-right: 12px !important;\n  }\n  .v-application--is-rtl .pe-lg-3 {\n    padding-left: 12px !important;\n  }\n  .v-application--is-ltr .pe-lg-4 {\n    padding-right: 16px !important;\n  }\n  .v-application--is-rtl .pe-lg-4 {\n    padding-left: 16px !important;\n  }\n  .v-application--is-ltr .pe-lg-5 {\n    padding-right: 20px !important;\n  }\n  .v-application--is-rtl .pe-lg-5 {\n    padding-left: 20px !important;\n  }\n  .v-application--is-ltr .pe-lg-6 {\n    padding-right: 24px !important;\n  }\n  .v-application--is-rtl .pe-lg-6 {\n    padding-left: 24px !important;\n  }\n  .v-application--is-ltr .pe-lg-7 {\n    padding-right: 28px !important;\n  }\n  .v-application--is-rtl .pe-lg-7 {\n    padding-left: 28px !important;\n  }\n  .v-application--is-ltr .pe-lg-8 {\n    padding-right: 32px !important;\n  }\n  .v-application--is-rtl .pe-lg-8 {\n    padding-left: 32px !important;\n  }\n  .v-application--is-ltr .pe-lg-9 {\n    padding-right: 36px !important;\n  }\n  .v-application--is-rtl .pe-lg-9 {\n    padding-left: 36px !important;\n  }\n  .v-application--is-ltr .pe-lg-10 {\n    padding-right: 40px !important;\n  }\n  .v-application--is-rtl .pe-lg-10 {\n    padding-left: 40px !important;\n  }\n  .v-application--is-ltr .pe-lg-11 {\n    padding-right: 44px !important;\n  }\n  .v-application--is-rtl .pe-lg-11 {\n    padding-left: 44px !important;\n  }\n  .v-application--is-ltr .pe-lg-12 {\n    padding-right: 48px !important;\n  }\n  .v-application--is-rtl .pe-lg-12 {\n    padding-left: 48px !important;\n  }\n  .v-application--is-ltr .pe-lg-13 {\n    padding-right: 52px !important;\n  }\n  .v-application--is-rtl .pe-lg-13 {\n    padding-left: 52px !important;\n  }\n  .v-application--is-ltr .pe-lg-14 {\n    padding-right: 56px !important;\n  }\n  .v-application--is-rtl .pe-lg-14 {\n    padding-left: 56px !important;\n  }\n  .v-application--is-ltr .pe-lg-15 {\n    padding-right: 60px !important;\n  }\n  .v-application--is-rtl .pe-lg-15 {\n    padding-left: 60px !important;\n  }\n  .v-application--is-ltr .pe-lg-16 {\n    padding-right: 64px !important;\n  }\n  .v-application--is-rtl .pe-lg-16 {\n    padding-left: 64px !important;\n  }\n  .v-application .text-lg-left {\n    text-align: left !important;\n  }\n  .v-application .text-lg-right {\n    text-align: right !important;\n  }\n  .v-application .text-lg-center {\n    text-align: center !important;\n  }\n  .v-application .text-lg-justify {\n    text-align: justify !important;\n  }\n  .v-application .text-lg-start {\n    text-align: start !important;\n  }\n  .v-application .text-lg-end {\n    text-align: end !important;\n  }\n  .v-application .text-lg-h1 {\n    font-size: 6rem !important;\n    font-weight: 300;\n    line-height: 6rem;\n    letter-spacing: -0.015625em !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-lg-h2 {\n    font-size: 3.75rem !important;\n    font-weight: 300;\n    line-height: 3.75rem;\n    letter-spacing: -0.0083333333em !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-lg-h3 {\n    font-size: 3rem !important;\n    font-weight: 400;\n    line-height: 3.125rem;\n    letter-spacing: normal !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-lg-h4 {\n    font-size: 2.125rem !important;\n    font-weight: 400;\n    line-height: 2.5rem;\n    letter-spacing: 0.0073529412em !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-lg-h5 {\n    font-size: 1.5rem !important;\n    font-weight: 400;\n    line-height: 2rem;\n    letter-spacing: normal !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-lg-h6 {\n    font-size: 1.25rem !important;\n    font-weight: 500;\n    line-height: 2rem;\n    letter-spacing: 0.0125em !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-lg-subtitle-1 {\n    font-size: 1rem !important;\n    font-weight: normal;\n    line-height: 1.75rem;\n    letter-spacing: 0.009375em !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-lg-subtitle-2 {\n    font-size: 0.875rem !important;\n    font-weight: 500;\n    line-height: 1.375rem;\n    letter-spacing: 0.0071428571em !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-lg-body-1 {\n    font-size: 1rem !important;\n    font-weight: 400;\n    line-height: 1.5rem;\n    letter-spacing: 0.03125em !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-lg-body-2 {\n    font-size: 0.875rem !important;\n    font-weight: 400;\n    line-height: 1.25rem;\n    letter-spacing: 0.0178571429em !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-lg-button {\n    font-size: 0.875rem !important;\n    font-weight: 500;\n    line-height: 2.25rem;\n    letter-spacing: 0.0892857143em !important;\n    font-family: \"Roboto\", sans-serif !important;\n    text-transform: uppercase !important;\n  }\n  .v-application .text-lg-caption {\n    font-size: 0.75rem !important;\n    font-weight: 400;\n    line-height: 1.25rem;\n    letter-spacing: 0.0333333333em !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-lg-overline {\n    font-size: 0.75rem !important;\n    font-weight: 500;\n    line-height: 2rem;\n    letter-spacing: 0.1666666667em !important;\n    font-family: \"Roboto\", sans-serif !important;\n    text-transform: uppercase !important;\n  }\n}\n@media (min-width: 1904px) {\n  .v-application .d-xl-none {\n    display: none !important;\n  }\n  .v-application .d-xl-inline {\n    display: inline !important;\n  }\n  .v-application .d-xl-inline-block {\n    display: inline-block !important;\n  }\n  .v-application .d-xl-block {\n    display: block !important;\n  }\n  .v-application .d-xl-table {\n    display: table !important;\n  }\n  .v-application .d-xl-table-row {\n    display: table-row !important;\n  }\n  .v-application .d-xl-table-cell {\n    display: table-cell !important;\n  }\n  .v-application .d-xl-flex {\n    display: flex !important;\n  }\n  .v-application .d-xl-inline-flex {\n    display: inline-flex !important;\n  }\n  .v-application .float-xl-none {\n    float: none !important;\n  }\n  .v-application .float-xl-left {\n    float: left !important;\n  }\n  .v-application .float-xl-right {\n    float: right !important;\n  }\n  .v-application--is-rtl .float-xl-end {\n    float: left !important;\n  }\n  .v-application--is-rtl .float-xl-start {\n    float: right !important;\n  }\n  .v-application--is-ltr .float-xl-end {\n    float: right !important;\n  }\n  .v-application--is-ltr .float-xl-start {\n    float: left !important;\n  }\n  .v-application .flex-xl-fill {\n    flex: 1 1 auto !important;\n  }\n  .v-application .flex-xl-row {\n    flex-direction: row !important;\n  }\n  .v-application .flex-xl-column {\n    flex-direction: column !important;\n  }\n  .v-application .flex-xl-row-reverse {\n    flex-direction: row-reverse !important;\n  }\n  .v-application .flex-xl-column-reverse {\n    flex-direction: column-reverse !important;\n  }\n  .v-application .flex-xl-grow-0 {\n    flex-grow: 0 !important;\n  }\n  .v-application .flex-xl-grow-1 {\n    flex-grow: 1 !important;\n  }\n  .v-application .flex-xl-shrink-0 {\n    flex-shrink: 0 !important;\n  }\n  .v-application .flex-xl-shrink-1 {\n    flex-shrink: 1 !important;\n  }\n  .v-application .flex-xl-wrap {\n    flex-wrap: wrap !important;\n  }\n  .v-application .flex-xl-nowrap {\n    flex-wrap: nowrap !important;\n  }\n  .v-application .flex-xl-wrap-reverse {\n    flex-wrap: wrap-reverse !important;\n  }\n  .v-application .justify-xl-start {\n    justify-content: flex-start !important;\n  }\n  .v-application .justify-xl-end {\n    justify-content: flex-end !important;\n  }\n  .v-application .justify-xl-center {\n    justify-content: center !important;\n  }\n  .v-application .justify-xl-space-between {\n    justify-content: space-between !important;\n  }\n  .v-application .justify-xl-space-around {\n    justify-content: space-around !important;\n  }\n  .v-application .align-xl-start {\n    align-items: flex-start !important;\n  }\n  .v-application .align-xl-end {\n    align-items: flex-end !important;\n  }\n  .v-application .align-xl-center {\n    align-items: center !important;\n  }\n  .v-application .align-xl-baseline {\n    align-items: baseline !important;\n  }\n  .v-application .align-xl-stretch {\n    align-items: stretch !important;\n  }\n  .v-application .align-content-xl-start {\n    align-content: flex-start !important;\n  }\n  .v-application .align-content-xl-end {\n    align-content: flex-end !important;\n  }\n  .v-application .align-content-xl-center {\n    align-content: center !important;\n  }\n  .v-application .align-content-xl-space-between {\n    align-content: space-between !important;\n  }\n  .v-application .align-content-xl-space-around {\n    align-content: space-around !important;\n  }\n  .v-application .align-content-xl-stretch {\n    align-content: stretch !important;\n  }\n  .v-application .align-self-xl-auto {\n    align-self: auto !important;\n  }\n  .v-application .align-self-xl-start {\n    align-self: flex-start !important;\n  }\n  .v-application .align-self-xl-end {\n    align-self: flex-end !important;\n  }\n  .v-application .align-self-xl-center {\n    align-self: center !important;\n  }\n  .v-application .align-self-xl-baseline {\n    align-self: baseline !important;\n  }\n  .v-application .align-self-xl-stretch {\n    align-self: stretch !important;\n  }\n  .v-application .order-xl-first {\n    order: -1 !important;\n  }\n  .v-application .order-xl-0 {\n    order: 0 !important;\n  }\n  .v-application .order-xl-1 {\n    order: 1 !important;\n  }\n  .v-application .order-xl-2 {\n    order: 2 !important;\n  }\n  .v-application .order-xl-3 {\n    order: 3 !important;\n  }\n  .v-application .order-xl-4 {\n    order: 4 !important;\n  }\n  .v-application .order-xl-5 {\n    order: 5 !important;\n  }\n  .v-application .order-xl-6 {\n    order: 6 !important;\n  }\n  .v-application .order-xl-7 {\n    order: 7 !important;\n  }\n  .v-application .order-xl-8 {\n    order: 8 !important;\n  }\n  .v-application .order-xl-9 {\n    order: 9 !important;\n  }\n  .v-application .order-xl-10 {\n    order: 10 !important;\n  }\n  .v-application .order-xl-11 {\n    order: 11 !important;\n  }\n  .v-application .order-xl-12 {\n    order: 12 !important;\n  }\n  .v-application .order-xl-last {\n    order: 13 !important;\n  }\n  .v-application .ma-xl-0 {\n    margin: 0px !important;\n  }\n  .v-application .ma-xl-1 {\n    margin: 4px !important;\n  }\n  .v-application .ma-xl-2 {\n    margin: 8px !important;\n  }\n  .v-application .ma-xl-3 {\n    margin: 12px !important;\n  }\n  .v-application .ma-xl-4 {\n    margin: 16px !important;\n  }\n  .v-application .ma-xl-5 {\n    margin: 20px !important;\n  }\n  .v-application .ma-xl-6 {\n    margin: 24px !important;\n  }\n  .v-application .ma-xl-7 {\n    margin: 28px !important;\n  }\n  .v-application .ma-xl-8 {\n    margin: 32px !important;\n  }\n  .v-application .ma-xl-9 {\n    margin: 36px !important;\n  }\n  .v-application .ma-xl-10 {\n    margin: 40px !important;\n  }\n  .v-application .ma-xl-11 {\n    margin: 44px !important;\n  }\n  .v-application .ma-xl-12 {\n    margin: 48px !important;\n  }\n  .v-application .ma-xl-13 {\n    margin: 52px !important;\n  }\n  .v-application .ma-xl-14 {\n    margin: 56px !important;\n  }\n  .v-application .ma-xl-15 {\n    margin: 60px !important;\n  }\n  .v-application .ma-xl-16 {\n    margin: 64px !important;\n  }\n  .v-application .ma-xl-auto {\n    margin: auto !important;\n  }\n  .v-application .mx-xl-0 {\n    margin-right: 0px !important;\n    margin-left: 0px !important;\n  }\n  .v-application .mx-xl-1 {\n    margin-right: 4px !important;\n    margin-left: 4px !important;\n  }\n  .v-application .mx-xl-2 {\n    margin-right: 8px !important;\n    margin-left: 8px !important;\n  }\n  .v-application .mx-xl-3 {\n    margin-right: 12px !important;\n    margin-left: 12px !important;\n  }\n  .v-application .mx-xl-4 {\n    margin-right: 16px !important;\n    margin-left: 16px !important;\n  }\n  .v-application .mx-xl-5 {\n    margin-right: 20px !important;\n    margin-left: 20px !important;\n  }\n  .v-application .mx-xl-6 {\n    margin-right: 24px !important;\n    margin-left: 24px !important;\n  }\n  .v-application .mx-xl-7 {\n    margin-right: 28px !important;\n    margin-left: 28px !important;\n  }\n  .v-application .mx-xl-8 {\n    margin-right: 32px !important;\n    margin-left: 32px !important;\n  }\n  .v-application .mx-xl-9 {\n    margin-right: 36px !important;\n    margin-left: 36px !important;\n  }\n  .v-application .mx-xl-10 {\n    margin-right: 40px !important;\n    margin-left: 40px !important;\n  }\n  .v-application .mx-xl-11 {\n    margin-right: 44px !important;\n    margin-left: 44px !important;\n  }\n  .v-application .mx-xl-12 {\n    margin-right: 48px !important;\n    margin-left: 48px !important;\n  }\n  .v-application .mx-xl-13 {\n    margin-right: 52px !important;\n    margin-left: 52px !important;\n  }\n  .v-application .mx-xl-14 {\n    margin-right: 56px !important;\n    margin-left: 56px !important;\n  }\n  .v-application .mx-xl-15 {\n    margin-right: 60px !important;\n    margin-left: 60px !important;\n  }\n  .v-application .mx-xl-16 {\n    margin-right: 64px !important;\n    margin-left: 64px !important;\n  }\n  .v-application .mx-xl-auto {\n    margin-right: auto !important;\n    margin-left: auto !important;\n  }\n  .v-application .my-xl-0 {\n    margin-top: 0px !important;\n    margin-bottom: 0px !important;\n  }\n  .v-application .my-xl-1 {\n    margin-top: 4px !important;\n    margin-bottom: 4px !important;\n  }\n  .v-application .my-xl-2 {\n    margin-top: 8px !important;\n    margin-bottom: 8px !important;\n  }\n  .v-application .my-xl-3 {\n    margin-top: 12px !important;\n    margin-bottom: 12px !important;\n  }\n  .v-application .my-xl-4 {\n    margin-top: 16px !important;\n    margin-bottom: 16px !important;\n  }\n  .v-application .my-xl-5 {\n    margin-top: 20px !important;\n    margin-bottom: 20px !important;\n  }\n  .v-application .my-xl-6 {\n    margin-top: 24px !important;\n    margin-bottom: 24px !important;\n  }\n  .v-application .my-xl-7 {\n    margin-top: 28px !important;\n    margin-bottom: 28px !important;\n  }\n  .v-application .my-xl-8 {\n    margin-top: 32px !important;\n    margin-bottom: 32px !important;\n  }\n  .v-application .my-xl-9 {\n    margin-top: 36px !important;\n    margin-bottom: 36px !important;\n  }\n  .v-application .my-xl-10 {\n    margin-top: 40px !important;\n    margin-bottom: 40px !important;\n  }\n  .v-application .my-xl-11 {\n    margin-top: 44px !important;\n    margin-bottom: 44px !important;\n  }\n  .v-application .my-xl-12 {\n    margin-top: 48px !important;\n    margin-bottom: 48px !important;\n  }\n  .v-application .my-xl-13 {\n    margin-top: 52px !important;\n    margin-bottom: 52px !important;\n  }\n  .v-application .my-xl-14 {\n    margin-top: 56px !important;\n    margin-bottom: 56px !important;\n  }\n  .v-application .my-xl-15 {\n    margin-top: 60px !important;\n    margin-bottom: 60px !important;\n  }\n  .v-application .my-xl-16 {\n    margin-top: 64px !important;\n    margin-bottom: 64px !important;\n  }\n  .v-application .my-xl-auto {\n    margin-top: auto !important;\n    margin-bottom: auto !important;\n  }\n  .v-application .mt-xl-0 {\n    margin-top: 0px !important;\n  }\n  .v-application .mt-xl-1 {\n    margin-top: 4px !important;\n  }\n  .v-application .mt-xl-2 {\n    margin-top: 8px !important;\n  }\n  .v-application .mt-xl-3 {\n    margin-top: 12px !important;\n  }\n  .v-application .mt-xl-4 {\n    margin-top: 16px !important;\n  }\n  .v-application .mt-xl-5 {\n    margin-top: 20px !important;\n  }\n  .v-application .mt-xl-6 {\n    margin-top: 24px !important;\n  }\n  .v-application .mt-xl-7 {\n    margin-top: 28px !important;\n  }\n  .v-application .mt-xl-8 {\n    margin-top: 32px !important;\n  }\n  .v-application .mt-xl-9 {\n    margin-top: 36px !important;\n  }\n  .v-application .mt-xl-10 {\n    margin-top: 40px !important;\n  }\n  .v-application .mt-xl-11 {\n    margin-top: 44px !important;\n  }\n  .v-application .mt-xl-12 {\n    margin-top: 48px !important;\n  }\n  .v-application .mt-xl-13 {\n    margin-top: 52px !important;\n  }\n  .v-application .mt-xl-14 {\n    margin-top: 56px !important;\n  }\n  .v-application .mt-xl-15 {\n    margin-top: 60px !important;\n  }\n  .v-application .mt-xl-16 {\n    margin-top: 64px !important;\n  }\n  .v-application .mt-xl-auto {\n    margin-top: auto !important;\n  }\n  .v-application .mr-xl-0 {\n    margin-right: 0px !important;\n  }\n  .v-application .mr-xl-1 {\n    margin-right: 4px !important;\n  }\n  .v-application .mr-xl-2 {\n    margin-right: 8px !important;\n  }\n  .v-application .mr-xl-3 {\n    margin-right: 12px !important;\n  }\n  .v-application .mr-xl-4 {\n    margin-right: 16px !important;\n  }\n  .v-application .mr-xl-5 {\n    margin-right: 20px !important;\n  }\n  .v-application .mr-xl-6 {\n    margin-right: 24px !important;\n  }\n  .v-application .mr-xl-7 {\n    margin-right: 28px !important;\n  }\n  .v-application .mr-xl-8 {\n    margin-right: 32px !important;\n  }\n  .v-application .mr-xl-9 {\n    margin-right: 36px !important;\n  }\n  .v-application .mr-xl-10 {\n    margin-right: 40px !important;\n  }\n  .v-application .mr-xl-11 {\n    margin-right: 44px !important;\n  }\n  .v-application .mr-xl-12 {\n    margin-right: 48px !important;\n  }\n  .v-application .mr-xl-13 {\n    margin-right: 52px !important;\n  }\n  .v-application .mr-xl-14 {\n    margin-right: 56px !important;\n  }\n  .v-application .mr-xl-15 {\n    margin-right: 60px !important;\n  }\n  .v-application .mr-xl-16 {\n    margin-right: 64px !important;\n  }\n  .v-application .mr-xl-auto {\n    margin-right: auto !important;\n  }\n  .v-application .mb-xl-0 {\n    margin-bottom: 0px !important;\n  }\n  .v-application .mb-xl-1 {\n    margin-bottom: 4px !important;\n  }\n  .v-application .mb-xl-2 {\n    margin-bottom: 8px !important;\n  }\n  .v-application .mb-xl-3 {\n    margin-bottom: 12px !important;\n  }\n  .v-application .mb-xl-4 {\n    margin-bottom: 16px !important;\n  }\n  .v-application .mb-xl-5 {\n    margin-bottom: 20px !important;\n  }\n  .v-application .mb-xl-6 {\n    margin-bottom: 24px !important;\n  }\n  .v-application .mb-xl-7 {\n    margin-bottom: 28px !important;\n  }\n  .v-application .mb-xl-8 {\n    margin-bottom: 32px !important;\n  }\n  .v-application .mb-xl-9 {\n    margin-bottom: 36px !important;\n  }\n  .v-application .mb-xl-10 {\n    margin-bottom: 40px !important;\n  }\n  .v-application .mb-xl-11 {\n    margin-bottom: 44px !important;\n  }\n  .v-application .mb-xl-12 {\n    margin-bottom: 48px !important;\n  }\n  .v-application .mb-xl-13 {\n    margin-bottom: 52px !important;\n  }\n  .v-application .mb-xl-14 {\n    margin-bottom: 56px !important;\n  }\n  .v-application .mb-xl-15 {\n    margin-bottom: 60px !important;\n  }\n  .v-application .mb-xl-16 {\n    margin-bottom: 64px !important;\n  }\n  .v-application .mb-xl-auto {\n    margin-bottom: auto !important;\n  }\n  .v-application .ml-xl-0 {\n    margin-left: 0px !important;\n  }\n  .v-application .ml-xl-1 {\n    margin-left: 4px !important;\n  }\n  .v-application .ml-xl-2 {\n    margin-left: 8px !important;\n  }\n  .v-application .ml-xl-3 {\n    margin-left: 12px !important;\n  }\n  .v-application .ml-xl-4 {\n    margin-left: 16px !important;\n  }\n  .v-application .ml-xl-5 {\n    margin-left: 20px !important;\n  }\n  .v-application .ml-xl-6 {\n    margin-left: 24px !important;\n  }\n  .v-application .ml-xl-7 {\n    margin-left: 28px !important;\n  }\n  .v-application .ml-xl-8 {\n    margin-left: 32px !important;\n  }\n  .v-application .ml-xl-9 {\n    margin-left: 36px !important;\n  }\n  .v-application .ml-xl-10 {\n    margin-left: 40px !important;\n  }\n  .v-application .ml-xl-11 {\n    margin-left: 44px !important;\n  }\n  .v-application .ml-xl-12 {\n    margin-left: 48px !important;\n  }\n  .v-application .ml-xl-13 {\n    margin-left: 52px !important;\n  }\n  .v-application .ml-xl-14 {\n    margin-left: 56px !important;\n  }\n  .v-application .ml-xl-15 {\n    margin-left: 60px !important;\n  }\n  .v-application .ml-xl-16 {\n    margin-left: 64px !important;\n  }\n  .v-application .ml-xl-auto {\n    margin-left: auto !important;\n  }\n  .v-application--is-ltr .ms-xl-0 {\n    margin-left: 0px !important;\n  }\n  .v-application--is-rtl .ms-xl-0 {\n    margin-right: 0px !important;\n  }\n  .v-application--is-ltr .ms-xl-1 {\n    margin-left: 4px !important;\n  }\n  .v-application--is-rtl .ms-xl-1 {\n    margin-right: 4px !important;\n  }\n  .v-application--is-ltr .ms-xl-2 {\n    margin-left: 8px !important;\n  }\n  .v-application--is-rtl .ms-xl-2 {\n    margin-right: 8px !important;\n  }\n  .v-application--is-ltr .ms-xl-3 {\n    margin-left: 12px !important;\n  }\n  .v-application--is-rtl .ms-xl-3 {\n    margin-right: 12px !important;\n  }\n  .v-application--is-ltr .ms-xl-4 {\n    margin-left: 16px !important;\n  }\n  .v-application--is-rtl .ms-xl-4 {\n    margin-right: 16px !important;\n  }\n  .v-application--is-ltr .ms-xl-5 {\n    margin-left: 20px !important;\n  }\n  .v-application--is-rtl .ms-xl-5 {\n    margin-right: 20px !important;\n  }\n  .v-application--is-ltr .ms-xl-6 {\n    margin-left: 24px !important;\n  }\n  .v-application--is-rtl .ms-xl-6 {\n    margin-right: 24px !important;\n  }\n  .v-application--is-ltr .ms-xl-7 {\n    margin-left: 28px !important;\n  }\n  .v-application--is-rtl .ms-xl-7 {\n    margin-right: 28px !important;\n  }\n  .v-application--is-ltr .ms-xl-8 {\n    margin-left: 32px !important;\n  }\n  .v-application--is-rtl .ms-xl-8 {\n    margin-right: 32px !important;\n  }\n  .v-application--is-ltr .ms-xl-9 {\n    margin-left: 36px !important;\n  }\n  .v-application--is-rtl .ms-xl-9 {\n    margin-right: 36px !important;\n  }\n  .v-application--is-ltr .ms-xl-10 {\n    margin-left: 40px !important;\n  }\n  .v-application--is-rtl .ms-xl-10 {\n    margin-right: 40px !important;\n  }\n  .v-application--is-ltr .ms-xl-11 {\n    margin-left: 44px !important;\n  }\n  .v-application--is-rtl .ms-xl-11 {\n    margin-right: 44px !important;\n  }\n  .v-application--is-ltr .ms-xl-12 {\n    margin-left: 48px !important;\n  }\n  .v-application--is-rtl .ms-xl-12 {\n    margin-right: 48px !important;\n  }\n  .v-application--is-ltr .ms-xl-13 {\n    margin-left: 52px !important;\n  }\n  .v-application--is-rtl .ms-xl-13 {\n    margin-right: 52px !important;\n  }\n  .v-application--is-ltr .ms-xl-14 {\n    margin-left: 56px !important;\n  }\n  .v-application--is-rtl .ms-xl-14 {\n    margin-right: 56px !important;\n  }\n  .v-application--is-ltr .ms-xl-15 {\n    margin-left: 60px !important;\n  }\n  .v-application--is-rtl .ms-xl-15 {\n    margin-right: 60px !important;\n  }\n  .v-application--is-ltr .ms-xl-16 {\n    margin-left: 64px !important;\n  }\n  .v-application--is-rtl .ms-xl-16 {\n    margin-right: 64px !important;\n  }\n  .v-application--is-ltr .ms-xl-auto {\n    margin-left: auto !important;\n  }\n  .v-application--is-rtl .ms-xl-auto {\n    margin-right: auto !important;\n  }\n  .v-application--is-ltr .me-xl-0 {\n    margin-right: 0px !important;\n  }\n  .v-application--is-rtl .me-xl-0 {\n    margin-left: 0px !important;\n  }\n  .v-application--is-ltr .me-xl-1 {\n    margin-right: 4px !important;\n  }\n  .v-application--is-rtl .me-xl-1 {\n    margin-left: 4px !important;\n  }\n  .v-application--is-ltr .me-xl-2 {\n    margin-right: 8px !important;\n  }\n  .v-application--is-rtl .me-xl-2 {\n    margin-left: 8px !important;\n  }\n  .v-application--is-ltr .me-xl-3 {\n    margin-right: 12px !important;\n  }\n  .v-application--is-rtl .me-xl-3 {\n    margin-left: 12px !important;\n  }\n  .v-application--is-ltr .me-xl-4 {\n    margin-right: 16px !important;\n  }\n  .v-application--is-rtl .me-xl-4 {\n    margin-left: 16px !important;\n  }\n  .v-application--is-ltr .me-xl-5 {\n    margin-right: 20px !important;\n  }\n  .v-application--is-rtl .me-xl-5 {\n    margin-left: 20px !important;\n  }\n  .v-application--is-ltr .me-xl-6 {\n    margin-right: 24px !important;\n  }\n  .v-application--is-rtl .me-xl-6 {\n    margin-left: 24px !important;\n  }\n  .v-application--is-ltr .me-xl-7 {\n    margin-right: 28px !important;\n  }\n  .v-application--is-rtl .me-xl-7 {\n    margin-left: 28px !important;\n  }\n  .v-application--is-ltr .me-xl-8 {\n    margin-right: 32px !important;\n  }\n  .v-application--is-rtl .me-xl-8 {\n    margin-left: 32px !important;\n  }\n  .v-application--is-ltr .me-xl-9 {\n    margin-right: 36px !important;\n  }\n  .v-application--is-rtl .me-xl-9 {\n    margin-left: 36px !important;\n  }\n  .v-application--is-ltr .me-xl-10 {\n    margin-right: 40px !important;\n  }\n  .v-application--is-rtl .me-xl-10 {\n    margin-left: 40px !important;\n  }\n  .v-application--is-ltr .me-xl-11 {\n    margin-right: 44px !important;\n  }\n  .v-application--is-rtl .me-xl-11 {\n    margin-left: 44px !important;\n  }\n  .v-application--is-ltr .me-xl-12 {\n    margin-right: 48px !important;\n  }\n  .v-application--is-rtl .me-xl-12 {\n    margin-left: 48px !important;\n  }\n  .v-application--is-ltr .me-xl-13 {\n    margin-right: 52px !important;\n  }\n  .v-application--is-rtl .me-xl-13 {\n    margin-left: 52px !important;\n  }\n  .v-application--is-ltr .me-xl-14 {\n    margin-right: 56px !important;\n  }\n  .v-application--is-rtl .me-xl-14 {\n    margin-left: 56px !important;\n  }\n  .v-application--is-ltr .me-xl-15 {\n    margin-right: 60px !important;\n  }\n  .v-application--is-rtl .me-xl-15 {\n    margin-left: 60px !important;\n  }\n  .v-application--is-ltr .me-xl-16 {\n    margin-right: 64px !important;\n  }\n  .v-application--is-rtl .me-xl-16 {\n    margin-left: 64px !important;\n  }\n  .v-application--is-ltr .me-xl-auto {\n    margin-right: auto !important;\n  }\n  .v-application--is-rtl .me-xl-auto {\n    margin-left: auto !important;\n  }\n  .v-application .ma-xl-n1 {\n    margin: -4px !important;\n  }\n  .v-application .ma-xl-n2 {\n    margin: -8px !important;\n  }\n  .v-application .ma-xl-n3 {\n    margin: -12px !important;\n  }\n  .v-application .ma-xl-n4 {\n    margin: -16px !important;\n  }\n  .v-application .ma-xl-n5 {\n    margin: -20px !important;\n  }\n  .v-application .ma-xl-n6 {\n    margin: -24px !important;\n  }\n  .v-application .ma-xl-n7 {\n    margin: -28px !important;\n  }\n  .v-application .ma-xl-n8 {\n    margin: -32px !important;\n  }\n  .v-application .ma-xl-n9 {\n    margin: -36px !important;\n  }\n  .v-application .ma-xl-n10 {\n    margin: -40px !important;\n  }\n  .v-application .ma-xl-n11 {\n    margin: -44px !important;\n  }\n  .v-application .ma-xl-n12 {\n    margin: -48px !important;\n  }\n  .v-application .ma-xl-n13 {\n    margin: -52px !important;\n  }\n  .v-application .ma-xl-n14 {\n    margin: -56px !important;\n  }\n  .v-application .ma-xl-n15 {\n    margin: -60px !important;\n  }\n  .v-application .ma-xl-n16 {\n    margin: -64px !important;\n  }\n  .v-application .mx-xl-n1 {\n    margin-right: -4px !important;\n    margin-left: -4px !important;\n  }\n  .v-application .mx-xl-n2 {\n    margin-right: -8px !important;\n    margin-left: -8px !important;\n  }\n  .v-application .mx-xl-n3 {\n    margin-right: -12px !important;\n    margin-left: -12px !important;\n  }\n  .v-application .mx-xl-n4 {\n    margin-right: -16px !important;\n    margin-left: -16px !important;\n  }\n  .v-application .mx-xl-n5 {\n    margin-right: -20px !important;\n    margin-left: -20px !important;\n  }\n  .v-application .mx-xl-n6 {\n    margin-right: -24px !important;\n    margin-left: -24px !important;\n  }\n  .v-application .mx-xl-n7 {\n    margin-right: -28px !important;\n    margin-left: -28px !important;\n  }\n  .v-application .mx-xl-n8 {\n    margin-right: -32px !important;\n    margin-left: -32px !important;\n  }\n  .v-application .mx-xl-n9 {\n    margin-right: -36px !important;\n    margin-left: -36px !important;\n  }\n  .v-application .mx-xl-n10 {\n    margin-right: -40px !important;\n    margin-left: -40px !important;\n  }\n  .v-application .mx-xl-n11 {\n    margin-right: -44px !important;\n    margin-left: -44px !important;\n  }\n  .v-application .mx-xl-n12 {\n    margin-right: -48px !important;\n    margin-left: -48px !important;\n  }\n  .v-application .mx-xl-n13 {\n    margin-right: -52px !important;\n    margin-left: -52px !important;\n  }\n  .v-application .mx-xl-n14 {\n    margin-right: -56px !important;\n    margin-left: -56px !important;\n  }\n  .v-application .mx-xl-n15 {\n    margin-right: -60px !important;\n    margin-left: -60px !important;\n  }\n  .v-application .mx-xl-n16 {\n    margin-right: -64px !important;\n    margin-left: -64px !important;\n  }\n  .v-application .my-xl-n1 {\n    margin-top: -4px !important;\n    margin-bottom: -4px !important;\n  }\n  .v-application .my-xl-n2 {\n    margin-top: -8px !important;\n    margin-bottom: -8px !important;\n  }\n  .v-application .my-xl-n3 {\n    margin-top: -12px !important;\n    margin-bottom: -12px !important;\n  }\n  .v-application .my-xl-n4 {\n    margin-top: -16px !important;\n    margin-bottom: -16px !important;\n  }\n  .v-application .my-xl-n5 {\n    margin-top: -20px !important;\n    margin-bottom: -20px !important;\n  }\n  .v-application .my-xl-n6 {\n    margin-top: -24px !important;\n    margin-bottom: -24px !important;\n  }\n  .v-application .my-xl-n7 {\n    margin-top: -28px !important;\n    margin-bottom: -28px !important;\n  }\n  .v-application .my-xl-n8 {\n    margin-top: -32px !important;\n    margin-bottom: -32px !important;\n  }\n  .v-application .my-xl-n9 {\n    margin-top: -36px !important;\n    margin-bottom: -36px !important;\n  }\n  .v-application .my-xl-n10 {\n    margin-top: -40px !important;\n    margin-bottom: -40px !important;\n  }\n  .v-application .my-xl-n11 {\n    margin-top: -44px !important;\n    margin-bottom: -44px !important;\n  }\n  .v-application .my-xl-n12 {\n    margin-top: -48px !important;\n    margin-bottom: -48px !important;\n  }\n  .v-application .my-xl-n13 {\n    margin-top: -52px !important;\n    margin-bottom: -52px !important;\n  }\n  .v-application .my-xl-n14 {\n    margin-top: -56px !important;\n    margin-bottom: -56px !important;\n  }\n  .v-application .my-xl-n15 {\n    margin-top: -60px !important;\n    margin-bottom: -60px !important;\n  }\n  .v-application .my-xl-n16 {\n    margin-top: -64px !important;\n    margin-bottom: -64px !important;\n  }\n  .v-application .mt-xl-n1 {\n    margin-top: -4px !important;\n  }\n  .v-application .mt-xl-n2 {\n    margin-top: -8px !important;\n  }\n  .v-application .mt-xl-n3 {\n    margin-top: -12px !important;\n  }\n  .v-application .mt-xl-n4 {\n    margin-top: -16px !important;\n  }\n  .v-application .mt-xl-n5 {\n    margin-top: -20px !important;\n  }\n  .v-application .mt-xl-n6 {\n    margin-top: -24px !important;\n  }\n  .v-application .mt-xl-n7 {\n    margin-top: -28px !important;\n  }\n  .v-application .mt-xl-n8 {\n    margin-top: -32px !important;\n  }\n  .v-application .mt-xl-n9 {\n    margin-top: -36px !important;\n  }\n  .v-application .mt-xl-n10 {\n    margin-top: -40px !important;\n  }\n  .v-application .mt-xl-n11 {\n    margin-top: -44px !important;\n  }\n  .v-application .mt-xl-n12 {\n    margin-top: -48px !important;\n  }\n  .v-application .mt-xl-n13 {\n    margin-top: -52px !important;\n  }\n  .v-application .mt-xl-n14 {\n    margin-top: -56px !important;\n  }\n  .v-application .mt-xl-n15 {\n    margin-top: -60px !important;\n  }\n  .v-application .mt-xl-n16 {\n    margin-top: -64px !important;\n  }\n  .v-application .mr-xl-n1 {\n    margin-right: -4px !important;\n  }\n  .v-application .mr-xl-n2 {\n    margin-right: -8px !important;\n  }\n  .v-application .mr-xl-n3 {\n    margin-right: -12px !important;\n  }\n  .v-application .mr-xl-n4 {\n    margin-right: -16px !important;\n  }\n  .v-application .mr-xl-n5 {\n    margin-right: -20px !important;\n  }\n  .v-application .mr-xl-n6 {\n    margin-right: -24px !important;\n  }\n  .v-application .mr-xl-n7 {\n    margin-right: -28px !important;\n  }\n  .v-application .mr-xl-n8 {\n    margin-right: -32px !important;\n  }\n  .v-application .mr-xl-n9 {\n    margin-right: -36px !important;\n  }\n  .v-application .mr-xl-n10 {\n    margin-right: -40px !important;\n  }\n  .v-application .mr-xl-n11 {\n    margin-right: -44px !important;\n  }\n  .v-application .mr-xl-n12 {\n    margin-right: -48px !important;\n  }\n  .v-application .mr-xl-n13 {\n    margin-right: -52px !important;\n  }\n  .v-application .mr-xl-n14 {\n    margin-right: -56px !important;\n  }\n  .v-application .mr-xl-n15 {\n    margin-right: -60px !important;\n  }\n  .v-application .mr-xl-n16 {\n    margin-right: -64px !important;\n  }\n  .v-application .mb-xl-n1 {\n    margin-bottom: -4px !important;\n  }\n  .v-application .mb-xl-n2 {\n    margin-bottom: -8px !important;\n  }\n  .v-application .mb-xl-n3 {\n    margin-bottom: -12px !important;\n  }\n  .v-application .mb-xl-n4 {\n    margin-bottom: -16px !important;\n  }\n  .v-application .mb-xl-n5 {\n    margin-bottom: -20px !important;\n  }\n  .v-application .mb-xl-n6 {\n    margin-bottom: -24px !important;\n  }\n  .v-application .mb-xl-n7 {\n    margin-bottom: -28px !important;\n  }\n  .v-application .mb-xl-n8 {\n    margin-bottom: -32px !important;\n  }\n  .v-application .mb-xl-n9 {\n    margin-bottom: -36px !important;\n  }\n  .v-application .mb-xl-n10 {\n    margin-bottom: -40px !important;\n  }\n  .v-application .mb-xl-n11 {\n    margin-bottom: -44px !important;\n  }\n  .v-application .mb-xl-n12 {\n    margin-bottom: -48px !important;\n  }\n  .v-application .mb-xl-n13 {\n    margin-bottom: -52px !important;\n  }\n  .v-application .mb-xl-n14 {\n    margin-bottom: -56px !important;\n  }\n  .v-application .mb-xl-n15 {\n    margin-bottom: -60px !important;\n  }\n  .v-application .mb-xl-n16 {\n    margin-bottom: -64px !important;\n  }\n  .v-application .ml-xl-n1 {\n    margin-left: -4px !important;\n  }\n  .v-application .ml-xl-n2 {\n    margin-left: -8px !important;\n  }\n  .v-application .ml-xl-n3 {\n    margin-left: -12px !important;\n  }\n  .v-application .ml-xl-n4 {\n    margin-left: -16px !important;\n  }\n  .v-application .ml-xl-n5 {\n    margin-left: -20px !important;\n  }\n  .v-application .ml-xl-n6 {\n    margin-left: -24px !important;\n  }\n  .v-application .ml-xl-n7 {\n    margin-left: -28px !important;\n  }\n  .v-application .ml-xl-n8 {\n    margin-left: -32px !important;\n  }\n  .v-application .ml-xl-n9 {\n    margin-left: -36px !important;\n  }\n  .v-application .ml-xl-n10 {\n    margin-left: -40px !important;\n  }\n  .v-application .ml-xl-n11 {\n    margin-left: -44px !important;\n  }\n  .v-application .ml-xl-n12 {\n    margin-left: -48px !important;\n  }\n  .v-application .ml-xl-n13 {\n    margin-left: -52px !important;\n  }\n  .v-application .ml-xl-n14 {\n    margin-left: -56px !important;\n  }\n  .v-application .ml-xl-n15 {\n    margin-left: -60px !important;\n  }\n  .v-application .ml-xl-n16 {\n    margin-left: -64px !important;\n  }\n  .v-application--is-ltr .ms-xl-n1 {\n    margin-left: -4px !important;\n  }\n  .v-application--is-rtl .ms-xl-n1 {\n    margin-right: -4px !important;\n  }\n  .v-application--is-ltr .ms-xl-n2 {\n    margin-left: -8px !important;\n  }\n  .v-application--is-rtl .ms-xl-n2 {\n    margin-right: -8px !important;\n  }\n  .v-application--is-ltr .ms-xl-n3 {\n    margin-left: -12px !important;\n  }\n  .v-application--is-rtl .ms-xl-n3 {\n    margin-right: -12px !important;\n  }\n  .v-application--is-ltr .ms-xl-n4 {\n    margin-left: -16px !important;\n  }\n  .v-application--is-rtl .ms-xl-n4 {\n    margin-right: -16px !important;\n  }\n  .v-application--is-ltr .ms-xl-n5 {\n    margin-left: -20px !important;\n  }\n  .v-application--is-rtl .ms-xl-n5 {\n    margin-right: -20px !important;\n  }\n  .v-application--is-ltr .ms-xl-n6 {\n    margin-left: -24px !important;\n  }\n  .v-application--is-rtl .ms-xl-n6 {\n    margin-right: -24px !important;\n  }\n  .v-application--is-ltr .ms-xl-n7 {\n    margin-left: -28px !important;\n  }\n  .v-application--is-rtl .ms-xl-n7 {\n    margin-right: -28px !important;\n  }\n  .v-application--is-ltr .ms-xl-n8 {\n    margin-left: -32px !important;\n  }\n  .v-application--is-rtl .ms-xl-n8 {\n    margin-right: -32px !important;\n  }\n  .v-application--is-ltr .ms-xl-n9 {\n    margin-left: -36px !important;\n  }\n  .v-application--is-rtl .ms-xl-n9 {\n    margin-right: -36px !important;\n  }\n  .v-application--is-ltr .ms-xl-n10 {\n    margin-left: -40px !important;\n  }\n  .v-application--is-rtl .ms-xl-n10 {\n    margin-right: -40px !important;\n  }\n  .v-application--is-ltr .ms-xl-n11 {\n    margin-left: -44px !important;\n  }\n  .v-application--is-rtl .ms-xl-n11 {\n    margin-right: -44px !important;\n  }\n  .v-application--is-ltr .ms-xl-n12 {\n    margin-left: -48px !important;\n  }\n  .v-application--is-rtl .ms-xl-n12 {\n    margin-right: -48px !important;\n  }\n  .v-application--is-ltr .ms-xl-n13 {\n    margin-left: -52px !important;\n  }\n  .v-application--is-rtl .ms-xl-n13 {\n    margin-right: -52px !important;\n  }\n  .v-application--is-ltr .ms-xl-n14 {\n    margin-left: -56px !important;\n  }\n  .v-application--is-rtl .ms-xl-n14 {\n    margin-right: -56px !important;\n  }\n  .v-application--is-ltr .ms-xl-n15 {\n    margin-left: -60px !important;\n  }\n  .v-application--is-rtl .ms-xl-n15 {\n    margin-right: -60px !important;\n  }\n  .v-application--is-ltr .ms-xl-n16 {\n    margin-left: -64px !important;\n  }\n  .v-application--is-rtl .ms-xl-n16 {\n    margin-right: -64px !important;\n  }\n  .v-application--is-ltr .me-xl-n1 {\n    margin-right: -4px !important;\n  }\n  .v-application--is-rtl .me-xl-n1 {\n    margin-left: -4px !important;\n  }\n  .v-application--is-ltr .me-xl-n2 {\n    margin-right: -8px !important;\n  }\n  .v-application--is-rtl .me-xl-n2 {\n    margin-left: -8px !important;\n  }\n  .v-application--is-ltr .me-xl-n3 {\n    margin-right: -12px !important;\n  }\n  .v-application--is-rtl .me-xl-n3 {\n    margin-left: -12px !important;\n  }\n  .v-application--is-ltr .me-xl-n4 {\n    margin-right: -16px !important;\n  }\n  .v-application--is-rtl .me-xl-n4 {\n    margin-left: -16px !important;\n  }\n  .v-application--is-ltr .me-xl-n5 {\n    margin-right: -20px !important;\n  }\n  .v-application--is-rtl .me-xl-n5 {\n    margin-left: -20px !important;\n  }\n  .v-application--is-ltr .me-xl-n6 {\n    margin-right: -24px !important;\n  }\n  .v-application--is-rtl .me-xl-n6 {\n    margin-left: -24px !important;\n  }\n  .v-application--is-ltr .me-xl-n7 {\n    margin-right: -28px !important;\n  }\n  .v-application--is-rtl .me-xl-n7 {\n    margin-left: -28px !important;\n  }\n  .v-application--is-ltr .me-xl-n8 {\n    margin-right: -32px !important;\n  }\n  .v-application--is-rtl .me-xl-n8 {\n    margin-left: -32px !important;\n  }\n  .v-application--is-ltr .me-xl-n9 {\n    margin-right: -36px !important;\n  }\n  .v-application--is-rtl .me-xl-n9 {\n    margin-left: -36px !important;\n  }\n  .v-application--is-ltr .me-xl-n10 {\n    margin-right: -40px !important;\n  }\n  .v-application--is-rtl .me-xl-n10 {\n    margin-left: -40px !important;\n  }\n  .v-application--is-ltr .me-xl-n11 {\n    margin-right: -44px !important;\n  }\n  .v-application--is-rtl .me-xl-n11 {\n    margin-left: -44px !important;\n  }\n  .v-application--is-ltr .me-xl-n12 {\n    margin-right: -48px !important;\n  }\n  .v-application--is-rtl .me-xl-n12 {\n    margin-left: -48px !important;\n  }\n  .v-application--is-ltr .me-xl-n13 {\n    margin-right: -52px !important;\n  }\n  .v-application--is-rtl .me-xl-n13 {\n    margin-left: -52px !important;\n  }\n  .v-application--is-ltr .me-xl-n14 {\n    margin-right: -56px !important;\n  }\n  .v-application--is-rtl .me-xl-n14 {\n    margin-left: -56px !important;\n  }\n  .v-application--is-ltr .me-xl-n15 {\n    margin-right: -60px !important;\n  }\n  .v-application--is-rtl .me-xl-n15 {\n    margin-left: -60px !important;\n  }\n  .v-application--is-ltr .me-xl-n16 {\n    margin-right: -64px !important;\n  }\n  .v-application--is-rtl .me-xl-n16 {\n    margin-left: -64px !important;\n  }\n  .v-application .pa-xl-0 {\n    padding: 0px !important;\n  }\n  .v-application .pa-xl-1 {\n    padding: 4px !important;\n  }\n  .v-application .pa-xl-2 {\n    padding: 8px !important;\n  }\n  .v-application .pa-xl-3 {\n    padding: 12px !important;\n  }\n  .v-application .pa-xl-4 {\n    padding: 16px !important;\n  }\n  .v-application .pa-xl-5 {\n    padding: 20px !important;\n  }\n  .v-application .pa-xl-6 {\n    padding: 24px !important;\n  }\n  .v-application .pa-xl-7 {\n    padding: 28px !important;\n  }\n  .v-application .pa-xl-8 {\n    padding: 32px !important;\n  }\n  .v-application .pa-xl-9 {\n    padding: 36px !important;\n  }\n  .v-application .pa-xl-10 {\n    padding: 40px !important;\n  }\n  .v-application .pa-xl-11 {\n    padding: 44px !important;\n  }\n  .v-application .pa-xl-12 {\n    padding: 48px !important;\n  }\n  .v-application .pa-xl-13 {\n    padding: 52px !important;\n  }\n  .v-application .pa-xl-14 {\n    padding: 56px !important;\n  }\n  .v-application .pa-xl-15 {\n    padding: 60px !important;\n  }\n  .v-application .pa-xl-16 {\n    padding: 64px !important;\n  }\n  .v-application .px-xl-0 {\n    padding-right: 0px !important;\n    padding-left: 0px !important;\n  }\n  .v-application .px-xl-1 {\n    padding-right: 4px !important;\n    padding-left: 4px !important;\n  }\n  .v-application .px-xl-2 {\n    padding-right: 8px !important;\n    padding-left: 8px !important;\n  }\n  .v-application .px-xl-3 {\n    padding-right: 12px !important;\n    padding-left: 12px !important;\n  }\n  .v-application .px-xl-4 {\n    padding-right: 16px !important;\n    padding-left: 16px !important;\n  }\n  .v-application .px-xl-5 {\n    padding-right: 20px !important;\n    padding-left: 20px !important;\n  }\n  .v-application .px-xl-6 {\n    padding-right: 24px !important;\n    padding-left: 24px !important;\n  }\n  .v-application .px-xl-7 {\n    padding-right: 28px !important;\n    padding-left: 28px !important;\n  }\n  .v-application .px-xl-8 {\n    padding-right: 32px !important;\n    padding-left: 32px !important;\n  }\n  .v-application .px-xl-9 {\n    padding-right: 36px !important;\n    padding-left: 36px !important;\n  }\n  .v-application .px-xl-10 {\n    padding-right: 40px !important;\n    padding-left: 40px !important;\n  }\n  .v-application .px-xl-11 {\n    padding-right: 44px !important;\n    padding-left: 44px !important;\n  }\n  .v-application .px-xl-12 {\n    padding-right: 48px !important;\n    padding-left: 48px !important;\n  }\n  .v-application .px-xl-13 {\n    padding-right: 52px !important;\n    padding-left: 52px !important;\n  }\n  .v-application .px-xl-14 {\n    padding-right: 56px !important;\n    padding-left: 56px !important;\n  }\n  .v-application .px-xl-15 {\n    padding-right: 60px !important;\n    padding-left: 60px !important;\n  }\n  .v-application .px-xl-16 {\n    padding-right: 64px !important;\n    padding-left: 64px !important;\n  }\n  .v-application .py-xl-0 {\n    padding-top: 0px !important;\n    padding-bottom: 0px !important;\n  }\n  .v-application .py-xl-1 {\n    padding-top: 4px !important;\n    padding-bottom: 4px !important;\n  }\n  .v-application .py-xl-2 {\n    padding-top: 8px !important;\n    padding-bottom: 8px !important;\n  }\n  .v-application .py-xl-3 {\n    padding-top: 12px !important;\n    padding-bottom: 12px !important;\n  }\n  .v-application .py-xl-4 {\n    padding-top: 16px !important;\n    padding-bottom: 16px !important;\n  }\n  .v-application .py-xl-5 {\n    padding-top: 20px !important;\n    padding-bottom: 20px !important;\n  }\n  .v-application .py-xl-6 {\n    padding-top: 24px !important;\n    padding-bottom: 24px !important;\n  }\n  .v-application .py-xl-7 {\n    padding-top: 28px !important;\n    padding-bottom: 28px !important;\n  }\n  .v-application .py-xl-8 {\n    padding-top: 32px !important;\n    padding-bottom: 32px !important;\n  }\n  .v-application .py-xl-9 {\n    padding-top: 36px !important;\n    padding-bottom: 36px !important;\n  }\n  .v-application .py-xl-10 {\n    padding-top: 40px !important;\n    padding-bottom: 40px !important;\n  }\n  .v-application .py-xl-11 {\n    padding-top: 44px !important;\n    padding-bottom: 44px !important;\n  }\n  .v-application .py-xl-12 {\n    padding-top: 48px !important;\n    padding-bottom: 48px !important;\n  }\n  .v-application .py-xl-13 {\n    padding-top: 52px !important;\n    padding-bottom: 52px !important;\n  }\n  .v-application .py-xl-14 {\n    padding-top: 56px !important;\n    padding-bottom: 56px !important;\n  }\n  .v-application .py-xl-15 {\n    padding-top: 60px !important;\n    padding-bottom: 60px !important;\n  }\n  .v-application .py-xl-16 {\n    padding-top: 64px !important;\n    padding-bottom: 64px !important;\n  }\n  .v-application .pt-xl-0 {\n    padding-top: 0px !important;\n  }\n  .v-application .pt-xl-1 {\n    padding-top: 4px !important;\n  }\n  .v-application .pt-xl-2 {\n    padding-top: 8px !important;\n  }\n  .v-application .pt-xl-3 {\n    padding-top: 12px !important;\n  }\n  .v-application .pt-xl-4 {\n    padding-top: 16px !important;\n  }\n  .v-application .pt-xl-5 {\n    padding-top: 20px !important;\n  }\n  .v-application .pt-xl-6 {\n    padding-top: 24px !important;\n  }\n  .v-application .pt-xl-7 {\n    padding-top: 28px !important;\n  }\n  .v-application .pt-xl-8 {\n    padding-top: 32px !important;\n  }\n  .v-application .pt-xl-9 {\n    padding-top: 36px !important;\n  }\n  .v-application .pt-xl-10 {\n    padding-top: 40px !important;\n  }\n  .v-application .pt-xl-11 {\n    padding-top: 44px !important;\n  }\n  .v-application .pt-xl-12 {\n    padding-top: 48px !important;\n  }\n  .v-application .pt-xl-13 {\n    padding-top: 52px !important;\n  }\n  .v-application .pt-xl-14 {\n    padding-top: 56px !important;\n  }\n  .v-application .pt-xl-15 {\n    padding-top: 60px !important;\n  }\n  .v-application .pt-xl-16 {\n    padding-top: 64px !important;\n  }\n  .v-application .pr-xl-0 {\n    padding-right: 0px !important;\n  }\n  .v-application .pr-xl-1 {\n    padding-right: 4px !important;\n  }\n  .v-application .pr-xl-2 {\n    padding-right: 8px !important;\n  }\n  .v-application .pr-xl-3 {\n    padding-right: 12px !important;\n  }\n  .v-application .pr-xl-4 {\n    padding-right: 16px !important;\n  }\n  .v-application .pr-xl-5 {\n    padding-right: 20px !important;\n  }\n  .v-application .pr-xl-6 {\n    padding-right: 24px !important;\n  }\n  .v-application .pr-xl-7 {\n    padding-right: 28px !important;\n  }\n  .v-application .pr-xl-8 {\n    padding-right: 32px !important;\n  }\n  .v-application .pr-xl-9 {\n    padding-right: 36px !important;\n  }\n  .v-application .pr-xl-10 {\n    padding-right: 40px !important;\n  }\n  .v-application .pr-xl-11 {\n    padding-right: 44px !important;\n  }\n  .v-application .pr-xl-12 {\n    padding-right: 48px !important;\n  }\n  .v-application .pr-xl-13 {\n    padding-right: 52px !important;\n  }\n  .v-application .pr-xl-14 {\n    padding-right: 56px !important;\n  }\n  .v-application .pr-xl-15 {\n    padding-right: 60px !important;\n  }\n  .v-application .pr-xl-16 {\n    padding-right: 64px !important;\n  }\n  .v-application .pb-xl-0 {\n    padding-bottom: 0px !important;\n  }\n  .v-application .pb-xl-1 {\n    padding-bottom: 4px !important;\n  }\n  .v-application .pb-xl-2 {\n    padding-bottom: 8px !important;\n  }\n  .v-application .pb-xl-3 {\n    padding-bottom: 12px !important;\n  }\n  .v-application .pb-xl-4 {\n    padding-bottom: 16px !important;\n  }\n  .v-application .pb-xl-5 {\n    padding-bottom: 20px !important;\n  }\n  .v-application .pb-xl-6 {\n    padding-bottom: 24px !important;\n  }\n  .v-application .pb-xl-7 {\n    padding-bottom: 28px !important;\n  }\n  .v-application .pb-xl-8 {\n    padding-bottom: 32px !important;\n  }\n  .v-application .pb-xl-9 {\n    padding-bottom: 36px !important;\n  }\n  .v-application .pb-xl-10 {\n    padding-bottom: 40px !important;\n  }\n  .v-application .pb-xl-11 {\n    padding-bottom: 44px !important;\n  }\n  .v-application .pb-xl-12 {\n    padding-bottom: 48px !important;\n  }\n  .v-application .pb-xl-13 {\n    padding-bottom: 52px !important;\n  }\n  .v-application .pb-xl-14 {\n    padding-bottom: 56px !important;\n  }\n  .v-application .pb-xl-15 {\n    padding-bottom: 60px !important;\n  }\n  .v-application .pb-xl-16 {\n    padding-bottom: 64px !important;\n  }\n  .v-application .pl-xl-0 {\n    padding-left: 0px !important;\n  }\n  .v-application .pl-xl-1 {\n    padding-left: 4px !important;\n  }\n  .v-application .pl-xl-2 {\n    padding-left: 8px !important;\n  }\n  .v-application .pl-xl-3 {\n    padding-left: 12px !important;\n  }\n  .v-application .pl-xl-4 {\n    padding-left: 16px !important;\n  }\n  .v-application .pl-xl-5 {\n    padding-left: 20px !important;\n  }\n  .v-application .pl-xl-6 {\n    padding-left: 24px !important;\n  }\n  .v-application .pl-xl-7 {\n    padding-left: 28px !important;\n  }\n  .v-application .pl-xl-8 {\n    padding-left: 32px !important;\n  }\n  .v-application .pl-xl-9 {\n    padding-left: 36px !important;\n  }\n  .v-application .pl-xl-10 {\n    padding-left: 40px !important;\n  }\n  .v-application .pl-xl-11 {\n    padding-left: 44px !important;\n  }\n  .v-application .pl-xl-12 {\n    padding-left: 48px !important;\n  }\n  .v-application .pl-xl-13 {\n    padding-left: 52px !important;\n  }\n  .v-application .pl-xl-14 {\n    padding-left: 56px !important;\n  }\n  .v-application .pl-xl-15 {\n    padding-left: 60px !important;\n  }\n  .v-application .pl-xl-16 {\n    padding-left: 64px !important;\n  }\n  .v-application--is-ltr .ps-xl-0 {\n    padding-left: 0px !important;\n  }\n  .v-application--is-rtl .ps-xl-0 {\n    padding-right: 0px !important;\n  }\n  .v-application--is-ltr .ps-xl-1 {\n    padding-left: 4px !important;\n  }\n  .v-application--is-rtl .ps-xl-1 {\n    padding-right: 4px !important;\n  }\n  .v-application--is-ltr .ps-xl-2 {\n    padding-left: 8px !important;\n  }\n  .v-application--is-rtl .ps-xl-2 {\n    padding-right: 8px !important;\n  }\n  .v-application--is-ltr .ps-xl-3 {\n    padding-left: 12px !important;\n  }\n  .v-application--is-rtl .ps-xl-3 {\n    padding-right: 12px !important;\n  }\n  .v-application--is-ltr .ps-xl-4 {\n    padding-left: 16px !important;\n  }\n  .v-application--is-rtl .ps-xl-4 {\n    padding-right: 16px !important;\n  }\n  .v-application--is-ltr .ps-xl-5 {\n    padding-left: 20px !important;\n  }\n  .v-application--is-rtl .ps-xl-5 {\n    padding-right: 20px !important;\n  }\n  .v-application--is-ltr .ps-xl-6 {\n    padding-left: 24px !important;\n  }\n  .v-application--is-rtl .ps-xl-6 {\n    padding-right: 24px !important;\n  }\n  .v-application--is-ltr .ps-xl-7 {\n    padding-left: 28px !important;\n  }\n  .v-application--is-rtl .ps-xl-7 {\n    padding-right: 28px !important;\n  }\n  .v-application--is-ltr .ps-xl-8 {\n    padding-left: 32px !important;\n  }\n  .v-application--is-rtl .ps-xl-8 {\n    padding-right: 32px !important;\n  }\n  .v-application--is-ltr .ps-xl-9 {\n    padding-left: 36px !important;\n  }\n  .v-application--is-rtl .ps-xl-9 {\n    padding-right: 36px !important;\n  }\n  .v-application--is-ltr .ps-xl-10 {\n    padding-left: 40px !important;\n  }\n  .v-application--is-rtl .ps-xl-10 {\n    padding-right: 40px !important;\n  }\n  .v-application--is-ltr .ps-xl-11 {\n    padding-left: 44px !important;\n  }\n  .v-application--is-rtl .ps-xl-11 {\n    padding-right: 44px !important;\n  }\n  .v-application--is-ltr .ps-xl-12 {\n    padding-left: 48px !important;\n  }\n  .v-application--is-rtl .ps-xl-12 {\n    padding-right: 48px !important;\n  }\n  .v-application--is-ltr .ps-xl-13 {\n    padding-left: 52px !important;\n  }\n  .v-application--is-rtl .ps-xl-13 {\n    padding-right: 52px !important;\n  }\n  .v-application--is-ltr .ps-xl-14 {\n    padding-left: 56px !important;\n  }\n  .v-application--is-rtl .ps-xl-14 {\n    padding-right: 56px !important;\n  }\n  .v-application--is-ltr .ps-xl-15 {\n    padding-left: 60px !important;\n  }\n  .v-application--is-rtl .ps-xl-15 {\n    padding-right: 60px !important;\n  }\n  .v-application--is-ltr .ps-xl-16 {\n    padding-left: 64px !important;\n  }\n  .v-application--is-rtl .ps-xl-16 {\n    padding-right: 64px !important;\n  }\n  .v-application--is-ltr .pe-xl-0 {\n    padding-right: 0px !important;\n  }\n  .v-application--is-rtl .pe-xl-0 {\n    padding-left: 0px !important;\n  }\n  .v-application--is-ltr .pe-xl-1 {\n    padding-right: 4px !important;\n  }\n  .v-application--is-rtl .pe-xl-1 {\n    padding-left: 4px !important;\n  }\n  .v-application--is-ltr .pe-xl-2 {\n    padding-right: 8px !important;\n  }\n  .v-application--is-rtl .pe-xl-2 {\n    padding-left: 8px !important;\n  }\n  .v-application--is-ltr .pe-xl-3 {\n    padding-right: 12px !important;\n  }\n  .v-application--is-rtl .pe-xl-3 {\n    padding-left: 12px !important;\n  }\n  .v-application--is-ltr .pe-xl-4 {\n    padding-right: 16px !important;\n  }\n  .v-application--is-rtl .pe-xl-4 {\n    padding-left: 16px !important;\n  }\n  .v-application--is-ltr .pe-xl-5 {\n    padding-right: 20px !important;\n  }\n  .v-application--is-rtl .pe-xl-5 {\n    padding-left: 20px !important;\n  }\n  .v-application--is-ltr .pe-xl-6 {\n    padding-right: 24px !important;\n  }\n  .v-application--is-rtl .pe-xl-6 {\n    padding-left: 24px !important;\n  }\n  .v-application--is-ltr .pe-xl-7 {\n    padding-right: 28px !important;\n  }\n  .v-application--is-rtl .pe-xl-7 {\n    padding-left: 28px !important;\n  }\n  .v-application--is-ltr .pe-xl-8 {\n    padding-right: 32px !important;\n  }\n  .v-application--is-rtl .pe-xl-8 {\n    padding-left: 32px !important;\n  }\n  .v-application--is-ltr .pe-xl-9 {\n    padding-right: 36px !important;\n  }\n  .v-application--is-rtl .pe-xl-9 {\n    padding-left: 36px !important;\n  }\n  .v-application--is-ltr .pe-xl-10 {\n    padding-right: 40px !important;\n  }\n  .v-application--is-rtl .pe-xl-10 {\n    padding-left: 40px !important;\n  }\n  .v-application--is-ltr .pe-xl-11 {\n    padding-right: 44px !important;\n  }\n  .v-application--is-rtl .pe-xl-11 {\n    padding-left: 44px !important;\n  }\n  .v-application--is-ltr .pe-xl-12 {\n    padding-right: 48px !important;\n  }\n  .v-application--is-rtl .pe-xl-12 {\n    padding-left: 48px !important;\n  }\n  .v-application--is-ltr .pe-xl-13 {\n    padding-right: 52px !important;\n  }\n  .v-application--is-rtl .pe-xl-13 {\n    padding-left: 52px !important;\n  }\n  .v-application--is-ltr .pe-xl-14 {\n    padding-right: 56px !important;\n  }\n  .v-application--is-rtl .pe-xl-14 {\n    padding-left: 56px !important;\n  }\n  .v-application--is-ltr .pe-xl-15 {\n    padding-right: 60px !important;\n  }\n  .v-application--is-rtl .pe-xl-15 {\n    padding-left: 60px !important;\n  }\n  .v-application--is-ltr .pe-xl-16 {\n    padding-right: 64px !important;\n  }\n  .v-application--is-rtl .pe-xl-16 {\n    padding-left: 64px !important;\n  }\n  .v-application .text-xl-left {\n    text-align: left !important;\n  }\n  .v-application .text-xl-right {\n    text-align: right !important;\n  }\n  .v-application .text-xl-center {\n    text-align: center !important;\n  }\n  .v-application .text-xl-justify {\n    text-align: justify !important;\n  }\n  .v-application .text-xl-start {\n    text-align: start !important;\n  }\n  .v-application .text-xl-end {\n    text-align: end !important;\n  }\n  .v-application .text-xl-h1 {\n    font-size: 6rem !important;\n    font-weight: 300;\n    line-height: 6rem;\n    letter-spacing: -0.015625em !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-xl-h2 {\n    font-size: 3.75rem !important;\n    font-weight: 300;\n    line-height: 3.75rem;\n    letter-spacing: -0.0083333333em !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-xl-h3 {\n    font-size: 3rem !important;\n    font-weight: 400;\n    line-height: 3.125rem;\n    letter-spacing: normal !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-xl-h4 {\n    font-size: 2.125rem !important;\n    font-weight: 400;\n    line-height: 2.5rem;\n    letter-spacing: 0.0073529412em !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-xl-h5 {\n    font-size: 1.5rem !important;\n    font-weight: 400;\n    line-height: 2rem;\n    letter-spacing: normal !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-xl-h6 {\n    font-size: 1.25rem !important;\n    font-weight: 500;\n    line-height: 2rem;\n    letter-spacing: 0.0125em !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-xl-subtitle-1 {\n    font-size: 1rem !important;\n    font-weight: normal;\n    line-height: 1.75rem;\n    letter-spacing: 0.009375em !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-xl-subtitle-2 {\n    font-size: 0.875rem !important;\n    font-weight: 500;\n    line-height: 1.375rem;\n    letter-spacing: 0.0071428571em !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-xl-body-1 {\n    font-size: 1rem !important;\n    font-weight: 400;\n    line-height: 1.5rem;\n    letter-spacing: 0.03125em !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-xl-body-2 {\n    font-size: 0.875rem !important;\n    font-weight: 400;\n    line-height: 1.25rem;\n    letter-spacing: 0.0178571429em !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-xl-button {\n    font-size: 0.875rem !important;\n    font-weight: 500;\n    line-height: 2.25rem;\n    letter-spacing: 0.0892857143em !important;\n    font-family: \"Roboto\", sans-serif !important;\n    text-transform: uppercase !important;\n  }\n  .v-application .text-xl-caption {\n    font-size: 0.75rem !important;\n    font-weight: 400;\n    line-height: 1.25rem;\n    letter-spacing: 0.0333333333em !important;\n    font-family: \"Roboto\", sans-serif !important;\n  }\n  .v-application .text-xl-overline {\n    font-size: 0.75rem !important;\n    font-weight: 500;\n    line-height: 2rem;\n    letter-spacing: 0.1666666667em !important;\n    font-family: \"Roboto\", sans-serif !important;\n    text-transform: uppercase !important;\n  }\n}\n@media print {\n  .v-application .d-print-none {\n    display: none !important;\n  }\n  .v-application .d-print-inline {\n    display: inline !important;\n  }\n  .v-application .d-print-inline-block {\n    display: inline-block !important;\n  }\n  .v-application .d-print-block {\n    display: block !important;\n  }\n  .v-application .d-print-table {\n    display: table !important;\n  }\n  .v-application .d-print-table-row {\n    display: table-row !important;\n  }\n  .v-application .d-print-table-cell {\n    display: table-cell !important;\n  }\n  .v-application .d-print-flex {\n    display: flex !important;\n  }\n  .v-application .d-print-inline-flex {\n    display: inline-flex !important;\n  }\n  .v-application .float-print-none {\n    float: none !important;\n  }\n  .v-application .float-print-left {\n    float: left !important;\n  }\n  .v-application .float-print-right {\n    float: right !important;\n  }\n  .v-application--is-rtl .float-print-end {\n    float: left !important;\n  }\n  .v-application--is-rtl .float-print-start {\n    float: right !important;\n  }\n  .v-application--is-ltr .float-print-end {\n    float: right !important;\n  }\n  .v-application--is-ltr .float-print-start {\n    float: left !important;\n  }\n}", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/MainVue.vue?vue&type=style&index=0&id=5b8bc01c&lang=css&":
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/MainVue.vue?vue&type=style&index=0&id=5b8bc01c&lang=css& ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "\na {\n    text-decoration: none;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -30861,6 +31153,156 @@ var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMP
 
 /***/ }),
 
+/***/ "./node_modules/vuetify/src/components/VDataTable/VSimpleTable.sass":
+/*!**************************************************************************!*\
+  !*** ./node_modules/vuetify/src/components/VDataTable/VSimpleTable.sass ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_cjs_js_clonedRuleSet_15_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_15_use_2_sass_loader_dist_cjs_js_clonedRuleSet_15_use_3_VSimpleTable_sass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../../css-loader/dist/cjs.js??clonedRuleSet-15.use[1]!../../../../postcss-loader/dist/cjs.js??clonedRuleSet-15.use[2]!../../../../sass-loader/dist/cjs.js??clonedRuleSet-15.use[3]!./VSimpleTable.sass */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-15.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-15.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-15.use[3]!./node_modules/vuetify/src/components/VDataTable/VSimpleTable.sass");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_clonedRuleSet_15_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_15_use_2_sass_loader_dist_cjs_js_clonedRuleSet_15_use_3_VSimpleTable_sass__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_clonedRuleSet_15_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_15_use_2_sass_loader_dist_cjs_js_clonedRuleSet_15_use_3_VSimpleTable_sass__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/src/components/VFooter/VFooter.sass":
+/*!******************************************************************!*\
+  !*** ./node_modules/vuetify/src/components/VFooter/VFooter.sass ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_cjs_js_clonedRuleSet_15_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_15_use_2_sass_loader_dist_cjs_js_clonedRuleSet_15_use_3_VFooter_sass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../../css-loader/dist/cjs.js??clonedRuleSet-15.use[1]!../../../../postcss-loader/dist/cjs.js??clonedRuleSet-15.use[2]!../../../../sass-loader/dist/cjs.js??clonedRuleSet-15.use[3]!./VFooter.sass */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-15.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-15.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-15.use[3]!./node_modules/vuetify/src/components/VFooter/VFooter.sass");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_clonedRuleSet_15_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_15_use_2_sass_loader_dist_cjs_js_clonedRuleSet_15_use_3_VFooter_sass__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_clonedRuleSet_15_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_15_use_2_sass_loader_dist_cjs_js_clonedRuleSet_15_use_3_VFooter_sass__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/src/components/VGrid/VGrid.sass":
+/*!**************************************************************!*\
+  !*** ./node_modules/vuetify/src/components/VGrid/VGrid.sass ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_cjs_js_clonedRuleSet_15_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_15_use_2_sass_loader_dist_cjs_js_clonedRuleSet_15_use_3_VGrid_sass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../../css-loader/dist/cjs.js??clonedRuleSet-15.use[1]!../../../../postcss-loader/dist/cjs.js??clonedRuleSet-15.use[2]!../../../../sass-loader/dist/cjs.js??clonedRuleSet-15.use[3]!./VGrid.sass */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-15.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-15.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-15.use[3]!./node_modules/vuetify/src/components/VGrid/VGrid.sass");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_clonedRuleSet_15_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_15_use_2_sass_loader_dist_cjs_js_clonedRuleSet_15_use_3_VGrid_sass__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_clonedRuleSet_15_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_15_use_2_sass_loader_dist_cjs_js_clonedRuleSet_15_use_3_VGrid_sass__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/src/components/VGrid/_grid.sass":
+/*!**************************************************************!*\
+  !*** ./node_modules/vuetify/src/components/VGrid/_grid.sass ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_cjs_js_clonedRuleSet_15_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_15_use_2_sass_loader_dist_cjs_js_clonedRuleSet_15_use_3_grid_sass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../../css-loader/dist/cjs.js??clonedRuleSet-15.use[1]!../../../../postcss-loader/dist/cjs.js??clonedRuleSet-15.use[2]!../../../../sass-loader/dist/cjs.js??clonedRuleSet-15.use[3]!./_grid.sass */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-15.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-15.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-15.use[3]!./node_modules/vuetify/src/components/VGrid/_grid.sass");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_clonedRuleSet_15_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_15_use_2_sass_loader_dist_cjs_js_clonedRuleSet_15_use_3_grid_sass__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_clonedRuleSet_15_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_15_use_2_sass_loader_dist_cjs_js_clonedRuleSet_15_use_3_grid_sass__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/src/components/VMain/VMain.sass":
+/*!**************************************************************!*\
+  !*** ./node_modules/vuetify/src/components/VMain/VMain.sass ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_cjs_js_clonedRuleSet_15_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_15_use_2_sass_loader_dist_cjs_js_clonedRuleSet_15_use_3_VMain_sass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../../css-loader/dist/cjs.js??clonedRuleSet-15.use[1]!../../../../postcss-loader/dist/cjs.js??clonedRuleSet-15.use[2]!../../../../sass-loader/dist/cjs.js??clonedRuleSet-15.use[3]!./VMain.sass */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-15.use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-15.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-15.use[3]!./node_modules/vuetify/src/components/VMain/VMain.sass");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_clonedRuleSet_15_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_15_use_2_sass_loader_dist_cjs_js_clonedRuleSet_15_use_3_VMain_sass__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_clonedRuleSet_15_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_15_use_2_sass_loader_dist_cjs_js_clonedRuleSet_15_use_3_VMain_sass__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
 /***/ "./node_modules/vuetify/src/components/VProgressCircular/VProgressCircular.sass":
 /*!**************************************************************************************!*\
   !*** ./node_modules/vuetify/src/components/VProgressCircular/VProgressCircular.sass ***!
@@ -30978,6 +31420,36 @@ var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMP
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_clonedRuleSet_15_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_15_use_2_sass_loader_dist_cjs_js_clonedRuleSet_15_use_3_main_sass__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/MainVue.vue?vue&type=style&index=0&id=5b8bc01c&lang=css&":
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/MainVue.vue?vue&type=style&index=0&id=5b8bc01c&lang=css& ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_MainVue_vue_vue_type_style_index_0_id_5b8bc01c_lang_css___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./MainVue.vue?vue&type=style&index=0&id=5b8bc01c&lang=css& */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/MainVue.vue?vue&type=style&index=0&id=5b8bc01c&lang=css&");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_MainVue_vue_vue_type_style_index_0_id_5b8bc01c_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_MainVue_vue_vue_type_style_index_0_id_5b8bc01c_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
 
 /***/ }),
 
@@ -31260,6 +31732,84 @@ module.exports = function (list, options) {
 
 /***/ }),
 
+/***/ "./resources/js/components/Categories/List.vue":
+/*!*****************************************************!*\
+  !*** ./resources/js/components/Categories/List.vue ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _List_vue_vue_type_template_id_88b84694___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./List.vue?vue&type=template&id=88b84694& */ "./resources/js/components/Categories/List.vue?vue&type=template&id=88b84694&");
+/* harmony import */ var _List_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./List.vue?vue&type=script&lang=js& */ "./resources/js/components/Categories/List.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _List_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _List_vue_vue_type_template_id_88b84694___WEBPACK_IMPORTED_MODULE_0__.render,
+  _List_vue_vue_type_template_id_88b84694___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Categories/List.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Items/List.vue":
+/*!************************************************!*\
+  !*** ./resources/js/components/Items/List.vue ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _List_vue_vue_type_template_id_09e71850___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./List.vue?vue&type=template&id=09e71850& */ "./resources/js/components/Items/List.vue?vue&type=template&id=09e71850&");
+/* harmony import */ var _List_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./List.vue?vue&type=script&lang=js& */ "./resources/js/components/Items/List.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _List_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _List_vue_vue_type_template_id_09e71850___WEBPACK_IMPORTED_MODULE_0__.render,
+  _List_vue_vue_type_template_id_09e71850___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Items/List.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/components/MainVue.vue":
 /*!*********************************************!*\
   !*** ./resources/js/components/MainVue.vue ***!
@@ -31273,15 +31823,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _MainVue_vue_vue_type_template_id_5b8bc01c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./MainVue.vue?vue&type=template&id=5b8bc01c& */ "./resources/js/components/MainVue.vue?vue&type=template&id=5b8bc01c&");
 /* harmony import */ var _MainVue_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./MainVue.vue?vue&type=script&lang=js& */ "./resources/js/components/MainVue.vue?vue&type=script&lang=js&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _MainVue_vue_vue_type_style_index_0_id_5b8bc01c_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./MainVue.vue?vue&type=style&index=0&id=5b8bc01c&lang=css& */ "./resources/js/components/MainVue.vue?vue&type=style&index=0&id=5b8bc01c&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
+;
 
 
 /* normalize component */
-;
-var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
   _MainVue_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _MainVue_vue_vue_type_template_id_5b8bc01c___WEBPACK_IMPORTED_MODULE_0__.render,
   _MainVue_vue_vue_type_template_id_5b8bc01c___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
@@ -31299,6 +31851,38 @@ component.options.__file = "resources/js/components/MainVue.vue"
 
 /***/ }),
 
+/***/ "./resources/js/components/Categories/List.vue?vue&type=script&lang=js&":
+/*!******************************************************************************!*\
+  !*** ./resources/js/components/Categories/List.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_List_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./List.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Categories/List.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_List_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Items/List.vue?vue&type=script&lang=js&":
+/*!*************************************************************************!*\
+  !*** ./resources/js/components/Items/List.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_List_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./List.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Items/List.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_List_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
 /***/ "./resources/js/components/MainVue.vue?vue&type=script&lang=js&":
 /*!**********************************************************************!*\
   !*** ./resources/js/components/MainVue.vue?vue&type=script&lang=js& ***!
@@ -31312,6 +31896,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MainVue_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./MainVue.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/MainVue.vue?vue&type=script&lang=js&");
  /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MainVue_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/MainVue.vue?vue&type=style&index=0&id=5b8bc01c&lang=css&":
+/*!******************************************************************************************!*\
+  !*** ./resources/js/components/MainVue.vue?vue&type=style&index=0&id=5b8bc01c&lang=css& ***!
+  \******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_MainVue_vue_vue_type_style_index_0_id_5b8bc01c_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./MainVue.vue?vue&type=style&index=0&id=5b8bc01c&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/MainVue.vue?vue&type=style&index=0&id=5b8bc01c&lang=css&");
+
 
 /***/ }),
 
@@ -31422,6 +32019,1491 @@ function normalizeComponent(
     options: options
   }
 }
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-resource/dist/vue-resource.esm.js":
+/*!************************************************************!*\
+  !*** ./node_modules/vue-resource/dist/vue-resource.esm.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Http": () => (/* binding */ Http),
+/* harmony export */   "Resource": () => (/* binding */ Resource),
+/* harmony export */   "Url": () => (/* binding */ Url),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/*!
+ * vue-resource v1.5.3
+ * https://github.com/pagekit/vue-resource
+ * Released under the MIT License.
+ */
+
+/**
+ * Promises/A+ polyfill v1.1.4 (https://github.com/bramstein/promis)
+ */
+var RESOLVED = 0;
+var REJECTED = 1;
+var PENDING = 2;
+function Promise$1(executor) {
+  this.state = PENDING;
+  this.value = undefined;
+  this.deferred = [];
+  var promise = this;
+
+  try {
+    executor(function (x) {
+      promise.resolve(x);
+    }, function (r) {
+      promise.reject(r);
+    });
+  } catch (e) {
+    promise.reject(e);
+  }
+}
+
+Promise$1.reject = function (r) {
+  return new Promise$1(function (resolve, reject) {
+    reject(r);
+  });
+};
+
+Promise$1.resolve = function (x) {
+  return new Promise$1(function (resolve, reject) {
+    resolve(x);
+  });
+};
+
+Promise$1.all = function all(iterable) {
+  return new Promise$1(function (resolve, reject) {
+    var count = 0,
+        result = [];
+
+    if (iterable.length === 0) {
+      resolve(result);
+    }
+
+    function resolver(i) {
+      return function (x) {
+        result[i] = x;
+        count += 1;
+
+        if (count === iterable.length) {
+          resolve(result);
+        }
+      };
+    }
+
+    for (var i = 0; i < iterable.length; i += 1) {
+      Promise$1.resolve(iterable[i]).then(resolver(i), reject);
+    }
+  });
+};
+
+Promise$1.race = function race(iterable) {
+  return new Promise$1(function (resolve, reject) {
+    for (var i = 0; i < iterable.length; i += 1) {
+      Promise$1.resolve(iterable[i]).then(resolve, reject);
+    }
+  });
+};
+
+var p = Promise$1.prototype;
+
+p.resolve = function resolve(x) {
+  var promise = this;
+
+  if (promise.state === PENDING) {
+    if (x === promise) {
+      throw new TypeError('Promise settled with itself.');
+    }
+
+    var called = false;
+
+    try {
+      var then = x && x['then'];
+
+      if (x !== null && typeof x === 'object' && typeof then === 'function') {
+        then.call(x, function (x) {
+          if (!called) {
+            promise.resolve(x);
+          }
+
+          called = true;
+        }, function (r) {
+          if (!called) {
+            promise.reject(r);
+          }
+
+          called = true;
+        });
+        return;
+      }
+    } catch (e) {
+      if (!called) {
+        promise.reject(e);
+      }
+
+      return;
+    }
+
+    promise.state = RESOLVED;
+    promise.value = x;
+    promise.notify();
+  }
+};
+
+p.reject = function reject(reason) {
+  var promise = this;
+
+  if (promise.state === PENDING) {
+    if (reason === promise) {
+      throw new TypeError('Promise settled with itself.');
+    }
+
+    promise.state = REJECTED;
+    promise.value = reason;
+    promise.notify();
+  }
+};
+
+p.notify = function notify() {
+  var promise = this;
+  nextTick(function () {
+    if (promise.state !== PENDING) {
+      while (promise.deferred.length) {
+        var deferred = promise.deferred.shift(),
+            onResolved = deferred[0],
+            onRejected = deferred[1],
+            resolve = deferred[2],
+            reject = deferred[3];
+
+        try {
+          if (promise.state === RESOLVED) {
+            if (typeof onResolved === 'function') {
+              resolve(onResolved.call(undefined, promise.value));
+            } else {
+              resolve(promise.value);
+            }
+          } else if (promise.state === REJECTED) {
+            if (typeof onRejected === 'function') {
+              resolve(onRejected.call(undefined, promise.value));
+            } else {
+              reject(promise.value);
+            }
+          }
+        } catch (e) {
+          reject(e);
+        }
+      }
+    }
+  });
+};
+
+p.then = function then(onResolved, onRejected) {
+  var promise = this;
+  return new Promise$1(function (resolve, reject) {
+    promise.deferred.push([onResolved, onRejected, resolve, reject]);
+    promise.notify();
+  });
+};
+
+p["catch"] = function (onRejected) {
+  return this.then(undefined, onRejected);
+};
+
+/**
+ * Promise adapter.
+ */
+
+if (typeof Promise === 'undefined') {
+  window.Promise = Promise$1;
+}
+
+function PromiseObj(executor, context) {
+  if (executor instanceof Promise) {
+    this.promise = executor;
+  } else {
+    this.promise = new Promise(executor.bind(context));
+  }
+
+  this.context = context;
+}
+
+PromiseObj.all = function (iterable, context) {
+  return new PromiseObj(Promise.all(iterable), context);
+};
+
+PromiseObj.resolve = function (value, context) {
+  return new PromiseObj(Promise.resolve(value), context);
+};
+
+PromiseObj.reject = function (reason, context) {
+  return new PromiseObj(Promise.reject(reason), context);
+};
+
+PromiseObj.race = function (iterable, context) {
+  return new PromiseObj(Promise.race(iterable), context);
+};
+
+var p$1 = PromiseObj.prototype;
+
+p$1.bind = function (context) {
+  this.context = context;
+  return this;
+};
+
+p$1.then = function (fulfilled, rejected) {
+  if (fulfilled && fulfilled.bind && this.context) {
+    fulfilled = fulfilled.bind(this.context);
+  }
+
+  if (rejected && rejected.bind && this.context) {
+    rejected = rejected.bind(this.context);
+  }
+
+  return new PromiseObj(this.promise.then(fulfilled, rejected), this.context);
+};
+
+p$1["catch"] = function (rejected) {
+  if (rejected && rejected.bind && this.context) {
+    rejected = rejected.bind(this.context);
+  }
+
+  return new PromiseObj(this.promise["catch"](rejected), this.context);
+};
+
+p$1["finally"] = function (callback) {
+  return this.then(function (value) {
+    callback.call(this);
+    return value;
+  }, function (reason) {
+    callback.call(this);
+    return Promise.reject(reason);
+  });
+};
+
+/**
+ * Utility functions.
+ */
+var _ref = {},
+    hasOwnProperty = _ref.hasOwnProperty,
+    slice = [].slice,
+    debug = false,
+    ntick;
+var inBrowser = typeof window !== 'undefined';
+function Util (_ref2) {
+  var config = _ref2.config,
+      nextTick = _ref2.nextTick;
+  ntick = nextTick;
+  debug = config.debug || !config.silent;
+}
+function warn(msg) {
+  if (typeof console !== 'undefined' && debug) {
+    console.warn('[VueResource warn]: ' + msg);
+  }
+}
+function error(msg) {
+  if (typeof console !== 'undefined') {
+    console.error(msg);
+  }
+}
+function nextTick(cb, ctx) {
+  return ntick(cb, ctx);
+}
+function trim(str) {
+  return str ? str.replace(/^\s*|\s*$/g, '') : '';
+}
+function trimEnd(str, chars) {
+  if (str && chars === undefined) {
+    return str.replace(/\s+$/, '');
+  }
+
+  if (!str || !chars) {
+    return str;
+  }
+
+  return str.replace(new RegExp("[" + chars + "]+$"), '');
+}
+function toLower(str) {
+  return str ? str.toLowerCase() : '';
+}
+function toUpper(str) {
+  return str ? str.toUpperCase() : '';
+}
+var isArray = Array.isArray;
+function isString(val) {
+  return typeof val === 'string';
+}
+function isFunction(val) {
+  return typeof val === 'function';
+}
+function isObject(obj) {
+  return obj !== null && typeof obj === 'object';
+}
+function isPlainObject(obj) {
+  return isObject(obj) && Object.getPrototypeOf(obj) == Object.prototype;
+}
+function isBlob(obj) {
+  return typeof Blob !== 'undefined' && obj instanceof Blob;
+}
+function isFormData(obj) {
+  return typeof FormData !== 'undefined' && obj instanceof FormData;
+}
+function when(value, fulfilled, rejected) {
+  var promise = PromiseObj.resolve(value);
+
+  if (arguments.length < 2) {
+    return promise;
+  }
+
+  return promise.then(fulfilled, rejected);
+}
+function options(fn, obj, opts) {
+  opts = opts || {};
+
+  if (isFunction(opts)) {
+    opts = opts.call(obj);
+  }
+
+  return merge(fn.bind({
+    $vm: obj,
+    $options: opts
+  }), fn, {
+    $options: opts
+  });
+}
+function each(obj, iterator) {
+  var i, key;
+
+  if (isArray(obj)) {
+    for (i = 0; i < obj.length; i++) {
+      iterator.call(obj[i], obj[i], i);
+    }
+  } else if (isObject(obj)) {
+    for (key in obj) {
+      if (hasOwnProperty.call(obj, key)) {
+        iterator.call(obj[key], obj[key], key);
+      }
+    }
+  }
+
+  return obj;
+}
+var assign = Object.assign || _assign;
+function merge(target) {
+  var args = slice.call(arguments, 1);
+  args.forEach(function (source) {
+    _merge(target, source, true);
+  });
+  return target;
+}
+function defaults(target) {
+  var args = slice.call(arguments, 1);
+  args.forEach(function (source) {
+    for (var key in source) {
+      if (target[key] === undefined) {
+        target[key] = source[key];
+      }
+    }
+  });
+  return target;
+}
+
+function _assign(target) {
+  var args = slice.call(arguments, 1);
+  args.forEach(function (source) {
+    _merge(target, source);
+  });
+  return target;
+}
+
+function _merge(target, source, deep) {
+  for (var key in source) {
+    if (deep && (isPlainObject(source[key]) || isArray(source[key]))) {
+      if (isPlainObject(source[key]) && !isPlainObject(target[key])) {
+        target[key] = {};
+      }
+
+      if (isArray(source[key]) && !isArray(target[key])) {
+        target[key] = [];
+      }
+
+      _merge(target[key], source[key], deep);
+    } else if (source[key] !== undefined) {
+      target[key] = source[key];
+    }
+  }
+}
+
+/**
+ * Root Prefix Transform.
+ */
+function root (options$$1, next) {
+  var url = next(options$$1);
+
+  if (isString(options$$1.root) && !/^(https?:)?\//.test(url)) {
+    url = trimEnd(options$$1.root, '/') + '/' + url;
+  }
+
+  return url;
+}
+
+/**
+ * Query Parameter Transform.
+ */
+function query (options$$1, next) {
+  var urlParams = Object.keys(Url.options.params),
+      query = {},
+      url = next(options$$1);
+  each(options$$1.params, function (value, key) {
+    if (urlParams.indexOf(key) === -1) {
+      query[key] = value;
+    }
+  });
+  query = Url.params(query);
+
+  if (query) {
+    url += (url.indexOf('?') == -1 ? '?' : '&') + query;
+  }
+
+  return url;
+}
+
+/**
+ * URL Template v2.0.6 (https://github.com/bramstein/url-template)
+ */
+function expand(url, params, variables) {
+  var tmpl = parse(url),
+      expanded = tmpl.expand(params);
+
+  if (variables) {
+    variables.push.apply(variables, tmpl.vars);
+  }
+
+  return expanded;
+}
+function parse(template) {
+  var operators = ['+', '#', '.', '/', ';', '?', '&'],
+      variables = [];
+  return {
+    vars: variables,
+    expand: function expand(context) {
+      return template.replace(/\{([^{}]+)\}|([^{}]+)/g, function (_, expression, literal) {
+        if (expression) {
+          var operator = null,
+              values = [];
+
+          if (operators.indexOf(expression.charAt(0)) !== -1) {
+            operator = expression.charAt(0);
+            expression = expression.substr(1);
+          }
+
+          expression.split(/,/g).forEach(function (variable) {
+            var tmp = /([^:*]*)(?::(\d+)|(\*))?/.exec(variable);
+            values.push.apply(values, getValues(context, operator, tmp[1], tmp[2] || tmp[3]));
+            variables.push(tmp[1]);
+          });
+
+          if (operator && operator !== '+') {
+            var separator = ',';
+
+            if (operator === '?') {
+              separator = '&';
+            } else if (operator !== '#') {
+              separator = operator;
+            }
+
+            return (values.length !== 0 ? operator : '') + values.join(separator);
+          } else {
+            return values.join(',');
+          }
+        } else {
+          return encodeReserved(literal);
+        }
+      });
+    }
+  };
+}
+
+function getValues(context, operator, key, modifier) {
+  var value = context[key],
+      result = [];
+
+  if (isDefined(value) && value !== '') {
+    if (typeof value === 'string' || typeof value === 'number' || typeof value === 'boolean') {
+      value = value.toString();
+
+      if (modifier && modifier !== '*') {
+        value = value.substring(0, parseInt(modifier, 10));
+      }
+
+      result.push(encodeValue(operator, value, isKeyOperator(operator) ? key : null));
+    } else {
+      if (modifier === '*') {
+        if (Array.isArray(value)) {
+          value.filter(isDefined).forEach(function (value) {
+            result.push(encodeValue(operator, value, isKeyOperator(operator) ? key : null));
+          });
+        } else {
+          Object.keys(value).forEach(function (k) {
+            if (isDefined(value[k])) {
+              result.push(encodeValue(operator, value[k], k));
+            }
+          });
+        }
+      } else {
+        var tmp = [];
+
+        if (Array.isArray(value)) {
+          value.filter(isDefined).forEach(function (value) {
+            tmp.push(encodeValue(operator, value));
+          });
+        } else {
+          Object.keys(value).forEach(function (k) {
+            if (isDefined(value[k])) {
+              tmp.push(encodeURIComponent(k));
+              tmp.push(encodeValue(operator, value[k].toString()));
+            }
+          });
+        }
+
+        if (isKeyOperator(operator)) {
+          result.push(encodeURIComponent(key) + '=' + tmp.join(','));
+        } else if (tmp.length !== 0) {
+          result.push(tmp.join(','));
+        }
+      }
+    }
+  } else {
+    if (operator === ';') {
+      result.push(encodeURIComponent(key));
+    } else if (value === '' && (operator === '&' || operator === '?')) {
+      result.push(encodeURIComponent(key) + '=');
+    } else if (value === '') {
+      result.push('');
+    }
+  }
+
+  return result;
+}
+
+function isDefined(value) {
+  return value !== undefined && value !== null;
+}
+
+function isKeyOperator(operator) {
+  return operator === ';' || operator === '&' || operator === '?';
+}
+
+function encodeValue(operator, value, key) {
+  value = operator === '+' || operator === '#' ? encodeReserved(value) : encodeURIComponent(value);
+
+  if (key) {
+    return encodeURIComponent(key) + '=' + value;
+  } else {
+    return value;
+  }
+}
+
+function encodeReserved(str) {
+  return str.split(/(%[0-9A-Fa-f]{2})/g).map(function (part) {
+    if (!/%[0-9A-Fa-f]/.test(part)) {
+      part = encodeURI(part);
+    }
+
+    return part;
+  }).join('');
+}
+
+/**
+ * URL Template (RFC 6570) Transform.
+ */
+function template (options) {
+  var variables = [],
+      url = expand(options.url, options.params, variables);
+  variables.forEach(function (key) {
+    delete options.params[key];
+  });
+  return url;
+}
+
+/**
+ * Service for URL templating.
+ */
+function Url(url, params) {
+  var self = this || {},
+      options$$1 = url,
+      transform;
+
+  if (isString(url)) {
+    options$$1 = {
+      url: url,
+      params: params
+    };
+  }
+
+  options$$1 = merge({}, Url.options, self.$options, options$$1);
+  Url.transforms.forEach(function (handler) {
+    if (isString(handler)) {
+      handler = Url.transform[handler];
+    }
+
+    if (isFunction(handler)) {
+      transform = factory(handler, transform, self.$vm);
+    }
+  });
+  return transform(options$$1);
+}
+/**
+ * Url options.
+ */
+
+Url.options = {
+  url: '',
+  root: null,
+  params: {}
+};
+/**
+ * Url transforms.
+ */
+
+Url.transform = {
+  template: template,
+  query: query,
+  root: root
+};
+Url.transforms = ['template', 'query', 'root'];
+/**
+ * Encodes a Url parameter string.
+ *
+ * @param {Object} obj
+ */
+
+Url.params = function (obj) {
+  var params = [],
+      escape = encodeURIComponent;
+
+  params.add = function (key, value) {
+    if (isFunction(value)) {
+      value = value();
+    }
+
+    if (value === null) {
+      value = '';
+    }
+
+    this.push(escape(key) + '=' + escape(value));
+  };
+
+  serialize(params, obj);
+  return params.join('&').replace(/%20/g, '+');
+};
+/**
+ * Parse a URL and return its components.
+ *
+ * @param {String} url
+ */
+
+
+Url.parse = function (url) {
+  var el = document.createElement('a');
+
+  if (document.documentMode) {
+    el.href = url;
+    url = el.href;
+  }
+
+  el.href = url;
+  return {
+    href: el.href,
+    protocol: el.protocol ? el.protocol.replace(/:$/, '') : '',
+    port: el.port,
+    host: el.host,
+    hostname: el.hostname,
+    pathname: el.pathname.charAt(0) === '/' ? el.pathname : '/' + el.pathname,
+    search: el.search ? el.search.replace(/^\?/, '') : '',
+    hash: el.hash ? el.hash.replace(/^#/, '') : ''
+  };
+};
+
+function factory(handler, next, vm) {
+  return function (options$$1) {
+    return handler.call(vm, options$$1, next);
+  };
+}
+
+function serialize(params, obj, scope) {
+  var array = isArray(obj),
+      plain = isPlainObject(obj),
+      hash;
+  each(obj, function (value, key) {
+    hash = isObject(value) || isArray(value);
+
+    if (scope) {
+      key = scope + '[' + (plain || hash ? key : '') + ']';
+    }
+
+    if (!scope && array) {
+      params.add(value.name, value.value);
+    } else if (hash) {
+      serialize(params, value, key);
+    } else {
+      params.add(key, value);
+    }
+  });
+}
+
+/**
+ * XDomain client (Internet Explorer).
+ */
+function xdrClient (request) {
+  return new PromiseObj(function (resolve) {
+    var xdr = new XDomainRequest(),
+        handler = function handler(_ref) {
+      var type = _ref.type;
+      var status = 0;
+
+      if (type === 'load') {
+        status = 200;
+      } else if (type === 'error') {
+        status = 500;
+      }
+
+      resolve(request.respondWith(xdr.responseText, {
+        status: status
+      }));
+    };
+
+    request.abort = function () {
+      return xdr.abort();
+    };
+
+    xdr.open(request.method, request.getUrl());
+
+    if (request.timeout) {
+      xdr.timeout = request.timeout;
+    }
+
+    xdr.onload = handler;
+    xdr.onabort = handler;
+    xdr.onerror = handler;
+    xdr.ontimeout = handler;
+
+    xdr.onprogress = function () {};
+
+    xdr.send(request.getBody());
+  });
+}
+
+/**
+ * CORS Interceptor.
+ */
+var SUPPORTS_CORS = inBrowser && 'withCredentials' in new XMLHttpRequest();
+function cors (request) {
+  if (inBrowser) {
+    var orgUrl = Url.parse(location.href);
+    var reqUrl = Url.parse(request.getUrl());
+
+    if (reqUrl.protocol !== orgUrl.protocol || reqUrl.host !== orgUrl.host) {
+      request.crossOrigin = true;
+      request.emulateHTTP = false;
+
+      if (!SUPPORTS_CORS) {
+        request.client = xdrClient;
+      }
+    }
+  }
+}
+
+/**
+ * Form data Interceptor.
+ */
+function form (request) {
+  if (isFormData(request.body)) {
+    request.headers["delete"]('Content-Type');
+  } else if (isObject(request.body) && request.emulateJSON) {
+    request.body = Url.params(request.body);
+    request.headers.set('Content-Type', 'application/x-www-form-urlencoded');
+  }
+}
+
+/**
+ * JSON Interceptor.
+ */
+function json (request) {
+  var type = request.headers.get('Content-Type') || '';
+
+  if (isObject(request.body) && type.indexOf('application/json') === 0) {
+    request.body = JSON.stringify(request.body);
+  }
+
+  return function (response) {
+    return response.bodyText ? when(response.text(), function (text) {
+      var type = response.headers.get('Content-Type') || '';
+
+      if (type.indexOf('application/json') === 0 || isJson(text)) {
+        try {
+          response.body = JSON.parse(text);
+        } catch (e) {
+          response.body = null;
+        }
+      } else {
+        response.body = text;
+      }
+
+      return response;
+    }) : response;
+  };
+}
+
+function isJson(str) {
+  var start = str.match(/^\s*(\[|\{)/);
+  var end = {
+    '[': /]\s*$/,
+    '{': /}\s*$/
+  };
+  return start && end[start[1]].test(str);
+}
+
+/**
+ * JSONP client (Browser).
+ */
+function jsonpClient (request) {
+  return new PromiseObj(function (resolve) {
+    var name = request.jsonp || 'callback',
+        callback = request.jsonpCallback || '_jsonp' + Math.random().toString(36).substr(2),
+        body = null,
+        handler,
+        script;
+
+    handler = function handler(_ref) {
+      var type = _ref.type;
+      var status = 0;
+
+      if (type === 'load' && body !== null) {
+        status = 200;
+      } else if (type === 'error') {
+        status = 500;
+      }
+
+      if (status && window[callback]) {
+        delete window[callback];
+        document.body.removeChild(script);
+      }
+
+      resolve(request.respondWith(body, {
+        status: status
+      }));
+    };
+
+    window[callback] = function (result) {
+      body = JSON.stringify(result);
+    };
+
+    request.abort = function () {
+      handler({
+        type: 'abort'
+      });
+    };
+
+    request.params[name] = callback;
+
+    if (request.timeout) {
+      setTimeout(request.abort, request.timeout);
+    }
+
+    script = document.createElement('script');
+    script.src = request.getUrl();
+    script.type = 'text/javascript';
+    script.async = true;
+    script.onload = handler;
+    script.onerror = handler;
+    document.body.appendChild(script);
+  });
+}
+
+/**
+ * JSONP Interceptor.
+ */
+function jsonp (request) {
+  if (request.method == 'JSONP') {
+    request.client = jsonpClient;
+  }
+}
+
+/**
+ * Before Interceptor.
+ */
+function before (request) {
+  if (isFunction(request.before)) {
+    request.before.call(this, request);
+  }
+}
+
+/**
+ * HTTP method override Interceptor.
+ */
+function method (request) {
+  if (request.emulateHTTP && /^(PUT|PATCH|DELETE)$/i.test(request.method)) {
+    request.headers.set('X-HTTP-Method-Override', request.method);
+    request.method = 'POST';
+  }
+}
+
+/**
+ * Header Interceptor.
+ */
+function header (request) {
+  var headers = assign({}, Http.headers.common, !request.crossOrigin ? Http.headers.custom : {}, Http.headers[toLower(request.method)]);
+  each(headers, function (value, name) {
+    if (!request.headers.has(name)) {
+      request.headers.set(name, value);
+    }
+  });
+}
+
+/**
+ * XMLHttp client (Browser).
+ */
+function xhrClient (request) {
+  return new PromiseObj(function (resolve) {
+    var xhr = new XMLHttpRequest(),
+        handler = function handler(event) {
+      var response = request.respondWith('response' in xhr ? xhr.response : xhr.responseText, {
+        status: xhr.status === 1223 ? 204 : xhr.status,
+        // IE9 status bug
+        statusText: xhr.status === 1223 ? 'No Content' : trim(xhr.statusText)
+      });
+      each(trim(xhr.getAllResponseHeaders()).split('\n'), function (row) {
+        response.headers.append(row.slice(0, row.indexOf(':')), row.slice(row.indexOf(':') + 1));
+      });
+      resolve(response);
+    };
+
+    request.abort = function () {
+      return xhr.abort();
+    };
+
+    xhr.open(request.method, request.getUrl(), true);
+
+    if (request.timeout) {
+      xhr.timeout = request.timeout;
+    }
+
+    if (request.responseType && 'responseType' in xhr) {
+      xhr.responseType = request.responseType;
+    }
+
+    if (request.withCredentials || request.credentials) {
+      xhr.withCredentials = true;
+    }
+
+    if (!request.crossOrigin) {
+      request.headers.set('X-Requested-With', 'XMLHttpRequest');
+    } // deprecated use downloadProgress
+
+
+    if (isFunction(request.progress) && request.method === 'GET') {
+      xhr.addEventListener('progress', request.progress);
+    }
+
+    if (isFunction(request.downloadProgress)) {
+      xhr.addEventListener('progress', request.downloadProgress);
+    } // deprecated use uploadProgress
+
+
+    if (isFunction(request.progress) && /^(POST|PUT)$/i.test(request.method)) {
+      xhr.upload.addEventListener('progress', request.progress);
+    }
+
+    if (isFunction(request.uploadProgress) && xhr.upload) {
+      xhr.upload.addEventListener('progress', request.uploadProgress);
+    }
+
+    request.headers.forEach(function (value, name) {
+      xhr.setRequestHeader(name, value);
+    });
+    xhr.onload = handler;
+    xhr.onabort = handler;
+    xhr.onerror = handler;
+    xhr.ontimeout = handler;
+    xhr.send(request.getBody());
+  });
+}
+
+/**
+ * Http client (Node).
+ */
+function nodeClient (request) {
+  var client = __webpack_require__(/*! got */ "?3cb3");
+
+  return new PromiseObj(function (resolve) {
+    var url = request.getUrl();
+    var body = request.getBody();
+    var method = request.method;
+    var headers = {},
+        handler;
+    request.headers.forEach(function (value, name) {
+      headers[name] = value;
+    });
+    client(url, {
+      body: body,
+      method: method,
+      headers: headers
+    }).then(handler = function handler(resp) {
+      var response = request.respondWith(resp.body, {
+        status: resp.statusCode,
+        statusText: trim(resp.statusMessage)
+      });
+      each(resp.headers, function (value, name) {
+        response.headers.set(name, value);
+      });
+      resolve(response);
+    }, function (error$$1) {
+      return handler(error$$1.response);
+    });
+  });
+}
+
+/**
+ * Base client.
+ */
+function Client (context) {
+  var reqHandlers = [sendRequest],
+      resHandlers = [];
+
+  if (!isObject(context)) {
+    context = null;
+  }
+
+  function Client(request) {
+    while (reqHandlers.length) {
+      var handler = reqHandlers.pop();
+
+      if (isFunction(handler)) {
+        var _ret = function () {
+          var response = void 0,
+              next = void 0;
+          response = handler.call(context, request, function (val) {
+            return next = val;
+          }) || next;
+
+          if (isObject(response)) {
+            return {
+              v: new PromiseObj(function (resolve, reject) {
+                resHandlers.forEach(function (handler) {
+                  response = when(response, function (response) {
+                    return handler.call(context, response) || response;
+                  }, reject);
+                });
+                when(response, resolve, reject);
+              }, context)
+            };
+          }
+
+          if (isFunction(response)) {
+            resHandlers.unshift(response);
+          }
+        }();
+
+        if (typeof _ret === "object") return _ret.v;
+      } else {
+        warn("Invalid interceptor of type " + typeof handler + ", must be a function");
+      }
+    }
+  }
+
+  Client.use = function (handler) {
+    reqHandlers.push(handler);
+  };
+
+  return Client;
+}
+
+function sendRequest(request) {
+  var client = request.client || (inBrowser ? xhrClient : nodeClient);
+  return client(request);
+}
+
+/**
+ * HTTP Headers.
+ */
+
+var Headers = /*#__PURE__*/function () {
+  function Headers(headers) {
+    var _this = this;
+
+    this.map = {};
+    each(headers, function (value, name) {
+      return _this.append(name, value);
+    });
+  }
+
+  var _proto = Headers.prototype;
+
+  _proto.has = function has(name) {
+    return getName(this.map, name) !== null;
+  };
+
+  _proto.get = function get(name) {
+    var list = this.map[getName(this.map, name)];
+    return list ? list.join() : null;
+  };
+
+  _proto.getAll = function getAll(name) {
+    return this.map[getName(this.map, name)] || [];
+  };
+
+  _proto.set = function set(name, value) {
+    this.map[normalizeName(getName(this.map, name) || name)] = [trim(value)];
+  };
+
+  _proto.append = function append(name, value) {
+    var list = this.map[getName(this.map, name)];
+
+    if (list) {
+      list.push(trim(value));
+    } else {
+      this.set(name, value);
+    }
+  };
+
+  _proto["delete"] = function _delete(name) {
+    delete this.map[getName(this.map, name)];
+  };
+
+  _proto.deleteAll = function deleteAll() {
+    this.map = {};
+  };
+
+  _proto.forEach = function forEach(callback, thisArg) {
+    var _this2 = this;
+
+    each(this.map, function (list, name) {
+      each(list, function (value) {
+        return callback.call(thisArg, value, name, _this2);
+      });
+    });
+  };
+
+  return Headers;
+}();
+
+function getName(map, name) {
+  return Object.keys(map).reduce(function (prev, curr) {
+    return toLower(name) === toLower(curr) ? curr : prev;
+  }, null);
+}
+
+function normalizeName(name) {
+  if (/[^a-z0-9\-#$%&'*+.^_`|~]/i.test(name)) {
+    throw new TypeError('Invalid character in header field name');
+  }
+
+  return trim(name);
+}
+
+/**
+ * HTTP Response.
+ */
+
+var Response = /*#__PURE__*/function () {
+  function Response(body, _ref) {
+    var url = _ref.url,
+        headers = _ref.headers,
+        status = _ref.status,
+        statusText = _ref.statusText;
+    this.url = url;
+    this.ok = status >= 200 && status < 300;
+    this.status = status || 0;
+    this.statusText = statusText || '';
+    this.headers = new Headers(headers);
+    this.body = body;
+
+    if (isString(body)) {
+      this.bodyText = body;
+    } else if (isBlob(body)) {
+      this.bodyBlob = body;
+
+      if (isBlobText(body)) {
+        this.bodyText = blobText(body);
+      }
+    }
+  }
+
+  var _proto = Response.prototype;
+
+  _proto.blob = function blob() {
+    return when(this.bodyBlob);
+  };
+
+  _proto.text = function text() {
+    return when(this.bodyText);
+  };
+
+  _proto.json = function json() {
+    return when(this.text(), function (text) {
+      return JSON.parse(text);
+    });
+  };
+
+  return Response;
+}();
+Object.defineProperty(Response.prototype, 'data', {
+  get: function get() {
+    return this.body;
+  },
+  set: function set(body) {
+    this.body = body;
+  }
+});
+
+function blobText(body) {
+  return new PromiseObj(function (resolve) {
+    var reader = new FileReader();
+    reader.readAsText(body);
+
+    reader.onload = function () {
+      resolve(reader.result);
+    };
+  });
+}
+
+function isBlobText(body) {
+  return body.type.indexOf('text') === 0 || body.type.indexOf('json') !== -1;
+}
+
+/**
+ * HTTP Request.
+ */
+
+var Request = /*#__PURE__*/function () {
+  function Request(options$$1) {
+    this.body = null;
+    this.params = {};
+    assign(this, options$$1, {
+      method: toUpper(options$$1.method || 'GET')
+    });
+
+    if (!(this.headers instanceof Headers)) {
+      this.headers = new Headers(this.headers);
+    }
+  }
+
+  var _proto = Request.prototype;
+
+  _proto.getUrl = function getUrl() {
+    return Url(this);
+  };
+
+  _proto.getBody = function getBody() {
+    return this.body;
+  };
+
+  _proto.respondWith = function respondWith(body, options$$1) {
+    return new Response(body, assign(options$$1 || {}, {
+      url: this.getUrl()
+    }));
+  };
+
+  return Request;
+}();
+
+/**
+ * Service for sending network requests.
+ */
+var COMMON_HEADERS = {
+  'Accept': 'application/json, text/plain, */*'
+};
+var JSON_CONTENT_TYPE = {
+  'Content-Type': 'application/json;charset=utf-8'
+};
+function Http(options$$1) {
+  var self = this || {},
+      client = Client(self.$vm);
+  defaults(options$$1 || {}, self.$options, Http.options);
+  Http.interceptors.forEach(function (handler) {
+    if (isString(handler)) {
+      handler = Http.interceptor[handler];
+    }
+
+    if (isFunction(handler)) {
+      client.use(handler);
+    }
+  });
+  return client(new Request(options$$1)).then(function (response) {
+    return response.ok ? response : PromiseObj.reject(response);
+  }, function (response) {
+    if (response instanceof Error) {
+      error(response);
+    }
+
+    return PromiseObj.reject(response);
+  });
+}
+Http.options = {};
+Http.headers = {
+  put: JSON_CONTENT_TYPE,
+  post: JSON_CONTENT_TYPE,
+  patch: JSON_CONTENT_TYPE,
+  "delete": JSON_CONTENT_TYPE,
+  common: COMMON_HEADERS,
+  custom: {}
+};
+Http.interceptor = {
+  before: before,
+  method: method,
+  jsonp: jsonp,
+  json: json,
+  form: form,
+  header: header,
+  cors: cors
+};
+Http.interceptors = ['before', 'method', 'jsonp', 'json', 'form', 'header', 'cors'];
+['get', 'delete', 'head', 'jsonp'].forEach(function (method$$1) {
+  Http[method$$1] = function (url, options$$1) {
+    return this(assign(options$$1 || {}, {
+      url: url,
+      method: method$$1
+    }));
+  };
+});
+['post', 'put', 'patch'].forEach(function (method$$1) {
+  Http[method$$1] = function (url, body, options$$1) {
+    return this(assign(options$$1 || {}, {
+      url: url,
+      method: method$$1,
+      body: body
+    }));
+  };
+});
+
+/**
+ * Service for interacting with RESTful services.
+ */
+function Resource(url, params, actions, options$$1) {
+  var self = this || {},
+      resource = {};
+  actions = assign({}, Resource.actions, actions);
+  each(actions, function (action, name) {
+    action = merge({
+      url: url,
+      params: assign({}, params)
+    }, options$$1, action);
+
+    resource[name] = function () {
+      return (self.$http || Http)(opts(action, arguments));
+    };
+  });
+  return resource;
+}
+
+function opts(action, args) {
+  var options$$1 = assign({}, action),
+      params = {},
+      body;
+
+  switch (args.length) {
+    case 2:
+      params = args[0];
+      body = args[1];
+      break;
+
+    case 1:
+      if (/^(POST|PUT|PATCH)$/i.test(options$$1.method)) {
+        body = args[0];
+      } else {
+        params = args[0];
+      }
+
+      break;
+
+    case 0:
+      break;
+
+    default:
+      throw 'Expected up to 2 arguments [params, body], got ' + args.length + ' arguments';
+  }
+
+  options$$1.body = body;
+  options$$1.params = assign({}, options$$1.params, params);
+  return options$$1;
+}
+
+Resource.actions = {
+  get: {
+    method: 'GET'
+  },
+  save: {
+    method: 'POST'
+  },
+  query: {
+    method: 'GET'
+  },
+  update: {
+    method: 'PUT'
+  },
+  remove: {
+    method: 'DELETE'
+  },
+  "delete": {
+    method: 'DELETE'
+  }
+};
+
+/**
+ * Install plugin.
+ */
+
+function plugin(Vue) {
+  if (plugin.installed) {
+    return;
+  }
+
+  Util(Vue);
+  Vue.url = Url;
+  Vue.http = Http;
+  Vue.resource = Resource;
+  Vue.Promise = PromiseObj;
+  Object.defineProperties(Vue.prototype, {
+    $url: {
+      get: function get() {
+        return options(Vue.url, this, this.$options.url);
+      }
+    },
+    $http: {
+      get: function get() {
+        return options(Vue.http, this, this.$options.http);
+      }
+    },
+    $resource: {
+      get: function get() {
+        return Vue.resource.bind(this);
+      }
+    },
+    $promise: {
+      get: function get() {
+        var _this = this;
+
+        return function (executor) {
+          return new Vue.Promise(executor, _this);
+        };
+      }
+    }
+  });
+}
+
+if (typeof window !== 'undefined' && window.Vue && !window.Vue.resource) {
+  window.Vue.use(plugin);
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (plugin);
+
 
 
 /***/ }),
@@ -46501,6 +48583,80 @@ Vue.compile = compileToFunctions;
 
 /***/ }),
 
+/***/ "./node_modules/vuetify-loader/lib/loader.js??ruleSet[1].rules[0].use!./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Categories/List.vue?vue&type=template&id=88b84694&":
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vuetify-loader/lib/loader.js??ruleSet[1].rules[0].use!./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Categories/List.vue?vue&type=template&id=88b84694& ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var vuetify_lib_components_VApp__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuetify/lib/components/VApp */ "./node_modules/vuetify/lib/components/VApp/VApp.js");
+/* harmony import */ var vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vuetify/lib/components/VGrid */ "./node_modules/vuetify/lib/components/VGrid/VContainer.js");
+
+
+
+var render = function render() {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c(vuetify_lib_components_VApp__WEBPACK_IMPORTED_MODULE_0__["default"], [_c(vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_1__["default"], [_vm._v("\n        Categories\n    ")]), _vm._v(" "), _c("router-view")], 1);
+};
+
+var staticRenderFns = [];
+render._withStripped = true;
+
+
+/***/ }),
+
+/***/ "./node_modules/vuetify-loader/lib/loader.js??ruleSet[1].rules[0].use!./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Items/List.vue?vue&type=template&id=09e71850&":
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vuetify-loader/lib/loader.js??ruleSet[1].rules[0].use!./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Items/List.vue?vue&type=template&id=09e71850& ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var vuetify_lib_components_VApp__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuetify/lib/components/VApp */ "./node_modules/vuetify/lib/components/VApp/VApp.js");
+/* harmony import */ var vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vuetify/lib/components/VGrid */ "./node_modules/vuetify/lib/components/VGrid/VContainer.js");
+/* harmony import */ var vuetify_lib_components_VDataTable__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vuetify/lib/components/VDataTable */ "./node_modules/vuetify/lib/components/VDataTable/VSimpleTable.js");
+
+
+
+
+var render = function render() {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c(vuetify_lib_components_VApp__WEBPACK_IMPORTED_MODULE_0__["default"], [_c(vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_1__["default"], [_c(vuetify_lib_components_VDataTable__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    scopedSlots: _vm._u([{
+      key: "default",
+      fn: function fn() {
+        return [_c("thead", [_c("tr", [_c("th", [_vm._v("Lp")]), _vm._v(" "), _c("th", [_vm._v("Nazwa")]), _vm._v(" "), _c("th", [_vm._v("Cena")]), _vm._v(" "), _c("th", [_vm._v("Kategoria")]), _vm._v(" "), _c("th", [_vm._v("Usuń")])])]), _vm._v(" "), _c("tbody", _vm._l(_vm.items, function (item, index) {
+          return _c("tr", {
+            key: item.id
+          }, [_c("td", [_vm._v(_vm._s(index + 1))]), _vm._v(" "), _c("td", [_vm._v(_vm._s(item.name))]), _vm._v(" "), _c("td", [_vm._v(_vm._s(item.price))]), _vm._v(" "), _c("td", [_vm._v(_vm._s(item.category.name))]), _vm._v(" "), _c("td", [_vm._v("Usuń")])]);
+        }), 0)];
+      },
+      proxy: true
+    }])
+  })], 1)], 1);
+};
+
+var staticRenderFns = [];
+render._withStripped = true;
+
+
+/***/ }),
+
 /***/ "./node_modules/vuetify-loader/lib/loader.js??ruleSet[1].rules[0].use!./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/MainVue.vue?vue&type=template&id=5b8bc01c&":
 /*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vuetify-loader/lib/loader.js??ruleSet[1].rules[0].use!./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/MainVue.vue?vue&type=template&id=5b8bc01c& ***!
@@ -46514,7 +48670,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var vuetify_lib_components_VApp__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuetify/lib/components/VApp */ "./node_modules/vuetify/lib/components/VApp/VApp.js");
-/* harmony import */ var vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vuetify/lib/components/VBtn */ "./node_modules/vuetify/lib/components/VBtn/VBtn.js");
+/* harmony import */ var vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vuetify/lib/components/VBtn */ "./node_modules/vuetify/lib/components/VBtn/VBtn.js");
+/* harmony import */ var vuetify_lib_components_VFooter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vuetify/lib/components/VFooter */ "./node_modules/vuetify/lib/components/VFooter/VFooter.js");
+/* harmony import */ var vuetify_lib_components_VMain__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vuetify/lib/components/VMain */ "./node_modules/vuetify/lib/components/VMain/VMain.js");
+
+
 
 
 
@@ -46522,13 +48682,57 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _c(vuetify_lib_components_VApp__WEBPACK_IMPORTED_MODULE_0__["default"], [_c(vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    staticClass: "primary"
-  }, [_vm._v("test")])], 1);
+  return _c(vuetify_lib_components_VApp__WEBPACK_IMPORTED_MODULE_0__["default"], [_c(vuetify_lib_components_VFooter__WEBPACK_IMPORTED_MODULE_1__["default"], [_c("router-link", {
+    attrs: {
+      to: "/items/list"
+    }
+  }, [_c(vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    staticClass: "primary mx-4"
+  }, [_vm._v("Przedmioty")])], 1), _vm._v(" "), _c("router-link", {
+    attrs: {
+      to: "/categories/list"
+    }
+  }, [_c(vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    staticClass: "primary red--text mx-4"
+  }, [_vm._v("Kategorie")])], 1)], 1), _vm._v(" "), _c(vuetify_lib_components_VMain__WEBPACK_IMPORTED_MODULE_3__["default"]), _vm._v(" "), _c("router-view")], 1);
 };
 
 var staticRenderFns = [];
 render._withStripped = true;
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Categories/List.vue?vue&type=template&id=88b84694&":
+/*!************************************************************************************!*\
+  !*** ./resources/js/components/Categories/List.vue?vue&type=template&id=88b84694& ***!
+  \************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vuetify_loader_lib_loader_js_ruleSet_1_rules_0_use_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_3_node_modules_vue_loader_lib_index_js_vue_loader_options_List_vue_vue_type_template_id_88b84694___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vuetify_loader_lib_loader_js_ruleSet_1_rules_0_use_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_3_node_modules_vue_loader_lib_index_js_vue_loader_options_List_vue_vue_type_template_id_88b84694___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vuetify_loader_lib_loader_js_ruleSet_1_rules_0_use_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_3_node_modules_vue_loader_lib_index_js_vue_loader_options_List_vue_vue_type_template_id_88b84694___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vuetify-loader/lib/loader.js??ruleSet[1].rules[0].use!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./List.vue?vue&type=template&id=88b84694& */ "./node_modules/vuetify-loader/lib/loader.js??ruleSet[1].rules[0].use!./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Categories/List.vue?vue&type=template&id=88b84694&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Items/List.vue?vue&type=template&id=09e71850&":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/components/Items/List.vue?vue&type=template&id=09e71850& ***!
+  \*******************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vuetify_loader_lib_loader_js_ruleSet_1_rules_0_use_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_3_node_modules_vue_loader_lib_index_js_vue_loader_options_List_vue_vue_type_template_id_09e71850___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vuetify_loader_lib_loader_js_ruleSet_1_rules_0_use_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_3_node_modules_vue_loader_lib_index_js_vue_loader_options_List_vue_vue_type_template_id_09e71850___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vuetify_loader_lib_loader_js_ruleSet_1_rules_0_use_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_3_node_modules_vue_loader_lib_index_js_vue_loader_options_List_vue_vue_type_template_id_09e71850___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vuetify-loader/lib/loader.js??ruleSet[1].rules[0].use!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./List.vue?vue&type=template&id=09e71850& */ "./node_modules/vuetify-loader/lib/loader.js??ruleSet[1].rules[0].use!./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Items/List.vue?vue&type=template&id=09e71850&");
 
 
 /***/ }),
@@ -93261,6 +95465,396 @@ const baseMixins = (0,_util_mixins__WEBPACK_IMPORTED_MODULE_1__["default"])(_VSh
 
 /***/ }),
 
+/***/ "./node_modules/vuetify/lib/components/VDataTable/VSimpleTable.js":
+/*!************************************************************************!*\
+  !*** ./node_modules/vuetify/lib/components/VDataTable/VSimpleTable.js ***!
+  \************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _src_components_VDataTable_VSimpleTable_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../src/components/VDataTable/VSimpleTable.sass */ "./node_modules/vuetify/src/components/VDataTable/VSimpleTable.sass");
+/* harmony import */ var _util_helpers__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../util/helpers */ "./node_modules/vuetify/lib/util/helpers.js");
+/* harmony import */ var _mixins_themeable__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../mixins/themeable */ "./node_modules/vuetify/lib/mixins/themeable/index.js");
+/* harmony import */ var _util_mixins__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../util/mixins */ "./node_modules/vuetify/lib/util/mixins.js");
+
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_util_mixins__WEBPACK_IMPORTED_MODULE_1__["default"])(_mixins_themeable__WEBPACK_IMPORTED_MODULE_2__["default"]).extend({
+  name: 'v-simple-table',
+  props: {
+    dense: Boolean,
+    fixedHeader: Boolean,
+    height: [Number, String]
+  },
+  computed: {
+    classes() {
+      return {
+        'v-data-table--dense': this.dense,
+        'v-data-table--fixed-height': !!this.height && !this.fixedHeader,
+        'v-data-table--fixed-header': this.fixedHeader,
+        'v-data-table--has-top': !!this.$slots.top,
+        'v-data-table--has-bottom': !!this.$slots.bottom,
+        ...this.themeClasses
+      };
+    }
+
+  },
+  methods: {
+    genWrapper() {
+      return this.$slots.wrapper || this.$createElement('div', {
+        staticClass: 'v-data-table__wrapper',
+        style: {
+          height: (0,_util_helpers__WEBPACK_IMPORTED_MODULE_3__.convertToUnit)(this.height)
+        }
+      }, [this.$createElement('table', this.$slots.default)]);
+    }
+
+  },
+
+  render(h) {
+    return h('div', {
+      staticClass: 'v-data-table',
+      class: this.classes
+    }, [this.$slots.top, this.genWrapper(), this.$slots.bottom]);
+  }
+
+}));
+//# sourceMappingURL=VSimpleTable.js.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/components/VFooter/VFooter.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/vuetify/lib/components/VFooter/VFooter.js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _src_components_VFooter_VFooter_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../src/components/VFooter/VFooter.sass */ "./node_modules/vuetify/src/components/VFooter/VFooter.sass");
+/* harmony import */ var _VSheet_VSheet__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../VSheet/VSheet */ "./node_modules/vuetify/lib/components/VSheet/VSheet.js");
+/* harmony import */ var _mixins_applicationable__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../mixins/applicationable */ "./node_modules/vuetify/lib/mixins/applicationable/index.js");
+/* harmony import */ var _mixins_ssr_bootable__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../mixins/ssr-bootable */ "./node_modules/vuetify/lib/mixins/ssr-bootable/index.js");
+/* harmony import */ var _util_mixins__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../util/mixins */ "./node_modules/vuetify/lib/util/mixins.js");
+/* harmony import */ var _util_helpers__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../util/helpers */ "./node_modules/vuetify/lib/util/helpers.js");
+// Styles
+ // Components
+
+ // Mixins
+
+
+ // Utilities
+
+
+
+/* @vue/component */
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_util_mixins__WEBPACK_IMPORTED_MODULE_1__["default"])(_VSheet_VSheet__WEBPACK_IMPORTED_MODULE_2__["default"], (0,_mixins_applicationable__WEBPACK_IMPORTED_MODULE_3__["default"])('footer', ['height', 'inset']), _mixins_ssr_bootable__WEBPACK_IMPORTED_MODULE_4__["default"]).extend({
+  name: 'v-footer',
+  props: {
+    height: {
+      default: 'auto',
+      type: [Number, String]
+    },
+    inset: Boolean,
+    padless: Boolean,
+    tag: {
+      type: String,
+      default: 'footer'
+    }
+  },
+  computed: {
+    applicationProperty() {
+      return this.inset ? 'insetFooter' : 'footer';
+    },
+
+    classes() {
+      return { ..._VSheet_VSheet__WEBPACK_IMPORTED_MODULE_2__["default"].options.computed.classes.call(this),
+        'v-footer--absolute': this.absolute,
+        'v-footer--fixed': !this.absolute && (this.app || this.fixed),
+        'v-footer--padless': this.padless,
+        'v-footer--inset': this.inset
+      };
+    },
+
+    computedBottom() {
+      if (!this.isPositioned) return undefined;
+      return this.app ? this.$vuetify.application.bottom : 0;
+    },
+
+    computedLeft() {
+      if (!this.isPositioned) return undefined;
+      return this.app && this.inset ? this.$vuetify.application.left : 0;
+    },
+
+    computedRight() {
+      if (!this.isPositioned) return undefined;
+      return this.app && this.inset ? this.$vuetify.application.right : 0;
+    },
+
+    isPositioned() {
+      return Boolean(this.absolute || this.fixed || this.app);
+    },
+
+    styles() {
+      const height = parseInt(this.height);
+      return { ..._VSheet_VSheet__WEBPACK_IMPORTED_MODULE_2__["default"].options.computed.styles.call(this),
+        height: isNaN(height) ? height : (0,_util_helpers__WEBPACK_IMPORTED_MODULE_5__.convertToUnit)(height),
+        left: (0,_util_helpers__WEBPACK_IMPORTED_MODULE_5__.convertToUnit)(this.computedLeft),
+        right: (0,_util_helpers__WEBPACK_IMPORTED_MODULE_5__.convertToUnit)(this.computedRight),
+        bottom: (0,_util_helpers__WEBPACK_IMPORTED_MODULE_5__.convertToUnit)(this.computedBottom)
+      };
+    }
+
+  },
+  methods: {
+    updateApplication() {
+      const height = parseInt(this.height);
+      return isNaN(height) ? this.$el ? this.$el.clientHeight : 0 : height;
+    }
+
+  },
+
+  render(h) {
+    const data = this.setBackgroundColor(this.color, {
+      staticClass: 'v-footer',
+      class: this.classes,
+      style: this.styles
+    });
+    return h(this.tag, data, this.$slots.default);
+  }
+
+}));
+//# sourceMappingURL=VFooter.js.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/components/VGrid/VContainer.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/vuetify/lib/components/VGrid/VContainer.js ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _src_components_VGrid_grid_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../src/components/VGrid/_grid.sass */ "./node_modules/vuetify/src/components/VGrid/_grid.sass");
+/* harmony import */ var _src_components_VGrid_VGrid_sass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../src/components/VGrid/VGrid.sass */ "./node_modules/vuetify/src/components/VGrid/VGrid.sass");
+/* harmony import */ var _grid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./grid */ "./node_modules/vuetify/lib/components/VGrid/grid.js");
+/* harmony import */ var _util_mergeData__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../util/mergeData */ "./node_modules/vuetify/lib/util/mergeData.js");
+
+
+
+
+/* @vue/component */
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_grid__WEBPACK_IMPORTED_MODULE_2__["default"])('container').extend({
+  name: 'v-container',
+  functional: true,
+  props: {
+    id: String,
+    tag: {
+      type: String,
+      default: 'div'
+    },
+    fluid: {
+      type: Boolean,
+      default: false
+    }
+  },
+
+  render(h, {
+    props,
+    data,
+    children
+  }) {
+    let classes;
+    const {
+      attrs
+    } = data;
+
+    if (attrs) {
+      // reset attrs to extract utility clases like pa-3
+      data.attrs = {};
+      classes = Object.keys(attrs).filter(key => {
+        // TODO: Remove once resolved
+        // https://github.com/vuejs/vue/issues/7841
+        if (key === 'slot') return false;
+        const value = attrs[key]; // add back data attributes like data-test="foo" but do not
+        // add them as classes
+
+        if (key.startsWith('data-')) {
+          data.attrs[key] = value;
+          return false;
+        }
+
+        return value || typeof value === 'string';
+      });
+    }
+
+    if (props.id) {
+      data.domProps = data.domProps || {};
+      data.domProps.id = props.id;
+    }
+
+    return h(props.tag, (0,_util_mergeData__WEBPACK_IMPORTED_MODULE_3__["default"])(data, {
+      staticClass: 'container',
+      class: Array({
+        'container--fluid': props.fluid
+      }).concat(classes || [])
+    }), children);
+  }
+
+}));
+//# sourceMappingURL=VContainer.js.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/components/VGrid/grid.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/vuetify/lib/components/VGrid/grid.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ VGrid)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
+// Types
+
+function VGrid(name) {
+  /* @vue/component */
+  return vue__WEBPACK_IMPORTED_MODULE_0__["default"].extend({
+    name: `v-${name}`,
+    functional: true,
+    props: {
+      id: String,
+      tag: {
+        type: String,
+        default: 'div'
+      }
+    },
+
+    render(h, {
+      props,
+      data,
+      children
+    }) {
+      data.staticClass = `${name} ${data.staticClass || ''}`.trim();
+      const {
+        attrs
+      } = data;
+
+      if (attrs) {
+        // reset attrs to extract utility clases like pa-3
+        data.attrs = {};
+        const classes = Object.keys(attrs).filter(key => {
+          // TODO: Remove once resolved
+          // https://github.com/vuejs/vue/issues/7841
+          if (key === 'slot') return false;
+          const value = attrs[key]; // add back data attributes like data-test="foo" but do not
+          // add them as classes
+
+          if (key.startsWith('data-')) {
+            data.attrs[key] = value;
+            return false;
+          }
+
+          return value || typeof value === 'string';
+        });
+        if (classes.length) data.staticClass += ` ${classes.join(' ')}`;
+      }
+
+      if (props.id) {
+        data.domProps = data.domProps || {};
+        data.domProps.id = props.id;
+      }
+
+      return h(props.tag, data, children);
+    }
+
+  });
+}
+//# sourceMappingURL=grid.js.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/components/VMain/VMain.js":
+/*!************************************************************!*\
+  !*** ./node_modules/vuetify/lib/components/VMain/VMain.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _src_components_VMain_VMain_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../src/components/VMain/VMain.sass */ "./node_modules/vuetify/src/components/VMain/VMain.sass");
+/* harmony import */ var _mixins_ssr_bootable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../mixins/ssr-bootable */ "./node_modules/vuetify/lib/mixins/ssr-bootable/index.js");
+// Styles
+ // Mixins
+
+
+/* @vue/component */
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_mixins_ssr_bootable__WEBPACK_IMPORTED_MODULE_1__["default"].extend({
+  name: 'v-main',
+  props: {
+    tag: {
+      type: String,
+      default: 'main'
+    }
+  },
+  computed: {
+    styles() {
+      const {
+        bar,
+        top,
+        right,
+        footer,
+        insetFooter,
+        bottom,
+        left
+      } = this.$vuetify.application;
+      return {
+        paddingTop: `${top + bar}px`,
+        paddingRight: `${right}px`,
+        paddingBottom: `${footer + insetFooter + bottom}px`,
+        paddingLeft: `${left}px`
+      };
+    }
+
+  },
+
+  render(h) {
+    const data = {
+      staticClass: 'v-main',
+      style: this.styles,
+      ref: 'main'
+    };
+    return h(this.tag, data, [h('div', {
+      staticClass: 'v-main__wrap'
+    }, this.$slots.default)]);
+  }
+
+}));
+//# sourceMappingURL=VMain.js.map
+
+/***/ }),
+
 /***/ "./node_modules/vuetify/lib/components/VProgressCircular/VProgressCircular.js":
 /*!************************************************************************************!*\
   !*** ./node_modules/vuetify/lib/components/VProgressCircular/VProgressCircular.js ***!
@@ -94220,6 +96814,91 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/vuetify/lib/mixins/applicationable/index.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/vuetify/lib/mixins/applicationable/index.js ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ applicationable)
+/* harmony export */ });
+/* harmony import */ var _positionable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../positionable */ "./node_modules/vuetify/lib/mixins/positionable/index.js");
+/* harmony import */ var _util_mixins__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../util/mixins */ "./node_modules/vuetify/lib/util/mixins.js");
+ // Util
+
+
+function applicationable(value, events = []) {
+  /* @vue/component */
+  return (0,_util_mixins__WEBPACK_IMPORTED_MODULE_0__["default"])((0,_positionable__WEBPACK_IMPORTED_MODULE_1__.factory)(['absolute', 'fixed'])).extend({
+    name: 'applicationable',
+    props: {
+      app: Boolean
+    },
+    computed: {
+      applicationProperty() {
+        return value;
+      }
+
+    },
+    watch: {
+      // If previous value was app
+      // reset the provided prop
+      app(x, prev) {
+        prev ? this.removeApplication(true) : this.callUpdate();
+      },
+
+      applicationProperty(newVal, oldVal) {
+        this.$vuetify.application.unregister(this._uid, oldVal);
+      }
+
+    },
+
+    activated() {
+      this.callUpdate();
+    },
+
+    created() {
+      for (let i = 0, length = events.length; i < length; i++) {
+        this.$watch(events[i], this.callUpdate);
+      }
+
+      this.callUpdate();
+    },
+
+    mounted() {
+      this.callUpdate();
+    },
+
+    deactivated() {
+      this.removeApplication();
+    },
+
+    destroyed() {
+      this.removeApplication();
+    },
+
+    methods: {
+      callUpdate() {
+        if (!this.app) return;
+        this.$vuetify.application.register(this._uid, this.applicationProperty, this.updateApplication());
+      },
+
+      removeApplication(force = false) {
+        if (!force && !this.app) return;
+        this.$vuetify.application.unregister(this._uid, this.applicationProperty);
+      },
+
+      updateApplication: () => 0
+    }
+  });
+}
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
 /***/ "./node_modules/vuetify/lib/mixins/binds-attrs/index.js":
 /*!**************************************************************!*\
   !*** ./node_modules/vuetify/lib/mixins/binds-attrs/index.js ***!
@@ -94896,6 +97575,49 @@ __webpack_require__.r(__webpack_exports__);
     }
 
   }
+}));
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ "./node_modules/vuetify/lib/mixins/ssr-bootable/index.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/vuetify/lib/mixins/ssr-bootable/index.js ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
+
+/**
+ * SSRBootable
+ *
+ * @mixin
+ *
+ * Used in layout components (drawer, toolbar, content)
+ * to avoid an entry animation when using SSR
+ */
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (vue__WEBPACK_IMPORTED_MODULE_0__["default"].extend({
+  name: 'ssr-bootable',
+  data: () => ({
+    isBooted: false
+  }),
+
+  mounted() {
+    // Use setAttribute instead of dataset
+    // because dataset does not work well
+    // with unit tests
+    window.requestAnimationFrame(() => {
+      this.$el.setAttribute('data-booted', 'true');
+      this.isBooted = true;
+    });
+  }
+
 }));
 //# sourceMappingURL=index.js.map
 
@@ -97510,6 +100232,179 @@ function composedPath(e) {
 
 /***/ }),
 
+/***/ "./node_modules/vuetify/lib/util/mergeData.js":
+/*!****************************************************!*\
+  !*** ./node_modules/vuetify/lib/util/mergeData.js ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ mergeData),
+/* harmony export */   "mergeClasses": () => (/* binding */ mergeClasses),
+/* harmony export */   "mergeListeners": () => (/* binding */ mergeListeners),
+/* harmony export */   "mergeStyles": () => (/* binding */ mergeStyles)
+/* harmony export */ });
+/* harmony import */ var _helpers__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./helpers */ "./node_modules/vuetify/lib/util/helpers.js");
+
+const pattern = {
+  styleList: /;(?![^(]*\))/g,
+  styleProp: /:(.*)/
+};
+
+function parseStyle(style) {
+  const styleMap = {};
+
+  for (const s of style.split(pattern.styleList)) {
+    let [key, val] = s.split(pattern.styleProp);
+    key = key.trim();
+
+    if (!key) {
+      continue;
+    } // May be undefined if the `key: value` pair is incomplete.
+
+
+    if (typeof val === 'string') {
+      val = val.trim();
+    }
+
+    styleMap[(0,_helpers__WEBPACK_IMPORTED_MODULE_0__.camelize)(key)] = val;
+  }
+
+  return styleMap;
+}
+
+function mergeData() {
+  const mergeTarget = {};
+  let i = arguments.length;
+  let prop; // Allow for variadic argument length.
+
+  while (i--) {
+    // Iterate through the data properties and execute merge strategies
+    // Object.keys eliminates need for hasOwnProperty call
+    for (prop of Object.keys(arguments[i])) {
+      switch (prop) {
+        // Array merge strategy (array concatenation)
+        case 'class':
+        case 'directives':
+          if (arguments[i][prop]) {
+            mergeTarget[prop] = mergeClasses(mergeTarget[prop], arguments[i][prop]);
+          }
+
+          break;
+
+        case 'style':
+          if (arguments[i][prop]) {
+            mergeTarget[prop] = mergeStyles(mergeTarget[prop], arguments[i][prop]);
+          }
+
+          break;
+        // Space delimited string concatenation strategy
+
+        case 'staticClass':
+          if (!arguments[i][prop]) {
+            break;
+          }
+
+          if (mergeTarget[prop] === undefined) {
+            mergeTarget[prop] = '';
+          }
+
+          if (mergeTarget[prop]) {
+            // Not an empty string, so concatenate
+            mergeTarget[prop] += ' ';
+          }
+
+          mergeTarget[prop] += arguments[i][prop].trim();
+          break;
+        // Object, the properties of which to merge via array merge strategy (array concatenation).
+        // Callback merge strategy merges callbacks to the beginning of the array,
+        // so that the last defined callback will be invoked first.
+        // This is done since to mimic how Object.assign merging
+        // uses the last given value to assign.
+
+        case 'on':
+        case 'nativeOn':
+          if (arguments[i][prop]) {
+            mergeTarget[prop] = mergeListeners(mergeTarget[prop], arguments[i][prop]);
+          }
+
+          break;
+        // Object merge strategy
+
+        case 'attrs':
+        case 'props':
+        case 'domProps':
+        case 'scopedSlots':
+        case 'staticStyle':
+        case 'hook':
+        case 'transition':
+          if (!arguments[i][prop]) {
+            break;
+          }
+
+          if (!mergeTarget[prop]) {
+            mergeTarget[prop] = {};
+          }
+
+          mergeTarget[prop] = { ...arguments[i][prop],
+            ...mergeTarget[prop]
+          };
+          break;
+        // Reassignment strategy (no merge)
+
+        default:
+          // slot, key, ref, tag, show, keepAlive
+          if (!mergeTarget[prop]) {
+            mergeTarget[prop] = arguments[i][prop];
+          }
+
+      }
+    }
+  }
+
+  return mergeTarget;
+}
+function mergeStyles(target, source) {
+  if (!target) return source;
+  if (!source) return target;
+  target = (0,_helpers__WEBPACK_IMPORTED_MODULE_0__.wrapInArray)(typeof target === 'string' ? parseStyle(target) : target);
+  return target.concat(typeof source === 'string' ? parseStyle(source) : source);
+}
+function mergeClasses(target, source) {
+  if (!source) return target;
+  if (!target) return source;
+  return target ? (0,_helpers__WEBPACK_IMPORTED_MODULE_0__.wrapInArray)(target).concat(source) : source;
+}
+function mergeListeners(...args) {
+  if (!args[0]) return args[1];
+  if (!args[1]) return args[0];
+  const dest = {};
+
+  for (let i = 2; i--;) {
+    const arg = args[i];
+
+    for (const event in arg) {
+      if (!arg[event]) continue;
+
+      if (dest[event]) {
+        // Merge current listeners before (because we are iterating backwards).
+        // Note that neither "target" or "source" must be altered.
+        dest[event] = [].concat(arg[event], dest[event]);
+      } else {
+        // Straight assign.
+        dest[event] = arg[event];
+      }
+    }
+  }
+
+  return dest;
+}
+//# sourceMappingURL=mergeData.js.map
+
+/***/ }),
+
 /***/ "./node_modules/vuetify/lib/util/mixins.js":
 /*!*************************************************!*\
   !*** ./node_modules/vuetify/lib/util/mixins.js ***!
@@ -97530,6 +100425,1282 @@ function mixins(...args) {
   });
 }
 //# sourceMappingURL=mixins.js.map
+
+/***/ }),
+
+/***/ "./node_modules/vuex/dist/vuex.esm.js":
+/*!********************************************!*\
+  !*** ./node_modules/vuex/dist/vuex.esm.js ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Store": () => (/* binding */ Store),
+/* harmony export */   "createLogger": () => (/* binding */ createLogger),
+/* harmony export */   "createNamespacedHelpers": () => (/* binding */ createNamespacedHelpers),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   "install": () => (/* binding */ install),
+/* harmony export */   "mapActions": () => (/* binding */ mapActions),
+/* harmony export */   "mapGetters": () => (/* binding */ mapGetters),
+/* harmony export */   "mapMutations": () => (/* binding */ mapMutations),
+/* harmony export */   "mapState": () => (/* binding */ mapState)
+/* harmony export */ });
+/*!
+ * vuex v3.6.2
+ * (c) 2021 Evan You
+ * @license MIT
+ */
+function applyMixin (Vue) {
+  var version = Number(Vue.version.split('.')[0]);
+
+  if (version >= 2) {
+    Vue.mixin({ beforeCreate: vuexInit });
+  } else {
+    // override init and inject vuex init procedure
+    // for 1.x backwards compatibility.
+    var _init = Vue.prototype._init;
+    Vue.prototype._init = function (options) {
+      if ( options === void 0 ) options = {};
+
+      options.init = options.init
+        ? [vuexInit].concat(options.init)
+        : vuexInit;
+      _init.call(this, options);
+    };
+  }
+
+  /**
+   * Vuex init hook, injected into each instances init hooks list.
+   */
+
+  function vuexInit () {
+    var options = this.$options;
+    // store injection
+    if (options.store) {
+      this.$store = typeof options.store === 'function'
+        ? options.store()
+        : options.store;
+    } else if (options.parent && options.parent.$store) {
+      this.$store = options.parent.$store;
+    }
+  }
+}
+
+var target = typeof window !== 'undefined'
+  ? window
+  : typeof __webpack_require__.g !== 'undefined'
+    ? __webpack_require__.g
+    : {};
+var devtoolHook = target.__VUE_DEVTOOLS_GLOBAL_HOOK__;
+
+function devtoolPlugin (store) {
+  if (!devtoolHook) { return }
+
+  store._devtoolHook = devtoolHook;
+
+  devtoolHook.emit('vuex:init', store);
+
+  devtoolHook.on('vuex:travel-to-state', function (targetState) {
+    store.replaceState(targetState);
+  });
+
+  store.subscribe(function (mutation, state) {
+    devtoolHook.emit('vuex:mutation', mutation, state);
+  }, { prepend: true });
+
+  store.subscribeAction(function (action, state) {
+    devtoolHook.emit('vuex:action', action, state);
+  }, { prepend: true });
+}
+
+/**
+ * Get the first item that pass the test
+ * by second argument function
+ *
+ * @param {Array} list
+ * @param {Function} f
+ * @return {*}
+ */
+function find (list, f) {
+  return list.filter(f)[0]
+}
+
+/**
+ * Deep copy the given object considering circular structure.
+ * This function caches all nested objects and its copies.
+ * If it detects circular structure, use cached copy to avoid infinite loop.
+ *
+ * @param {*} obj
+ * @param {Array<Object>} cache
+ * @return {*}
+ */
+function deepCopy (obj, cache) {
+  if ( cache === void 0 ) cache = [];
+
+  // just return if obj is immutable value
+  if (obj === null || typeof obj !== 'object') {
+    return obj
+  }
+
+  // if obj is hit, it is in circular structure
+  var hit = find(cache, function (c) { return c.original === obj; });
+  if (hit) {
+    return hit.copy
+  }
+
+  var copy = Array.isArray(obj) ? [] : {};
+  // put the copy into cache at first
+  // because we want to refer it in recursive deepCopy
+  cache.push({
+    original: obj,
+    copy: copy
+  });
+
+  Object.keys(obj).forEach(function (key) {
+    copy[key] = deepCopy(obj[key], cache);
+  });
+
+  return copy
+}
+
+/**
+ * forEach for object
+ */
+function forEachValue (obj, fn) {
+  Object.keys(obj).forEach(function (key) { return fn(obj[key], key); });
+}
+
+function isObject (obj) {
+  return obj !== null && typeof obj === 'object'
+}
+
+function isPromise (val) {
+  return val && typeof val.then === 'function'
+}
+
+function assert (condition, msg) {
+  if (!condition) { throw new Error(("[vuex] " + msg)) }
+}
+
+function partial (fn, arg) {
+  return function () {
+    return fn(arg)
+  }
+}
+
+// Base data struct for store's module, package with some attribute and method
+var Module = function Module (rawModule, runtime) {
+  this.runtime = runtime;
+  // Store some children item
+  this._children = Object.create(null);
+  // Store the origin module object which passed by programmer
+  this._rawModule = rawModule;
+  var rawState = rawModule.state;
+
+  // Store the origin module's state
+  this.state = (typeof rawState === 'function' ? rawState() : rawState) || {};
+};
+
+var prototypeAccessors = { namespaced: { configurable: true } };
+
+prototypeAccessors.namespaced.get = function () {
+  return !!this._rawModule.namespaced
+};
+
+Module.prototype.addChild = function addChild (key, module) {
+  this._children[key] = module;
+};
+
+Module.prototype.removeChild = function removeChild (key) {
+  delete this._children[key];
+};
+
+Module.prototype.getChild = function getChild (key) {
+  return this._children[key]
+};
+
+Module.prototype.hasChild = function hasChild (key) {
+  return key in this._children
+};
+
+Module.prototype.update = function update (rawModule) {
+  this._rawModule.namespaced = rawModule.namespaced;
+  if (rawModule.actions) {
+    this._rawModule.actions = rawModule.actions;
+  }
+  if (rawModule.mutations) {
+    this._rawModule.mutations = rawModule.mutations;
+  }
+  if (rawModule.getters) {
+    this._rawModule.getters = rawModule.getters;
+  }
+};
+
+Module.prototype.forEachChild = function forEachChild (fn) {
+  forEachValue(this._children, fn);
+};
+
+Module.prototype.forEachGetter = function forEachGetter (fn) {
+  if (this._rawModule.getters) {
+    forEachValue(this._rawModule.getters, fn);
+  }
+};
+
+Module.prototype.forEachAction = function forEachAction (fn) {
+  if (this._rawModule.actions) {
+    forEachValue(this._rawModule.actions, fn);
+  }
+};
+
+Module.prototype.forEachMutation = function forEachMutation (fn) {
+  if (this._rawModule.mutations) {
+    forEachValue(this._rawModule.mutations, fn);
+  }
+};
+
+Object.defineProperties( Module.prototype, prototypeAccessors );
+
+var ModuleCollection = function ModuleCollection (rawRootModule) {
+  // register root module (Vuex.Store options)
+  this.register([], rawRootModule, false);
+};
+
+ModuleCollection.prototype.get = function get (path) {
+  return path.reduce(function (module, key) {
+    return module.getChild(key)
+  }, this.root)
+};
+
+ModuleCollection.prototype.getNamespace = function getNamespace (path) {
+  var module = this.root;
+  return path.reduce(function (namespace, key) {
+    module = module.getChild(key);
+    return namespace + (module.namespaced ? key + '/' : '')
+  }, '')
+};
+
+ModuleCollection.prototype.update = function update$1 (rawRootModule) {
+  update([], this.root, rawRootModule);
+};
+
+ModuleCollection.prototype.register = function register (path, rawModule, runtime) {
+    var this$1 = this;
+    if ( runtime === void 0 ) runtime = true;
+
+  if ((true)) {
+    assertRawModule(path, rawModule);
+  }
+
+  var newModule = new Module(rawModule, runtime);
+  if (path.length === 0) {
+    this.root = newModule;
+  } else {
+    var parent = this.get(path.slice(0, -1));
+    parent.addChild(path[path.length - 1], newModule);
+  }
+
+  // register nested modules
+  if (rawModule.modules) {
+    forEachValue(rawModule.modules, function (rawChildModule, key) {
+      this$1.register(path.concat(key), rawChildModule, runtime);
+    });
+  }
+};
+
+ModuleCollection.prototype.unregister = function unregister (path) {
+  var parent = this.get(path.slice(0, -1));
+  var key = path[path.length - 1];
+  var child = parent.getChild(key);
+
+  if (!child) {
+    if ((true)) {
+      console.warn(
+        "[vuex] trying to unregister module '" + key + "', which is " +
+        "not registered"
+      );
+    }
+    return
+  }
+
+  if (!child.runtime) {
+    return
+  }
+
+  parent.removeChild(key);
+};
+
+ModuleCollection.prototype.isRegistered = function isRegistered (path) {
+  var parent = this.get(path.slice(0, -1));
+  var key = path[path.length - 1];
+
+  if (parent) {
+    return parent.hasChild(key)
+  }
+
+  return false
+};
+
+function update (path, targetModule, newModule) {
+  if ((true)) {
+    assertRawModule(path, newModule);
+  }
+
+  // update target module
+  targetModule.update(newModule);
+
+  // update nested modules
+  if (newModule.modules) {
+    for (var key in newModule.modules) {
+      if (!targetModule.getChild(key)) {
+        if ((true)) {
+          console.warn(
+            "[vuex] trying to add a new module '" + key + "' on hot reloading, " +
+            'manual reload is needed'
+          );
+        }
+        return
+      }
+      update(
+        path.concat(key),
+        targetModule.getChild(key),
+        newModule.modules[key]
+      );
+    }
+  }
+}
+
+var functionAssert = {
+  assert: function (value) { return typeof value === 'function'; },
+  expected: 'function'
+};
+
+var objectAssert = {
+  assert: function (value) { return typeof value === 'function' ||
+    (typeof value === 'object' && typeof value.handler === 'function'); },
+  expected: 'function or object with "handler" function'
+};
+
+var assertTypes = {
+  getters: functionAssert,
+  mutations: functionAssert,
+  actions: objectAssert
+};
+
+function assertRawModule (path, rawModule) {
+  Object.keys(assertTypes).forEach(function (key) {
+    if (!rawModule[key]) { return }
+
+    var assertOptions = assertTypes[key];
+
+    forEachValue(rawModule[key], function (value, type) {
+      assert(
+        assertOptions.assert(value),
+        makeAssertionMessage(path, key, type, value, assertOptions.expected)
+      );
+    });
+  });
+}
+
+function makeAssertionMessage (path, key, type, value, expected) {
+  var buf = key + " should be " + expected + " but \"" + key + "." + type + "\"";
+  if (path.length > 0) {
+    buf += " in module \"" + (path.join('.')) + "\"";
+  }
+  buf += " is " + (JSON.stringify(value)) + ".";
+  return buf
+}
+
+var Vue; // bind on install
+
+var Store = function Store (options) {
+  var this$1 = this;
+  if ( options === void 0 ) options = {};
+
+  // Auto install if it is not done yet and `window` has `Vue`.
+  // To allow users to avoid auto-installation in some cases,
+  // this code should be placed here. See #731
+  if (!Vue && typeof window !== 'undefined' && window.Vue) {
+    install(window.Vue);
+  }
+
+  if ((true)) {
+    assert(Vue, "must call Vue.use(Vuex) before creating a store instance.");
+    assert(typeof Promise !== 'undefined', "vuex requires a Promise polyfill in this browser.");
+    assert(this instanceof Store, "store must be called with the new operator.");
+  }
+
+  var plugins = options.plugins; if ( plugins === void 0 ) plugins = [];
+  var strict = options.strict; if ( strict === void 0 ) strict = false;
+
+  // store internal state
+  this._committing = false;
+  this._actions = Object.create(null);
+  this._actionSubscribers = [];
+  this._mutations = Object.create(null);
+  this._wrappedGetters = Object.create(null);
+  this._modules = new ModuleCollection(options);
+  this._modulesNamespaceMap = Object.create(null);
+  this._subscribers = [];
+  this._watcherVM = new Vue();
+  this._makeLocalGettersCache = Object.create(null);
+
+  // bind commit and dispatch to self
+  var store = this;
+  var ref = this;
+  var dispatch = ref.dispatch;
+  var commit = ref.commit;
+  this.dispatch = function boundDispatch (type, payload) {
+    return dispatch.call(store, type, payload)
+  };
+  this.commit = function boundCommit (type, payload, options) {
+    return commit.call(store, type, payload, options)
+  };
+
+  // strict mode
+  this.strict = strict;
+
+  var state = this._modules.root.state;
+
+  // init root module.
+  // this also recursively registers all sub-modules
+  // and collects all module getters inside this._wrappedGetters
+  installModule(this, state, [], this._modules.root);
+
+  // initialize the store vm, which is responsible for the reactivity
+  // (also registers _wrappedGetters as computed properties)
+  resetStoreVM(this, state);
+
+  // apply plugins
+  plugins.forEach(function (plugin) { return plugin(this$1); });
+
+  var useDevtools = options.devtools !== undefined ? options.devtools : Vue.config.devtools;
+  if (useDevtools) {
+    devtoolPlugin(this);
+  }
+};
+
+var prototypeAccessors$1 = { state: { configurable: true } };
+
+prototypeAccessors$1.state.get = function () {
+  return this._vm._data.$$state
+};
+
+prototypeAccessors$1.state.set = function (v) {
+  if ((true)) {
+    assert(false, "use store.replaceState() to explicit replace store state.");
+  }
+};
+
+Store.prototype.commit = function commit (_type, _payload, _options) {
+    var this$1 = this;
+
+  // check object-style commit
+  var ref = unifyObjectStyle(_type, _payload, _options);
+    var type = ref.type;
+    var payload = ref.payload;
+    var options = ref.options;
+
+  var mutation = { type: type, payload: payload };
+  var entry = this._mutations[type];
+  if (!entry) {
+    if ((true)) {
+      console.error(("[vuex] unknown mutation type: " + type));
+    }
+    return
+  }
+  this._withCommit(function () {
+    entry.forEach(function commitIterator (handler) {
+      handler(payload);
+    });
+  });
+
+  this._subscribers
+    .slice() // shallow copy to prevent iterator invalidation if subscriber synchronously calls unsubscribe
+    .forEach(function (sub) { return sub(mutation, this$1.state); });
+
+  if (
+    ( true) &&
+    options && options.silent
+  ) {
+    console.warn(
+      "[vuex] mutation type: " + type + ". Silent option has been removed. " +
+      'Use the filter functionality in the vue-devtools'
+    );
+  }
+};
+
+Store.prototype.dispatch = function dispatch (_type, _payload) {
+    var this$1 = this;
+
+  // check object-style dispatch
+  var ref = unifyObjectStyle(_type, _payload);
+    var type = ref.type;
+    var payload = ref.payload;
+
+  var action = { type: type, payload: payload };
+  var entry = this._actions[type];
+  if (!entry) {
+    if ((true)) {
+      console.error(("[vuex] unknown action type: " + type));
+    }
+    return
+  }
+
+  try {
+    this._actionSubscribers
+      .slice() // shallow copy to prevent iterator invalidation if subscriber synchronously calls unsubscribe
+      .filter(function (sub) { return sub.before; })
+      .forEach(function (sub) { return sub.before(action, this$1.state); });
+  } catch (e) {
+    if ((true)) {
+      console.warn("[vuex] error in before action subscribers: ");
+      console.error(e);
+    }
+  }
+
+  var result = entry.length > 1
+    ? Promise.all(entry.map(function (handler) { return handler(payload); }))
+    : entry[0](payload);
+
+  return new Promise(function (resolve, reject) {
+    result.then(function (res) {
+      try {
+        this$1._actionSubscribers
+          .filter(function (sub) { return sub.after; })
+          .forEach(function (sub) { return sub.after(action, this$1.state); });
+      } catch (e) {
+        if ((true)) {
+          console.warn("[vuex] error in after action subscribers: ");
+          console.error(e);
+        }
+      }
+      resolve(res);
+    }, function (error) {
+      try {
+        this$1._actionSubscribers
+          .filter(function (sub) { return sub.error; })
+          .forEach(function (sub) { return sub.error(action, this$1.state, error); });
+      } catch (e) {
+        if ((true)) {
+          console.warn("[vuex] error in error action subscribers: ");
+          console.error(e);
+        }
+      }
+      reject(error);
+    });
+  })
+};
+
+Store.prototype.subscribe = function subscribe (fn, options) {
+  return genericSubscribe(fn, this._subscribers, options)
+};
+
+Store.prototype.subscribeAction = function subscribeAction (fn, options) {
+  var subs = typeof fn === 'function' ? { before: fn } : fn;
+  return genericSubscribe(subs, this._actionSubscribers, options)
+};
+
+Store.prototype.watch = function watch (getter, cb, options) {
+    var this$1 = this;
+
+  if ((true)) {
+    assert(typeof getter === 'function', "store.watch only accepts a function.");
+  }
+  return this._watcherVM.$watch(function () { return getter(this$1.state, this$1.getters); }, cb, options)
+};
+
+Store.prototype.replaceState = function replaceState (state) {
+    var this$1 = this;
+
+  this._withCommit(function () {
+    this$1._vm._data.$$state = state;
+  });
+};
+
+Store.prototype.registerModule = function registerModule (path, rawModule, options) {
+    if ( options === void 0 ) options = {};
+
+  if (typeof path === 'string') { path = [path]; }
+
+  if ((true)) {
+    assert(Array.isArray(path), "module path must be a string or an Array.");
+    assert(path.length > 0, 'cannot register the root module by using registerModule.');
+  }
+
+  this._modules.register(path, rawModule);
+  installModule(this, this.state, path, this._modules.get(path), options.preserveState);
+  // reset store to update getters...
+  resetStoreVM(this, this.state);
+};
+
+Store.prototype.unregisterModule = function unregisterModule (path) {
+    var this$1 = this;
+
+  if (typeof path === 'string') { path = [path]; }
+
+  if ((true)) {
+    assert(Array.isArray(path), "module path must be a string or an Array.");
+  }
+
+  this._modules.unregister(path);
+  this._withCommit(function () {
+    var parentState = getNestedState(this$1.state, path.slice(0, -1));
+    Vue.delete(parentState, path[path.length - 1]);
+  });
+  resetStore(this);
+};
+
+Store.prototype.hasModule = function hasModule (path) {
+  if (typeof path === 'string') { path = [path]; }
+
+  if ((true)) {
+    assert(Array.isArray(path), "module path must be a string or an Array.");
+  }
+
+  return this._modules.isRegistered(path)
+};
+
+Store.prototype.hotUpdate = function hotUpdate (newOptions) {
+  this._modules.update(newOptions);
+  resetStore(this, true);
+};
+
+Store.prototype._withCommit = function _withCommit (fn) {
+  var committing = this._committing;
+  this._committing = true;
+  fn();
+  this._committing = committing;
+};
+
+Object.defineProperties( Store.prototype, prototypeAccessors$1 );
+
+function genericSubscribe (fn, subs, options) {
+  if (subs.indexOf(fn) < 0) {
+    options && options.prepend
+      ? subs.unshift(fn)
+      : subs.push(fn);
+  }
+  return function () {
+    var i = subs.indexOf(fn);
+    if (i > -1) {
+      subs.splice(i, 1);
+    }
+  }
+}
+
+function resetStore (store, hot) {
+  store._actions = Object.create(null);
+  store._mutations = Object.create(null);
+  store._wrappedGetters = Object.create(null);
+  store._modulesNamespaceMap = Object.create(null);
+  var state = store.state;
+  // init all modules
+  installModule(store, state, [], store._modules.root, true);
+  // reset vm
+  resetStoreVM(store, state, hot);
+}
+
+function resetStoreVM (store, state, hot) {
+  var oldVm = store._vm;
+
+  // bind store public getters
+  store.getters = {};
+  // reset local getters cache
+  store._makeLocalGettersCache = Object.create(null);
+  var wrappedGetters = store._wrappedGetters;
+  var computed = {};
+  forEachValue(wrappedGetters, function (fn, key) {
+    // use computed to leverage its lazy-caching mechanism
+    // direct inline function use will lead to closure preserving oldVm.
+    // using partial to return function with only arguments preserved in closure environment.
+    computed[key] = partial(fn, store);
+    Object.defineProperty(store.getters, key, {
+      get: function () { return store._vm[key]; },
+      enumerable: true // for local getters
+    });
+  });
+
+  // use a Vue instance to store the state tree
+  // suppress warnings just in case the user has added
+  // some funky global mixins
+  var silent = Vue.config.silent;
+  Vue.config.silent = true;
+  store._vm = new Vue({
+    data: {
+      $$state: state
+    },
+    computed: computed
+  });
+  Vue.config.silent = silent;
+
+  // enable strict mode for new vm
+  if (store.strict) {
+    enableStrictMode(store);
+  }
+
+  if (oldVm) {
+    if (hot) {
+      // dispatch changes in all subscribed watchers
+      // to force getter re-evaluation for hot reloading.
+      store._withCommit(function () {
+        oldVm._data.$$state = null;
+      });
+    }
+    Vue.nextTick(function () { return oldVm.$destroy(); });
+  }
+}
+
+function installModule (store, rootState, path, module, hot) {
+  var isRoot = !path.length;
+  var namespace = store._modules.getNamespace(path);
+
+  // register in namespace map
+  if (module.namespaced) {
+    if (store._modulesNamespaceMap[namespace] && ("development" !== 'production')) {
+      console.error(("[vuex] duplicate namespace " + namespace + " for the namespaced module " + (path.join('/'))));
+    }
+    store._modulesNamespaceMap[namespace] = module;
+  }
+
+  // set state
+  if (!isRoot && !hot) {
+    var parentState = getNestedState(rootState, path.slice(0, -1));
+    var moduleName = path[path.length - 1];
+    store._withCommit(function () {
+      if ((true)) {
+        if (moduleName in parentState) {
+          console.warn(
+            ("[vuex] state field \"" + moduleName + "\" was overridden by a module with the same name at \"" + (path.join('.')) + "\"")
+          );
+        }
+      }
+      Vue.set(parentState, moduleName, module.state);
+    });
+  }
+
+  var local = module.context = makeLocalContext(store, namespace, path);
+
+  module.forEachMutation(function (mutation, key) {
+    var namespacedType = namespace + key;
+    registerMutation(store, namespacedType, mutation, local);
+  });
+
+  module.forEachAction(function (action, key) {
+    var type = action.root ? key : namespace + key;
+    var handler = action.handler || action;
+    registerAction(store, type, handler, local);
+  });
+
+  module.forEachGetter(function (getter, key) {
+    var namespacedType = namespace + key;
+    registerGetter(store, namespacedType, getter, local);
+  });
+
+  module.forEachChild(function (child, key) {
+    installModule(store, rootState, path.concat(key), child, hot);
+  });
+}
+
+/**
+ * make localized dispatch, commit, getters and state
+ * if there is no namespace, just use root ones
+ */
+function makeLocalContext (store, namespace, path) {
+  var noNamespace = namespace === '';
+
+  var local = {
+    dispatch: noNamespace ? store.dispatch : function (_type, _payload, _options) {
+      var args = unifyObjectStyle(_type, _payload, _options);
+      var payload = args.payload;
+      var options = args.options;
+      var type = args.type;
+
+      if (!options || !options.root) {
+        type = namespace + type;
+        if (( true) && !store._actions[type]) {
+          console.error(("[vuex] unknown local action type: " + (args.type) + ", global type: " + type));
+          return
+        }
+      }
+
+      return store.dispatch(type, payload)
+    },
+
+    commit: noNamespace ? store.commit : function (_type, _payload, _options) {
+      var args = unifyObjectStyle(_type, _payload, _options);
+      var payload = args.payload;
+      var options = args.options;
+      var type = args.type;
+
+      if (!options || !options.root) {
+        type = namespace + type;
+        if (( true) && !store._mutations[type]) {
+          console.error(("[vuex] unknown local mutation type: " + (args.type) + ", global type: " + type));
+          return
+        }
+      }
+
+      store.commit(type, payload, options);
+    }
+  };
+
+  // getters and state object must be gotten lazily
+  // because they will be changed by vm update
+  Object.defineProperties(local, {
+    getters: {
+      get: noNamespace
+        ? function () { return store.getters; }
+        : function () { return makeLocalGetters(store, namespace); }
+    },
+    state: {
+      get: function () { return getNestedState(store.state, path); }
+    }
+  });
+
+  return local
+}
+
+function makeLocalGetters (store, namespace) {
+  if (!store._makeLocalGettersCache[namespace]) {
+    var gettersProxy = {};
+    var splitPos = namespace.length;
+    Object.keys(store.getters).forEach(function (type) {
+      // skip if the target getter is not match this namespace
+      if (type.slice(0, splitPos) !== namespace) { return }
+
+      // extract local getter type
+      var localType = type.slice(splitPos);
+
+      // Add a port to the getters proxy.
+      // Define as getter property because
+      // we do not want to evaluate the getters in this time.
+      Object.defineProperty(gettersProxy, localType, {
+        get: function () { return store.getters[type]; },
+        enumerable: true
+      });
+    });
+    store._makeLocalGettersCache[namespace] = gettersProxy;
+  }
+
+  return store._makeLocalGettersCache[namespace]
+}
+
+function registerMutation (store, type, handler, local) {
+  var entry = store._mutations[type] || (store._mutations[type] = []);
+  entry.push(function wrappedMutationHandler (payload) {
+    handler.call(store, local.state, payload);
+  });
+}
+
+function registerAction (store, type, handler, local) {
+  var entry = store._actions[type] || (store._actions[type] = []);
+  entry.push(function wrappedActionHandler (payload) {
+    var res = handler.call(store, {
+      dispatch: local.dispatch,
+      commit: local.commit,
+      getters: local.getters,
+      state: local.state,
+      rootGetters: store.getters,
+      rootState: store.state
+    }, payload);
+    if (!isPromise(res)) {
+      res = Promise.resolve(res);
+    }
+    if (store._devtoolHook) {
+      return res.catch(function (err) {
+        store._devtoolHook.emit('vuex:error', err);
+        throw err
+      })
+    } else {
+      return res
+    }
+  });
+}
+
+function registerGetter (store, type, rawGetter, local) {
+  if (store._wrappedGetters[type]) {
+    if ((true)) {
+      console.error(("[vuex] duplicate getter key: " + type));
+    }
+    return
+  }
+  store._wrappedGetters[type] = function wrappedGetter (store) {
+    return rawGetter(
+      local.state, // local state
+      local.getters, // local getters
+      store.state, // root state
+      store.getters // root getters
+    )
+  };
+}
+
+function enableStrictMode (store) {
+  store._vm.$watch(function () { return this._data.$$state }, function () {
+    if ((true)) {
+      assert(store._committing, "do not mutate vuex store state outside mutation handlers.");
+    }
+  }, { deep: true, sync: true });
+}
+
+function getNestedState (state, path) {
+  return path.reduce(function (state, key) { return state[key]; }, state)
+}
+
+function unifyObjectStyle (type, payload, options) {
+  if (isObject(type) && type.type) {
+    options = payload;
+    payload = type;
+    type = type.type;
+  }
+
+  if ((true)) {
+    assert(typeof type === 'string', ("expects string as the type, but found " + (typeof type) + "."));
+  }
+
+  return { type: type, payload: payload, options: options }
+}
+
+function install (_Vue) {
+  if (Vue && _Vue === Vue) {
+    if ((true)) {
+      console.error(
+        '[vuex] already installed. Vue.use(Vuex) should be called only once.'
+      );
+    }
+    return
+  }
+  Vue = _Vue;
+  applyMixin(Vue);
+}
+
+/**
+ * Reduce the code which written in Vue.js for getting the state.
+ * @param {String} [namespace] - Module's namespace
+ * @param {Object|Array} states # Object's item can be a function which accept state and getters for param, you can do something for state and getters in it.
+ * @param {Object}
+ */
+var mapState = normalizeNamespace(function (namespace, states) {
+  var res = {};
+  if (( true) && !isValidMap(states)) {
+    console.error('[vuex] mapState: mapper parameter must be either an Array or an Object');
+  }
+  normalizeMap(states).forEach(function (ref) {
+    var key = ref.key;
+    var val = ref.val;
+
+    res[key] = function mappedState () {
+      var state = this.$store.state;
+      var getters = this.$store.getters;
+      if (namespace) {
+        var module = getModuleByNamespace(this.$store, 'mapState', namespace);
+        if (!module) {
+          return
+        }
+        state = module.context.state;
+        getters = module.context.getters;
+      }
+      return typeof val === 'function'
+        ? val.call(this, state, getters)
+        : state[val]
+    };
+    // mark vuex getter for devtools
+    res[key].vuex = true;
+  });
+  return res
+});
+
+/**
+ * Reduce the code which written in Vue.js for committing the mutation
+ * @param {String} [namespace] - Module's namespace
+ * @param {Object|Array} mutations # Object's item can be a function which accept `commit` function as the first param, it can accept another params. You can commit mutation and do any other things in this function. specially, You need to pass anthor params from the mapped function.
+ * @return {Object}
+ */
+var mapMutations = normalizeNamespace(function (namespace, mutations) {
+  var res = {};
+  if (( true) && !isValidMap(mutations)) {
+    console.error('[vuex] mapMutations: mapper parameter must be either an Array or an Object');
+  }
+  normalizeMap(mutations).forEach(function (ref) {
+    var key = ref.key;
+    var val = ref.val;
+
+    res[key] = function mappedMutation () {
+      var args = [], len = arguments.length;
+      while ( len-- ) args[ len ] = arguments[ len ];
+
+      // Get the commit method from store
+      var commit = this.$store.commit;
+      if (namespace) {
+        var module = getModuleByNamespace(this.$store, 'mapMutations', namespace);
+        if (!module) {
+          return
+        }
+        commit = module.context.commit;
+      }
+      return typeof val === 'function'
+        ? val.apply(this, [commit].concat(args))
+        : commit.apply(this.$store, [val].concat(args))
+    };
+  });
+  return res
+});
+
+/**
+ * Reduce the code which written in Vue.js for getting the getters
+ * @param {String} [namespace] - Module's namespace
+ * @param {Object|Array} getters
+ * @return {Object}
+ */
+var mapGetters = normalizeNamespace(function (namespace, getters) {
+  var res = {};
+  if (( true) && !isValidMap(getters)) {
+    console.error('[vuex] mapGetters: mapper parameter must be either an Array or an Object');
+  }
+  normalizeMap(getters).forEach(function (ref) {
+    var key = ref.key;
+    var val = ref.val;
+
+    // The namespace has been mutated by normalizeNamespace
+    val = namespace + val;
+    res[key] = function mappedGetter () {
+      if (namespace && !getModuleByNamespace(this.$store, 'mapGetters', namespace)) {
+        return
+      }
+      if (( true) && !(val in this.$store.getters)) {
+        console.error(("[vuex] unknown getter: " + val));
+        return
+      }
+      return this.$store.getters[val]
+    };
+    // mark vuex getter for devtools
+    res[key].vuex = true;
+  });
+  return res
+});
+
+/**
+ * Reduce the code which written in Vue.js for dispatch the action
+ * @param {String} [namespace] - Module's namespace
+ * @param {Object|Array} actions # Object's item can be a function which accept `dispatch` function as the first param, it can accept anthor params. You can dispatch action and do any other things in this function. specially, You need to pass anthor params from the mapped function.
+ * @return {Object}
+ */
+var mapActions = normalizeNamespace(function (namespace, actions) {
+  var res = {};
+  if (( true) && !isValidMap(actions)) {
+    console.error('[vuex] mapActions: mapper parameter must be either an Array or an Object');
+  }
+  normalizeMap(actions).forEach(function (ref) {
+    var key = ref.key;
+    var val = ref.val;
+
+    res[key] = function mappedAction () {
+      var args = [], len = arguments.length;
+      while ( len-- ) args[ len ] = arguments[ len ];
+
+      // get dispatch function from store
+      var dispatch = this.$store.dispatch;
+      if (namespace) {
+        var module = getModuleByNamespace(this.$store, 'mapActions', namespace);
+        if (!module) {
+          return
+        }
+        dispatch = module.context.dispatch;
+      }
+      return typeof val === 'function'
+        ? val.apply(this, [dispatch].concat(args))
+        : dispatch.apply(this.$store, [val].concat(args))
+    };
+  });
+  return res
+});
+
+/**
+ * Rebinding namespace param for mapXXX function in special scoped, and return them by simple object
+ * @param {String} namespace
+ * @return {Object}
+ */
+var createNamespacedHelpers = function (namespace) { return ({
+  mapState: mapState.bind(null, namespace),
+  mapGetters: mapGetters.bind(null, namespace),
+  mapMutations: mapMutations.bind(null, namespace),
+  mapActions: mapActions.bind(null, namespace)
+}); };
+
+/**
+ * Normalize the map
+ * normalizeMap([1, 2, 3]) => [ { key: 1, val: 1 }, { key: 2, val: 2 }, { key: 3, val: 3 } ]
+ * normalizeMap({a: 1, b: 2, c: 3}) => [ { key: 'a', val: 1 }, { key: 'b', val: 2 }, { key: 'c', val: 3 } ]
+ * @param {Array|Object} map
+ * @return {Object}
+ */
+function normalizeMap (map) {
+  if (!isValidMap(map)) {
+    return []
+  }
+  return Array.isArray(map)
+    ? map.map(function (key) { return ({ key: key, val: key }); })
+    : Object.keys(map).map(function (key) { return ({ key: key, val: map[key] }); })
+}
+
+/**
+ * Validate whether given map is valid or not
+ * @param {*} map
+ * @return {Boolean}
+ */
+function isValidMap (map) {
+  return Array.isArray(map) || isObject(map)
+}
+
+/**
+ * Return a function expect two param contains namespace and map. it will normalize the namespace and then the param's function will handle the new namespace and the map.
+ * @param {Function} fn
+ * @return {Function}
+ */
+function normalizeNamespace (fn) {
+  return function (namespace, map) {
+    if (typeof namespace !== 'string') {
+      map = namespace;
+      namespace = '';
+    } else if (namespace.charAt(namespace.length - 1) !== '/') {
+      namespace += '/';
+    }
+    return fn(namespace, map)
+  }
+}
+
+/**
+ * Search a special module from store by namespace. if module not exist, print error message.
+ * @param {Object} store
+ * @param {String} helper
+ * @param {String} namespace
+ * @return {Object}
+ */
+function getModuleByNamespace (store, helper, namespace) {
+  var module = store._modulesNamespaceMap[namespace];
+  if (( true) && !module) {
+    console.error(("[vuex] module namespace not found in " + helper + "(): " + namespace));
+  }
+  return module
+}
+
+// Credits: borrowed code from fcomb/redux-logger
+
+function createLogger (ref) {
+  if ( ref === void 0 ) ref = {};
+  var collapsed = ref.collapsed; if ( collapsed === void 0 ) collapsed = true;
+  var filter = ref.filter; if ( filter === void 0 ) filter = function (mutation, stateBefore, stateAfter) { return true; };
+  var transformer = ref.transformer; if ( transformer === void 0 ) transformer = function (state) { return state; };
+  var mutationTransformer = ref.mutationTransformer; if ( mutationTransformer === void 0 ) mutationTransformer = function (mut) { return mut; };
+  var actionFilter = ref.actionFilter; if ( actionFilter === void 0 ) actionFilter = function (action, state) { return true; };
+  var actionTransformer = ref.actionTransformer; if ( actionTransformer === void 0 ) actionTransformer = function (act) { return act; };
+  var logMutations = ref.logMutations; if ( logMutations === void 0 ) logMutations = true;
+  var logActions = ref.logActions; if ( logActions === void 0 ) logActions = true;
+  var logger = ref.logger; if ( logger === void 0 ) logger = console;
+
+  return function (store) {
+    var prevState = deepCopy(store.state);
+
+    if (typeof logger === 'undefined') {
+      return
+    }
+
+    if (logMutations) {
+      store.subscribe(function (mutation, state) {
+        var nextState = deepCopy(state);
+
+        if (filter(mutation, prevState, nextState)) {
+          var formattedTime = getFormattedTime();
+          var formattedMutation = mutationTransformer(mutation);
+          var message = "mutation " + (mutation.type) + formattedTime;
+
+          startMessage(logger, message, collapsed);
+          logger.log('%c prev state', 'color: #9E9E9E; font-weight: bold', transformer(prevState));
+          logger.log('%c mutation', 'color: #03A9F4; font-weight: bold', formattedMutation);
+          logger.log('%c next state', 'color: #4CAF50; font-weight: bold', transformer(nextState));
+          endMessage(logger);
+        }
+
+        prevState = nextState;
+      });
+    }
+
+    if (logActions) {
+      store.subscribeAction(function (action, state) {
+        if (actionFilter(action, state)) {
+          var formattedTime = getFormattedTime();
+          var formattedAction = actionTransformer(action);
+          var message = "action " + (action.type) + formattedTime;
+
+          startMessage(logger, message, collapsed);
+          logger.log('%c action', 'color: #03A9F4; font-weight: bold', formattedAction);
+          endMessage(logger);
+        }
+      });
+    }
+  }
+}
+
+function startMessage (logger, message, collapsed) {
+  var startMessage = collapsed
+    ? logger.groupCollapsed
+    : logger.group;
+
+  // render
+  try {
+    startMessage.call(logger, message);
+  } catch (e) {
+    logger.log(message);
+  }
+}
+
+function endMessage (logger) {
+  try {
+    logger.groupEnd();
+  } catch (e) {
+    logger.log('—— log end ——');
+  }
+}
+
+function getFormattedTime () {
+  var time = new Date();
+  return (" @ " + (pad(time.getHours(), 2)) + ":" + (pad(time.getMinutes(), 2)) + ":" + (pad(time.getSeconds(), 2)) + "." + (pad(time.getMilliseconds(), 3)))
+}
+
+function repeat (str, times) {
+  return (new Array(times + 1)).join(str)
+}
+
+function pad (num, maxLength) {
+  return repeat('0', maxLength - num.toString().length) + num
+}
+
+var index = {
+  Store: Store,
+  install: install,
+  version: '3.6.2',
+  mapState: mapState,
+  mapMutations: mapMutations,
+  mapGetters: mapGetters,
+  mapActions: mapActions,
+  createNamespacedHelpers: createNamespacedHelpers,
+  createLogger: createLogger
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (index);
+
+
+
+/***/ }),
+
+/***/ "?3cb3":
+/*!*********************!*\
+  !*** got (ignored) ***!
+  \*********************/
+/***/ (() => {
+
+/* (ignored) */
 
 /***/ })
 

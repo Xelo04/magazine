@@ -1,9 +1,10 @@
-// import { VueElement } from "vue";
-// import Vuex from "vuex"
+import Vue from "vue"
+import Vuex from "vuex"
+import Items from "./modules/items"
+Vue.use(Vuex)
 
-// VueElement.use(Vuex)
-// export default new Vuex.Store({
-//     modules: {
-
-//     },
-// })
+export default new Vuex.Store({
+    modules: {
+        Items
+    },
+})
