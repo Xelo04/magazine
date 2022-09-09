@@ -1,11 +1,15 @@
-import Vue from "vue";
-import Vuetify from "vuetify";
+import Vue from 'vue'
+import Vuetify from 'vuetify'
+import '@mdi/font/css/materialdesignicons.css'
 Vue.use(Vuetify)
 
 const opts = {
     theme: {
-        light: {
-            primary: '#01BAEF'
+        themes: {
+            light: {
+                primary: '#01BAEF'
+            }
         }
     }
 }
+export default new Vuetify(opts)

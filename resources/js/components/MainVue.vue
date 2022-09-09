@@ -5,7 +5,10 @@
                 <v-btn class="primary mx-4">Przedmioty</v-btn>
             </router-link>
             <router-link to="/categories/list">
-                <v-btn class="primary red--text mx-4">Kategorie</v-btn>
+                <v-btn class="primary mx-4">Kategorie</v-btn>
+            </router-link>
+            <router-link to="/users/list">
+                <v-btn class="primary mx-4">Użytkownicy</v-btn>
             </router-link>
         </v-footer>
 

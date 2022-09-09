@@ -1,6 +1,9 @@
 const urlCategories = "/main-api/categories/";
 const state = {
     categories: [],
+    category: {
+        name: ""
+    }
 
 }
 const getters = {
