@@ -16,7 +16,7 @@ class ItemsService
 
     public function list()
     {
-        $items = $this->itemModel->with("category")->get();
+        $items = $this->itemModel->with(["category", "user"])->get();
         return $items;
     }
 }

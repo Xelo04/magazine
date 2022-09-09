@@ -5,7 +5,9 @@ const state = {
         id: 0,
         name: "",
         price: 0,
-        category_id: 0
+        category_id: 0,
+        user_id: 0
+
     }
 }
 const getters = {

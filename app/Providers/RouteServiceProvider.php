@@ -34,7 +34,7 @@ class RouteServiceProvider extends ServiceProvider
 
             foreach ($this->modules as $module) {
                 Route::prefix('main-api/' . $module)
-                    ->middleware(['api'])
+                    ->middleware(['api', "auth:sanctum"])
                     ->namespace($this->namespace)
                     ->group(base_path('routes/main-api/' . $module . '.php'));
             }

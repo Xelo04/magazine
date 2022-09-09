@@ -238,13 +238,14 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0__["default"]({
     MainVue: _components_MainVue_vue__WEBPACK_IMPORTED_MODULE_5__["default"],
     ItemsList: _components_Items_List_vue__WEBPACK_IMPORTED_MODULE_6__["default"]
   }
-}); // Vue.http.interceptors.push((request) => {
-//     let token = document.head.querySelector('meta[name="csrf-token"]');
-//     if (token) {
-//         request.headers.set("X-CSRF-TOKEN", token.content);
-//     }
-// });
+});
+vue__WEBPACK_IMPORTED_MODULE_0__["default"].http.interceptors.push(function (request) {
+  var token = document.head.querySelector('meta[name="csrf-token"]');
 
+  if (token) {
+    request.headers.set("X-CSRF-TOKEN", token.content);
+  }
+});
 var bus = new vue__WEBPACK_IMPORTED_MODULE_0__["default"]();
 
 /***/ }),
@@ -378,7 +379,8 @@ var state = {
     id: 0,
     name: "",
     price: 0,
-    category_id: 0
+    category_id: 0,
+    user_id: 0
   }
 };
 var getters = {
@@ -19802,10 +19804,10 @@ var render = function render() {
     scopedSlots: _vm._u([{
       key: "default",
       fn: function fn() {
-        return [_c("thead", [_c("tr", [_c("th", [_vm._v("Lp")]), _vm._v(" "), _c("th", [_vm._v("Nazwa")]), _vm._v(" "), _c("th", [_vm._v("Cena")]), _vm._v(" "), _c("th", [_vm._v("Kategoria")]), _vm._v(" "), _c("th", [_vm._v("Usuń")])])]), _vm._v(" "), _c("tbody", _vm._l(_vm.items, function (item, index) {
+        return [_c("thead", [_c("tr", [_c("th", [_vm._v("Lp")]), _vm._v(" "), _c("th", [_vm._v("Nazwa")]), _vm._v(" "), _c("th", [_vm._v("Cena")]), _vm._v(" "), _c("th", [_vm._v("Kategoria")]), _vm._v(" "), _c("th", [_vm._v("Użytkownik")]), _vm._v(" "), _c("th", [_vm._v("Usuń")])])]), _vm._v(" "), _c("tbody", _vm._l(_vm.items, function (item, index) {
           return _c("tr", {
             key: item.id
-          }, [_c("td", [_vm._v(_vm._s(index + 1))]), _vm._v(" "), _c("td", [_vm._v(_vm._s(item.name))]), _vm._v(" "), _c("td", [_vm._v(_vm._s(item.price))]), _vm._v(" "), _c("td", [_vm._v(_vm._s(item.category.name))]), _vm._v(" "), _c("td", [_c(vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_3__["default"], {
+          }, [_c("td", [_vm._v(_vm._s(index + 1))]), _vm._v(" "), _c("td", [_vm._v(_vm._s(item.name))]), _vm._v(" "), _c("td", [_vm._v(_vm._s(item.price))]), _vm._v(" "), _c("td", [_vm._v(_vm._s(item.category.name))]), _vm._v(" "), _c("td", [item.user ? _c("span", [_vm._v("\n                                " + _vm._s(item.user.name) + "\n                            ")]) : _vm._e()]), _vm._v(" "), _c("td", [_c(vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_3__["default"], {
             attrs: {
               color: "error",
               fab: "",
