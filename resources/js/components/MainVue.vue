@@ -10,6 +10,9 @@
             <router-link to="/users/list">
                 <v-btn class="primary mx-4">Użytkownicy</v-btn>
             </router-link>
+            <v-spacer>
+            </v-spacer>
+            <v-btn class="primary mx-4" color="error" @click="logout">Wyloguj się</v-btn>
         </v-footer>
 
         <v-main>
@@ -20,8 +23,18 @@
 </template>
 
 <script>
+
 export default {
-    name: 'MainVue'
+    name: 'MainVue',
+    methods: {
+        async logout() {
+            await this.$http.post("/logout")
+                .then(response => {
+                    console.log(response);
+                })
+            window.location.reload();
+        }
+    }
 }
 </script>
 <style>
