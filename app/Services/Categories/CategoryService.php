@@ -28,6 +28,7 @@ class CategoryService
 
     public function create($newCategory)
     {
+        $newCategory['user_id'] = 1;
         $this->categoryModel::create($newCategory);
     }
 
